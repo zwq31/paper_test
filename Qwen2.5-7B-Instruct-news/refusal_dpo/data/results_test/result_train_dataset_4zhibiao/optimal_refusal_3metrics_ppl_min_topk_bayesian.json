@@ -1,0 +1,23 @@
+{
+  "optimal_thresholds": {
+    "ppl_leq": 1.3455614047625466,
+    "min_token_prob_geq": 0.08725228526445696,
+    "avg_topk_delta_geq": 0.5798081720880707
+  },
+  "performance": {
+    "youden_j": 0.40386793698445445,
+    "accuracy": 0.7023920472196334,
+    "sensitivity": 0.7466174661746617,
+    "specificity": 0.6572504708097928,
+    "tp": 1214,
+    "tn": 1047,
+    "fp": 546,
+    "fn": 412
+  },
+  "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Avg TopK Delta ≥ 阈值 时作答，否则拒答",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 300,
+    "best_trial_number": 110
+  }
+}

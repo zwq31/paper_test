@@ -1,0 +1,69 @@
+
+============================================================
+H-Neurons训练完成报告 - 梯度提升版本（参考代码特征筛选）
+============================================================
+
+特征筛选方法（完全按照参考代码）:
+  - 第一阶段: VarianceThreshold(threshold=0) - 剔除常数特征
+  - 第二阶段: SelectPercentile(f_classif, percentile=10) - 选择前10%特征
+
+梯度提升方法:
+  - 算法: LightGBM梯度提升决策树
+  - 树数量: 500棵树
+  - 树深度: 6
+  - 学习率: 0.05
+  - 正则化: L1=0.1, L2=0.1
+  - 早停策略: 50轮无提升则停止
+
+特征重要性分析:
+  - 总特征数: 53044
+  - 零重要性特征: 49469
+  - 累积重要性:
+    cumulative_50%: 65个特征 (0.1%)
+    cumulative_80%: 789个特征 (1.5%)
+    cumulative_90%: 1417个特征 (2.7%)
+    cumulative_95%: 2004个特征 (3.8%)
+    cumulative_99%: 3003个特征 (5.7%)
+
+数据统计:
+  - 原始特征维度: 530432
+  - 筛选后特征维度: 53044
+  - 筛选比例: 10.00%
+  - 正样本比例: 0.250
+
+H-Neurons发现:
+  - H-Neurons数量: 3575
+  - H-Neurons比例: 0.6740%
+  - 是否<0.1%: ⚠ 否
+  - 最佳迭代次数: 171
+
+模型性能:
+  - 准确率: 0.8167
+  - AUC: 0.8990
+
+输出文件:
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/gradient_boosting_model.pkl - 完整的模型对象
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/h_neurons_gradient_boosting.json - H-Neurons详细信息(按重要性排序)
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/feature_importance_analysis.json - 特征重要性分析
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/lightgbm_model.txt - LightGBM原生模型文件
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/h_neurons_statistics.json - 统计信息
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/experiment_results.json - 完整实验结果
+  - /mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/training_report.txt - 本报告
+
+使用说明:
+  1. 加载模型:
+     with open('/mnt/project/H-Neurous/output/gradient_boosting_reference/h_neurons_gradient_boosting_reference_20260118_113702/gradient_boosting_model.pkl', 'rb') as f:
+         model_data = pickle.load(f)
+  
+  2. 获取H-Neurons:
+     h_neurons = model_data['h_neuron_names']
+     importance = model_data['feature_importance']
+  
+  3. 进行预测:
+     # 先应用相同的特征筛选
+     X_test_var = model_data['var_selector'].transform(new_X)
+     X_test_percentile = model_data['percentile_selector'].transform(X_test_var)
+     X_test_scaled = model_data['scaler'].transform(X_test_percentile)
+     predictions = model_data['model'].predict(X_test_scaled)
+
+============================================================

@@ -1,0 +1,14 @@
+{
+  "total_samples": 3224,
+  "correct_count": 1323,
+  "accuracy": 0.4103598014888337,
+  "accuracy_rate": "41.04%",
+  "basic_metrics_average": {
+    "rouge_1": 22.872649746714917,
+    "rouge_2": 10.130813063691583,
+    "rouge_l": 22.746400574213375,
+    "bertscore_precision": 71.13431084337216,
+    "bertscore_recall": 79.01446050675425,
+    "bertscore_f1": 74.45236283074833
+  }
+}

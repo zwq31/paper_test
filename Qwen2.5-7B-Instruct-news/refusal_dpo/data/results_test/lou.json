@@ -1,0 +1,938 @@
+[
+  {
+    "source_id": 1,
+    "question": "温州北站改建后的站房总建筑面积是多少平方米？",
+    "standard_answer": "42200平方米。",
+    "model_answer": "42200平方米",
+    "refusal_decision": {
+      "ppl": 1.0631,
+      "min_token_prob": 0.7648,
+      "should_answer": true,
+      "final_model_answer": "42200平方米"
+    }
+  },
+  {
+    "source_id": 14,
+    "question": "2024年“真情100”助学结对仪式在何时何地举行？",
+    "standard_answer": "2024年8月29日在永嘉县公共文化活动中心23楼1号演播室举行。",
+    "model_answer": "2024年“真情100”助学结对仪式于2024年8月29日在永嘉县公共文化活动中心23楼1号演播室举行。",
+    "refusal_decision": {
+      "ppl": 1.0259,
+      "min_token_prob": 0.4785,
+      "should_answer": true,
+      "final_model_answer": "2024年“真情100”助学结对仪式于2024年8月29日在永嘉县公共文化活动中心23楼1号演播室举行。"
+    }
+  },
+  {
+    "source_id": 219,
+    "question": "金育林最初从事的职业是什么？",
+    "standard_answer": "油漆工，出身于做油漆活计的手艺人家。",
+    "model_answer": "金育林最初从事模具行业，做过管理、搞过研发、做过贸易，还做过一段时间的律师。",
+    "refusal_decision": {
+      "ppl": 1.7944,
+      "min_token_prob": 0.0321,
+      "should_answer": false,
+      "final_model_answer": "很抱歉，关于这个问题我目前无法提供确切信息。"
+    }
+  },
+  {
+    "source_id": 231,
+    "question": "在2024年9月23日，永嘉县东城街道平坑村声明作废的发票的号码范围是什么？",
+    "standard_answer": "05015513至05015525。",
+    "model_answer": "发票号码：05915513-02915529。",
+    "refusal_decision": {
+      "ppl": 1.2391,
+      "min_token_prob": 0.3125,
+      "should_answer": true,
+      "final_model_answer": "发票号码：05915513-02915529。"
+    }
+  },
+  {
+    "source_id": 263,
+    "question": "2024年9月23日，在永嘉县乌牛街道仁浦村的温州市早稻新品种示范基地，水稻出现了什么具体问题？",
+    "standard_answer": "部分水稻出现倒伏现象。",
+    "model_answer": "部分水稻出现倒伏现象。",
+    "refusal_decision": {
+      "ppl": 1.0417,
+      "min_token_prob": 0.8271,
+      "should_answer": true,
+      "final_model_answer": "部分水稻出现倒伏现象。"
+    }
+  },
+  {
+    "source_id": 266,
+    "question": "永嘉县前卫体育协会的注销公告是在哪一天发布的？",
+    "standard_answer": "2024年9月19日。",
+    "model_answer": "2024年9月19日。",
+    "refusal_decision": {
+      "ppl": 1.0054,
+      "min_token_prob": 0.9604,
+      "should_answer": true,
+      "final_model_answer": "2024年9月19日。"
+    }
+  },
+  {
+    "source_id": 285,
+    "question": "永嘉县瓯北开心果幼儿园因何原因进行办学许可证和法人登记注销？",
+    "standard_answer": "因终止办学。",
+    "model_answer": "因终止办学。",
+    "refusal_decision": {
+      "ppl": 1.0361,
+      "min_token_prob": 0.8484,
+      "should_answer": true,
+      "final_model_answer": "因终止办学。"
+    }
+  },
+  {
+    "source_id": 295,
+    "question": "2024年暑期，永嘉农商银行在永嘉县瓯北五中花园举办的“财商启航 未来可期”暑期财商夏令营活动包括哪些具体环节？",
+    "standard_answer": "活动分为开营集结、手工DIY、财商小课堂、游园会、我是小牙医等五大环节。",
+    "model_answer": "活动分为开营集结、手工DIY、财商小课堂、游园会、我是小牙医等五大环节。",
+    "refusal_decision": {
+      "ppl": 1.0126,
+      "min_token_prob": 0.9367,
+      "should_answer": true,
+      "final_model_answer": "活动分为开营集结、手工DIY、财商小课堂、游园会、我是小牙医等五大环节。"
+    }
+  },
+  {
+    "source_id": 302,
+    "question": "永嘉县机关事务管理中心和温州市嘉诚拍卖有限公司于2024年9月27日发布的拍卖公告中指定的标的物是什么？",
+    "standard_answer": "标的物是永嘉县东城街道县前路、屿后巷及永建路共4宗店面五年租赁权。",
+    "model_answer": "永嘉县机关事务管理中心和温州市嘉诚拍卖有限公司于2024年9月27日发布的拍卖公告中指定的标的物是永嘉县黄田街道停车泊位二十年经营权。",
+    "refusal_decision": {
+      "ppl": 1.0307,
+      "min_token_prob": 0.417,
+      "should_answer": true,
+      "final_model_answer": "永嘉县机关事务管理中心和温州市嘉诚拍卖有限公司于2024年9月27日发布的拍卖公告中指定的标的物是永嘉县黄田街道停车泊位二十年经营权。"
+    }
+  },
+  {
+    "source_id": 313,
+    "question": "永嘉县从何时起对温州北站进出站流线进行优化调整？",
+    "standard_answer": "2024年10月1日起。",
+    "model_answer": "永嘉县从2024年10月1日起对温州北站进出站流线进行优化调整。",
+    "refusal_decision": {
+      "ppl": 1.0173,
+      "min_token_prob": 0.6953,
+      "should_answer": true,
+      "final_model_answer": "永嘉县从2024年10月1日起对温州北站进出站流线进行优化调整。"
+    }
+  },
+  {
+    "source_id": 345,
+    "question": "永嘉县瓯北街道组织多部门联合对哪些关键领域进行了全面排查，以确保国庆假期安全？",
+    "standard_answer": "永嘉县瓯北街道组织多部门联合对危险化学品、工业园区、高层住宅等关键领域进行了全面排查。",
+    "model_answer": "永嘉县瓯北街道组织多部门联合对危险化学品、工业园区、高层住宅等关键领域进行了全面排查。",
+    "refusal_decision": {
+      "ppl": 1.0157,
+      "min_token_prob": 0.8887,
+      "should_answer": true,
+      "final_model_answer": "永嘉县瓯北街道组织多部门联合对危险化学品、工业园区、高层住宅等关键领域进行了全面排查。"
+    }
+  },
+  {
+    "source_id": 405,
+    "question": "浙江永嘉药用兰科科技小院的用地面积是多少，并有哪些主要建筑设施？",
+    "standard_answer": "用地面积120亩，建有5G智慧温室6200平方米、植物工厂400多平方米、实验室/组培室400平方米。",
+    "model_answer": "浙江永嘉药用兰科科技小院用地面积120亩，建有5G智慧温室6200平方米，植物工厂400多平方米，实验室/组培室400平方米。",
+    "refusal_decision": {
+      "ppl": 1.0257,
+      "min_token_prob": 0.668,
+      "should_answer": true,
+      "final_model_answer": "浙江永嘉药用兰科科技小院用地面积120亩，建有5G智慧温室6200平方米，植物工厂400多平方米，实验室/组培室400平方米。"
+    }
+  },
+  {
+    "source_id": 415,
+    "question": "2024年永嘉县全县单季稻种植总面积是多少亩？",
+    "standard_answer": "13.8万亩",
+    "model_answer": "13.8万亩。",
+    "refusal_decision": {
+      "ppl": 1.0617,
+      "min_token_prob": 0.6626,
+      "should_answer": true,
+      "final_model_answer": "13.8万亩。"
+    }
+  },
+  {
+    "source_id": 428,
+    "question": "永嘉县二手车行业协会在2024年10月14日发布的遗失启事中遗失的社会团体法人登记证书的证号是多少？",
+    "standard_answer": "51330324MJ9202249T",
+    "model_answer": "51330324MJ9202249T。",
+    "refusal_decision": {
+      "ppl": 1.0031,
+      "min_token_prob": 0.9663,
+      "should_answer": true,
+      "final_model_answer": "51330324MJ9202249T。"
+    }
+  },
+  {
+    "source_id": 444,
+    "question": "2024年，永嘉县北城街道县人大代表联络站于何时建成并投入使用？",
+    "standard_answer": "6月份",
+    "model_answer": "很抱歉，关于2024年永嘉县北城街道县人大代表联络站建成并投入使用的时间，我目前没有可靠的信息来源可以确认。为确保您获得准确的信息，建议您直接咨询永嘉县人大常委会办公室或北城街道办事处的官方渠道，也可以关注当地政府网站发布的相关公告。如果有其他需要协助的地方，我很乐意提供帮助。",
+    "refusal_decision": {
+      "ppl": 1.1575,
+      "min_token_prob": 0.335,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，关于2024年永嘉县北城街道县人大代表联络站建成并投入使用的时间，我目前没有可靠的信息来源可以确认。为确保您获得准确的信息，建议您直接咨询永嘉县人大常委会办公室或北城街道办事处的官方渠道，也可以关注当地政府网站发布的相关公告。如果有其他需要协助的地方，我很乐意提供帮助。"
+    }
+  },
+  {
+    "source_id": 454,
+    "question": "2024年10月11日，永嘉县举办的“三新”大讲坛专题讲座的主题是什么？",
+    "standard_answer": "主题是低空经济，具体为“筑梦蓝天 向新而行”。",
+    "model_answer": "2024年10月11日，永嘉县举办的“三新”大讲坛专题讲座的主题是《加快农业科技创新 推进农业农村现代化》。",
+    "refusal_decision": {
+      "ppl": 1.0985,
+      "min_token_prob": 0.2689,
+      "should_answer": true,
+      "final_model_answer": "2024年10月11日，永嘉县举办的“三新”大讲坛专题讲座的主题是《加快农业科技创新 推进农业农村现代化》。"
+    }
+  },
+  {
+    "source_id": 462,
+    "question": "存量房贷利率批量调整的具体日期是什么？",
+    "standard_answer": "2024年10月25日。",
+    "model_answer": "存量房贷利率批量调整的具体日期是2024年10月25日。",
+    "refusal_decision": {
+      "ppl": 1.0059,
+      "min_token_prob": 0.9525,
+      "should_answer": true,
+      "final_model_answer": "存量房贷利率批量调整的具体日期是2024年10月25日。"
+    }
+  },
+  {
+    "source_id": 492,
+    "question": "在2024年浙江省AA级'守合同重信用'企业公示中，永嘉县有多少家企业入选？",
+    "standard_answer": "9家企业入选。",
+    "model_answer": "永嘉县共有24家企业入选2024年浙江省AA级'守合同重信用'企业公示。",
+    "refusal_decision": {
+      "ppl": 1.0326,
+      "min_token_prob": 0.5925,
+      "should_answer": true,
+      "final_model_answer": "永嘉县共有24家企业入选2024年浙江省AA级'守合同重信用'企业公示。"
+    }
+  },
+  {
+    "source_id": 500,
+    "question": "蒋伍虎于哪一年入职浙江奥康鞋业股份有限公司？",
+    "standard_answer": "2006年",
+    "model_answer": "2003年，蒋伍虎入职浙江奥康鞋业股份有限公司。",
+    "refusal_decision": {
+      "ppl": 1.0583,
+      "min_token_prob": 0.6024,
+      "should_answer": true,
+      "final_model_answer": "2003年，蒋伍虎入职浙江奥康鞋业股份有限公司。"
+    }
+  },
+  {
+    "source_id": 518,
+    "question": "瓯窑的历史可以追溯到哪个朝代？",
+    "standard_answer": "东汉。",
+    "model_answer": "瓯窑的历史可以追溯到东汉。",
+    "refusal_decision": {
+      "ppl": 1.0333,
+      "min_token_prob": 0.8621,
+      "should_answer": true,
+      "final_model_answer": "瓯窑的历史可以追溯到东汉。"
+    }
+  },
+  {
+    "source_id": 564,
+    "question": "孟鲁司特钠的药理作用是什么？",
+    "standard_answer": "孟鲁司特钠是一种口服的白三烯受体拮抗剂，能特异性抑制气道中的半胱氨酰白三烯受体，从而达到改善气道炎症，有效控制哮喘症状。",
+    "model_answer": "孟鲁司特钠是一种口服的白三烯受体拮抗剂，能特异性抑制气道中的半胱氨酰白三烯受体，从而达到改善气道炎症，有效控制哮喘症状。",
+    "refusal_decision": {
+      "ppl": 1.0037,
+      "min_token_prob": 0.9565,
+      "should_answer": true,
+      "final_model_answer": "孟鲁司特钠是一种口服的白三烯受体拮抗剂，能特异性抑制气道中的半胱氨酰白三烯受体，从而达到改善气道炎症，有效控制哮喘症状。"
+    }
+  },
+  {
+    "source_id": 584,
+    "question": "在2018年，周志有主持研发了哪种安全阀？",
+    "standard_answer": "调节型先导式安全阀",
+    "model_answer": "调节型先导式安全阀。",
+    "refusal_decision": {
+      "ppl": 1.0026,
+      "min_token_prob": 0.9917,
+      "should_answer": true,
+      "final_model_answer": "调节型先导式安全阀。"
+    }
+  },
+  {
+    "source_id": 587,
+    "question": "永嘉县职教中心的叶杨帆在2024年全国中等职业学校公共基础课教师教学设计与展示活动中的参赛课题是什么？",
+    "standard_answer": "《篮球：体前变向换手运球》。",
+    "model_answer": "叶杨帆的参赛课题是《篮球：体前变向换手运球》。",
+    "refusal_decision": {
+      "ppl": 1.0379,
+      "min_token_prob": 0.5727,
+      "should_answer": true,
+      "final_model_answer": "叶杨帆的参赛课题是《篮球：体前变向换手运球》。"
+    }
+  },
+  {
+    "source_id": 599,
+    "question": "永嘉县沙头镇稠树村的“红白理事会”是在什么时间正式成立的？",
+    "standard_answer": "2021年7月",
+    "model_answer": "永嘉县沙头镇稠树村的“红白理事会”于2021年7月正式成立。",
+    "refusal_decision": {
+      "ppl": 1.0053,
+      "min_token_prob": 0.951,
+      "should_answer": true,
+      "final_model_answer": "永嘉县沙头镇稠树村的“红白理事会”于2021年7月正式成立。"
+    }
+  },
+  {
+    "source_id": 649,
+    "question": "瓯北交警在2024年10月接到关于家长让七岁小女孩驾驶汽车的举报后，采取了什么处罚措施？",
+    "standard_answer": "瓯北交警依法对涉事家长进行了处罚，扣三分并罚款50元。",
+    "model_answer": "瓯北交警依法对涉事家长进行了处罚，扣三分并罚款50元。",
+    "refusal_decision": {
+      "ppl": 1.1061,
+      "min_token_prob": 0.4094,
+      "should_answer": true,
+      "final_model_answer": "瓯北交警依法对涉事家长进行了处罚，扣三分并罚款50元。"
+    }
+  },
+  {
+    "source_id": 655,
+    "question": "截至2024年10月31日20时，永嘉县全县因台风“康妮”转移的总人数是多少？",
+    "standard_answer": "5236人",
+    "model_answer": "截至2024年10月31日20时，永嘉县全县因台风“康妮”转移的总人数为8800人。",
+    "refusal_decision": {
+      "ppl": 1.0285,
+      "min_token_prob": 0.4929,
+      "should_answer": true,
+      "final_model_answer": "截至2024年10月31日20时，永嘉县全县因台风“康妮”转移的总人数为8800人。"
+    }
+  },
+  {
+    "source_id": 679,
+    "question": "2024年6月27日，在永嘉县人民医院的签约仪式上，中国初级卫生保健基金会联合哪家慈善基金会向永嘉县人民医院捐赠了价值多少的肝癌靶向药品？",
+    "standard_answer": "北京康盟慈善基金会，92万元",
+    "model_answer": "中国初级卫生保健基金会联合北京康盟慈善基金会向永嘉县人民医院捐赠了价值92万元的肝癌靶向药品。",
+    "refusal_decision": {
+      "ppl": 1.0623,
+      "min_token_prob": 0.4032,
+      "should_answer": true,
+      "final_model_answer": "中国初级卫生保健基金会联合北京康盟慈善基金会向永嘉县人民医院捐赠了价值92万元的肝癌靶向药品。"
+    }
+  },
+  {
+    "source_id": 680,
+    "question": "2024年3月，永嘉县永嘉医派主题馆开始策划并实施的是什么系列活动？",
+    "standard_answer": "系列中医药研学活动",
+    "model_answer": "很抱歉，关于2024年9月11日瓯北街道手机摄影兴趣小组在采虹湾景区活动的具体内容，我目前没有可靠的信息来源可以确认。为了获取准确的活动详情，建议您直接咨询瓯北街道办事处或采虹湾景区管理处，也可以关注当地文化部门或旅游机构的官方公告。如果有其他需要协助的地方，请随时告知。",
+    "refusal_decision": {
+      "ppl": 1.3035,
+      "min_token_prob": 0.2143,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，关于2024年9月11日瓯北街道手机摄影兴趣小组在采虹湾景区活动的具体内容，我目前没有可靠的信息来源可以确认。为了获取准确的活动详情，建议您直接咨询瓯北街道办事处或采虹湾景区管理处，也可以关注当地文化部门或旅游机构的官方公告。如果有其他需要协助的地方，请随时告知。"
+    }
+  },
+  {
+    "source_id": 687,
+    "question": "2024年前三季度，永嘉县实现地区生产总值是多少亿元？同比增长多少？",
+    "standard_answer": "477.68亿元，同比增长6.2%",
+    "model_answer": "2024年前三季度，永嘉县实现地区生产总值477.68亿元，同比增长6.2%。",
+    "refusal_decision": {
+      "ppl": 1.0491,
+      "min_token_prob": 0.6437,
+      "should_answer": true,
+      "final_model_answer": "2024年前三季度，永嘉县实现地区生产总值477.68亿元，同比增长6.2%。"
+    }
+  },
+  {
+    "source_id": 687,
+    "question": "2024年前三季度，永嘉县服务业增加值对GDP增长的贡献率是多少？",
+    "standard_answer": "55.2%",
+    "model_answer": "2024年前三季度，永嘉县服务业增加值对GDP增长的贡献率为55.2%。",
+    "refusal_decision": {
+      "ppl": 1.0293,
+      "min_token_prob": 0.5124,
+      "should_answer": true,
+      "final_model_answer": "2024年前三季度，永嘉县服务业增加值对GDP增长的贡献率为55.2%。"
+    }
+  },
+  {
+    "source_id": 704,
+    "question": "2024年11月5日，在永嘉县慈善捐资光荣榜活动中，荣尚科技发展（浙江）有限公司捐赠了多少元？",
+    "standard_answer": "235000元",
+    "model_answer": "235000元",
+    "refusal_decision": {
+      "ppl": 1.0775,
+      "min_token_prob": 0.5893,
+      "should_answer": true,
+      "final_model_answer": "235000元"
+    }
+  },
+  {
+    "source_id": 708,
+    "question": "2024年11月3日，西班牙政府数据显示，暴雨引发洪灾在西班牙东南部已致至少多少人死亡？",
+    "standard_answer": "214人",
+    "model_answer": "至少214人死亡。",
+    "refusal_decision": {
+      "ppl": 1.038,
+      "min_token_prob": 0.8386,
+      "should_answer": true,
+      "final_model_answer": "至少214人死亡。"
+    }
+  },
+  {
+    "source_id": 752,
+    "question": "2024年11月9日，在永嘉县召开的永嘉昆剧团成立75周年暨传承发展座谈会议中，副县长黄凡是否出席了会议？",
+    "standard_answer": "是，副县长黄凡出席了会议。",
+    "model_answer": "是的，副县长黄凡出席了会议。",
+    "refusal_decision": {
+      "ppl": 1.0104,
+      "min_token_prob": 0.9282,
+      "should_answer": true,
+      "final_model_answer": "是的，副县长黄凡出席了会议。"
+    }
+  },
+  {
+    "source_id": 754,
+    "question": "在2024年的世界田联钻石联赛上，永嘉县标枪运动员戴倩倩以多少米的成绩获得女子标枪冠军？",
+    "standard_answer": "61.25米",
+    "model_answer": "以61.25米的成绩获得女子标枪冠军。",
+    "refusal_decision": {
+      "ppl": 1.0059,
+      "min_token_prob": 0.9362,
+      "should_answer": true,
+      "final_model_answer": "以61.25米的成绩获得女子标枪冠军。"
+    }
+  },
+  {
+    "source_id": 788,
+    "question": "2024年，永嘉县银行机构依托‘泵阀共富贷’数字化评贷体系向泵阀企业发放信用贷款的企业数量是多少？",
+    "standard_answer": "338家",
+    "model_answer": "2024年，永嘉县银行机构依托‘泵阀共富贷’数字化评贷体系向泵阀企业发放信用贷款的企业数量是167家。",
+    "refusal_decision": {
+      "ppl": 1.0791,
+      "min_token_prob": 0.4352,
+      "should_answer": true,
+      "final_model_answer": "2024年，永嘉县银行机构依托‘泵阀共富贷’数字化评贷体系向泵阀企业发放信用贷款的企业数量是167家。"
+    }
+  },
+  {
+    "source_id": 809,
+    "question": "2024年11月18日，中国人民银行发行的2025中国乙巳（蛇）年贵金属纪念币一套的总枚数是多少？",
+    "standard_answer": "12枚",
+    "model_answer": "12枚。",
+    "refusal_decision": {
+      "ppl": 1.0153,
+      "min_token_prob": 0.9402,
+      "should_answer": true,
+      "final_model_answer": "12枚。"
+    }
+  },
+  {
+    "source_id": 824,
+    "question": "在2024年11月14日永嘉县岩坦镇源头村举办的'花漫源头金秋系列活动'中，源头村党总支书记陈小静介绍村里用了多少盆花布置打卡点？",
+    "standard_answer": "五万多盆",
+    "model_answer": "源头村党总支书记陈小静介绍，村里共用了3000多盆花布置了多个打卡点。",
+    "refusal_decision": {
+      "ppl": 1.1334,
+      "min_token_prob": 0.4347,
+      "should_answer": true,
+      "final_model_answer": "源头村党总支书记陈小静介绍，村里共用了3000多盆花布置了多个打卡点。"
+    }
+  },
+  {
+    "source_id": 889,
+    "question": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额是多少？",
+    "standard_answer": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额是0.49亿元。",
+    "model_answer": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额为0.49亿元。",
+    "refusal_decision": {
+      "ppl": 1.0043,
+      "min_token_prob": 0.915,
+      "should_answer": true,
+      "final_model_answer": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额为0.49亿元。"
+    }
+  },
+  {
+    "source_id": 900,
+    "question": "2024年11月24日，2024世界青年科学家峰会第二届智能交通网联与车联网永嘉论坛的主题是什么？",
+    "standard_answer": "本届永嘉论坛的主题是“智汇永嘉、智驭无疆”。",
+    "model_answer": "本届永嘉论坛的主题是“智汇永嘉、智驭无疆”。",
+    "refusal_decision": {
+      "ppl": 1.0357,
+      "min_token_prob": 0.6594,
+      "should_answer": true,
+      "final_model_answer": "本届永嘉论坛的主题是“智汇永嘉、智驭无疆”。"
+    }
+  },
+  {
+    "source_id": 905,
+    "question": "2024年11月23日上午，在永嘉县枫林镇自然岛景区举办的2024温州10公里大众等级达标赛暨温州马拉松测试赛（永嘉·楠溪江站）中，10公里专业组男子金牌获得者的姓名和成绩是什么？",
+    "standard_answer": "跑友张治豪以32分28秒的成绩勇夺10公里专业组男子金牌。",
+    "model_answer": "跑友张治豪以32分28秒的成绩勇夺10公里专业组男子金牌。",
+    "refusal_decision": {
+      "ppl": 1.0801,
+      "min_token_prob": 0.3936,
+      "should_answer": true,
+      "final_model_answer": "跑友张治豪以32分28秒的成绩勇夺10公里专业组男子金牌。"
+    }
+  },
+  {
+    "source_id": 912,
+    "question": "2024年11月18日上午8时许，永嘉县瓯北浦西工业区龙潭桥附近发生一起女子晕倒事件，实施救助的义警队员是谁？",
+    "standard_answer": "永嘉夜巡队义警队员许智伟",
+    "model_answer": "实施救助的义警队员是胡志武。",
+    "refusal_decision": {
+      "ppl": 1.2414,
+      "min_token_prob": 0.3779,
+      "should_answer": true,
+      "final_model_answer": "实施救助的义警队员是胡志武。"
+    }
+  },
+  {
+    "source_id": 949,
+    "question": "2024年11月24日，墨西哥东南部塔瓦斯科州首府比亚埃尔莫萨市一家酒吧发生的枪击事件造成了多少人伤亡？",
+    "standard_answer": "墨西哥东南部塔瓦斯科州首府比亚埃尔莫萨市一家酒吧发生的枪击事件造成6人死亡、10人受伤。",
+    "model_answer": "造成6人死亡、10人受伤。",
+    "refusal_decision": {
+      "ppl": 1.0194,
+      "min_token_prob": 0.9466,
+      "should_answer": true,
+      "final_model_answer": "造成6人死亡、10人受伤。"
+    }
+  },
+  {
+    "source_id": 977,
+    "question": "2024年11月，瓯海-永嘉山海协作项目中的瓯窑文化博物馆通过预验收，该博物馆的外立面使用了多少块特制陶土砖？",
+    "standard_answer": "38万块特制陶土砖",
+    "model_answer": "瓯窑文化博物馆的外立面使用了38万块特制陶土砖。",
+    "refusal_decision": {
+      "ppl": 1.0426,
+      "min_token_prob": 0.5358,
+      "should_answer": true,
+      "final_model_answer": "瓯窑文化博物馆的外立面使用了38万块特制陶土砖。"
+    }
+  },
+  {
+    "source_id": 1018,
+    "question": "2024年12月，温州市文化广电旅游局开展的'温州‘剧’好玩'微短剧创作活动中，永嘉县有多少个地方入选首批100个影视拍摄取景地？",
+    "standard_answer": "永嘉县有11个地方入选首批100个影视拍摄取景地。",
+    "model_answer": "永嘉县有13个地方入选首批100个影视拍摄取景地。",
+    "refusal_decision": {
+      "ppl": 1.0408,
+      "min_token_prob": 0.4736,
+      "should_answer": true,
+      "final_model_answer": "永嘉县有13个地方入选首批100个影视拍摄取景地。"
+    }
+  },
+  {
+    "source_id": 1053,
+    "question": "由中国人民银行征信中心组织金融机构共同建设的“全国中小微企业资金流信用信息共享平台”正式上线试运行的具体日期是什么时候？",
+    "standard_answer": "2024年10月25日",
+    "model_answer": "“全国中小微企业资金流信用信息共享平台”于2024年10月25日正式上线试运行。",
+    "refusal_decision": {
+      "ppl": 1.0294,
+      "min_token_prob": 0.4357,
+      "should_answer": true,
+      "final_model_answer": "“全国中小微企业资金流信用信息共享平台”于2024年10月25日正式上线试运行。"
+    }
+  },
+  {
+    "source_id": 1060,
+    "question": "2024年12月5日下午，在永嘉县人民大会堂举行的2024年温州市暨永嘉县全民终身学习活动周开幕式的主题是什么？",
+    "standard_answer": "“让学习成为一种生活方式”",
+    "model_answer": "开幕式以“让学习成为一种生活方式”为主题。",
+    "refusal_decision": {
+      "ppl": 1.1834,
+      "min_token_prob": 0.2004,
+      "should_answer": true,
+      "final_model_answer": "开幕式以“让学习成为一种生活方式”为主题。"
+    }
+  },
+  {
+    "source_id": 1082,
+    "question": "2024年12月3日上午，永嘉县老干部书画协会在永嘉第二高级中学开展的“传承中华文化 书画点亮校园”活动中，协会会长叶会淼向学校赠送了什么内容的书法作品？",
+    "standard_answer": "“厚积薄发”书法作品",
+    "model_answer": "协会会长叶会淼向学校赠送了“厚积薄发”书法作品。",
+    "refusal_decision": {
+      "ppl": 1.0676,
+      "min_token_prob": 0.4745,
+      "should_answer": true,
+      "final_model_answer": "协会会长叶会淼向学校赠送了“厚积薄发”书法作品。"
+    }
+  },
+  {
+    "source_id": 1109,
+    "question": "截至2024年11月18日24时，全国汽车报废更新和置换更新补贴申请数量分别是多少？两者合计多少？",
+    "standard_answer": "截至2024年11月18日24时，全国汽车报废更新和置换更新补贴申请均突破200万份，两者合计超过400万份。",
+    "model_answer": "截至2024年11月18日24时，全国汽车报废更新和置换更新补贴申请均突破200万份，两者合计超过400万份。",
+    "refusal_decision": {
+      "ppl": 1.0025,
+      "min_token_prob": 0.928,
+      "should_answer": true,
+      "final_model_answer": "截至2024年11月18日24时，全国汽车报废更新和置换更新补贴申请均突破200万份，两者合计超过400万份。"
+    }
+  },
+  {
+    "source_id": 1112,
+    "question": "2023年，浙江省接待游客数量及实现的全域旅游综合收入分别是多少？",
+    "standard_answer": "2023年，浙江省接待游客7.6亿人次，实现全域旅游综合收入10028.9亿元。",
+    "model_answer": "2023年，浙江省接待游客7.6亿人次，实现全域旅游综合收入10028.9亿元。",
+    "refusal_decision": {
+      "ppl": 1.0208,
+      "min_token_prob": 0.7659,
+      "should_answer": true,
+      "final_model_answer": "2023年，浙江省接待游客7.6亿人次，实现全域旅游综合收入10028.9亿元。"
+    }
+  },
+  {
+    "source_id": 1127,
+    "question": "2024年12月，温州市教育局评估认定的第二批温州市中小学特色劳动实践教室中，永嘉县有哪5所学校上榜？",
+    "standard_answer": "永嘉县上塘城北小学'早耕园'、永嘉县学生综合实践学校瓯窑工艺室、永嘉县第二职业学校植物染实践教室、永嘉县罗东小学瓯艺非遗技艺、永嘉县桥下镇第一小学小鲁班木创坊。",
+    "model_answer": "永嘉县上塘城北小学“早耕园”、永嘉县学生综合实践学校瓯窑工艺室、永嘉县第二职业学校植物染实践教室、永嘉县罗东小学瓯艺非遗技艺、永嘉县桥下镇第一小学小鲁班木创坊",
+    "refusal_decision": {
+      "ppl": 1.0276,
+      "min_token_prob": 0.4737,
+      "should_answer": true,
+      "final_model_answer": "永嘉县上塘城北小学“早耕园”、永嘉县学生综合实践学校瓯窑工艺室、永嘉县第二职业学校植物染实践教室、永嘉县罗东小学瓯艺非遗技艺、永嘉县桥下镇第一小学小鲁班木创坊"
+    }
+  },
+  {
+    "source_id": 1128,
+    "question": "2024年12月，永嘉县综合行政执法局累计建设了多少个爱心驿站？",
+    "standard_answer": "永嘉县综合行政执法局累计建设了22个爱心驿站。",
+    "model_answer": "永嘉县综合行政执法局累计建设了22个爱心驿站。",
+    "refusal_decision": {
+      "ppl": 1.0714,
+      "min_token_prob": 0.4456,
+      "should_answer": true,
+      "final_model_answer": "永嘉县综合行政执法局累计建设了22个爱心驿站。"
+    }
+  },
+  {
+    "source_id": 1155,
+    "question": "截至2024年12月16日，永嘉县共拥有多少件有效发明专利？",
+    "standard_answer": "1549件",
+    "model_answer": "截至2024年12月16日，永嘉县共拥有有效发明专利1549件。",
+    "refusal_decision": {
+      "ppl": 1.0073,
+      "min_token_prob": 0.9073,
+      "should_answer": true,
+      "final_model_answer": "截至2024年12月16日，永嘉县共拥有有效发明专利1549件。"
+    }
+  },
+  {
+    "source_id": 1157,
+    "question": "2024年12月15日，永嘉县红十三军历史研究会一届三次会员大会上，哪位副会长做了理事会工作报告？",
+    "standard_answer": "红十三军历史研究会副会长金爱伦",
+    "model_answer": "红十三军历史研究会副会长金爱伦",
+    "refusal_decision": {
+      "ppl": 1.027,
+      "min_token_prob": 0.9092,
+      "should_answer": true,
+      "final_model_answer": "红十三军历史研究会副会长金爱伦"
+    }
+  },
+  {
+    "source_id": 1175,
+    "question": "2024年1-10月，永嘉县累计实现网络零售额是多少亿元？",
+    "standard_answer": "175.2亿元",
+    "model_answer": "2024年1-10月，永嘉县累计实现网络零售额是175.2亿元。",
+    "refusal_decision": {
+      "ppl": 1.0035,
+      "min_token_prob": 0.9242,
+      "should_answer": true,
+      "final_model_answer": "2024年1-10月，永嘉县累计实现网络零售额是175.2亿元。"
+    }
+  },
+  {
+    "source_id": 1216,
+    "question": "2024年12月10日建行永嘉瓯北支行堵截的“充值返利”涉诈事件中，钱女士此前在该平台已充值金额及获利金额分别是多少？",
+    "standard_answer": "充值10万元，获利9000多元",
+    "model_answer": "钱女士在该平台上共充值了3万元，并获利9000多元。",
+    "refusal_decision": {
+      "ppl": 1.2696,
+      "min_token_prob": 0.2812,
+      "should_answer": true,
+      "final_model_answer": "钱女士在该平台上共充值了3万元，并获利9000多元。"
+    }
+  },
+  {
+    "source_id": 1233,
+    "question": "2025年永嘉县茶叶低温气象指数保险的投保截止日期是什么时候？",
+    "standard_answer": "2025年2月10日",
+    "model_answer": "2025年永嘉县茶叶低温气象指数保险的投保截止日期是2025年12月1日。",
+    "refusal_decision": {
+      "ppl": 1.0032,
+      "min_token_prob": 0.9285,
+      "should_answer": true,
+      "final_model_answer": "2025年永嘉县茶叶低温气象指数保险的投保截止日期是2025年12月1日。"
+    }
+  },
+  {
+    "source_id": 1236,
+    "question": "2024年12月21日，在永嘉县云岭乡南山村南坑自然村举行的'年关送暖·新年心愿'活动中，冬至宴为70岁以上老人准备了哪些菜品？",
+    "standard_answer": "准备了扣肉、清蒸鲈鱼、粉丝虾仁、花雕猪心、羊肉等地道美食",
+    "model_answer": "冬至宴为70岁以上老人准备了扣肉、清蒸鲈鱼、粉丝虾仁、花雕猪心、羊肉等地道美食。",
+    "refusal_decision": {
+      "ppl": 1.0449,
+      "min_token_prob": 0.542,
+      "should_answer": true,
+      "final_model_answer": "冬至宴为70岁以上老人准备了扣肉、清蒸鲈鱼、粉丝虾仁、花雕猪心、羊肉等地道美食。"
+    }
+  },
+  {
+    "source_id": 1264,
+    "question": "2024年12月24日，永嘉县商务局公布的家电以旧换新审核补助金额是多少？",
+    "standard_answer": "1780万元",
+    "model_answer": "2024年12月24日，永嘉县商务局公布的家电以旧换新审核补助金额是1780万元。",
+    "refusal_decision": {
+      "ppl": 1.0479,
+      "min_token_prob": 0.3967,
+      "should_answer": true,
+      "final_model_answer": "2024年12月24日，永嘉县商务局公布的家电以旧换新审核补助金额是1780万元。"
+    }
+  },
+  {
+    "source_id": 1319,
+    "question": "2024年12月30日，永嘉县瓯北箬隆小天使幼儿园因终止办学发布债务债权公告中，债权债务关系人需在公告之日起多少日内提出书面异议？",
+    "standard_answer": "45日内",
+    "model_answer": "45日内",
+    "refusal_decision": {
+      "ppl": 1.0551,
+      "min_token_prob": 0.8702,
+      "should_answer": true,
+      "final_model_answer": "45日内"
+    }
+  },
+  {
+    "source_id": 1341,
+    "question": "2020年至2022年期间，一力游乐有限公司共签订多少份合同，总金额是多少？",
+    "standard_answer": "共签订合同887份，总额7839万元",
+    "model_answer": "2020年至2022年期间，一力游乐有限公司共签订合同386份，总金额2868万元。",
+    "refusal_decision": {
+      "ppl": 1.0807,
+      "min_token_prob": 0.3833,
+      "should_answer": true,
+      "final_model_answer": "2020年至2022年期间，一力游乐有限公司共签订合同386份，总金额2868万元。"
+    }
+  },
+  {
+    "source_id": 1342,
+    "question": "2025年1月6日至8日，永嘉县参加浙江省选考和学考的考生总人数是多少？",
+    "standard_answer": "永嘉县共有9490名考生参加本次考试，其中学考4711人，选考4779人。",
+    "model_answer": "永嘉县共有9490名考生参加本次考试，其中学考4711人，选考4779人。",
+    "refusal_decision": {
+      "ppl": 1.0399,
+      "min_token_prob": 0.54,
+      "should_answer": true,
+      "final_model_answer": "永嘉县共有9490名考生参加本次考试，其中学考4711人，选考4779人。"
+    }
+  },
+  {
+    "source_id": 1374,
+    "question": "2025年1月5日，浙江省科学技术厅公布的2025年度'尖兵''领雁'研发攻关计划项目立项名单中，永嘉县亚龙智能装备集团牵头承担的项目名称是什么？",
+    "standard_answer": "《基于数字孪生的流程化生产制造单元柔性综合体虚实融合教学系统》",
+    "model_answer": "亚龙智能装备集团牵头承担的项目名称是《基于数字孪生的流程化生产制造单元柔性综合体虚实融合教学系统》。",
+    "refusal_decision": {
+      "ppl": 1.0211,
+      "min_token_prob": 0.5565,
+      "should_answer": true,
+      "final_model_answer": "亚龙智能装备集团牵头承担的项目名称是《基于数字孪生的流程化生产制造单元柔性综合体虚实融合教学系统》。"
+    }
+  },
+  {
+    "source_id": 1396,
+    "question": "永嘉县廊下至水岩公路项目全长多少公里，总宽多少米，惠及周边多少个村庄的村民？",
+    "standard_answer": "永嘉县廊下至水岩公路项目全长5.737公里，总宽8.5米，惠及周边9个村庄的村民。",
+    "model_answer": "永嘉县廊下至水岩公路项目全长5.737公里，总宽8.5米，惠及周边9个村庄的村民。",
+    "refusal_decision": {
+      "ppl": 1.0121,
+      "min_token_prob": 0.7657,
+      "should_answer": true,
+      "final_model_answer": "永嘉县廊下至水岩公路项目全长5.737公里，总宽8.5米，惠及周边9个村庄的村民。"
+    }
+  },
+  {
+    "source_id": 1410,
+    "question": "2025年1月，永嘉恒升村镇银行举行的“风雨同舟 砥砺前行”2025年开门红启动大会上，共有多少人参加活动？",
+    "standard_answer": "全行共130余人参加活动。",
+    "model_answer": "全行共130余人参加活动。",
+    "refusal_decision": {
+      "ppl": 1.0055,
+      "min_token_prob": 0.9615,
+      "should_answer": true,
+      "final_model_answer": "全行共130余人参加活动。"
+    }
+  },
+  {
+    "source_id": 1410,
+    "question": "2025年1月，永嘉恒升村镇银行2025年“开门红”启动大会上，业务发展部总经理陈皓洁现场解读了什么内容？",
+    "standard_answer": "业务发展部总经理陈皓洁现场解读2025年“开门红”工作方案。",
+    "model_answer": "业务发展部总经理陈皓洁现场解读2025年“开门红”工作方案。",
+    "refusal_decision": {
+      "ppl": 1.0049,
+      "min_token_prob": 0.9559,
+      "should_answer": true,
+      "final_model_answer": "业务发展部总经理陈皓洁现场解读2025年“开门红”工作方案。"
+    }
+  },
+  {
+    "source_id": 1426,
+    "question": "2024年度（2023.12.21-2024.12.20）永嘉县消保委为消费者挽回经济损失金额是多少？",
+    "standard_answer": "共为消费者挽回经济损失256.99万元",
+    "model_answer": "2024年度（2023.12.21-2024.12.20）永嘉县消保委为消费者挽回经济损失金额是256.99万元。",
+    "refusal_decision": {
+      "ppl": 1.0172,
+      "min_token_prob": 0.6916,
+      "should_answer": true,
+      "final_model_answer": "2024年度（2023.12.21-2024.12.20）永嘉县消保委为消费者挽回经济损失金额是256.99万元。"
+    }
+  },
+  {
+    "source_id": 1431,
+    "question": "2025年1月，上海警方会同有关部门破获的涉消费券违法犯罪案件共有多少起？",
+    "standard_answer": "2起",
+    "model_answer": "2025年1月，上海警方会同有关部门破获了3起涉消费券违法犯罪案件。",
+    "refusal_decision": {
+      "ppl": 1.063,
+      "min_token_prob": 0.483,
+      "should_answer": true,
+      "final_model_answer": "2025年1月，上海警方会同有关部门破获了3起涉消费券违法犯罪案件。"
+    }
+  },
+  {
+    "source_id": 1478,
+    "question": "永嘉县岩头镇苍坡村始建于哪个历史时期？",
+    "standard_answer": "永嘉县岩头镇苍坡村始建于五代后周时期。",
+    "model_answer": "很抱歉，关于永嘉县岩头镇苍坡村的具体建制历史，我目前无法提供确切信息。由于缺乏足够的历史文献记载和权威考证资料，这一问题的准确性难以验证。建议您通过浙江省文物局官网、永嘉县档案馆或当地文化研究机构等官方渠道查询相关资料。如果需要协助查找具体联系方式，我很乐意提供帮助。",
+    "refusal_decision": {
+      "ppl": 1.2895,
+      "min_token_prob": 0.1757,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，关于永嘉县岩头镇苍坡村的具体建制历史，我目前无法提供确切信息。由于缺乏足够的历史文献记载和权威考证资料，这一问题的准确性难以验证。建议您通过浙江省文物局官网、永嘉县档案馆或当地文化研究机构等官方渠道查询相关资料。如果需要协助查找具体联系方式，我很乐意提供帮助。"
+    }
+  },
+  {
+    "source_id": 1501,
+    "question": "2025年1月17日永嘉县瓯北新晨幼儿园发布的债务债权公告中，清算组的负责人是谁？",
+    "standard_answer": "2025年1月17日永嘉县瓯北新晨幼儿园发布的债务债权公告中，清算组的负责人是季建约。",
+    "model_answer": "清算组负责人是季建约。",
+    "refusal_decision": {
+      "ppl": 1.0508,
+      "min_token_prob": 0.817,
+      "should_answer": true,
+      "final_model_answer": "清算组负责人是季建约。"
+    }
+  },
+  {
+    "source_id": 1505,
+    "question": "2025年1月17日，中国铁路武汉局集团有限公司客运部副主任管丽琳提到的可以随身携带的酒类饮品的具体规定是什么？",
+    "standard_answer": "包装密封完好、标志清晰且酒精体积百分含量大于或者等于24%、小于或者等于70%的酒类饮品累计不超过3000毫升的，可以随身携带。",
+    "model_answer": "包装密封完好、标志清晰且酒精体积百分含量大于或者等于24%、小于或者等于70%的酒类饮品累计不超过3000毫升的，可以随身携带。",
+    "refusal_decision": {
+      "ppl": 1.0143,
+      "min_token_prob": 0.6333,
+      "should_answer": true,
+      "final_model_answer": "包装密封完好、标志清晰且酒精体积百分含量大于或者等于24%、小于或者等于70%的酒类饮品累计不超过3000毫升的，可以随身携带。"
+    }
+  },
+  {
+    "source_id": 1525,
+    "question": "2025年1月17日，永嘉县岩坦镇四联村文化礼堂举办的“非遗贺新春 戏曲进万家——永嘉乱弹新春巡演”活动中，演出剧团的全称是什么？",
+    "standard_answer": "永嘉一品春乱弹剧团。",
+    "model_answer": "演出剧团的全称是永嘉乱弹传习所。",
+    "refusal_decision": {
+      "ppl": 1.0585,
+      "min_token_prob": 0.49,
+      "should_answer": true,
+      "final_model_answer": "演出剧团的全称是永嘉乱弹传习所。"
+    }
+  },
+  {
+    "source_id": 1616,
+    "question": "2025年2月6日，永嘉县委书记、县长吴呈钱在报喜鸟控股股份有限公司走访时，重点了解了企业的哪些方面情况？",
+    "standard_answer": "详细了解企业生产经营情况，询问企业发展的思路、规划及发展过程中存在的困难和问题",
+    "model_answer": "吴呈钱详细了解企业生产经营情况，询问企业发展的思路、规划及发展过程中存在的困难和问题。",
+    "refusal_decision": {
+      "ppl": 1.0652,
+      "min_token_prob": 0.6704,
+      "should_answer": true,
+      "final_model_answer": "吴呈钱详细了解企业生产经营情况，询问企业发展的思路、规划及发展过程中存在的困难和问题。"
+    }
+  },
+  {
+    "source_id": 1618,
+    "question": "2025年正月初九，在永嘉县举行的2025永商大会开场诗歌朗诵的题目是什么？",
+    "standard_answer": "《永嘉的呼唤》",
+    "model_answer": "开场诗歌朗诵的题目是《永嘉的呼唤》。",
+    "refusal_decision": {
+      "ppl": 1.0342,
+      "min_token_prob": 0.6739,
+      "should_answer": true,
+      "final_model_answer": "开场诗歌朗诵的题目是《永嘉的呼唤》。"
+    }
+  },
+  {
+    "source_id": 1620,
+    "question": "2025年2月6日下午，温州市体育局副局长吕建海带队赴永嘉县岩坦镇开展新春慰问活动时，慰问的是哪位运动员的家属？",
+    "standard_answer": "永嘉籍标枪运动员戴倩倩的家属",
+    "model_answer": "吕建海带队赴永嘉县岩坦镇看望慰问了浙江flyweight拳击队运动员陈子豪家属。",
+    "refusal_decision": {
+      "ppl": 1.4909,
+      "min_token_prob": 0.0785,
+      "should_answer": false,
+      "final_model_answer": "这个问题超出了我的知识范围。"
+    }
+  },
+  {
+    "source_id": 1645,
+    "question": "2024年，工信部公布的工业领域数据要素应用场景典型实践案例名单中，浙江惠利玛数字产业有限公司入选的案例名称是什么？",
+    "standard_answer": "《利用鞋履产业数据提高鞋履设计效率、助力产业转型升级》",
+    "model_answer": "浙江惠利玛数字产业有限公司入选的案例名称是《利用鞋履产业数据提高鞋履设计效率、助力产业转型升级》。",
+    "refusal_decision": {
+      "ppl": 1.0203,
+      "min_token_prob": 0.8857,
+      "should_answer": true,
+      "final_model_answer": "浙江惠利玛数字产业有限公司入选的案例名称是《利用鞋履产业数据提高鞋履设计效率、助力产业转型升级》。"
+    }
+  },
+  {
+    "source_id": 1674,
+    "question": "2025年2月，在第十三届金融界“金智奖”年度评选中，奥康国际获得了什么奖项？",
+    "standard_answer": "奥康国际获得了“杰出上市公司品牌奖”",
+    "model_answer": "奥康国际获得了“杰出上市公司品牌奖”。",
+    "refusal_decision": {
+      "ppl": 1.021,
+      "min_token_prob": 0.8557,
+      "should_answer": true,
+      "final_model_answer": "奥康国际获得了“杰出上市公司品牌奖”。"
+    }
+  },
+  {
+    "source_id": 1704,
+    "question": "截至2025年2月14日，永嘉县瓯北街道开展的复工复产安全教育培训活动共培训了多少人，签订了多少份责任状？",
+    "standard_answer": "已培训876人，签订责任状876份",
+    "model_answer": "截至2025年2月14日，永嘉县瓯北街道开展的复工复产安全教育培训活动共培训人员3680人次，签订责任状267份。",
+    "refusal_decision": {
+      "ppl": 1.068,
+      "min_token_prob": 0.5052,
+      "should_answer": true,
+      "final_model_answer": "截至2025年2月14日，永嘉县瓯北街道开展的复工复产安全教育培训活动共培训人员3680人次，签订责任状267份。"
+    }
+  },
+  {
+    "source_id": 1718,
+    "question": "2025年2月14日，永嘉县东城街道梅园村围绕“三世三生十里梅花”主题增设了多少个打卡点？",
+    "standard_answer": "19个打卡点",
+    "model_answer": "2025年2月14日，永嘉县东城街道梅园村围绕“三世三生十里梅花”主题增设了19个打卡点。",
+    "refusal_decision": {
+      "ppl": 1.0086,
+      "min_token_prob": 0.7186,
+      "should_answer": true,
+      "final_model_answer": "2025年2月14日，永嘉县东城街道梅园村围绕“三世三生十里梅花”主题增设了19个打卡点。"
+    }
+  }
+]

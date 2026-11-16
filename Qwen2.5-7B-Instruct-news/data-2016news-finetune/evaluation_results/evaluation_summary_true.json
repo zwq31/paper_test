@@ -1,0 +1,16 @@
+{
+  "total_samples": 196,
+  "situational_samples": 98,
+  "conceptual_samples": 98,
+  "basic_metrics_average": {
+    "rouge_1": 3.877551020408163,
+    "rouge_2": 1.0204081632653061,
+    "rouge_l": 3.877551020408163,
+    "bertscore_precision": 77.12864848423978,
+    "bertscore_recall": 76.06387118599852,
+    "bertscore_f1": 76.33466180794093
+  },
+  "situational_average_score": 2.0918367346938775,
+  "conceptual_average_score": 3.357142857142857,
+  "hallucination_detection_rate": 0.6479591836734694
+}

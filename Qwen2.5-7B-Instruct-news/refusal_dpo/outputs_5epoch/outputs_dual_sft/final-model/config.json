@@ -1,0 +1,8 @@
+{
+  "model_type": "DualLossModel",
+  "base_model": "/mnt/project/Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-QLORA-1year",
+  "lora_rank": 128,
+  "lora_alpha": 128,
+  "lora_dropout": 0.1,
+  "refusal_head_dim": 3584
+}

@@ -1,0 +1,131 @@
+Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages (4.57.1)
+Requirement already satisfied: trl in /usr/local/lib/python3.10/dist-packages (0.25.0)
+Collecting trl
+  Downloading trl-0.25.1-py3-none-any.whl (465 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 465.5/465.5 KB 173.5 kB/s eta 0:00:00
+Requirement already satisfied: unsloth in /usr/local/lib/python3.10/dist-packages (2025.11.1)
+Collecting unsloth
+  Downloading unsloth-2025.11.3-py3-none-any.whl (353 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 353.0/353.0 KB 33.5 kB/s eta 0:00:00
+Requirement already satisfied: swanlab in /usr/local/lib/python3.10/dist-packages (0.6.8)
+Collecting swanlab
+  Downloading swanlab-0.7.2-py3-none-any.whl (312 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 312.1/312.1 KB 35.1 kB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (6.0.3)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.22.1)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (2025.10.23)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.36.0)
+Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.10/dist-packages (from transformers) (4.67.1)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from transformers) (2.32.5)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from transformers) (3.20.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (25.0)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.6.2)
+Requirement already satisfied: accelerate>=1.4.0 in /usr/local/lib/python3.10/dist-packages (from trl) (1.10.0)
+Requirement already satisfied: datasets>=3.0.0 in /usr/local/lib/python3.10/dist-packages (from trl) (3.6.0)
+Requirement already satisfied: wheel>=0.42.0 in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.45.1)
+Requirement already satisfied: peft!=0.11.0,>=0.7.1 in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.15.1)
+Requirement already satisfied: xformers>=0.0.27.post2 in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.0.29.post2)
+Requirement already satisfied: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5 in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.48.2)
+Requirement already satisfied: torch>=2.4.0 in /usr/local/lib/python3.10/dist-packages (from unsloth) (2.6.0+cu118)
+Requirement already satisfied: hf_transfer in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.1.9)
+Requirement already satisfied: protobuf in /usr/local/lib/python3.10/dist-packages (from unsloth) (3.20.3)
+Collecting unsloth_zoo>=2025.11.4
+  Downloading unsloth_zoo-2025.11.4-py3-none-any.whl (283 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 283.5/283.5 KB 50.9 kB/s eta 0:00:00
+Requirement already satisfied: triton>=3.0.0 in /usr/local/lib/python3.10/dist-packages (from unsloth) (3.2.0)
+Collecting trl
+  Using cached trl-0.23.0-py3-none-any.whl (564 kB)
+Requirement already satisfied: torchvision in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.21.0+cu118)
+Requirement already satisfied: sentencepiece>=0.2.0 in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.2.0)
+Requirement already satisfied: tyro in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.9.19)
+Requirement already satisfied: diffusers in /usr/local/lib/python3.10/dist-packages (from unsloth) (0.33.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.10/dist-packages (from unsloth) (7.0.0)
+Requirement already satisfied: nvidia-ml-py in /usr/local/lib/python3.10/dist-packages (from swanlab) (12.575.51)
+Requirement already satisfied: rich<14.0.0,>=13.6.0 in /usr/local/lib/python3.10/dist-packages (from swanlab) (13.9.4)
+Requirement already satisfied: pyecharts>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from swanlab) (2.0.8)
+Requirement already satisfied: urllib3>=1.26.0 in /usr/local/lib/python3.10/dist-packages (from swanlab) (2.5.0)
+Requirement already satisfied: click in /usr/local/lib/python3.10/dist-packages (from swanlab) (8.1.8)
+Requirement already satisfied: botocore in /usr/local/lib/python3.10/dist-packages (from swanlab) (1.40.16)
+Requirement already satisfied: pydantic~=2.0 in /usr/local/lib/python3.10/dist-packages (from swanlab) (2.10.6)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from swanlab) (59.6.0)
+Requirement already satisfied: wrapt>=1.17.0 in /usr/local/lib/python3.10/dist-packages (from swanlab) (1.17.2)
+Requirement already satisfied: platformdirs>=4.2.0 in /usr/local/lib/python3.10/dist-packages (from swanlab) (4.3.6)
+Requirement already satisfied: boto3>=1.35.49 in /usr/local/lib/python3.10/dist-packages (from swanlab) (1.40.16)
+Requirement already satisfied: s3transfer<0.14.0,>=0.13.0 in /usr/local/lib/python3.10/dist-packages (from boto3>=1.35.49->swanlab) (0.13.1)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /usr/local/lib/python3.10/dist-packages (from boto3>=1.35.49->swanlab) (1.0.1)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.10/dist-packages (from botocore->swanlab) (2.9.0.post0)
+Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.10/dist-packages (from datasets>=3.0.0->trl) (19.0.1)
+Requirement already satisfied: multiprocess<0.70.17 in /usr/local/lib/python3.10/dist-packages (from datasets>=3.0.0->trl) (0.70.16)
+Requirement already satisfied: pandas in /usr/local/lib/python3.10/dist-packages (from datasets>=3.0.0->trl) (2.2.3)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in /usr/local/lib/python3.10/dist-packages (from datasets>=3.0.0->trl) (0.3.8)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.10/dist-packages (from datasets>=3.0.0->trl) (3.5.0)
+Requirement already satisfied: fsspec[http]<=2025.3.0,>=2023.1.0 in /usr/local/lib/python3.10/dist-packages (from datasets>=3.0.0->trl) (2025.3.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.2.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.15.0)
+Requirement already satisfied: pydantic-core==2.27.2 in /usr/local/lib/python3.10/dist-packages (from pydantic~=2.0->swanlab) (2.27.2)
+Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.10/dist-packages (from pydantic~=2.0->swanlab) (0.7.0)
+Requirement already satisfied: simplejson in /usr/local/lib/python3.10/dist-packages (from pyecharts>=2.0.0->swanlab) (3.20.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from pyecharts>=2.0.0->swanlab) (3.1.6)
+Requirement already satisfied: prettytable in /usr/local/lib/python3.10/dist-packages (from pyecharts>=2.0.0->swanlab) (3.16.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.11)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2025.10.5)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.10/dist-packages (from rich<14.0.0,>=13.6.0->swanlab) (2.19.1)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.10/dist-packages (from rich<14.0.0,>=13.6.0->swanlab) (3.0.0)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (3.4.2)
+Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (1.13.1)
+Requirement already satisfied: nvidia-cublas-cu11==11.11.3.6 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.11.3.6)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.8.89 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.8.89)
+Requirement already satisfied: nvidia-cusparse-cu11==11.7.5.86 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.7.5.86)
+Requirement already satisfied: nvidia-nccl-cu11==2.21.5 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (2.21.5)
+Requirement already satisfied: nvidia-cudnn-cu11==9.1.0.70 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (9.1.0.70)
+Requirement already satisfied: nvidia-cuda-cupti-cu11==11.8.87 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.8.87)
+Requirement already satisfied: nvidia-nvtx-cu11==11.8.86 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.8.86)
+Requirement already satisfied: nvidia-curand-cu11==10.3.0.86 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (10.3.0.86)
+Requirement already satisfied: nvidia-cufft-cu11==10.9.0.58 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (10.9.0.58)
+Requirement already satisfied: nvidia-cusolver-cu11==11.4.1.48 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.4.1.48)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.8.89 in /usr/local/lib/python3.10/dist-packages (from torch>=2.4.0->unsloth) (11.8.89)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.10/dist-packages (from sympy==1.13.1->torch>=2.4.0->unsloth) (1.3.0)
+Requirement already satisfied: cut_cross_entropy in /usr/local/lib/python3.10/dist-packages (from unsloth_zoo>=2025.11.4->unsloth) (25.1.1)
+Requirement already satisfied: torchao>=0.13.0 in /usr/local/lib/python3.10/dist-packages (from unsloth_zoo>=2025.11.4->unsloth) (0.14.1)
+Requirement already satisfied: pillow in /usr/local/lib/python3.10/dist-packages (from unsloth_zoo>=2025.11.4->unsloth) (11.1.0)
+Requirement already satisfied: msgspec in /usr/local/lib/python3.10/dist-packages (from unsloth_zoo>=2025.11.4->unsloth) (0.19.0)
+Requirement already satisfied: importlib-metadata in /usr/local/lib/python3.10/dist-packages (from diffusers->unsloth) (8.0.0)
+Requirement already satisfied: shtab>=1.5.6 in /usr/local/lib/python3.10/dist-packages (from tyro->unsloth) (1.7.2)
+Requirement already satisfied: typeguard>=4.0.0 in /usr/local/lib/python3.10/dist-packages (from tyro->unsloth) (4.4.2)
+Requirement already satisfied: docstring-parser>=0.15 in /usr/local/lib/python3.10/dist-packages (from tyro->unsloth) (0.16)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.10/dist-packages (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (3.11.13)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.10/dist-packages (from markdown-it-py>=2.2.0->rich<14.0.0,>=13.6.0->swanlab) (0.1.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil<3.0.0,>=2.1->botocore->swanlab) (1.17.0)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.10/dist-packages (from importlib-metadata->diffusers->unsloth) (3.21.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->pyecharts>=2.0.0->swanlab) (3.0.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets>=3.0.0->trl) (2025.1)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets>=3.0.0->trl) (2025.1)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.10/dist-packages (from prettytable->pyecharts>=2.0.0->swanlab) (0.2.13)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (1.3.2)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (5.0.1)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (1.5.0)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (0.3.0)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (1.18.3)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (2.5.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (25.1.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=3.0.0->trl) (6.1.0)
+Installing collected packages: swanlab, trl, unsloth_zoo, unsloth
+  Attempting uninstall: swanlab
+    Found existing installation: swanlab 0.6.8
+    Uninstalling swanlab-0.6.8:
+      Successfully uninstalled swanlab-0.6.8
+  Attempting uninstall: trl
+    Found existing installation: trl 0.25.0
+    Uninstalling trl-0.25.0:
+      Successfully uninstalled trl-0.25.0
+  Attempting uninstall: unsloth_zoo
+    Found existing installation: unsloth_zoo 2025.11.2
+    Uninstalling unsloth_zoo-2025.11.2:
+      Successfully uninstalled unsloth_zoo-2025.11.2
+  Attempting uninstall: unsloth
+    Found existing installation: unsloth 2025.11.1
+    Uninstalling unsloth-2025.11.1:
+      Successfully uninstalled unsloth-2025.11.1
+Successfully installed swanlab-0.7.2 trl-0.23.0 unsloth-2025.11.3 unsloth_zoo-2025.11.4

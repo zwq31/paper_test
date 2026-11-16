@@ -1,0 +1,61 @@
+
+============================================================
+H-Neurons训练完成报告 - 迭代剪枝版本（参考代码特征筛选）
+============================================================
+
+特征筛选方法（完全按照参考代码）:
+  - 第一阶段: VarianceThreshold(threshold=0) - 剔除常数特征
+  - 第二阶段: SelectPercentile(f_classif, percentile=10) - 选择前10%特征
+
+迭代剪枝方法:
+  - 剪枝策略: 10步剪枝，每步保留10.0%特征
+  - 停止条件: 最小特征数=100
+  - 重训练: 3次重训练优化权重
+  - 正则化: L2正则化，C=0.01
+
+剪枝效果:
+  - 初始特征数: 53044
+  - 最终特征数: 100
+  - 总减少比例: 99.8%
+  - 性能峰值 - 步骤1:
+      AUC: 0.9986
+      特征数: 5304
+      减少比例: 90.0%
+
+数据统计:
+  - 原始特征维度: 530432
+  - 筛选后特征维度: 53044
+  - H-Neurons特征数: 100
+  - 筛选比例: 0.0189%
+  - 正样本比例: 0.250
+
+H-Neurons发现:
+  - H-Neurons数量: 100
+  - H-Neurons比例: 0.0189%
+  - 是否<0.1%: ✓ 是
+
+模型性能:
+  - 准确率: 0.7389
+  - AUC: 0.2587
+
+输出文件:
+  - /mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/iterative_pruning_model.pkl - 完整的模型对象
+  - /mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/h_neurons_iterative_pruning.json - H-Neurons详细信息
+  - /mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/pruning_history.json - 剪枝历史分析
+  - /mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/h_neurons_statistics.json - 统计信息
+  - /mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/experiment_results.json - 完整实验结果
+  - /mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/training_report.txt - 本报告
+
+使用说明:
+  1. 加载模型:
+     with open('/mnt/project/H-Neurous/output/iterative_pruning_reference/h_neurons_iterative_pruning_reference_20260119_040223/iterative_pruning_model.pkl', 'rb') as f:
+         model_data = pickle.load(f)
+  
+  2. 获取H-Neurons:
+     h_neurons = model_data['h_neuron_names']
+     h_weights = model_data['h_neuron_weights']
+  
+  3. 查看剪枝历史:
+     pruning_history = model_data['pruning_history']
+
+============================================================

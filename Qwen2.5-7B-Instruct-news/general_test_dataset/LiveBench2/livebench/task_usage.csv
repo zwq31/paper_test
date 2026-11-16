@@ -1,0 +1,2 @@
+model,AMPS_Hard,LCB_generation,coding_completion,connections,cta,math_comp,olympiad,paraphrase,plot_unscrambling,simplify,spatial,story_generation,summarize,tablejoin,tablereformat,typos,web_of_lies_v2,zebra_puzzle
+qwen2.5-7b-instruct-cpt-mol-3years,794.4,143.1,66.9,386.7,3.8,906.9,1313.8,255.5,612.7,193.1,387.8,354.2,213.4,105.4,568.3,208.5,930.3,1142.1

@@ -1,0 +1,446 @@
+[
+  {
+    "source_id": 168,
+    "question": "永嘉县档案馆新馆的具体地址是什么？",
+    "standard_answer": "永嘉县南城街道广场路65号。",
+    "model_answer": "永嘉县南城街道广场路65号。",
+    "refusal_decision": {
+      "ppl": 1.0126,
+      "min_token_prob": 0.917,
+      "should_answer": true,
+      "final_model_answer": "永嘉县南城街道广场路65号。"
+    }
+  },
+  {
+    "source_id": 171,
+    "question": "建行永嘉支行在2024年组织了哪些具体的廉洁教育活动？",
+    "standard_answer": "建行永嘉支行党总支书记作题为《明纪知廉树正气》的党纪教育专题党课，组织全体党员赴乐清市廉洁文化教育基地开展“以学正风、以廉正心”参观研学主题活动（期间支行纪检委员作题为《严纪倡廉守初心》的专题廉课），组织全行员工集中观看警示教育片《“权利任性”的代价》和《抵住身边的腐蚀诱惑》，并组织员工参加建行温州分行“学党纪、忆初心、筑清风”清廉文化上桌面作品征集活动。",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0165,
+      "min_token_prob": 0.8649,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 172,
+    "question": "永嘉农商银行在2024年9月为永嘉县罗浮中学开立了多少张学子专属的梦翔卡？",
+    "standard_answer": "600余户",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0279,
+      "min_token_prob": 0.7823,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 195,
+    "question": "永嘉县在2024年9月19日之前召开的基层应急消防治理体系建设达标验收推进会的目的是什么？",
+    "standard_answer": "推进落实乡镇（街道）基层应急消防治理体系建设工作，确保全县各乡镇（街道）应急消防管理站、专职消防队高质量通过省市达标验收。",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0043,
+      "min_token_prob": 0.9665,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 234,
+    "question": "2024年9月19日上午在永嘉县上塘城区红长廊举办了什么活动？",
+    "standard_answer": "由中国好人邵则长携手温州好人陈爱华（爱华阿姨），与红长廊的义工们共同开展道德实践活动，为高龄老人、环卫工人提供免费早餐，分发按摩梳等物品。",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0108,
+      "min_token_prob": 0.9111,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 345,
+    "question": "永嘉县瓯北街道在2024年国庆假期前启动了哪个文件来推进安全生产和消防安全检查工作？",
+    "standard_answer": "永嘉县瓯北街道启动了《关于开展2024年中秋、国庆节前安全生产、消防安全检查的通知》。",
+    "model_answer": "永嘉县瓯北街道启动了《关于开展2024年中秋、国庆节前安全生产、消防安全检查的通知》。",
+    "refusal_decision": {
+      "ppl": 1.0232,
+      "min_token_prob": 0.6939,
+      "should_answer": true,
+      "final_model_answer": "永嘉县瓯北街道启动了《关于开展2024年中秋、国庆节前安全生产、消防安全检查的通知》。"
+    }
+  },
+  {
+    "source_id": 345,
+    "question": "永嘉县瓯北街道组织多部门联合对哪些关键领域进行了全面排查，以确保国庆假期安全？",
+    "standard_answer": "永嘉县瓯北街道组织多部门联合对危险化学品、工业园区、高层住宅等关键领域进行了全面排查。",
+    "model_answer": "永嘉县瓯北街道组织多部门联合对危险化学品、工业园区、高层住宅等关键领域进行了全面排查。",
+    "refusal_decision": {
+      "ppl": 1.0288,
+      "min_token_prob": 0.7005,
+      "should_answer": true,
+      "final_model_answer": "永嘉县瓯北街道组织多部门联合对危险化学品、工业园区、高层住宅等关键领域进行了全面排查。"
+    }
+  },
+  {
+    "source_id": 397,
+    "question": "在2024年'慈善一日捐'活动中，至2024年9月底，永嘉县慈善总会收到的总捐款金额是多少？",
+    "standard_answer": "94700元",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0019,
+      "min_token_prob": 0.9862,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 407,
+    "question": "金家吉老人居住在永嘉县的哪个具体社区？",
+    "standard_answer": "岩头镇岩头社区。",
+    "model_answer": "金家吉老人居住在永嘉县南城街道城西社区。",
+    "refusal_decision": {
+      "ppl": 1.1164,
+      "min_token_prob": 0.4205,
+      "should_answer": false,
+      "final_model_answer": "抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 434,
+    "question": "永嘉县瓯北三小在2024年10月组织了什么研学实践活动？",
+    "standard_answer": "永嘉县瓯北三小组织开展了《小小温商》研学实践活动，走进报喜鸟控股股份有限公司。",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0539,
+      "min_token_prob": 0.6249,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 474,
+    "question": "2024年永嘉县单季稻种植面积是多少？",
+    "standard_answer": "13.8万亩",
+    "model_answer": "13.8万亩。",
+    "refusal_decision": {
+      "ppl": 1.0588,
+      "min_token_prob": 0.6716,
+      "should_answer": true,
+      "final_model_answer": "13.8万亩。"
+    }
+  },
+  {
+    "source_id": 564,
+    "question": "孟鲁司特钠的药理作用是什么？",
+    "standard_answer": "孟鲁司特钠是一种口服的白三烯受体拮抗剂，能特异性抑制气道中的半胱氨酰白三烯受体，从而达到改善气道炎症，有效控制哮喘症状。",
+    "model_answer": "孟鲁司特钠是一种口服的白三烯受体拮抗剂，能特异性抑制气道中的半胱氨酰白三烯受体，从而达到改善气道炎症，有效控制哮喘症状。",
+    "refusal_decision": {
+      "ppl": 1.0106,
+      "min_token_prob": 0.8568,
+      "should_answer": true,
+      "final_model_answer": "孟鲁司特钠是一种口服的白三烯受体拮抗剂，能特异性抑制气道中的半胱氨酰白三烯受体，从而达到改善气道炎症，有效控制哮喘症状。"
+    }
+  },
+  {
+    "source_id": 741,
+    "question": "在2024年11月8日发表的遗失启事中，永嘉鸿凯文化公司与陈卓然声明作废的位于永嘉县三江街道三江商务区国鸿财富中心 B16-01地块2幢439室的商品房买卖合同遗失，该合同的合同编号是什么？",
+    "standard_answer": "20230826124005",
+    "model_answer": "合同编号为20230826124005。",
+    "refusal_decision": {
+      "ppl": 1.0073,
+      "min_token_prob": 0.8868,
+      "should_answer": true,
+      "final_model_answer": "合同编号为20230826124005。"
+    }
+  },
+  {
+    "source_id": 817,
+    "question": "2024年11月15日，在永嘉县举行的由商务部中国国际电子商务中心指导、省商务厅等12部门联合主办的'之江创客'2024全球电子商务创业创新大赛全球总决赛和颁奖典礼的主题是什么？",
+    "standard_answer": "开放、连接、协同、赋能",
+    "model_answer": "大赛的主题是'开放、连接、协同、赋能'。",
+    "refusal_decision": {
+      "ppl": 1.0948,
+      "min_token_prob": 0.6366,
+      "should_answer": true,
+      "final_model_answer": "大赛的主题是'开放、连接、协同、赋能'。"
+    }
+  },
+  {
+    "source_id": 821,
+    "question": "2024年11月15日，在永嘉县政协之家举行的永嘉书画艺术发展座谈会上，出席的县领导有哪些？",
+    "standard_answer": "县政协主席王晓雄，县委常委、宣传部部长周旭丹，县政协副主席杨志华",
+    "model_answer": "出席的县领导有县政协主席王晓雄，县委常委、宣传部长周旭丹，县政协副主席杨志华。",
+    "refusal_decision": {
+      "ppl": 1.0885,
+      "min_token_prob": 0.4999,
+      "should_answer": true,
+      "final_model_answer": "出席的县领导有县政协主席王晓雄，县委常委、宣传部长周旭丹，县政协副主席杨志华。"
+    }
+  },
+  {
+    "source_id": 889,
+    "question": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额是多少？",
+    "standard_answer": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额是0.49亿元。",
+    "model_answer": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额是3.81亿元。",
+    "refusal_decision": {
+      "ppl": 1.0254,
+      "min_token_prob": 0.5926,
+      "should_answer": true,
+      "final_model_answer": "2024年1月至10月，建行永嘉支行的个人消费贷款新增额是3.81亿元。"
+    }
+  },
+  {
+    "source_id": 899,
+    "question": "2024年11月，永嘉县瓯北第五小学党总支的党建品牌名称是什么？",
+    "standard_answer": "“红心向党 立德筑魂”",
+    "model_answer": "“红心向党 立德筑魂”。",
+    "refusal_decision": {
+      "ppl": 1.0309,
+      "min_token_prob": 0.7127,
+      "should_answer": true,
+      "final_model_answer": "“红心向党 立德筑魂”。"
+    }
+  },
+  {
+    "source_id": 917,
+    "question": "2024年11月25日，永嘉县大若岩镇新三联村股份经济合作社遗失的收据第二联的金额是多少？",
+    "standard_answer": "520621元",
+    "model_answer": "金额为250621元。",
+    "refusal_decision": {
+      "ppl": 1.1637,
+      "min_token_prob": 0.5886,
+      "should_answer": false,
+      "final_model_answer": "抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 927,
+    "question": "2024年11月26日，永嘉县三江立体城中鼎商业中心项目的两栋超高层建筑的具体高度是多少？",
+    "standard_answer": "1号塔楼高211米，2号塔楼高191米。",
+    "model_answer": "两栋超高层建筑中，1号塔楼高211米，2号塔楼高191米。",
+    "refusal_decision": {
+      "ppl": 1.0259,
+      "min_token_prob": 0.5736,
+      "should_answer": true,
+      "final_model_answer": "两栋超高层建筑中，1号塔楼高211米，2号塔楼高191米。"
+    }
+  },
+  {
+    "source_id": 975,
+    "question": "2024年11月26日，以色列安全内阁批准的与黎巴嫩真主党的停火协议的投票结果是什么？",
+    "standard_answer": "以色列安全内阁以10比1的投票结果批准了与黎巴嫩真主党的停火协议。",
+    "model_answer": "以安全内阁以10比1的投票结果批准了与黎巴嫩真主党的停火协议。",
+    "refusal_decision": {
+      "ppl": 1.0352,
+      "min_token_prob": 0.4617,
+      "should_answer": true,
+      "final_model_answer": "以安全内阁以10比1的投票结果批准了与黎巴嫩真主党的停火协议。"
+    }
+  },
+  {
+    "source_id": 1042,
+    "question": "2024年12月4日，永嘉县举行的第四个'宪法与浙江'主题宣传月暨国家宪法日启动仪式上，哪些县领导参加了活动？",
+    "standard_answer": "县领导周旭丹、潘剑永、金京明、郑碧碧参加了活动。",
+    "model_answer": "县领导周旭丹、潘剑永、金京明、郑碧碧参加了活动。",
+    "refusal_decision": {
+      "ppl": 1.0717,
+      "min_token_prob": 0.5535,
+      "should_answer": true,
+      "final_model_answer": "县领导周旭丹、潘剑永、金京明、郑碧碧参加了活动。"
+    }
+  },
+  {
+    "source_id": 1069,
+    "question": "2024年12月9日公布的2024年温州市智能化技改示范项目中，永嘉县申乐股份有限公司的继电器插座设备智能化升级改造项目的主要目标是什么？",
+    "standard_answer": "永嘉县申乐股份有限公司的继电器插座设备智能化升级改造项目旨在通过引入先进的智能化技术，提升设备的性能、效率和安全性。",
+    "model_answer": "申乐股份有限公司的继电器插座设备智能化升级改造项目旨在通过引入先进的智能化技术，提升设备的性能、效率和安全性。",
+    "refusal_decision": {
+      "ppl": 1.0152,
+      "min_token_prob": 0.815,
+      "should_answer": true,
+      "final_model_answer": "申乐股份有限公司的继电器插座设备智能化升级改造项目旨在通过引入先进的智能化技术，提升设备的性能、效率和安全性。"
+    }
+  },
+  {
+    "source_id": 1101,
+    "question": "永嘉县永嘉书院作为第五批浙江省国际人文交流基地，其总占地面积和总投资额分别是多少？",
+    "standard_answer": "总占地面积5000亩，总投资12亿元",
+    "model_answer": "永嘉县永嘉书院总占地面积5000亩，总投资12亿元。",
+    "refusal_decision": {
+      "ppl": 1.0189,
+      "min_token_prob": 0.9181,
+      "should_answer": true,
+      "final_model_answer": "永嘉县永嘉书院总占地面积5000亩，总投资12亿元。"
+    }
+  },
+  {
+    "source_id": 1129,
+    "question": "2024年12月，永嘉县下塘片区竣工并通过验收的下塘儿童友好公园位于哪个具体位置？",
+    "standard_answer": "下塘儿童友好公园位于楠盛中心南面，滨临下塘溪，临近清华上城、楠盛中心、滨江一号等多个小区。",
+    "model_answer": "下塘儿童友好公园位于楠盛中心南面，滨临下塘溪，临近清华上城、楠盛中心、滨江一号等多个小区。",
+    "refusal_decision": {
+      "ppl": 1.0392,
+      "min_token_prob": 0.4893,
+      "should_answer": true,
+      "final_model_answer": "下塘儿童友好公园位于楠盛中心南面，滨临下塘溪，临近清华上城、楠盛中心、滨江一号等多个小区。"
+    }
+  },
+  {
+    "source_id": 1133,
+    "question": "截至2024年9月末，中国工商银行的个人客户数达到多少户，较年初增加了多少户？",
+    "standard_answer": "截至2024年9月末，中国工商银行的个人客户数达7.55亿户，较年初增加超1400万户。",
+    "model_answer": "截至2024年9月末，中国工商银行的个人客户数达7.55亿户，较年初增加超1400万户。",
+    "refusal_decision": {
+      "ppl": 1.0048,
+      "min_token_prob": 0.8893,
+      "should_answer": true,
+      "final_model_answer": "截至2024年9月末，中国工商银行的个人客户数达7.55亿户，较年初增加超1400万户。"
+    }
+  },
+  {
+    "source_id": 1189,
+    "question": "2024年12月，永嘉县瓯北警方在侦办一起电瓶车盗窃案时，通过什么技术手段锁定了犯罪嫌疑人冯某的踪迹？",
+    "standard_answer": "通过被盗电瓶车自带的定位装置锁定了冯某的踪迹。",
+    "model_answer": "通过被盗电瓶车自带的定位装置锁定了冯某的踪迹。",
+    "refusal_decision": {
+      "ppl": 1.1134,
+      "min_token_prob": 0.4448,
+      "should_answer": false,
+      "final_model_answer": "抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 1206,
+    "question": "2024年12月18日下午，永嘉县举办的2024年县管干部荣誉退休仪式上，有哪些县领导参加了仪式？",
+    "standard_answer": "县领导黄益文、陈文平、金盾参加了仪式。",
+    "model_answer": "县领导黄益文、陈文平、金盾参加了仪式。",
+    "refusal_decision": {
+      "ppl": 1.0531,
+      "min_token_prob": 0.7413,
+      "should_answer": true,
+      "final_model_answer": "县领导黄益文、陈文平、金盾参加了仪式。"
+    }
+  },
+  {
+    "source_id": 1254,
+    "question": "2024年12月24日，浙江省经信厅、省发展改革委、省建设厅、省水利厅公布的2024年度浙江省节水型企业名单中，永嘉县有哪些企业入选？",
+    "standard_answer": "永嘉县申乐股份有限公司和温州长城拉链集团有限公司入选。",
+    "model_answer": "永嘉县申乐股份有限公司和温州长城拉链集团有限公司入选了2024年度浙江省节水型企业名单。",
+    "refusal_decision": {
+      "ppl": 1.1023,
+      "min_token_prob": 0.269,
+      "should_answer": false,
+      "final_model_answer": "抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 1410,
+    "question": "2025年1月，永嘉恒升村镇银行举行的“风雨同舟 砥砺前行”2025年开门红启动大会上，共有多少人参加活动？",
+    "standard_answer": "全行共130余人参加活动。",
+    "model_answer": "全行共130余人参加活动。",
+    "refusal_decision": {
+      "ppl": 1.0032,
+      "min_token_prob": 0.9855,
+      "should_answer": true,
+      "final_model_answer": "全行共130余人参加活动。"
+    }
+  },
+  {
+    "source_id": 1410,
+    "question": "2025年1月，永嘉恒升村镇银行2025年“开门红”启动大会上，业务发展部总经理陈皓洁现场解读了什么内容？",
+    "standard_answer": "业务发展部总经理陈皓洁现场解读2025年“开门红”工作方案。",
+    "model_answer": "业务发展部总经理陈皓洁现场解读了2025年“开门红”工作方案。",
+    "refusal_decision": {
+      "ppl": 1.0423,
+      "min_token_prob": 0.6427,
+      "should_answer": true,
+      "final_model_answer": "业务发展部总经理陈皓洁现场解读了2025年“开门红”工作方案。"
+    }
+  },
+  {
+    "source_id": 1456,
+    "question": "2025年1月，永嘉县融媒体中心、县残联等机构联合开展的'年关送暖·新年心愿'爱心慈善活动中，慰问组为永嘉县岩坦镇多少户困难家庭送上了慰问金？",
+    "standard_answer": "8户困难家庭",
+    "model_answer": "慰问组为永嘉县岩坦镇4户困难家庭送上了慰问金。",
+    "refusal_decision": {
+      "ppl": 1.0417,
+      "min_token_prob": 0.4705,
+      "should_answer": true,
+      "final_model_answer": "慰问组为永嘉县岩坦镇4户困难家庭送上了慰问金。"
+    }
+  },
+  {
+    "source_id": 1515,
+    "question": "2025年1月，永嘉县在县委十四届七次全会暨县委经济工作会议上提出的打造新时代文明实践帮共体的目标是什么？",
+    "standard_answer": "深化“浙江有礼·嘉有新风”文明实践，打造新时代文明实践帮共体，争取全国文明城市提名资格。",
+    "model_answer": "深化“浙江有礼·嘉有新风”文明实践，打造新时代文明实践帮共体，争取全国文明城市提名资格。",
+    "refusal_decision": {
+      "ppl": 1.0927,
+      "min_token_prob": 0.2991,
+      "should_answer": false,
+      "final_model_answer": "抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 1517,
+    "question": "2025年1月19日，申乐股份有限公司与南京朗驰智能控制系统有限公司签署的战略合作协议主要目的是什么？",
+    "standard_answer": "整合双方优势资源，通过强强联合，实现企业数智化升级，推动企业跨越发展",
+    "model_answer": "双方签署的战略合作协议主要目的是整合双方优势资源，通过强强联合，实现企业数智化升级，推动企业跨越发展。",
+    "refusal_decision": {
+      "ppl": 1.0564,
+      "min_token_prob": 0.6842,
+      "should_answer": true,
+      "final_model_answer": "双方签署的战略合作协议主要目的是整合双方优势资源，通过强强联合，实现企业数智化升级，推动企业跨越发展。"
+    }
+  },
+  {
+    "source_id": 1618,
+    "question": "截至2025年2月，永嘉县在外经商创业的人数有多少？",
+    "standard_answer": "40余万人",
+    "model_answer": "很抱歉，我无法回答这个问题。",
+    "refusal_decision": {
+      "ppl": 1.0275,
+      "min_token_prob": 0.7872,
+      "should_answer": true,
+      "final_model_answer": "很抱歉，我无法回答这个问题。"
+    }
+  },
+  {
+    "source_id": 1642,
+    "question": "2025年2月7日永嘉县污水处理工作会议上，哪些县级部门和单位汇报了污水处理相关工作情况？",
+    "standard_answer": "县资规局、县住建局、县水利局、县综合行政执法局、温州北站高铁新城综合开发建设中心、县水务集团、县铁投集团、市生态环境局永嘉分局、上塘中心城区、瓯北街道、黄田街道分别汇报了污水处理厂运行、污水管网建设维护、水环境治理等情况。",
+    "model_answer": "县资规局、县住建局、县水利局、县综合行政执法局、温州北站高铁新城综合开发建设中心、县水务集团、县铁投集团、市生态环境局永嘉分局、上塘中心城区、瓯北街道、黄田街道分别汇报了污水处理厂运行、污水管网建设维护、水环境治理等情况。",
+    "refusal_decision": {
+      "ppl": 1.0418,
+      "min_token_prob": 0.4773,
+      "should_answer": true,
+      "final_model_answer": "县资规局、县住建局、县水利局、县综合行政执法局、温州北站高铁新城综合开发建设中心、县水务集团、县铁投集团、市生态环境局永嘉分局、上塘中心城区、瓯北街道、黄田街道分别汇报了污水处理厂运行、污水管网建设维护、水环境治理等情况。"
+    }
+  },
+  {
+    "source_id": 1673,
+    "question": "2025年2月，永嘉县经开区'园区客厅'建设工程的总建筑面积和总投资分别是多少？",
+    "standard_answer": "总建筑面积12484.82平方米，总投资7052.92万元",
+    "model_answer": "总建筑面积为12484.82平方米，总投资为7052.92万元。",
+    "refusal_decision": {
+      "ppl": 1.0482,
+      "min_token_prob": 0.7669,
+      "should_answer": true,
+      "final_model_answer": "总建筑面积为12484.82平方米，总投资为7052.92万元。"
+    }
+  },
+  {
+    "source_id": 1735,
+    "question": "2025年7月，永嘉县瓯北街道光伏专项整治工作组在整治行动期间累计出动人员多少次？",
+    "standard_answer": "工作组累计出动人员378人次。",
+    "model_answer": "工作组累计出动人员378人次。",
+    "refusal_decision": {
+      "ppl": 1.1139,
+      "min_token_prob": 0.4876,
+      "should_answer": false,
+      "final_model_answer": "抱歉，我无法回答这个问题。"
+    }
+  }
+]

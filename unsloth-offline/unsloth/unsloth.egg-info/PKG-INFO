@@ -1,0 +1,1204 @@
+Metadata-Version: 2.4
+Name: unsloth
+Version: 2026.1.4
+Summary: 2-5X faster training, reinforcement learning & finetuning
+Author: Unsloth AI team
+Author-email: info@unsloth.ai
+Maintainer-email: Daniel Han <danielhanchen@gmail.com>, Michael Han <info@unsloth.ai>
+License-Expression: Apache-2.0
+Project-URL: homepage, http://www.unsloth.ai
+Project-URL: documentation, https://github.com/unslothai/unsloth
+Project-URL: repository, https://github.com/unslothai/unsloth
+Keywords: ai,llm,reinforcement learning,machine learning,artificial intelligence,pytorch
+Classifier: Programming Language :: Python
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: <3.14,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: triton
+Requires-Dist: triton>=3.0.0; "linux" in sys_platform and extra == "triton"
+Requires-Dist: triton-windows; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "triton"
+Provides-Extra: huggingfacenotorch
+Requires-Dist: wheel>=0.42.0; extra == "huggingfacenotorch"
+Requires-Dist: packaging; extra == "huggingfacenotorch"
+Requires-Dist: numpy; extra == "huggingfacenotorch"
+Requires-Dist: tqdm; extra == "huggingfacenotorch"
+Requires-Dist: psutil; extra == "huggingfacenotorch"
+Requires-Dist: tyro; extra == "huggingfacenotorch"
+Requires-Dist: protobuf; extra == "huggingfacenotorch"
+Requires-Dist: sentencepiece>=0.2.0; extra == "huggingfacenotorch"
+Requires-Dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1; extra == "huggingfacenotorch"
+Requires-Dist: accelerate>=0.34.1; extra == "huggingfacenotorch"
+Requires-Dist: peft!=0.11.0,>=0.18.0; extra == "huggingfacenotorch"
+Requires-Dist: huggingface_hub>=0.34.0; extra == "huggingfacenotorch"
+Requires-Dist: hf_transfer; extra == "huggingfacenotorch"
+Requires-Dist: diffusers; extra == "huggingfacenotorch"
+Requires-Dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.0,!=4.57.4,!=4.57.5,<=4.57.6,>=4.51.3; extra == "huggingfacenotorch"
+Requires-Dist: trl!=0.19.0,<=0.24.0,>=0.18.2; extra == "huggingfacenotorch"
+Provides-Extra: huggingface
+Requires-Dist: unsloth[huggingfacenotorch]; extra == "huggingface"
+Requires-Dist: unsloth_zoo>=2026.1.4; extra == "huggingface"
+Requires-Dist: torchvision; extra == "huggingface"
+Requires-Dist: unsloth[triton]; extra == "huggingface"
+Provides-Extra: windows
+Requires-Dist: unsloth[huggingface]; extra == "windows"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; sys_platform == "win32" and extra == "windows"
+Requires-Dist: xformers>=0.0.22.post7; sys_platform == "win32" and extra == "windows"
+Provides-Extra: base
+Requires-Dist: unsloth[huggingface]; extra == "base"
+Provides-Extra: cu118only
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118only"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118only"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.22.post7%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118only"
+Provides-Extra: cu121only
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121only"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121only"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.22.post7-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121only"
+Provides-Extra: cu118onlytorch211
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch211"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch211"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch211"
+Provides-Extra: cu121onlytorch211
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch211"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch211"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch211"
+Provides-Extra: cu118onlytorch212
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch212"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch212"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.23.post1%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch212"
+Provides-Extra: cu121onlytorch212
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch212"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch212"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.23.post1-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch212"
+Provides-Extra: cu118onlytorch220
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch220"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch220"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.24%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch220"
+Provides-Extra: cu121onlytorch220
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch220"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch220"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.24-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch220"
+Provides-Extra: cu118onlytorch230
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch230"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch230"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch230"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27%2Bcu118-cp312-cp312-manylinux2014_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu118onlytorch230"
+Provides-Extra: cu121onlytorch230
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch230"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch230"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch230"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.27-cp312-cp312-manylinux2014_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu121onlytorch230"
+Provides-Extra: cu118onlytorch240
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp39-cp39-manylinux2014_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp310-cp310-manylinux2014_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp311-cp311-manylinux2014_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.27.post2%2Bcu118-cp312-cp312-manylinux2014_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu118onlytorch240"
+Provides-Extra: cu121onlytorch240
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu121onlytorch240"
+Provides-Extra: cu124onlytorch240
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu124onlytorch240"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post1-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu124onlytorch240"
+Provides-Extra: cu118onlytorch250
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu118onlytorch250"
+Provides-Extra: cu121onlytorch250
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu121onlytorch250"
+Provides-Extra: cu124onlytorch250
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu124onlytorch250"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.28.post2-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu124onlytorch250"
+Provides-Extra: cu118onlytorch251
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu118onlytorch251"
+Provides-Extra: cu121onlytorch251
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu121onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu121onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu121onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu121/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu121onlytorch251"
+Provides-Extra: cu124onlytorch251
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu124onlytorch251"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post1-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu124onlytorch251"
+Provides-Extra: cu118onlytorch260
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu118onlytorch260"
+Provides-Extra: cu124onlytorch260
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu124onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu124/xformers-0.0.29.post3-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu124onlytorch260"
+Provides-Extra: cu126onlytorch260
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu126onlytorch260"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.29.post3-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu126onlytorch260"
+Provides-Extra: cu118onlytorch270
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu118onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.30-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu118onlytorch270"
+Provides-Extra: cu126onlytorch270
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu126onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.30-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu126onlytorch270"
+Provides-Extra: cu128onlytorch270
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp39-cp39-manylinux_2_28_x86_64.whl ; (python_version == "3.9" and "linux" in sys_platform) and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp310-cp310-manylinux_2_28_x86_64.whl ; (python_version == "3.10" and "linux" in sys_platform) and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp311-cp311-manylinux_2_28_x86_64.whl ; (python_version == "3.11" and "linux" in sys_platform) and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp312-cp312-manylinux_2_28_x86_64.whl ; (python_version == "3.12" and "linux" in sys_platform) and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp39-cp39-win_amd64.whl ; (python_version == "3.9" and sys_platform == "win32") and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp310-cp310-win_amd64.whl ; (python_version == "3.10" and sys_platform == "win32") and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp311-cp311-win_amd64.whl ; (python_version == "3.11" and sys_platform == "win32") and extra == "cu128onlytorch270"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.30-cp312-cp312-win_amd64.whl ; (python_version == "3.12" and sys_platform == "win32") and extra == "cu128onlytorch270"
+Provides-Extra: cu118onlytorch271
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.31.post1-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu118onlytorch271"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu118/xformers-0.0.31.post1-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu118onlytorch271"
+Provides-Extra: cu126onlytorch271
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.31.post1-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu126onlytorch271"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.31.post1-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu126onlytorch271"
+Provides-Extra: cu128onlytorch271
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.31.post1-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu128onlytorch271"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.31.post1-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu128onlytorch271"
+Provides-Extra: cu118onlytorch280
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.32.post2-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu118onlytorch280"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.32.post2-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu118onlytorch280"
+Provides-Extra: cu126onlytorch280
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.32.post2-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu126onlytorch280"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.32.post2-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu126onlytorch280"
+Provides-Extra: cu128onlytorch280
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu129/xformers-0.0.32.post2-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu128onlytorch280"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu129/xformers-0.0.32.post2-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu128onlytorch280"
+Provides-Extra: cu130onlytorch280
+Provides-Extra: cu126onlytorch290
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.33.post1-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu126onlytorch290"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.33.post1-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu126onlytorch290"
+Provides-Extra: cu128onlytorch290
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.33.post1-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu128onlytorch290"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.33.post1-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu128onlytorch290"
+Provides-Extra: cu130onlytorch290
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu130/xformers-0.0.33.post1-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu130onlytorch290"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu130/xformers-0.0.33.post1-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu130onlytorch290"
+Provides-Extra: cu126onlytorch291
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.33.post2-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu126onlytorch291"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu126/xformers-0.0.33.post2-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu126onlytorch291"
+Provides-Extra: cu128onlytorch291
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.33.post2-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu128onlytorch291"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu128/xformers-0.0.33.post2-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu128onlytorch291"
+Provides-Extra: cu130onlytorch291
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu130/xformers-0.0.33.post2-cp39-abi3-manylinux_2_28_x86_64.whl ; "linux" in sys_platform and extra == "cu130onlytorch291"
+Requires-Dist: xformers @ https://download.pytorch.org/whl/cu130/xformers-0.0.33.post2-cp39-abi3-win_amd64.whl ; sys_platform == "win32" and extra == "cu130onlytorch291"
+Provides-Extra: cu118
+Requires-Dist: unsloth[huggingface]; extra == "cu118"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118"
+Requires-Dist: unsloth[cu118only]; extra == "cu118"
+Provides-Extra: cu121
+Requires-Dist: unsloth[huggingface]; extra == "cu121"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121"
+Requires-Dist: unsloth[cu121only]; extra == "cu121"
+Provides-Extra: cu118-torch211
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch211"
+Requires-Dist: bitsandbytes==0.45.5; extra == "cu118-torch211"
+Requires-Dist: unsloth[cu118onlytorch211]; extra == "cu118-torch211"
+Provides-Extra: cu121-torch211
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch211"
+Requires-Dist: bitsandbytes==0.45.5; extra == "cu121-torch211"
+Requires-Dist: unsloth[cu121onlytorch211]; extra == "cu121-torch211"
+Provides-Extra: cu118-torch212
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch212"
+Requires-Dist: bitsandbytes==0.45.5; extra == "cu118-torch212"
+Requires-Dist: unsloth[cu118onlytorch212]; extra == "cu118-torch212"
+Provides-Extra: cu121-torch212
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch212"
+Requires-Dist: bitsandbytes==0.45.5; extra == "cu121-torch212"
+Requires-Dist: unsloth[cu121onlytorch212]; extra == "cu121-torch212"
+Provides-Extra: cu118-torch220
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch220"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch220"
+Requires-Dist: unsloth[cu118onlytorch220]; extra == "cu118-torch220"
+Provides-Extra: cu121-torch220
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch220"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch220"
+Requires-Dist: unsloth[cu121onlytorch220]; extra == "cu121-torch220"
+Provides-Extra: cu118-torch230
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch230"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch230"
+Requires-Dist: unsloth[cu118onlytorch230]; extra == "cu118-torch230"
+Provides-Extra: cu121-torch230
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch230"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch230"
+Requires-Dist: unsloth[cu121onlytorch230]; extra == "cu121-torch230"
+Provides-Extra: cu118-torch240
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch240"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch240"
+Requires-Dist: unsloth[cu118onlytorch240]; extra == "cu118-torch240"
+Provides-Extra: cu121-torch240
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch240"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch240"
+Requires-Dist: unsloth[cu121onlytorch240]; extra == "cu121-torch240"
+Provides-Extra: cu124-torch240
+Requires-Dist: unsloth[huggingface]; extra == "cu124-torch240"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch240"
+Requires-Dist: unsloth[cu124onlytorch240]; extra == "cu124-torch240"
+Provides-Extra: cu118-torch250
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch250"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch250"
+Requires-Dist: unsloth[cu118onlytorch250]; extra == "cu118-torch250"
+Provides-Extra: cu121-torch250
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch250"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch250"
+Requires-Dist: unsloth[cu121onlytorch250]; extra == "cu121-torch250"
+Provides-Extra: cu124-torch250
+Requires-Dist: unsloth[huggingface]; extra == "cu124-torch250"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch250"
+Requires-Dist: unsloth[cu124onlytorch250]; extra == "cu124-torch250"
+Provides-Extra: cu118-torch251
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch251"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch251"
+Requires-Dist: unsloth[cu118onlytorch251]; extra == "cu118-torch251"
+Provides-Extra: cu121-torch251
+Requires-Dist: unsloth[huggingface]; extra == "cu121-torch251"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch251"
+Requires-Dist: unsloth[cu121onlytorch251]; extra == "cu121-torch251"
+Provides-Extra: cu124-torch251
+Requires-Dist: unsloth[huggingface]; extra == "cu124-torch251"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch251"
+Requires-Dist: unsloth[cu124onlytorch251]; extra == "cu124-torch251"
+Provides-Extra: cu118-torch260
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch260"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch260"
+Requires-Dist: unsloth[cu118onlytorch260]; extra == "cu118-torch260"
+Provides-Extra: cu124-torch260
+Requires-Dist: unsloth[huggingface]; extra == "cu124-torch260"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch260"
+Requires-Dist: unsloth[cu124onlytorch260]; extra == "cu124-torch260"
+Provides-Extra: cu126-torch260
+Requires-Dist: unsloth[huggingface]; extra == "cu126-torch260"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch260"
+Requires-Dist: unsloth[cu126onlytorch260]; extra == "cu126-torch260"
+Provides-Extra: cu118-torch270
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch270"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch270"
+Requires-Dist: unsloth[cu118onlytorch270]; extra == "cu118-torch270"
+Provides-Extra: cu126-torch270
+Requires-Dist: unsloth[huggingface]; extra == "cu126-torch270"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch270"
+Requires-Dist: unsloth[cu126onlytorch270]; extra == "cu126-torch270"
+Provides-Extra: cu128-torch270
+Requires-Dist: unsloth[huggingface]; extra == "cu128-torch270"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch270"
+Requires-Dist: unsloth[cu128onlytorch270]; extra == "cu128-torch270"
+Provides-Extra: cu118-torch271
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch271"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch271"
+Requires-Dist: unsloth[cu118onlytorch271]; extra == "cu118-torch271"
+Provides-Extra: cu126-torch271
+Requires-Dist: unsloth[huggingface]; extra == "cu126-torch271"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch271"
+Requires-Dist: unsloth[cu126onlytorch271]; extra == "cu126-torch271"
+Provides-Extra: cu128-torch271
+Requires-Dist: unsloth[huggingface]; extra == "cu128-torch271"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch271"
+Requires-Dist: unsloth[cu128onlytorch271]; extra == "cu128-torch271"
+Provides-Extra: cu118-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu118-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch280"
+Requires-Dist: unsloth[cu118onlytorch280]; extra == "cu118-torch280"
+Provides-Extra: cu126-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu126-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch280"
+Requires-Dist: unsloth[cu126onlytorch280]; extra == "cu126-torch280"
+Provides-Extra: cu128-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu128-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch280"
+Requires-Dist: unsloth[cu128onlytorch280]; extra == "cu128-torch280"
+Provides-Extra: cu130-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu130-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch280"
+Requires-Dist: unsloth[cu130onlytorch280]; extra == "cu130-torch280"
+Provides-Extra: cu126-torch290
+Requires-Dist: unsloth[huggingface]; extra == "cu126-torch290"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch290"
+Requires-Dist: unsloth[cu126onlytorch290]; extra == "cu126-torch290"
+Provides-Extra: cu128-torch290
+Requires-Dist: unsloth[huggingface]; extra == "cu128-torch290"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch290"
+Requires-Dist: unsloth[cu128onlytorch290]; extra == "cu128-torch290"
+Provides-Extra: cu130-torch290
+Requires-Dist: unsloth[huggingface]; extra == "cu130-torch290"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch290"
+Requires-Dist: unsloth[cu130onlytorch290]; extra == "cu130-torch290"
+Provides-Extra: cu126-torch291
+Requires-Dist: unsloth[huggingface]; extra == "cu126-torch291"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch291"
+Requires-Dist: unsloth[cu126onlytorch291]; extra == "cu126-torch291"
+Provides-Extra: cu128-torch291
+Requires-Dist: unsloth[huggingface]; extra == "cu128-torch291"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch291"
+Requires-Dist: unsloth[cu128onlytorch291]; extra == "cu128-torch291"
+Provides-Extra: cu130-torch291
+Requires-Dist: unsloth[huggingface]; extra == "cu130-torch291"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch291"
+Requires-Dist: unsloth[cu130onlytorch291]; extra == "cu130-torch291"
+Provides-Extra: kaggle
+Requires-Dist: unsloth[huggingface]; extra == "kaggle"
+Provides-Extra: kaggle-new
+Requires-Dist: unsloth[huggingface]; extra == "kaggle-new"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "kaggle-new"
+Provides-Extra: conda
+Requires-Dist: unsloth[huggingface]; extra == "conda"
+Provides-Extra: colab-torch211
+Requires-Dist: unsloth[huggingface]; extra == "colab-torch211"
+Requires-Dist: bitsandbytes==0.45.5; extra == "colab-torch211"
+Requires-Dist: unsloth[cu121onlytorch211]; extra == "colab-torch211"
+Provides-Extra: colab-ampere-torch211
+Requires-Dist: unsloth[huggingface]; extra == "colab-ampere-torch211"
+Requires-Dist: bitsandbytes==0.45.5; extra == "colab-ampere-torch211"
+Requires-Dist: unsloth[cu121onlytorch211]; extra == "colab-ampere-torch211"
+Requires-Dist: packaging; extra == "colab-ampere-torch211"
+Requires-Dist: ninja; extra == "colab-ampere-torch211"
+Requires-Dist: flash-attn>=2.6.3; "linux" in sys_platform and extra == "colab-ampere-torch211"
+Provides-Extra: colab-torch220
+Requires-Dist: unsloth[huggingface]; extra == "colab-torch220"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-torch220"
+Requires-Dist: unsloth[cu121onlytorch220]; extra == "colab-torch220"
+Provides-Extra: colab-ampere-torch220
+Requires-Dist: unsloth[huggingface]; extra == "colab-ampere-torch220"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-ampere-torch220"
+Requires-Dist: unsloth[cu121onlytorch220]; extra == "colab-ampere-torch220"
+Requires-Dist: packaging; extra == "colab-ampere-torch220"
+Requires-Dist: ninja; extra == "colab-ampere-torch220"
+Requires-Dist: flash-attn>=2.6.3; "linux" in sys_platform and extra == "colab-ampere-torch220"
+Provides-Extra: colab-new
+Requires-Dist: unsloth_zoo>=2026.1.4; extra == "colab-new"
+Requires-Dist: packaging; extra == "colab-new"
+Requires-Dist: tyro; extra == "colab-new"
+Requires-Dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.0,!=4.57.4,!=4.57.5,<=4.57.6,>=4.51.3; extra == "colab-new"
+Requires-Dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1; extra == "colab-new"
+Requires-Dist: sentencepiece>=0.2.0; extra == "colab-new"
+Requires-Dist: tqdm; extra == "colab-new"
+Requires-Dist: psutil; extra == "colab-new"
+Requires-Dist: wheel>=0.42.0; extra == "colab-new"
+Requires-Dist: numpy; extra == "colab-new"
+Requires-Dist: protobuf; extra == "colab-new"
+Requires-Dist: huggingface_hub>=0.34.0; extra == "colab-new"
+Requires-Dist: hf_transfer; extra == "colab-new"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-new"
+Requires-Dist: unsloth[triton]; extra == "colab-new"
+Provides-Extra: colab-no-deps
+Requires-Dist: accelerate>=0.34.1; extra == "colab-no-deps"
+Requires-Dist: trl!=0.19.0,<=0.24.0,>=0.18.2; extra == "colab-no-deps"
+Requires-Dist: peft>=0.18.0; extra == "colab-no-deps"
+Requires-Dist: xformers; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "colab-no-deps"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-no-deps"
+Requires-Dist: protobuf; extra == "colab-no-deps"
+Provides-Extra: colab
+Requires-Dist: unsloth[cu121]; extra == "colab"
+Provides-Extra: flashattention
+Requires-Dist: packaging; "linux" in sys_platform and extra == "flashattention"
+Requires-Dist: ninja; "linux" in sys_platform and extra == "flashattention"
+Requires-Dist: flash-attn>=2.6.3; "linux" in sys_platform and extra == "flashattention"
+Provides-Extra: colab-ampere
+Requires-Dist: unsloth[colab-ampere-torch220]; extra == "colab-ampere"
+Requires-Dist: unsloth[flashattention]; extra == "colab-ampere"
+Provides-Extra: cu118-ampere
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere"
+Requires-Dist: unsloth[cu118only]; extra == "cu118-ampere"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere"
+Provides-Extra: cu121-ampere
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere"
+Requires-Dist: unsloth[cu121only]; extra == "cu121-ampere"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere"
+Provides-Extra: cu118-ampere-torch211
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch211"
+Requires-Dist: bitsandbytes==0.45.5; extra == "cu118-ampere-torch211"
+Requires-Dist: unsloth[cu118onlytorch211]; extra == "cu118-ampere-torch211"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch211"
+Provides-Extra: cu121-ampere-torch211
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere-torch211"
+Requires-Dist: bitsandbytes==0.45.5; extra == "cu121-ampere-torch211"
+Requires-Dist: unsloth[cu121onlytorch211]; extra == "cu121-ampere-torch211"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere-torch211"
+Provides-Extra: cu118-ampere-torch220
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch220"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch220"
+Requires-Dist: unsloth[cu118onlytorch220]; extra == "cu118-ampere-torch220"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch220"
+Provides-Extra: cu121-ampere-torch220
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere-torch220"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch220"
+Requires-Dist: unsloth[cu121onlytorch220]; extra == "cu121-ampere-torch220"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere-torch220"
+Provides-Extra: cu118-ampere-torch230
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch230"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch230"
+Requires-Dist: unsloth[cu118onlytorch230]; extra == "cu118-ampere-torch230"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch230"
+Provides-Extra: cu121-ampere-torch230
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere-torch230"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch230"
+Requires-Dist: unsloth[cu121onlytorch230]; extra == "cu121-ampere-torch230"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere-torch230"
+Provides-Extra: cu118-ampere-torch240
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch240"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch240"
+Requires-Dist: unsloth[cu118onlytorch240]; extra == "cu118-ampere-torch240"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch240"
+Provides-Extra: cu121-ampere-torch240
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere-torch240"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch240"
+Requires-Dist: unsloth[cu121onlytorch240]; extra == "cu121-ampere-torch240"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere-torch240"
+Provides-Extra: cu124-ampere-torch240
+Requires-Dist: unsloth[huggingface]; extra == "cu124-ampere-torch240"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch240"
+Requires-Dist: unsloth[cu124onlytorch240]; extra == "cu124-ampere-torch240"
+Requires-Dist: unsloth[flashattention]; extra == "cu124-ampere-torch240"
+Provides-Extra: cu118-ampere-torch250
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch250"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch250"
+Requires-Dist: unsloth[cu118onlytorch250]; extra == "cu118-ampere-torch250"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch250"
+Provides-Extra: cu121-ampere-torch250
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere-torch250"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch250"
+Requires-Dist: unsloth[cu121onlytorch250]; extra == "cu121-ampere-torch250"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere-torch250"
+Provides-Extra: cu124-ampere-torch250
+Requires-Dist: unsloth[huggingface]; extra == "cu124-ampere-torch250"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch250"
+Requires-Dist: unsloth[cu124onlytorch250]; extra == "cu124-ampere-torch250"
+Requires-Dist: unsloth[flashattention]; extra == "cu124-ampere-torch250"
+Provides-Extra: cu118-ampere-torch251
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch251"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch251"
+Requires-Dist: unsloth[cu118onlytorch251]; extra == "cu118-ampere-torch251"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch251"
+Provides-Extra: cu121-ampere-torch251
+Requires-Dist: unsloth[huggingface]; extra == "cu121-ampere-torch251"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch251"
+Requires-Dist: unsloth[cu121onlytorch251]; extra == "cu121-ampere-torch251"
+Requires-Dist: unsloth[flashattention]; extra == "cu121-ampere-torch251"
+Provides-Extra: cu124-ampere-torch251
+Requires-Dist: unsloth[huggingface]; extra == "cu124-ampere-torch251"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch251"
+Requires-Dist: unsloth[cu124onlytorch251]; extra == "cu124-ampere-torch251"
+Requires-Dist: unsloth[flashattention]; extra == "cu124-ampere-torch251"
+Provides-Extra: cu118-ampere-torch260
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch260"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch260"
+Requires-Dist: unsloth[cu118onlytorch260]; extra == "cu118-ampere-torch260"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch260"
+Provides-Extra: cu124-ampere-torch260
+Requires-Dist: unsloth[huggingface]; extra == "cu124-ampere-torch260"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch260"
+Requires-Dist: unsloth[cu124onlytorch260]; extra == "cu124-ampere-torch260"
+Requires-Dist: unsloth[flashattention]; extra == "cu124-ampere-torch260"
+Provides-Extra: cu126-ampere-torch260
+Requires-Dist: unsloth[huggingface]; extra == "cu126-ampere-torch260"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch260"
+Requires-Dist: unsloth[cu126onlytorch260]; extra == "cu126-ampere-torch260"
+Requires-Dist: unsloth[flashattention]; extra == "cu126-ampere-torch260"
+Provides-Extra: cu118-ampere-torch270
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch270"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch270"
+Requires-Dist: unsloth[cu118onlytorch270]; extra == "cu118-ampere-torch270"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch270"
+Provides-Extra: cu126-ampere-torch270
+Requires-Dist: unsloth[huggingface]; extra == "cu126-ampere-torch270"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch270"
+Requires-Dist: unsloth[cu126onlytorch270]; extra == "cu126-ampere-torch270"
+Requires-Dist: unsloth[flashattention]; extra == "cu126-ampere-torch270"
+Provides-Extra: cu128-ampere-torch270
+Requires-Dist: unsloth[huggingface]; extra == "cu128-ampere-torch270"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch270"
+Requires-Dist: unsloth[cu128onlytorch270]; extra == "cu128-ampere-torch270"
+Requires-Dist: unsloth[flashattention]; extra == "cu128-ampere-torch270"
+Provides-Extra: cu118-ampere-torch271
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch271"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch271"
+Requires-Dist: unsloth[cu118onlytorch271]; extra == "cu118-ampere-torch271"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch271"
+Provides-Extra: cu126-ampere-torch271
+Requires-Dist: unsloth[huggingface]; extra == "cu126-ampere-torch271"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch271"
+Requires-Dist: unsloth[cu126onlytorch271]; extra == "cu126-ampere-torch271"
+Requires-Dist: unsloth[flashattention]; extra == "cu126-ampere-torch271"
+Provides-Extra: cu128-ampere-torch271
+Requires-Dist: unsloth[huggingface]; extra == "cu128-ampere-torch271"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch271"
+Requires-Dist: unsloth[cu128onlytorch271]; extra == "cu128-ampere-torch271"
+Requires-Dist: unsloth[flashattention]; extra == "cu128-ampere-torch271"
+Provides-Extra: cu118-ampere-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu118-ampere-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch280"
+Requires-Dist: unsloth[cu118onlytorch280]; extra == "cu118-ampere-torch280"
+Requires-Dist: unsloth[flashattention]; extra == "cu118-ampere-torch280"
+Provides-Extra: cu126-ampere-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu126-ampere-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch280"
+Requires-Dist: unsloth[cu126onlytorch280]; extra == "cu126-ampere-torch280"
+Requires-Dist: unsloth[flashattention]; extra == "cu126-ampere-torch280"
+Provides-Extra: cu128-ampere-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu128-ampere-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch280"
+Requires-Dist: unsloth[cu128onlytorch280]; extra == "cu128-ampere-torch280"
+Requires-Dist: unsloth[flashattention]; extra == "cu128-ampere-torch280"
+Provides-Extra: cu130-ampere-torch280
+Requires-Dist: unsloth[huggingface]; extra == "cu130-ampere-torch280"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch280"
+Requires-Dist: unsloth[cu130onlytorch280]; extra == "cu130-ampere-torch280"
+Requires-Dist: unsloth[flashattention]; extra == "cu130-ampere-torch280"
+Provides-Extra: cu126-ampere-torch290
+Requires-Dist: unsloth[huggingface]; extra == "cu126-ampere-torch290"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch290"
+Requires-Dist: unsloth[cu126onlytorch290]; extra == "cu126-ampere-torch290"
+Provides-Extra: cu128-ampere-torch290
+Requires-Dist: unsloth[huggingface]; extra == "cu128-ampere-torch290"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch290"
+Requires-Dist: unsloth[cu128onlytorch290]; extra == "cu128-ampere-torch290"
+Provides-Extra: cu130-ampere-torch290
+Requires-Dist: unsloth[huggingface]; extra == "cu130-ampere-torch290"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch290"
+Requires-Dist: unsloth[cu130onlytorch290]; extra == "cu130-ampere-torch290"
+Provides-Extra: cu126-ampere-torch291
+Requires-Dist: unsloth[huggingface]; extra == "cu126-ampere-torch291"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch291"
+Requires-Dist: unsloth[cu126onlytorch291]; extra == "cu126-ampere-torch291"
+Provides-Extra: cu128-ampere-torch291
+Requires-Dist: unsloth[huggingface]; extra == "cu128-ampere-torch291"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch291"
+Requires-Dist: unsloth[cu128onlytorch291]; extra == "cu128-ampere-torch291"
+Provides-Extra: cu130-ampere-torch291
+Requires-Dist: unsloth[huggingface]; extra == "cu130-ampere-torch291"
+Requires-Dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch291"
+Requires-Dist: unsloth[cu130onlytorch291]; extra == "cu130-ampere-torch291"
+Provides-Extra: flashattentiontorch260abifalsecu12x
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9") and extra == "flashattentiontorch260abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10") and extra == "flashattentiontorch260abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11") and extra == "flashattentiontorch260abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12") and extra == "flashattentiontorch260abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13") and extra == "flashattentiontorch260abifalsecu12x"
+Provides-Extra: flashattentiontorch260abitruecu12x
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiTRUE-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9") and extra == "flashattentiontorch260abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiTRUE-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10") and extra == "flashattentiontorch260abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiTRUE-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11") and extra == "flashattentiontorch260abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiTRUE-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12") and extra == "flashattentiontorch260abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiTRUE-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13") and extra == "flashattentiontorch260abitruecu12x"
+Provides-Extra: flashattentiontorch250abifalsecu12x
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9") and extra == "flashattentiontorch250abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10") and extra == "flashattentiontorch250abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11") and extra == "flashattentiontorch250abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12") and extra == "flashattentiontorch250abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13") and extra == "flashattentiontorch250abifalsecu12x"
+Provides-Extra: flashattentiontorch250abitruecu12x
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiTRUE-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9") and extra == "flashattentiontorch250abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiTRUE-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10") and extra == "flashattentiontorch250abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiTRUE-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11") and extra == "flashattentiontorch250abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiTRUE-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12") and extra == "flashattentiontorch250abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiTRUE-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13") and extra == "flashattentiontorch250abitruecu12x"
+Provides-Extra: flashattentiontorch240abifalsecu12x
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiFALSE-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9") and extra == "flashattentiontorch240abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10") and extra == "flashattentiontorch240abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiFALSE-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11") and extra == "flashattentiontorch240abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiFALSE-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12") and extra == "flashattentiontorch240abifalsecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiFALSE-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13") and extra == "flashattentiontorch240abifalsecu12x"
+Provides-Extra: flashattentiontorch240abitruecu12x
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiTRUE-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9") and extra == "flashattentiontorch240abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiTRUE-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10") and extra == "flashattentiontorch240abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiTRUE-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11") and extra == "flashattentiontorch240abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiTRUE-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12") and extra == "flashattentiontorch240abitruecu12x"
+Requires-Dist: flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.4cxx11abiTRUE-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13") and extra == "flashattentiontorch240abitruecu12x"
+Provides-Extra: intelgputorch260
+Requires-Dist: unsloth_zoo[intelgpu]; extra == "intelgputorch260"
+Requires-Dist: unsloth[huggingfacenotorch]; extra == "intelgputorch260"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.2.0-cp39-cp39-linux_x86_64.whl#sha256=147607f190a7d7aa24ba454def5977fbbfec792fdae18e4ed278cfec29b69271 ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.2.0-cp310-cp310-linux_x86_64.whl#sha256=23aa423fa1542afc34f67eb3ba8ef20060f6d1b3a4697eaeab22b11c92b30f2b ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.2.0-cp311-cp311-linux_x86_64.whl#sha256=bcfa995229bbfd9ffd8d6c8d9f6428d393e876fa6e23ee3c20e3c0d73ca75ca5 ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.2.0-cp312-cp312-linux_x86_64.whl#sha256=bd340903d03470708df3442438acb8b7e08087ab9e61fbe349b2872bf9257ab0 ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.2.0-cp313-cp313-linux_x86_64.whl#sha256=814dccc8a07159e6eca74bed70091bc8fea2d9dd87b0d91845f9f38cde62f01c ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_x86_64.whl ; ("linux" in sys_platform and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl ; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.6.0%2Bxpu-cp39-cp39-linux_x86_64.whl#sha256=6a8adf6dc4c089406e8b3a7e58ab57a463bddf9b07130d2576e76eced43e92af ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.6.0%2Bxpu-cp310-cp310-linux_x86_64.whl#sha256=ff4561cbf07c83bbccaa0f6e9bb0e6dcf721bacd53c9c43c4eb0e7331b4792f9 ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.6.0%2Bxpu-cp311-cp311-linux_x86_64.whl#sha256=12005f66b810ddd3ab93f86c4522bcfdd412cbd27fc9d189b661ff7509bc5e8a ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.6.0%2Bxpu-cp312-cp312-linux_x86_64.whl#sha256=c4c5c67625cdacf35765c2b94e61fe166e3c3f4a14521b1212a59ad1b3eb0f2e ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.6.0%2Bxpu-cp313-cp313-linux_x86_64.whl#sha256=e6864f7a60a5ecc43d5d38f59a16e5dd132384f73dfd3a697f74944026038f7b ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch260"
+Provides-Extra: intel-gpu-torch260
+Requires-Dist: unsloth[intelgputorch260]; extra == "intel-gpu-torch260"
+Provides-Extra: intelgputorch270
+Requires-Dist: unsloth_zoo[intelgpu]; extra == "intelgputorch270"
+Requires-Dist: unsloth[huggingfacenotorch]; extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=749a7098492c6a27b356c97149a4a62973b953eae60bc1b6259260974f344913 ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=44362e80abd752471a08341093321955b066daa2cfb4810e73b8e3b240850f93 ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=faa6b8c945a837a080f641bc8ccc77a98fa66980dcd7e62e715fd853737343fd ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=40f6fb65b345dc9a61813abe7ac9a585f2c9808f414d140cc2a5f11f53ee063c ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=b22b4c02ec71b4bfc862ae3cdfd2871dc0b05d2b1802f5db2196e0f897d581e9 ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp39-cp39-win_amd64.whl#sha256=d4b738d7fa5100c1bd766f91614962828a4810eb57b4df92cd5214a83505a752 ; (sys_platform == "win32" and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp310-cp310-win_amd64.whl#sha256=143fe8a64d807bcdb7d81bbc062816add325570aa160448454ab6ded4a0a17a1 ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp311-cp311-win_amd64.whl#sha256=a8025459ff325d6e3532eb5cf72519db1b178155e7d60aff6c56beb5968fc758 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp312-cp312-win_amd64.whl#sha256=0dd07e6d5b872e42e48f5ee140e609d4554ca3cc509d5bf509ac232267cf358e ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.3.0-cp313-cp313-win_amd64.whl#sha256=a936a18182d8e065a9933afc9a3ebbffadd38604969f87c493831214539fc027 ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_x86_64.whl ; ("linux" in sys_platform and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl ; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp39-cp39-linux_x86_64.whl#sha256=f8ee75e50fcbb37ed5b498299ca2264da99ab278a93fae2358e921e4a6e28273 ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp310-cp310-linux_x86_64.whl#sha256=d6fdc342961d98fdcd9d03dfd491a3208bb5f7fbb435841f8f72ce9fdcd2d026 ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp311-cp311-linux_x86_64.whl#sha256=74d07f9357df5cf2bf223ad3c84de16346bfaa0504f988fdd5590d3e177e5e86 ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp312-cp312-linux_x86_64.whl#sha256=c806d44aa2ca5d225629f6fbc6c994d5deaac2d2cde449195bc8e3522ddd219a ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp313-cp313-linux_x86_64.whl#sha256=25d8277b7f01d42e2e014ccbab57a2692b6ec4eff8dcf894eda1b297407cf97a ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp39-cp39-win_amd64.whl#sha256=046e85125266ae69c1a0d083e6c092f947ab4b6b41532c16bafe40dbced845df ; (sys_platform == "win32" and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp310-cp310-win_amd64.whl#sha256=9ebaeffb82b0b3e39b6030927d3ebe0eb62a0e9045a3b2d7b0a9e7b15222c0db ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp311-cp311-win_amd64.whl#sha256=356ba66cee127e7e2c942880bd50e03768306a4ea08d358a0f29c6eebfc4bc81 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp312-cp312-win_amd64.whl#sha256=94739e665d9b4d5cd7af5f517cb6103f6f9fb421c095184609653a24524040f5 ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.7.0%2Bxpu-cp313-cp313-win_amd64.whl#sha256=31df3cb674918e89bc8c532baa331dc84f4430e1f9c0ec379232db44cba78355 ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch270"
+Provides-Extra: intel-gpu-torch270
+Requires-Dist: unsloth[intelgputorch270]; extra == "intel-gpu-torch270"
+Provides-Extra: intelgputorch280
+Requires-Dist: unsloth_zoo[intelgpu]; extra == "intelgputorch280"
+Requires-Dist: unsloth[huggingfacenotorch]; extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=ac4d8e33986b1c3c5e48151640539272b2187e83016985853111b46fb82c3c94 ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=999fef4c1f711092b9d3086525920545df490de476ecebe899ffc777019ae17f ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=57b09c8c492985ff6a27cd3a22b08e8f7b96b407bd8030967b6efbb9f63b80cf ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=df4bb3282bac9a3b90231700077110d8680b338416de03c2b7c6133c9b602649 ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=60da63c99ca827bdcb0df28e0298bf7d066dc607454c6d6176783cb4e79d838b ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp39-cp39-win_amd64.whl#sha256=64aea8de349f3e2e0ebf4c24b011a8122531fdffda5776edaef45829cc241cf8 ; (sys_platform == "win32" and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp310-cp310-win_amd64.whl#sha256=ae573d255b257fdbed319a3440dc9d0a721e31160ab7f6eba1b2226e6a409a1d ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp311-cp311-win_amd64.whl#sha256=8e0ea4558e5776d8ddab0264310be9b26aee5641bcac0da023537556d4317b86 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp312-cp312-win_amd64.whl#sha256=4090dde07a4fffc34aaf855701a9db28e9fccb57b368ade520f1a0f8e811c878 ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.4.0-cp313-cp313-win_amd64.whl#sha256=a33d0888f3c8df028a2d028842715837d0049524d6c06b9bb11869890a13601a ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp39-cp39-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp310-cp310-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp311-cp311-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp312-cp312-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp313-cp313-linux_x86_64.whl ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp39-cp39-win_amd64.whl#sha256=f2f401276892428e4875cf1d8717c5cbab704b16fc594ccf23795e7b16549a99 ; (sys_platform == "win32" and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp310-cp310-win_amd64.whl#sha256=125c60cd59d51b39581a7e9afcd4679bc3a6b8c1f9440b1bb502a23fdd60571e ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp311-cp311-win_amd64.whl#sha256=47f1a57258cd460e80b38b2ed6744e31587ab77a96b4215bf59546cb4bab5cc0 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp312-cp312-win_amd64.whl#sha256=0937d8943c145a83d9bafc6f80ef28971167817f9eda26066d33f72caf8a6646 ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.8.0%2Bxpu-cp313-cp313-win_amd64.whl#sha256=e034aab1d71760dc80a731531be43673ffe15e99033b82d24e40d2e6d41bd8bf ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_x86_64.whl ; ("linux" in sys_platform and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl ; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp39-cp39-manylinux_2_28_x86_64.whl#sha256=6e981c192045fc249c008441179ff237bb00174d818b875b0475730b63f0eaca ; ("linux" in sys_platform and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=e5ba4805969277175ebfd59cc717093528cc6e3ada89ac2725fc7a3c1fee6169 ; ("linux" in sys_platform and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp311-cp311-manylinux_2_28_x86_64.whl#sha256=74c39c144104416bc4c5ad8c26ab0c169dc5cc6be58059e01bc3665dd0ef676f ; ("linux" in sys_platform and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=0acec355b80c3899841184084f365df336c508602812e34a44007b8b60d53af4 ; ("linux" in sys_platform and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp313-cp313-manylinux_2_28_x86_64.whl#sha256=e2109ae773dad27b98ca17681044b4f876563c37f2382b75de3a371399edcff8 ; ("linux" in sys_platform and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp39-cp39-win_amd64.whl#sha256=5f7904e7048d414379bc8c1167260f1e84204f105db2d0a2f9c89e87ce1cf205 ; (sys_platform == "win32" and python_version == "3.9" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp310-cp310-win_amd64.whl#sha256=005fca5e658ca8e37adb63c1a021c84f5e56dfa6cf0d601d89cfe40b9473f79f ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp311-cp311-win_amd64.whl#sha256=c6d030f5361461550c0ff1339b5bca8585fc1e84fda2e64b6184e65a581e4f98 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp312-cp312-win_amd64.whl#sha256=91aafd61864cdce27461cbec13ddbf28c1bc6494265a1e4b80131c64a3b7d18f ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.23.0%2Bxpu-cp313-cp313-win_amd64.whl#sha256=71dc4a6421742ed1e7f585b04a100ad53615c341fbccfbc255aefb38ea9091da ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch280"
+Provides-Extra: intel-gpu-torch280
+Requires-Dist: unsloth[intelgputorch280]; extra == "intel-gpu-torch280"
+Provides-Extra: intelgputorch290
+Requires-Dist: unsloth_zoo[intelgpu]; extra == "intelgputorch290"
+Requires-Dist: unsloth[huggingfacenotorch]; extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=c169a1de14c19673b17c751290d467fa282fc90fa5da4314b2e5cdab1f553146 ; (platform_system == "Linux" and python_version == "3.10" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=013d9dd5d6479bd22983161f462e61c8dbe1d82e6730624a7a8d5945507eaa61 ; (platform_system == "Linux" and python_version == "3.11" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=afc8cabfbf7ed51fd278d1e0f88d6afc157b0201bad4b99d681e4d542f9e66d4 ; (platform_system == "Linux" and python_version == "3.12" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=0d24c1716088f2764d0d24c64227732195b6a42706c3c5fc89eeb4904bfa0818 ; (platform_system == "Linux" and python_version == "3.13" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp310-cp310-win_amd64.whl#sha256=c83ab007311d9cfb6e809ee5a4587d99a9eef4be720b90da4f1aaa68b45139a0 ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp311-cp311-win_amd64.whl#sha256=debf75348da8e8c7166b4d4a9b91d1508bb8d6581e339f79f7604b2e6746bacd ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp312-cp312-win_amd64.whl#sha256=97337a47425f1963a723475bd61037460e84ba01db4f87a1d662c3718ff6c47e ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: pytorch_triton_xpu @ https://download.pytorch.org/whl/pytorch_triton_xpu-3.5.0-cp313-cp313-win_amd64.whl#sha256=2caf8138695f6abb023ecd02031a2611ba1bf8fff2f19802567cb2fadefe9e87 ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp310-cp310-linux_x86_64.whl#sha256=5afbe860ce991825a36b75706a523601087e414b77598ef0d9d3d565741c277d ; (platform_system == "Linux" and python_version == "3.10" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp311-cp311-linux_x86_64.whl#sha256=607fe419c32d6e8e0556f745742e7cff1d0babce51f54be890e0c1422359c442 ; (platform_system == "Linux" and python_version == "3.11" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp312-cp312-linux_x86_64.whl#sha256=376bae584d89980b8e59934d248c38d5fa3b7d4687a4df1a19f4bc1d23dcc8c1 ; (platform_system == "Linux" and python_version == "3.12" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp313-cp313-linux_x86_64.whl#sha256=98d6a06dd7fb185874367b18bd609f05f16fdce4142a5980ca94461949965cd2 ; (platform_system == "Linux" and python_version == "3.13" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp310-cp310-win_amd64.whl#sha256=47cc68f631f65bd9c84924d052cd04dec7531023caa85e80345e9c94611c887d ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp311-cp311-win_amd64.whl#sha256=d56c44ab4818aba57e5c7b628f422d014e0d507427170a771c5be85e308b0bc6 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp312-cp312-win_amd64.whl#sha256=18cad93aaff76a01ce73aef6935ece7cfc03344b905592ec731446c44d44592b ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torch @ https://download.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp313-cp313-win_amd64.whl#sha256=579929cdc10a76800ead41289cac191ea36d1b16f5f501d3fc25607d4375cd83 ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_x86_64.whl ; ("linux" in sys_platform and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl ; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=cbfae2b79b7549fd368c2462fc8e94f8f26cc450782ee72138e908077c09a519 ; (platform_system == "Linux" and python_version == "3.10" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp311-cp311-manylinux_2_28_x86_64.whl#sha256=044fa36ef4b6b43edcd490b75c853fa4b3eb033c2bded29f8fbcf27734713c67 ; (platform_system == "Linux" and python_version == "3.11" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=4b91e4bec1d740a6211f02578a79888550b73f3a4e1383035f8f6d72f587212c ; (platform_system == "Linux" and python_version == "3.12" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp313-cp313-manylinux_2_28_x86_64.whl#sha256=88239e73ca37254bec84f29cd5887e10ff712de7edbbda3fbb3609cd6190d99e ; (platform_system == "Linux" and python_version == "3.13" and platform_machine == "x86_64") and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp310-cp310-win_amd64.whl#sha256=19c7da8ca767d593e13a88a12bb08d06e34a673f6f26c2f9c191d60e81c02953 ; (sys_platform == "win32" and python_version == "3.10" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp311-cp311-win_amd64.whl#sha256=9bb0d1421c544ac8e2eca5b47daacaf54706dc9139c003aa5e77ee5f355c5931 ; (sys_platform == "win32" and python_version == "3.11" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp312-cp312-win_amd64.whl#sha256=6a5194bc736089606342d48a3f6822829b167617e9495d91d753dd1bd46fda18 ; (sys_platform == "win32" and python_version == "3.12" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Requires-Dist: torchvision @ https://download.pytorch.org/whl/xpu/torchvision-0.24.0%2Bxpu-cp313-cp313-win_amd64.whl#sha256=da47a3ce2bb7f0301a31124668b5908f9b9e92d6241443de15a310ef9632fd83 ; (sys_platform == "win32" and python_version == "3.13" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "intelgputorch290"
+Provides-Extra: intel-gpu-torch290
+Requires-Dist: unsloth[intelgputorch290]; extra == "intel-gpu-torch290"
+Provides-Extra: intel
+Requires-Dist: unsloth[intelgputorch280]; extra == "intel"
+Provides-Extra: amd
+Requires-Dist: unsloth[huggingfacenotorch]; extra == "amd"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_x86_64.whl ; ("linux" in sys_platform and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "amd"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-win_amd64.whl ; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "amd"
+Requires-Dist: bitsandbytes @ https://github.com/bitsandbytes-foundation/bitsandbytes/releases/download/continuous-release_main/bitsandbytes-1.33.7.preview-py3-none-manylinux_2_24_aarch64.whl ; ("linux" in sys_platform and platform_machine == "aarch64") and extra == "amd"
+Dynamic: license-file
+
+<div align="center">
+
+  <a href="https://unsloth.ai/docs"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20logo%20white%20text.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20logo%20black%20text.png">
+    <img alt="unsloth logo" src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20logo%20black%20text.png" height="110" style="max-width: 100%;">
+  </picture></a>
+  
+<a href="https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-(20B)-Fine-tuning.ipynb"><img src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/start free finetune button.png" width="154"></a>
+<a href="https://discord.com/invite/unsloth"><img src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/Discord button.png" width="165"></a>
+<a href="https://unsloth.ai/docs"><img src="https://raw.githubusercontent.com/unslothai/unsloth/refs/heads/main/images/Documentation%20Button.png" width="137"></a>
+
+### Train gpt-oss, DeepSeek, Gemma, Qwen & Llama 2x faster with 70% less VRAM!
+
+![](https://i.ibb.co/sJ7RhGG/image-41.png)
+
+</div>
+
+## ✨ Train for Free
+
+Notebooks are beginner friendly. Read our [guide](https://unsloth.ai/docs/get-started/fine-tuning-llms-guide). Add dataset, run, then deploy your trained model.
+
+| Model | Free Notebooks | Performance | Memory use |
+|-----------|---------|--------|----------|
+| **gpt-oss (20B)**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-(20B)-Fine-tuning.ipynb)               | 1.5x faster | 70% less |
+| **gpt-oss (20B): GRPO**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-(20B)-GRPO.ipynb)               | 2x faster | 80% less |
+| **Qwen3: Advanced GRPO**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-GRPO.ipynb)               | 2x faster | 50% less |
+| **Qwen3-VL (8B): GSPO**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_VL_(8B)-Vision-GRPO.ipynb)               | 1.5x faster | 80% less |
+| **Gemma 3 (4B) Vision** | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(4B)-Vision.ipynb)               | 1.7x faster | 60% less |
+| **Gemma 3n (e4B)**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Conversational.ipynb)               | 1.5x faster | 50% less |
+| **embeddinggemma (300M)**    | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/EmbeddingGemma_(300M).ipynb)               | 2x faster | 20% less |
+| **Mistral Ministral 3 (3B)**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Ministral_3_VL_(3B)_Vision.ipynb)               | 1.5x faster | 60% less |
+| **Llama 3.1 (8B) Alpaca**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.1_(8B)-Alpaca.ipynb)               | 2x faster | 70% less |
+| **Llama 3.2 Conversational**      | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.2_(1B_and_3B)-Conversational.ipynb)               | 2x faster | 70% less |
+| **Orpheus-TTS (3B)**     | [▶️ Start for free](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Orpheus_(3B)-TTS.ipynb)               | 1.5x faster | 50% less |
+
+- See all our notebooks for: [Kaggle](https://github.com/unslothai/notebooks?tab=readme-ov-file#-kaggle-notebooks), [GRPO](https://unsloth.ai/docs/get-started/unsloth-notebooks#grpo-reasoning-rl-notebooks), [TTS](https://unsloth.ai/docs/get-started/unsloth-notebooks#text-to-speech-tts-notebooks), [embedding](https://unsloth.ai/docs/new/embedding-finetuning) & [Vision](https://unsloth.ai/docs/get-started/unsloth-notebooks#vision-multimodal-notebooks)
+- See [all our models](https://unsloth.ai/docs/get-started/unsloth-model-catalog) and [all our notebooks](https://unsloth.ai/docs/get-started/unsloth-notebooks)
+- See detailed documentation for Unsloth [here](https://unsloth.ai/docs)
+
+## ⚡ Quickstart
+### Linux or WSL
+```bash
+pip install unsloth
+```
+### Windows
+For Windows, `pip install unsloth` works only if you have Pytorch installed. Read our [Windows Guide](https://unsloth.ai/docs/get-started/install-and-update/windows-installation).
+
+### Docker
+Use our official [Unsloth Docker image](https://hub.docker.com/r/unsloth/unsloth) ```unsloth/unsloth``` container. Read our [Docker Guide](https://unsloth.ai/docs/get-started/install-and-update/docker).
+
+### Blackwell & DGX Spark
+For RTX 50x, B200, 6000 GPUs: `pip install unsloth`. Read our [Blackwell Guide](https://unsloth.ai/docs/basics/fine-tuning-llms-with-blackwell-rtx-50-series-and-unsloth) and [DGX Spark Guide](https://unsloth.ai/docs/basics/fine-tuning-llms-with-nvidia-dgx-spark-and-unsloth) for more details.
+
+## 🦥 Unsloth News
+- **Embedding models**: Unsloth now supports ~1.8-3.3x faster embedding fine-tuning. [Blog](https://unsloth.ai/docs/new/embedding-finetuning) • [Notebooks](https://unsloth.ai/docs/get-started/unsloth-notebooks#embedding-models)
+- New **7x longer context RL** vs. all other setups, via our new batching algorithms. [Blog](https://unsloth.ai/docs/new/grpo-long-context)
+- New RoPE & MLP **Triton Kernels** & **Padding Free + Packing**: 3x faster training & 30% less VRAM. [Blog](https://unsloth.ai/docs/new/3x-faster-training-packing)
+- **500K Context**: Training a 20B model with >500K context is now possible on an 80GB GPU. [Blog](https://unsloth.ai/docs/new/500k-context-length-fine-tuning)
+- **FP8 Reinforcement Learning**: You can now do FP8 GRPO on consumer GPUs. [Blog](https://unsloth.ai/docs/new/fp8-reinforcement-learning) • [Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_8B_FP8_GRPO.ipynb)
+- **DeepSeek-OCR**: Fine-tune to improve language understanding by 89%. [Guide](https://unsloth.ai/docs/models/deepseek-ocr-how-to-run-and-fine-tune) • [Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Deepseek_OCR_(3B).ipynb)
+- **Docker**: Use Unsloth with no setup & environment issues with our new image. [Guide](https://unsloth.ai/docs/new/how-to-fine-tune-llms-with-unsloth-and-docker) • [Docker image](https://hub.docker.com/r/unsloth/unsloth)
+- **Vision RL**: You can now train VLMs with GRPO or GSPO in Unsloth! [Read guide](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide/vision-reinforcement-learning-vlm-rl)
+- **gpt-oss** by OpenAI: Read our [RL blog](https://unsloth.ai/docs/models/gpt-oss-how-to-run-and-fine-tune/gpt-oss-reinforcement-learning), [Flex Attention](https://unsloth.ai/docs/models/gpt-oss-how-to-run-and-fine-tune/long-context-gpt-oss-training) blog and [gpt-oss Guide](https://unsloth.ai/docs/models/gpt-oss-how-to-run-and-fine-tune). 20B works on 14GB VRAM. 120B on 65GB.
+
+<details>
+  <summary>Click for more news</summary>
+
+- **Quantization-Aware Training**: We collabed with Pytorch, recovering ~70% accuracy. [Read blog](https://unsloth.ai/docs/basics/quantization-aware-training-qat)
+- **Memory-efficient RL**: We're introducing even better RL. Our new kernels & algos allows faster RL with 50% less VRAM & 10× more context. [Read blog](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide/memory-efficient-rl)
+- **Mistral 3**: Run Ministral 3 or Devstral 2 and fine-tune with vision/RL sodoku notebooks. [Guide](https://unsloth.ai/docs/models/ministral-3) • [Notebooks](https://unsloth.ai/docs/models/ministral-3#fine-tuning-ministral-3)
+- **Gemma 3n** by Google: [Read Blog](https://unsloth.ai/docs/models/gemma-3-how-to-run-and-fine-tune/gemma-3n-how-to-run-and-fine-tune). We [uploaded GGUFs, 4-bit models](https://huggingface.co/collections/unsloth/gemma-3n-685d3874830e49e1c93f9339).
+- **[Text-to-Speech (TTS)](https://unsloth.ai/docs/basics/text-to-speech-tts-fine-tuning)** is now supported, including `sesame/csm-1b` and STT `openai/whisper-large-v3`.
+- **[Qwen3](https://unsloth.ai/docs/models/qwen3-how-to-run-and-fine-tune)** is now supported. Qwen3-30B-A3B fits on 17.5GB VRAM.
+- Introducing **[Dynamic 2.0](https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs)** quants that set new benchmarks on 5-shot MMLU & Aider Polyglot.
+- [**EVERYTHING** is now supported](https://unsloth.ai/blog/gemma3#everything) - all models (TTS, BERT, Mamba), FFT, etc. [MultiGPU](https://unsloth.ai/docs/basics/multi-gpu-training-with-unsloth) coming soon. Enable FFT with `full_finetuning = True`, 8-bit with `load_in_8bit = True`.
+- 📣 [DeepSeek-R1](https://unsloth.ai/blog/deepseek-r1) - run or fine-tune them [with our guide](https://unsloth.ai/blog/deepseek-r1). All model uploads: [here](https://huggingface.co/collections/unsloth/deepseek-r1-all-versions-678e1c48f5d2fce87892ace5).
+- 📣 Introducing Long-context [Reasoning (GRPO)](https://unsloth.ai/blog/grpo) in Unsloth. Train your own reasoning model with just 5GB VRAM. Transform Llama, Phi, Mistral etc. into reasoning LLMs!
+- 📣 Introducing Unsloth [Dynamic 4-bit Quantization](https://unsloth.ai/blog/dynamic-4bit)! We dynamically opt not to quantize certain parameters and this greatly increases accuracy while only using <10% more VRAM than BnB 4-bit. See our collection on [Hugging Face here.](https://huggingface.co/collections/unsloth/unsloth-4-bit-dynamic-quants-67503bb873f89e15276c44e7)
+- 📣 **[Llama 4](https://unsloth.ai/blog/llama4)** by Meta, including Scout & Maverick are now supported.
+- 📣 [Phi-4](https://unsloth.ai/blog/phi4) by Microsoft: We also [fixed bugs](https://unsloth.ai/blog/phi4) in Phi-4 and [uploaded GGUFs, 4-bit](https://huggingface.co/collections/unsloth/phi-4-all-versions-677eecf93784e61afe762afa).
+- 📣 [Vision models](https://unsloth.ai/blog/vision) now supported! [Llama 3.2 Vision (11B)](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.2_(11B)-Vision.ipynb), [Qwen 2.5 VL (7B)](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb) and [Pixtral (12B) 2409](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Pixtral_(12B)-Vision.ipynb)
+- 📣 [Llama 3.3 (70B)](https://huggingface.co/collections/unsloth/llama-33-all-versions-67535d7d994794b9d7cf5e9f), Meta's latest model is supported.
+- 📣 We worked with Apple to add [Cut Cross Entropy](https://arxiv.org/abs/2411.09009). Unsloth now supports 89K context for Meta's Llama 3.3 (70B) on a 80GB GPU - 13x longer than HF+FA2. For Llama 3.1 (8B), Unsloth enables 342K context, surpassing its native 128K support.
+- 📣 We found and helped fix a [gradient accumulation bug](https://unsloth.ai/blog/gradient)! Please update Unsloth and transformers.
+- 📣 We cut memory usage by a [further 30%](https://unsloth.ai/blog/long-context) and now support [4x longer context windows](https://unsloth.ai/blog/long-context)!
+</details>
+
+## 🔗 Links and Resources
+| Type                                                                                                                                      | Links                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| <img width="15" src="https://redditinc.com/hs-fs/hubfs/Reddit%20Inc/Brand/Reddit_Logo.png" />  **r/unsloth Reddit**                       | [Join Reddit community](https://reddit.com/r/unsloth)                          |
+| 📚 **Documentation & Wiki**                                                                                                               | [Read Our Docs](https://unsloth.ai/docs)                                       |
+| <img width="13" src="https://upload.wikimedia.org/wikipedia/commons/0/09/X_(formerly_Twitter)_logo_late_2025.svg" />  **Twitter (aka X)** | [Follow us on X](https://twitter.com/unslothai)                                |
+| 💾 **Installation**                                                                                                                       | [Pip & Docker Install](https://unsloth.ai/docs/get-started/install-and-update) |
+| 🔮 **Our Models**                                                                                                                         | [Unsloth Catalog](https://unsloth.ai/docs/get-started/unsloth-model-catalog)   |
+| ✍️ **Blog**                                                                                                                               | [Read our Blogs](https://unsloth.ai/blog)                                      |
+
+## ⭐ Key Features
+
+* Supports **full-finetuning**, pretraining, 4b-bit, 16-bit and **FP8** training
+* Supports **all models** including [TTS](https://unsloth.ai/docs/basics/text-to-speech-tts-fine-tuning), multimodal, [embedding](https://unsloth.ai/docs/new/embedding-finetuning) and more! Any model that works in transformers, works in Unsloth.
+* The most efficient library for [Reinforcement Learning (RL)](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide), using 80% less VRAM. Supports GRPO, GSPO, DrGRPO, DAPO etc.
+* **0% loss in accuracy** - no approximation methods - all exact.
+* Export and [deploy your model](https://unsloth.ai/docs/basics/inference-and-deployment) to GGUF, llama.cpp, vLLM, SGLang and Hugging Face.
+* Supports NVIDIA (since 2018), [AMD](https://unsloth.ai/docs/get-started/install-and-update/amd) and Intel GPUs. Minimum CUDA Capability 7.0 (V100, T4, Titan V, RTX 20, 30, 40x, A100, H100, L40 etc)
+* Works on **Linux**, WSL and **Windows**
+* All kernels written in OpenAI's Triton language. Manual backprop engine.
+* If you trained a model with 🦥Unsloth, you can use this cool sticker!   <img src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/made with unsloth.png" width="200" align="center" />
+
+## 💾 Install Unsloth
+You can also see our docs for more detailed installation and updating instructions [here](https://unsloth.ai/docs/get-started/install-and-update).
+
+Unsloth supports Python 3.13 or lower.
+
+### Pip Installation
+**Install with pip (recommended) for Linux devices:**
+```
+pip install unsloth
+```
+**To update Unsloth:**
+```
+pip install --upgrade --force-reinstall --no-cache-dir unsloth unsloth_zoo
+```
+See [here](#advanced-pip-installation) for advanced pip install instructions.
+### Windows Installation
+
+1. **Install NVIDIA Video Driver:**
+  You should install the latest driver for your GPU. Download drivers here: [NVIDIA GPU Driver](https://www.nvidia.com/Download/index.aspx).
+
+3. **Install Visual Studio C++:**
+   You will need Visual Studio, with C++ installed. By default, C++ is not installed with [Visual Studio](https://visualstudio.microsoft.com/vs/community/), so make sure you select all of the C++ options. Also select options for Windows 10/11 SDK. For detailed instructions with options, see [here](https://unsloth.ai/docs/get-started/install-and-update/windows-installation#method-3-windows-directly).
+
+5. **Install CUDA Toolkit:**
+   Follow the instructions to install [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive).
+
+6. **Install PyTorch:**
+   You will need the correct version of PyTorch that is compatible with your CUDA drivers, so make sure to select them carefully.
+   [Install PyTorch](https://pytorch.org/get-started/locally/).
+
+7. **Install Unsloth:**
+   
+```python
+pip install unsloth
+```
+
+#### Advanced/Troubleshooting
+For **advanced installation instructions** or if you see weird errors during installations:
+
+First try using an isolated environment via then `pip install unsloth`
+```bash
+python -m venv unsloth
+source unsloth/bin/activate
+pip install unsloth
+```
+
+1. Install `torch` and `triton`. Go to https://pytorch.org to install it. For example `pip install torch torchvision torchaudio triton`
+2. Confirm if CUDA is installed correctly. Try `nvcc`. If that fails, you need to install `cudatoolkit` or CUDA drivers.
+3. Install `xformers` manually via:
+  ```bash
+  pip install ninja
+  pip install -v --no-build-isolation -U git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
+  ```
+    Check if `xformers` succeeded with `python -m xformers.info` Go to https://github.com/facebookresearch/xformers. Another option is to install `flash-attn` for Ampere GPUs and ignore `xformers`
+
+5. For GRPO runs, you can try installing `vllm` and seeing if `pip install vllm` succeeds.
+6. Double check that your versions of Python, CUDA, CUDNN, `torch`, `triton`, and `xformers` are compatible with one another. The [PyTorch Compatibility Matrix](https://github.com/pytorch/pytorch/blob/main/RELEASE.md#release-compatibility-matrix) may be useful. 
+5. Finally, install `bitsandbytes` and check it with `python -m bitsandbytes`
+
+### Conda Installation (Optional)
+`⚠️Only use Conda if you have it. If not, use Pip`. Select either `pytorch-cuda=11.8,12.1` for CUDA 11.8 or CUDA 12.1. We support `python=3.10,3.11,3.12`.
+```bash
+conda create --name unsloth_env \
+    python=3.11 \
+    pytorch-cuda=12.1 \
+    pytorch cudatoolkit xformers -c pytorch -c nvidia -c xformers \
+    -y
+conda activate unsloth_env
+
+pip install unsloth
+```
+
+<details>
+  <summary>If you're looking to install Conda in a Linux environment, <a href="https://docs.anaconda.com/miniconda/">read here</a>, or run the below 🔽</summary>
+  
+  ```bash
+  mkdir -p ~/miniconda3
+  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+  bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+  rm -rf ~/miniconda3/miniconda.sh
+  ~/miniconda3/bin/conda init bash
+  ~/miniconda3/bin/conda init zsh
+  ```
+</details>
+
+### Advanced Pip Installation
+`⚠️Do **NOT** use this if you have Conda.` Pip is a bit more complex since there are dependency issues. The pip command is different for `torch 2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9` and CUDA versions.
+
+For other torch versions, we support `torch211`, `torch212`, `torch220`, `torch230`, `torch240`, `torch250`, `torch260`, `torch270`, `torch280`, `torch290` and for CUDA versions, we support `cu118` and `cu121` and `cu124`. For Ampere devices (A100, H100, RTX3090) and above, use `cu118-ampere` or `cu121-ampere` or `cu124-ampere`.
+
+For example, if you have `torch 2.4` and `CUDA 12.1`, use:
+```bash
+pip install --upgrade pip
+pip install "unsloth[cu121-torch240] @ git+https://github.com/unslothai/unsloth.git"
+```
+
+Another example, if you have `torch 2.9` and `CUDA 13.0`, use:
+```bash
+pip install --upgrade pip
+pip install "unsloth[cu130-torch290] @ git+https://github.com/unslothai/unsloth.git"
+```
+
+And other examples:
+```bash
+pip install "unsloth[cu121-ampere-torch240] @ git+https://github.com/unslothai/unsloth.git"
+pip install "unsloth[cu118-ampere-torch240] @ git+https://github.com/unslothai/unsloth.git"
+pip install "unsloth[cu121-torch240] @ git+https://github.com/unslothai/unsloth.git"
+pip install "unsloth[cu118-torch240] @ git+https://github.com/unslothai/unsloth.git"
+
+pip install "unsloth[cu121-torch230] @ git+https://github.com/unslothai/unsloth.git"
+pip install "unsloth[cu121-ampere-torch230] @ git+https://github.com/unslothai/unsloth.git"
+
+pip install "unsloth[cu121-torch250] @ git+https://github.com/unslothai/unsloth.git"
+pip install "unsloth[cu124-ampere-torch250] @ git+https://github.com/unslothai/unsloth.git"
+```
+
+Or, run the below in a terminal to get the **optimal** pip installation command:
+```bash
+wget -qO- https://raw.githubusercontent.com/unslothai/unsloth/main/unsloth/_auto_install.py | python -
+```
+
+Or, run the below manually in a Python REPL:
+```python
+try: import torch
+except: raise ImportError('Install torch via `pip install torch`')
+from packaging.version import Version as V
+import re
+v = V(re.match(r"[0-9\.]{3,}", torch.__version__).group(0))
+cuda = str(torch.version.cuda)
+is_ampere = torch.cuda.get_device_capability()[0] >= 8
+USE_ABI = torch._C._GLIBCXX_USE_CXX11_ABI
+if cuda not in ("11.8", "12.1", "12.4", "12.6", "12.8", "13.0"): raise RuntimeError(f"CUDA = {cuda} not supported!")
+if   v <= V('2.1.0'): raise RuntimeError(f"Torch = {v} too old!")
+elif v <= V('2.1.1'): x = 'cu{}{}-torch211'
+elif v <= V('2.1.2'): x = 'cu{}{}-torch212'
+elif v  < V('2.3.0'): x = 'cu{}{}-torch220'
+elif v  < V('2.4.0'): x = 'cu{}{}-torch230'
+elif v  < V('2.5.0'): x = 'cu{}{}-torch240'
+elif v  < V('2.5.1'): x = 'cu{}{}-torch250'
+elif v <= V('2.5.1'): x = 'cu{}{}-torch251'
+elif v  < V('2.7.0'): x = 'cu{}{}-torch260'
+elif v  < V('2.7.9'): x = 'cu{}{}-torch270'
+elif v  < V('2.8.0'): x = 'cu{}{}-torch271'
+elif v  < V('2.8.9'): x = 'cu{}{}-torch280'
+elif v  < V('2.9.1'): x = 'cu{}{}-torch290'
+elif v  < V('2.9.2'): x = 'cu{}{}-torch291'
+else: raise RuntimeError(f"Torch = {v} too new!")
+if v > V('2.6.9') and cuda not in ("11.8", "12.6", "12.8", "13.0"): raise RuntimeError(f"CUDA = {cuda} not supported!")
+x = x.format(cuda.replace(".", ""), "-ampere" if False else "") # is_ampere is broken due to flash-attn
+print(f'pip install --upgrade pip && pip install --no-deps git+https://github.com/unslothai/unsloth-zoo.git && pip install "unsloth[{x}] @ git+https://github.com/unslothai/unsloth.git" --no-build-isolation')
+```
+### Docker Installation
+You can use our pre-built Docker container with all dependencies to use Unsloth instantly with no setup required.
+[Read our guide](https://unsloth.ai/docs/get-started/install-and-update/docker).
+
+This container requires installing [NVIDIA's Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+
+```bash
+docker run -d -e JUPYTER_PASSWORD="__SET_VIA_ENVIRONMENT__" \
+  -p 8888:8888 -p 2222:22 \
+  -v $(pwd)/work:/workspace/work \
+  --gpus all \
+  unsloth/unsloth
+```
+
+Access Jupyter Lab at `http://localhost:8888` and start fine-tuning!
+
+## 📜 Documentation
+* Go to our official [Documentation](https://unsloth.ai/docs) for [running models](https://unsloth.ai/docs/basics/inference-and-deployment), [saving to GGUF](https://unsloth.ai/docs/basics/inference-and-deployment/saving-to-gguf), [checkpointing](https://unsloth.ai/docs/basics/finetuning-from-last-checkpoint), [evaluation](https://unsloth.ai/docs/get-started/fine-tuning-llms-guide#evaluation) and more!
+* Read our Guides for: [Fine-tuning](https://unsloth.ai/docs/get-started/fine-tuning-llms-guide), [Reinforcement Learning](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide), [Text-to-Speech (TTS)](https://unsloth.ai/docs/basics/text-to-speech-tts-fine-tuning), [Vision](https://unsloth.ai/docs/basics/vision-fine-tuning) and [any model](https://unsloth.ai/docs/models/tutorials-how-to-fine-tune-and-run-llms).
+* We support Huggingface's transformers, TRL, Trainer, Seq2SeqTrainer and Pytorch code.
+
+Unsloth example code to fine-tune gpt-oss-20b:
+
+```python
+from unsloth import FastLanguageModel, FastModel
+import torch
+from trl import SFTTrainer, SFTConfig
+from datasets import load_dataset
+max_seq_length = 2048 # Supports RoPE Scaling internally, so choose any!
+# Get LAION dataset
+url = "https://huggingface.co/datasets/laion/OIG/resolve/main/unified_chip2.jsonl"
+dataset = load_dataset("json", data_files = {"train" : url}, split = "train")
+
+# 4bit pre quantized models we support for 4x faster downloading + no OOMs.
+fourbit_models = [
+    "unsloth/gpt-oss-20b-unsloth-bnb-4bit", #or choose any model
+
+] # More models at https://huggingface.co/unsloth
+
+model, tokenizer = FastModel.from_pretrained(
+    model_name = "unsloth/gpt-oss-20b",
+    max_seq_length = 2048, # Choose any for long context!
+    load_in_4bit = True,  # 4-bit quantization. False = 16-bit LoRA.
+    load_in_8bit = False, # 8-bit quantization
+    load_in_16bit = False, # 16-bit LoRA
+    full_finetuning = False, # Use for full fine-tuning.
+    trust_remote_code = False, # Enable to support new models
+    # token = "hf_...", # use one if using gated models
+)
+
+# Do model patching and add fast LoRA weights
+model = FastLanguageModel.get_peft_model(
+    model,
+    r = 16,
+    target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
+                      "gate_proj", "up_proj", "down_proj",],
+    lora_alpha = 16,
+    lora_dropout = 0, # Supports any, but = 0 is optimized
+    bias = "none",    # Supports any, but = "none" is optimized
+    # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
+    use_gradient_checkpointing = "unsloth", # True or "unsloth" for very long context
+    random_state = 3407,
+    max_seq_length = max_seq_length,
+    use_rslora = False,  # We support rank stabilized LoRA
+    loftq_config = None, # And LoftQ
+)
+
+trainer = SFTTrainer(
+    model = model,
+    train_dataset = dataset,
+    tokenizer = tokenizer,
+    args = SFTConfig(
+        max_seq_length = max_seq_length,
+        per_device_train_batch_size = 2,
+        gradient_accumulation_steps = 4,
+        warmup_steps = 10,
+        max_steps = 60,
+        logging_steps = 1,
+        output_dir = "outputs",
+        optim = "adamw_8bit",
+        seed = 3407,
+    ),
+)
+trainer.train()
+
+# Go to https://unsloth.ai/docs for advanced tips like
+# (1) Saving to GGUF / merging to 16bit for vLLM or SGLang
+# (2) Continued training from a saved LoRA adapter
+# (3) Adding an evaluation loop / OOMs
+# (4) Customized chat templates
+```
+
+<a name="RL"></a>
+## 💡 Reinforcement Learning
+[RL](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide) including [GRPO](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide#training-with-grpo), [GSPO](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide/gspo-reinforcement-learning), [**FP8** training](https://unsloth.ai/docs/new/fp8-reinforcement-learning), DrGRPO, DAPO, PPO, Reward Modelling, Online DPO all work with Unsloth.
+
+Read our [Reinforcement Learning Guide](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide) or our [advanced RL docs](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide/advanced-rl-documentation) for batching, generation & training parameters.
+
+List of RL notebooks:
+- gpt-oss GSPO notebook: [Link](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-(20B)-GRPO.ipynb)
+- - ***FP8*** Qwen3-8B GRPO notebook (L4): [Link](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_8B_FP8_GRPO.ipynb)
+- Qwen2.3-VL GSPO notebook: [Link](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_VL_(8B)-Vision-GRPO.ipynb)
+- Advanced Qwen3 GRPO notebook: [Link](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-GRPO.ipynb)
+- ORPO notebook: [Link](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb)
+- DPO Zephyr notebook: [Link](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Zephyr_(7B)-DPO.ipynb)
+- KTO notebook: [Link](https://colab.research.google.com/drive/1MRgGtLWuZX4ypSfGguFgC-IblTvO2ivM?usp=sharing)
+- SimPO notebook: [Link](https://colab.research.google.com/drive/1Hs5oQDovOay4mFA6Y9lQhVJ8TnbFLFh2?usp=sharing)
+
+## 🥇 Performance Benchmarking
+- For our most detailed benchmarks, read our [Llama 3.3 Blog](https://unsloth.ai/blog/llama3-3).
+- Benchmarking of Unsloth was also conducted by [🤗Hugging Face](https://huggingface.co/blog/unsloth-trl).
+
+We tested using the Alpaca  Dataset, a batch size of 2, gradient accumulation steps of 4, rank = 32, and applied QLoRA on all linear layers (q, k, v, o, gate, up, down):
+  
+| Model          | VRAM  | 🦥 Unsloth speed | 🦥 VRAM reduction | 🦥 Longer context | 😊 Hugging Face + FA2 |
+|----------------|-------|-----------------|----------------|----------------|--------------------|
+| Llama 3.3 (70B)| 80GB  | 2x              | >75%           | 13x longer     | 1x                 |
+| Llama 3.1 (8B) | 80GB  | 2x              | >70%           | 12x longer     | 1x                 |
+
+### Context length benchmarks
+
+#### Llama 3.1 (8B) max. context length
+We tested Llama 3.1 (8B) Instruct and did 4bit QLoRA on all linear layers (Q, K, V, O, gate, up and down) with rank = 32 with a batch size of 1. We padded all sequences to a certain maximum sequence length to mimic long context finetuning workloads.
+| GPU VRAM | 🦥Unsloth context length | Hugging Face + FA2 |
+|----------|-----------------------|-----------------|
+| 8 GB     | 2,972                 | OOM             |
+| 12 GB    | 21,848                | 932             |
+| 16 GB    | 40,724                | 2,551           |
+| 24 GB    | 78,475                | 5,789           |
+| 40 GB    | 153,977               | 12,264          |
+| 48 GB    | 191,728               | 15,502          |
+| 80 GB    | 342,733               | 28,454          |
+
+#### Llama 3.3 (70B) max. context length
+We tested Llama 3.3 (70B) Instruct on a 80GB A100 and did 4bit QLoRA on all linear layers (Q, K, V, O, gate, up and down) with rank = 32 with a batch size of 1. We padded all sequences to a certain maximum sequence length to mimic long context finetuning workloads.
+
+| GPU VRAM | 🦥Unsloth context length | Hugging Face + FA2 |
+|----------|------------------------|------------------|
+| 48 GB    | 12,106                | OOM              |
+| 80 GB    | 89,389                | 6,916            |
+
+<br>
+
+![](https://i.ibb.co/sJ7RhGG/image-41.png)
+<br>
+
+### Citation
+
+You can cite the Unsloth repo as follows:
+```bibtex
+@software{unsloth,
+  author = {Daniel Han, Michael Han and Unsloth team},
+  title = {Unsloth},
+  url = {http://github.com/unslothai/unsloth},
+  year = {2023}
+}
+```
+
+### Thank You to
+- The [llama.cpp library](https://github.com/ggml-org/llama.cpp) that lets users save models with Unsloth
+- The Hugging Face team and their libraries: [transformers](https://github.com/huggingface/transformers) and [TRL](https://github.com/huggingface/trl)
+- The Pytorch and [Torch AO](https://github.com/unslothai/unsloth/pull/3391) team for their contributions
+- And of course for every single person who has contributed or has used Unsloth!

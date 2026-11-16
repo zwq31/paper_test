@@ -1,0 +1,2 @@
+model,average,coding,data_analysis,instruction_following,language,math,reasoning
+qwen2.5-7b-instruct-mol-cpt-3years-qlora-1year,313.2,92.3,205.6,157.1,317.2,625.9,481.0

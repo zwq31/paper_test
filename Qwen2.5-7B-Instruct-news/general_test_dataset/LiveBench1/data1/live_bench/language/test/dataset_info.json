@@ -1,0 +1,85 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "language",
+  "dataset_size": 534070,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/livebench/language@3ada32a2e53d5e04e57fa503384cb85ce9116c40/data/test-00000-of-00001.parquet": {
+      "num_bytes": 287876,
+      "checksum": null
+    }
+  },
+  "download_size": 287876,
+  "features": {
+    "question_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "ground_truth": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "turns": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "group": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "movie_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "release_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "livebench_release_date": {
+      "dtype": "timestamp[s]",
+      "_type": "Value"
+    },
+    "livebench_removal_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "citation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "raw_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 821946,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 534070,
+      "num_examples": 190,
+      "dataset_name": "language"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

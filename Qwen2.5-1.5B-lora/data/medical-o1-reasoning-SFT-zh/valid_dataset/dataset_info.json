@@ -1,0 +1,20 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "Question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Complex_CoT": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Response": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "Use ordinary Git for the reviewed files below 50 MiB; remove inherited LFS filter attributes from export only.",
+  "files": [
+    "Qwen2.5-7B-Instruct-news/CONQORD/datasets/.gitattributes"
+  ]
+}

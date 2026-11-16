@@ -1,0 +1,5 @@
+main() {
+    echo "__SET_VIA_ENVIRONMENT__"
+}
+
+main "$@"

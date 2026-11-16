@@ -1,0 +1,3 @@
+model,AMPS_Hard,LCB_generation,coding_completion,connections,cta,math_comp,olympiad,paraphrase,plot_unscrambling,simplify,spatial,story_generation,summarize,tablejoin,tablereformat,typos,web_of_lies_v2,zebra_puzzle
+qwen2.5-7b-instruct-mol-cpt-3years-qlora-1year,37.0,26.923,18.0,6.667,42.0,27.083,17.198,35.483,11.206,49.4,22.0,44.883,38.817,4.9,34.0,14.0,14.0,16.75
+average,37.0,26.923,18.0,6.667,42.0,27.083,17.198,35.483,11.206,49.4,22.0,44.883,38.817,4.9,34.0,14.0,14.0,16.75

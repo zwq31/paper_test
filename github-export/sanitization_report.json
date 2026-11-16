@@ -1,0 +1,853 @@
+[
+  {
+    "path": "H-Neurous/code/post.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "H-Neurous/code/2_answer_tokens.py",
+    "redactions": {
+      "credential_assignment": 1,
+      "token_pattern": 1
+    }
+  },
+  {
+    "path": "H-Neurous/code/4_inference.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "H-Neurous/code/configs/config.py",
+    "redactions": {
+      "token_pattern": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/news_qa_system/code/pipeline.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/output2-2016news-finetune-2e-4/Qwen2.5-7B-Instruct-news-finetune-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/output/Qwen2.5-7B-Instruct-6month-finetune/Qwen2.5-7B-Instruct-6month-finetune-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-drouput0.1-r128-bs16-epoch5/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-cpt-drouput0.05-r64-bs32/Qwen2.5-7B-Instruct-news-finetune-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-drouput0.05-r64-bs32/Qwen2.5-7B-Instruct-news-finetune-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-cpt-drouput0.1-r128-bs16-epoch5/final_model_2dataset/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-cpt-drouput0.1-r128-bs16-epoch5/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-cpt-drouput0.1-r128-bs16-epoch5/final_model_4/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-drouput0.05-r128-bs32/Qwen2.5-7B-Instruct-news-finetune-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/dataset_enhance.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/get_data_unmentioned.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/qa_quality_enhance_cp.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/get_data_unfinetuned.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/qa_test_data.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/news_to_data.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/generate.ipynb",
+    "redactions": {},
+    "cleared_outputs": 12
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/qa_quality_enhance.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/dataset_enhance_piliang.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/coda/datasets_evaluate.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-5epoch-drouput0.1-r128-bs16-epoch5/final_2epoch_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/outputs/output/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/outputs/output_2high/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/outputs/output_2lei/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/outputs/output_2leidantiao/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/outputs/output_2leidantiao/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/outputs/output_reject/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat_template/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/dpo_final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/final/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model/final/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/reject/sft/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/reject/sft_dpo/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/dpo_train_2lei_model/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/sft_dpo_2lei_model/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/base_model_dpo_train_2lei_model/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/4lei_model_chat/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/dpo_2lei_model/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei2tiao_model_chat/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_10to1_refusal/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft/interrupted_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/dpo_all_moban/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_all/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_all/interrupted_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/dpo_all/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_fixed/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_fixed/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_dual_sft/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_dual_sft/final-model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_prompt_1:1/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_prompt_1:1/interrupted_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/final-model/tokenizer.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/final-model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/epoch-2/tokenizer.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/epoch-2/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/epoch-1/tokenizer.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/epoch-1/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/epoch-3/tokenizer.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_margin_contrastive/epoch-3/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_duoshuju/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_duoshuju/interrupted_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_news_qora/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_laoshi_1_多样化模板/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/dpo/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/dpo/dpo-model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_dpo_all/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/sft_laoshi/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/refusal_dpo/outputs_5epoch/outputs_refusal_only/final-refusal-head/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/output-continued-pretraining/6month-adapter/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/domain_test/jujue.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/domain_test/evaluate_result.py",
+    "redactions": {
+      "credential_assignment": 2
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/CONQORD/utils/data/data_utils copy.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/CONQORD/utils/data/data_utils.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/CONQORD/step4_evaluation/RAG.ipynb",
+    "redactions": {},
+    "cleared_outputs": 21
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/CONQORD/step3_RL_finetune_LLM/main.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/CONQORD/step2_reward_model/rw_eval.py",
+    "redactions": {
+      "credential_assignment": 4
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/code/tool.py",
+    "redactions": {
+      "credential_assignment": 2
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/code/demo_system_nodecide.py",
+    "redactions": {
+      "credential_assignment": 3
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/multihop_qa/code/step0_add_entity_relations.py",
+    "redactions": {
+      "credential_assignment": 2
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/multihop_qa/code/step2_generate_qa.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/coke/outputs/coke_training/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/coke/outputs/coke_training_1/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/code-continued-pretraining/Continued_Pretraining.ipynb",
+    "redactions": {},
+    "cleared_outputs": 21
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/code-continued-pretraining/Continued_Pretraining_inference.ipynb",
+    "redactions": {},
+    "cleared_outputs": 6
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/create_finetune_dataset/mysql_to_csv.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/create_finetune_dataset/news_to_data.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/create_finetune_dataset/mysql_to_json.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/output-2016news-finetune/Qwen2.5-7B-Instruct-news-finetune-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/code/merge.ipynb",
+    "redactions": {},
+    "cleared_outputs": 5
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/code/generate.ipynb",
+    "redactions": {},
+    "cleared_outputs": 1
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/code/convert_news.py",
+    "redactions": {
+      "credential_assignment": 2
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/output/final_model_2epoch/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/output/mol_pretrain_epoch_2/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/output/mol_pretrain_epoch_5/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/output/mol_pretrain_epoch_4/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/output/mol_pretrain_epoch_3/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/MOL-CPT/output/mol_pretrain_epoch_1/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/agentic_code_runner/sweagent/tools/edit_replace/bin/edit",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/agentic_code_runner/sweagent/tools/edit_replace/bin/insert",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/agentic_code_runner/sweagent/tools/forfeit/bin/exit_forfeit",
+    "redactions": {
+      "repeated_credential_value": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/agentic_code_runner/sweagent/agent/agent/agents.py",
+    "redactions": {
+      "credential_assignment": 3
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench1/livebench/agentic_code_runner/sweagent/tools/edit_replace/bin/edit",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench1/livebench/agentic_code_runner/sweagent/tools/edit_replace/bin/insert",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench1/livebench/agentic_code_runner/sweagent/tools/forfeit/bin/exit_forfeit",
+    "redactions": {
+      "repeated_credential_value": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench1/livebench/agentic_code_runner/sweagent/agent/agent/agents.py",
+    "redactions": {
+      "credential_assignment": 3
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench1/data1/arrow_to_json.ipynb",
+    "redactions": {},
+    "cleared_outputs": 1
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench2/livebench/agentic_code_runner/sweagent/tools/edit_replace/bin/edit",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench2/livebench/agentic_code_runner/sweagent/tools/edit_replace/bin/insert",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench2/livebench/agentic_code_runner/sweagent/tools/forfeit/bin/exit_forfeit",
+    "redactions": {
+      "repeated_credential_value": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench2/livebench/agentic_code_runner/sweagent/agent/agent/agents.py",
+    "redactions": {
+      "credential_assignment": 3
+    }
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/code-2016news-finetune/finetune.ipynb",
+    "redactions": {},
+    "cleared_outputs": 29
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/code-2016news-finetune/generate.ipynb",
+    "redactions": {},
+    "cleared_outputs": 9
+  },
+  {
+    "path": "Qwen2.5-7B-Instruct-news/code-2016news-finetune/evaluate_test.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "deepseek-r1-distill-llama-8b-qlora/code/generate.ipynb",
+    "redactions": {},
+    "cleared_outputs": 8
+  },
+  {
+    "path": "Qwen3-8B-news/sft/output/Qwen3-8B-cpt-sft/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen3-8B-news/sft/output/Qwen3-8B-cpt-sft/lora-final/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen3-8B-news/outputs/mol_cpt/Qwen3-8B-1epoch/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen3-8B-news/outputs/mol_cpt/mol_pretrain_epoch_0/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen3-8B-news/mol-cpt/outputs/mol_cpt/mol_pretrain_epoch_0/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen3-8B-news/mol-cpt/data/magpie_50.jsonl",
+    "redactions": {
+      "url_password": 1
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth/README.md",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth/unsloth/chat_templates.py",
+    "redactions": {
+      "credential_assignment": 4
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth/unsloth.egg-info/PKG-INFO",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth/build/lib/unsloth/chat_templates.py",
+    "redactions": {
+      "credential_assignment": 4
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth-zoo/README.md",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth-zoo/unsloth_zoo.egg-info/PKG-INFO",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth-zoo/build/lib/unsloth_zoo/tokenizer_utils.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "unsloth-offline/unsloth-zoo/unsloth_zoo/tokenizer_utils.py",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/code/Qwen2.5-7B-GRPO.ipynb",
+    "redactions": {},
+    "cleared_outputs": 18
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/code/Qwen2.5-1.5B-GRPO.ipynb",
+    "redactions": {},
+    "cleared_outputs": 19
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/code/generate.ipynb",
+    "redactions": {},
+    "cleared_outputs": 6
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/code/Qwen2.5-7B-GRPO-cMedQA.ipynb",
+    "redactions": {},
+    "cleared_outputs": 1
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/output/Qwen2.5-1.5B-lora-medical-o1/Qwen2.5-1.5B-lora/tokenizer.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/output/Qwen2.5-1.5B-lora-medical-o1/Qwen2.5-1.5B-lora/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 2
+    }
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/output/Qwen2.5-1.5B-lora-cMedQA/final_model/tokenizer.json",
+    "redactions": {
+      "credential_assignment": 1
+    }
+  },
+  {
+    "path": "Qwen2.5-1.5B-lora/output/Qwen2.5-1.5B-lora-cMedQA/final_model/tokenizer_config.json",
+    "redactions": {
+      "credential_assignment": 2
+    }
+  }
+]

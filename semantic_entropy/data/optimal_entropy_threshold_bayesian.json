@@ -1,0 +1,19 @@
+{
+  "optimal_threshold": 0.9986342564556536,
+  "performance": {
+    "youden_j": 0.3159073448508831,
+    "accuracy": 0.6604535570052812,
+    "sensitivity": 0.3983688833124216,
+    "specificity": 0.9175384615384615,
+    "tp": 635,
+    "tn": 1491,
+    "fp": 134,
+    "fn": 959
+  },
+  "decision_rule": "if semantic_entropy <= T: answer; else: refuse",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 300,
+    "metric_used": "semantic_entropy"
+  }
+}

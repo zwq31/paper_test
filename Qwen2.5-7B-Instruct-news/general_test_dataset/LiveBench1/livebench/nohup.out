@@ -1,0 +1,1267 @@
+
+Starting LiveBench evaluation
+Mode: single
+Models: qwen2.5-7b-instruct
+Question source: huggingface
+
+Running single benchmark 'live_bench' for model: qwen2.5-7b-instruct
+
+Running benchmark command:
+python -u gen_api_answer.py --model qwen2.5-7b-instruct --question-source huggingface --bench-name live_bench && python -u gen_ground_truth_judgment.py --question-source huggingface --model qwen2.5-7b-instruct --bench-name live_bench
+Running: python -u gen_api_answer.py --model qwen2.5-7b-instruct --question-source huggingface --bench-name live_bench && python -u gen_ground_truth_judgment.py --question-source huggingface --model qwen2.5-7b-instruct --bench-name live_bench
+Traceback (most recent call last):
+  File "/mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/run_livebench.py", line 514, in <module>
+    main()
+  File "/mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/run_livebench.py", line 508, in main
+    run_model(params)
+  File "/mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/run_livebench.py", line 364, in run_model
+    run_single(bench_params)
+  File "/mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/run_livebench.py", line 435, in run_single
+    exit_code = run_command(cmd)
+  File "/mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/livebench/run_livebench.py", line 114, in run_command
+    result = subprocess.run(["bash", "-c", cmd], env=env, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1146, in communicate
+    self.wait()
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:198 in         │
+│ _new_conn                                                                    │
+│                                                                              │
+│    195 │   │   :return: New socket connection.                               │
+│    196 │   │   """                                                           │
+│    197 │   │   try:                                                          │
+│ ❱  198 │   │   │   sock = connection.create_connection(                      │
+│    199 │   │   │   │   (self._dns_host, self.port),                          │
+│    200 │   │   │   │   self.timeout,                                         │
+│    201 │   │   │   │   source_address=self.source_address,                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py:85 in     │
+│ create_connection                                                            │
+│                                                                              │
+│    82 │                                                                      │
+│    83 │   if err is not None:                                                │
+│    84 │   │   try:                                                           │
+│ ❱  85 │   │   │   raise err                                                  │
+│    86 │   │   finally:                                                       │
+│    87 │   │   │   # Break explicitly a reference cycle                       │
+│    88 │   │   │   err = None                                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py:73 in     │
+│ create_connection                                                            │
+│                                                                              │
+│    70 │   │   │   │   sock.settimeout(timeout)                               │
+│    71 │   │   │   if source_address:                                         │
+│    72 │   │   │   │   sock.bind(source_address)                              │
+│ ❱  73 │   │   │   sock.connect(sa)                                           │
+│    74 │   │   │   # Break explicitly a reference cycle                       │
+│    75 │   │   │   err = None                                                 │
+│    76 │   │   │   return sock                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+OSError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:787 in     │
+│ urlopen                                                                      │
+│                                                                              │
+│    784 │   │   │   response_conn = conn if not release_conn else None        │
+│    785 │   │   │                                                             │
+│    786 │   │   │   # Make the request on the HTTPConnection object           │
+│ ❱  787 │   │   │   response = self._make_request(                            │
+│    788 │   │   │   │   conn,                                                 │
+│    789 │   │   │   │   method,                                               │
+│    790 │   │   │   │   url,                                                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:488 in     │
+│ _make_request                                                                │
+│                                                                              │
+│    485 │   │   │   │   new_e, (OSError, NewConnectionError, TimeoutError, SS │
+│    486 │   │   │   ) and (conn and conn.proxy and not conn.has_connected_to_ │
+│    487 │   │   │   │   new_e = _wrap_proxy_error(new_e, conn.proxy.scheme)   │
+│ ❱  488 │   │   │   raise new_e                                               │
+│    489 │   │                                                                 │
+│    490 │   │   # conn.request() calls http.client.*.request, not the method  │
+│    491 │   │   # urllib3.request. It also calls makefile (recv) on the socke │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:464 in     │
+│ _make_request                                                                │
+│                                                                              │
+│    461 │   │   try:                                                          │
+│    462 │   │   │   # Trigger any extra validation we need to do.             │
+│    463 │   │   │   try:                                                      │
+│ ❱  464 │   │   │   │   self._validate_conn(conn)                             │
+│    465 │   │   │   except (SocketTimeout, BaseSSLError) as e:                │
+│    466 │   │   │   │   self._raise_timeout(err=e, url=url, timeout_value=con │
+│    467 │   │   │   │   raise                                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:1093 in    │
+│ _validate_conn                                                               │
+│                                                                              │
+│   1090 │   │                                                                 │
+│   1091 │   │   # Force connect early to allow us to validate the connection. │
+│   1092 │   │   if conn.is_closed:                                            │
+│ ❱ 1093 │   │   │   conn.connect()                                            │
+│   1094 │   │                                                                 │
+│   1095 │   │   # TODO revise this, see https://github.com/urllib3/urllib3/is │
+│   1096 │   │   if not conn.is_verified and not conn.proxy_is_verified:       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:704 in connect │
+│                                                                              │
+│    701 │   │                                                                 │
+│    702 │   │   try:                                                          │
+│    703 │   │   │   sock: socket.socket | ssl.SSLSocket                       │
+│ ❱  704 │   │   │   self.sock = sock = self._new_conn()                       │
+│    705 │   │   │   server_hostname: str = self.host                          │
+│    706 │   │   │   tls_in_tls = False                                        │
+│    707                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:213 in         │
+│ _new_conn                                                                    │
+│                                                                              │
+│    210 │   │   │   ) from e                                                  │
+│    211 │   │                                                                 │
+│    212 │   │   except OSError as e:                                          │
+│ ❱  213 │   │   │   raise NewConnectionError(                                 │
+│    214 │   │   │   │   self, f"Failed to establish a new connection: {e}"    │
+│    215 │   │   │   ) from e                                                  │
+│    216                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+NewConnectionError: <urllib3.connection.HTTPSConnection object at 
+0x7f6f2bdbdb40>: Failed to establish a new connection: [Errno 101] Network is 
+unreachable
+
+The above exception was the direct cause of the following exception:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /usr/local/lib/python3.10/dist-packages/requests/adapters.py:667 in send     │
+│                                                                              │
+│   664 │   │   │   timeout = TimeoutSauce(connect=timeout, read=timeout)      │
+│   665 │   │                                                                  │
+│   666 │   │   try:                                                           │
+│ ❱ 667 │   │   │   resp = conn.urlopen(                                       │
+│   668 │   │   │   │   method=request.method,                                 │
+│   669 │   │   │   │   url=url,                                               │
+│   670 │   │   │   │   body=request.body,                                     │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:841 in     │
+│ urlopen                                                                      │
+│                                                                              │
+│    838 │   │   │   elif isinstance(new_e, (OSError, HTTPException)):         │
+│    839 │   │   │   │   new_e = ProtocolError("Connection aborted.", new_e)   │
+│    840 │   │   │                                                             │
+│ ❱  841 │   │   │   retries = retries.increment(                              │
+│    842 │   │   │   │   method, url, error=new_e, _pool=self, _stacktrace=sys │
+│    843 │   │   │   )                                                         │
+│    844 │   │   │   retries.sleep()                                           │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py:519 in         │
+│ increment                                                                    │
+│                                                                              │
+│   516 │   │                                                                  │
+│   517 │   │   if new_retry.is_exhausted():                                   │
+│   518 │   │   │   reason = error or ResponseError(cause)                     │
+│ ❱ 519 │   │   │   raise MaxRetryError(_pool, url, reason) from reason  # typ │
+│   520 │   │                                                                  │
+│   521 │   │   log.debug("Incremented Retry for (url='%s'): %r", url, new_ret │
+│   522                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries
+exceeded with url: 
+/datasets/livebench/coding/resolve/a958549fdd8aa57be0a3fafe7b205ffc160ed5f4/codi
+ng.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object 
+at 0x7f6f2bdbdb40>: Failed to establish a new connection: [Errno 101] Network is
+unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:148 │
+│ 4 in _get_metadata_or_catch_error                                            │
+│                                                                              │
+│   1481 │   if not local_files_only:                                          │
+│   1482 │   │   try:                                                          │
+│   1483 │   │   │   try:                                                      │
+│ ❱ 1484 │   │   │   │   metadata = get_hf_file_metadata(                      │
+│   1485 │   │   │   │   │   url=url, proxies=proxies, timeout=etag_timeout, h │
+│   1486 │   │   │   │   )                                                     │
+│   1487 │   │   │   except EntryNotFoundError as http_error:                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:140 │
+│ 1 in get_hf_file_metadata                                                    │
+│                                                                              │
+│   1398 │   hf_headers["Accept-Encoding"] = "identity"  # prevent any compres │
+│   1399 │                                                                     │
+│   1400 │   # Retrieve metadata                                               │
+│ ❱ 1401 │   r = _request_wrapper(                                             │
+│   1402 │   │   method="HEAD",                                                │
+│   1403 │   │   url=url,                                                      │
+│   1404 │   │   headers=hf_headers,                                           │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:285 │
+│ in _request_wrapper                                                          │
+│                                                                              │
+│    282 │   """                                                               │
+│    283 │   # Recursively follow relative redirects                           │
+│    284 │   if follow_relative_redirects:                                     │
+│ ❱  285 │   │   response = _request_wrapper(                                  │
+│    286 │   │   │   method=method,                                            │
+│    287 │   │   │   url=url,                                                  │
+│    288 │   │   │   follow_relative_redirects=False,                          │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:308 │
+│ in _request_wrapper                                                          │
+│                                                                              │
+│    305 │   │   return response                                               │
+│    306 │                                                                     │
+│    307 │   # Perform request and return if status_code is not in the retry l │
+│ ❱  308 │   response = get_session().request(method=method, url=url, **params │
+│    309 │   hf_raise_for_status(response)                                     │
+│    310 │   return response                                                   │
+│    311                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:589 in request  │
+│                                                                              │
+│   586 │   │   │   "allow_redirects": allow_redirects,                        │
+│   587 │   │   }                                                              │
+│   588 │   │   send_kwargs.update(settings)                                   │
+│ ❱ 589 │   │   resp = self.send(prep, **send_kwargs)                          │
+│   590 │   │                                                                  │
+│   591 │   │   return resp                                                    │
+│   592                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:703 in send     │
+│                                                                              │
+│   700 │   │   start = preferred_clock()                                      │
+│   701 │   │                                                                  │
+│   702 │   │   # Send the request                                             │
+│ ❱ 703 │   │   r = adapter.send(request, **kwargs)                            │
+│   704 │   │                                                                  │
+│   705 │   │   # Total elapsed time of the request (approximately)            │
+│   706 │   │   elapsed = preferred_clock() - start                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py:96 in │
+│ send                                                                         │
+│                                                                              │
+│    93 │   │   if constants.HF_DEBUG:                                         │
+│    94 │   │   │   logger.debug(f"Send: {_curlify(request)}")                 │
+│    95 │   │   try:                                                           │
+│ ❱  96 │   │   │   return super().send(request, *args, **kwargs)              │
+│    97 │   │   except requests.RequestException as e:                         │
+│    98 │   │   │   request_id = request.headers.get(X_AMZN_TRACE_ID)          │
+│    99 │   │   │   if request_id is not None:                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/adapters.py:700 in send     │
+│                                                                              │
+│   697 │   │   │   │   # This branch is for urllib3 v1.22 and later.          │
+│   698 │   │   │   │   raise SSLError(e, request=request)                     │
+│   699 │   │   │                                                              │
+│ ❱ 700 │   │   │   raise ConnectionError(e, request=request)                  │
+│   701 │   │                                                                  │
+│   702 │   │   except ClosedPoolError as e:                                   │
+│   703 │   │   │   raise ConnectionError(e, request=request)                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ConnectionError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', 
+port=443): Max retries exceeded with url: 
+/datasets/livebench/coding/resolve/a958549fdd8aa57be0a3fafe7b205ffc160ed5f4/codi
+ng.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object 
+at 0x7f6f2bdbdb40>: Failed to establish a new connection: [Errno 101] Network is
+unreachable'))"), '(Request ID: f62d685a-0471-4acb-9972-d9f7f7327c5b)')
+
+The above exception was the direct cause of the following exception:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1647 in             │
+│ dataset_module_factory                                                       │
+│                                                                              │
+│   1644 │   │   │   except RepositoryNotFoundError as e:                      │
+│   1645 │   │   │   │   raise DatasetNotFoundError(f"Dataset '{path}' doesn't │
+│   1646 │   │   │   try:                                                      │
+│ ❱ 1647 │   │   │   │   dataset_script_path = api.hf_hub_download(            │
+│   1648 │   │   │   │   │   repo_id=path,                                     │
+│   1649 │   │   │   │   │   filename=filename,                                │
+│   1650 │   │   │   │   │   repo_type="dataset",                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py:5475 in    │
+│ hf_hub_download                                                              │
+│                                                                              │
+│   5472 │   │   │   # Cannot do `token = token or self.token` as token can be │
+│   5473 │   │   │   token = self.token                                        │
+│   5474 │   │                                                                 │
+│ ❱ 5475 │   │   return hf_hub_download(                                       │
+│   5476 │   │   │   repo_id=repo_id,                                          │
+│   5477 │   │   │   filename=filename,                                        │
+│   5478 │   │   │   subfolder=subfolder,                                      │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:961 │
+│ in hf_hub_download                                                           │
+│                                                                              │
+│    958 │   │   │   local_files_only=local_files_only,                        │
+│    959 │   │   )                                                             │
+│    960 │   else:                                                             │
+│ ❱  961 │   │   return _hf_hub_download_to_cache_dir(                         │
+│    962 │   │   │   # Destination                                             │
+│    963 │   │   │   cache_dir=cache_dir,                                      │
+│    964 │   │   │   # File info                                               │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:106 │
+│ 8 in _hf_hub_download_to_cache_dir                                           │
+│                                                                              │
+│   1065 │   │   │   │   │   return pointer_path                               │
+│   1066 │   │                                                                 │
+│   1067 │   │   # Otherwise, raise appropriate error                          │
+│ ❱ 1068 │   │   _raise_on_head_call_error(head_call_error, force_download, lo │
+│   1069 │                                                                     │
+│   1070 │   # From now on, etag, commit_hash, url and size are not None.      │
+│   1071 │   assert etag is not None, "etag must have been retrieved from serv │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:159 │
+│ 9 in _raise_on_head_call_error                                               │
+│                                                                              │
+│   1596 │   │   raise head_call_error                                         │
+│   1597 │   else:                                                             │
+│   1598 │   │   # Otherwise: most likely a connection issue or Hub downtime = │
+│ ❱ 1599 │   │   raise LocalEntryNotFoundError(                                │
+│   1600 │   │   │   "An error happened while trying to locate the file on the │
+│   1601 │   │   │   " in the local cache. Please check your connection and tr │
+│   1602 │   │   │   " is on."                                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+LocalEntryNotFoundError: An error happened while trying to locate the file on 
+the Hub and we cannot find the requested files in the local cache. Please check 
+your connection and try again or make sure your Internet connection is on.
+
+During handling of the above exception, another exception occurred:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/gen_api_answer.py:386 in <module>                                         │
+│                                                                              │
+│   383 │   model_display_name = args.model_display_name if args.model_display │
+│   384 │                                                                      │
+│   385 │   if args.question_source == "huggingface":                          │
+│ ❱ 386 │   │   categories, tasks = get_categories_tasks(args.bench_name)      │
+│   387 │   │                                                                  │
+│   388 │   │   # Check if this is an agentic_coding benchmark                 │
+│   389 │   │   is_agentic_coding = 'agentic_coding' in args.bench_name        │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:84 in get_categories_tasks                                      │
+│                                                                              │
+│    81 │   if len(split_bench_name) == 1:                                     │
+│    82 │   │   # specify entire bench                                         │
+│    83 │   │                                                                  │
+│ ❱  84 │   │   categories = {                                                 │
+│    85 │   │   │   category_name: get_hf_dataset(category_name)               │
+│    86 │   │   │   for category_name in LIVE_BENCH_CATEGORIES                 │
+│    87 │   │   }                                                              │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:85 in <dictcomp>                                                │
+│                                                                              │
+│    82 │   │   # specify entire bench                                         │
+│    83 │   │                                                                  │
+│    84 │   │   categories = {                                                 │
+│ ❱  85 │   │   │   category_name: get_hf_dataset(category_name)               │
+│    86 │   │   │   for category_name in LIVE_BENCH_CATEGORIES                 │
+│    87 │   │   }                                                              │
+│    88                                                                        │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:114 in get_hf_dataset                                           │
+│                                                                              │
+│   111 def get_hf_dataset(dataset_name: str, split="test"):                   │
+│   112 │   """Load a dataset from HuggingFace using the given split."""       │
+│   113 │   from datasets import load_dataset                                  │
+│ ❱ 114 │   return load_dataset(f"{LIVE_BENCH_HF_ORGANIZATION}/{dataset_name}" │
+│   115                                                                        │
+│   116                                                                        │
+│   117 def get_tasks_from_hf_category(category: 'Dataset'):                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:2129 in             │
+│ load_dataset                                                                 │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1849 in             │
+│ load_dataset_builder                                                         │
+│                                                                              │
+│   1846 │   if storage_options is not None:                                   │
+│   1847 │   │   download_config = download_config.copy() if download_config e │
+│   1848 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1849 │   dataset_module = dataset_module_factory(                          │
+│   1850 │   │   path,                                                         │
+│   1851 │   │   revision=revision,                                            │
+│   1852 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1696 in             │
+│ dataset_module_factory                                                       │
+│                                                                              │
+│   1693 │   │   │   │   │   download_config=download_config,                  │
+│   1694 │   │   │   │   │   download_mode=download_mode,                      │
+│   1695 │   │   │   │   │   use_exported_dataset_infos=use_exported_dataset_i │
+│ ❱ 1696 │   │   │   │   ).get_module()                                        │
+│   1697 │   │   │   except GatedRepoError as e:                               │
+│   1698 │   │   │   │   message = f"Dataset '{path}' is a gated dataset on th │
+│   1699 │   │   │   │   if e.response.status_code == 401:                     │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1026 in get_module  │
+│                                                                              │
+│   1023 │   │   if download_config.download_desc is None:                     │
+│   1024 │   │   │   download_config.download_desc = "Downloading standalone y │
+│   1025 │   │   try:                                                          │
+│ ❱ 1026 │   │   │   standalone_yaml_path = cached_path(                       │
+│   1027 │   │   │   │   hf_dataset_url(self.name, config.REPOYAML_FILENAME, r │
+│   1028 │   │   │   │   download_config=download_config,                      │
+│   1029 │   │   │   )                                                         │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/utils/file_utils.py:180 in  │
+│ cached_path                                                                  │
+│                                                                              │
+│    177 │   │   if url_or_filename.startswith("hf://"):                       │
+│    178 │   │   │   resolved_path = huggingface_hub.HfFileSystem(             │
+│    179 │   │   │   │   endpoint=config.HF_ENDPOINT, token=download_config.to │
+│ ❱  180 │   │   │   ).resolve_path(url_or_filename)                           │
+│    181 │   │   │   try:                                                      │
+│    182 │   │   │   │   output_path = huggingface_hub.HfApi(                  │
+│    183 │   │   │   │   │   endpoint=config.HF_ENDPOINT,                      │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_file_system.py:19 │
+│ 8 in resolve_path                                                            │
+│                                                                              │
+│    195 │   │   │   │   else:                                                 │
+│    196 │   │   │   │   │   path_in_repo = ""                                 │
+│    197 │   │   │   │   revision = _align_revision_in_path_with_revision(unqu │
+│ ❱  198 │   │   │   │   repo_and_revision_exist, err = self._repo_and_revisio │
+│    199 │   │   │   │   if not repo_and_revision_exist:                       │
+│    200 │   │   │   │   │   _raise_file_not_found(path, err)                  │
+│    201 │   │   │   else:                                                     │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_file_system.py:12 │
+│ 5 in _repo_and_revision_exist                                                │
+│                                                                              │
+│    122 │   ) -> Tuple[bool, Optional[Exception]]:                            │
+│    123 │   │   if (repo_type, repo_id, revision) not in self._repo_and_revis │
+│    124 │   │   │   try:                                                      │
+│ ❱  125 │   │   │   │   self._api.repo_info(                                  │
+│    126 │   │   │   │   │   repo_id, revision=revision, repo_type=repo_type,  │
+│    127 │   │   │   │   )                                                     │
+│    128 │   │   │   except (RepositoryNotFoundError, HFValidationError) as e: │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py:2807 in    │
+│ repo_info                                                                    │
+│                                                                              │
+│   2804 │   │   │   method = self.space_info  # type: ignore                  │
+│   2805 │   │   else:                                                         │
+│   2806 │   │   │   raise ValueError("Unsupported repo type.")                │
+│ ❱ 2807 │   │   return method(                                                │
+│   2808 │   │   │   repo_id,                                                  │
+│   2809 │   │   │   revision=revision,                                        │
+│   2810 │   │   │   token=token,                                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py:2664 in    │
+│ dataset_info                                                                 │
+│                                                                              │
+│   2661 │   │   if expand:                                                    │
+│   2662 │   │   │   params["expand"] = expand                                 │
+│   2663 │   │                                                                 │
+│ ❱ 2664 │   │   r = get_session().get(path, headers=headers, timeout=timeout, │
+│   2665 │   │   hf_raise_for_status(r)                                        │
+│   2666 │   │   data = r.json()                                               │
+│   2667 │   │   return DatasetInfo(**data)                                    │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:602 in get      │
+│                                                                              │
+│   599 │   │   """                                                            │
+│   600 │   │                                                                  │
+│   601 │   │   kwargs.setdefault("allow_redirects", True)                     │
+│ ❱ 602 │   │   return self.request("GET", url, **kwargs)                      │
+│   603 │                                                                      │
+│   604 │   def options(self, url, **kwargs):                                  │
+│   605 │   │   r"""Sends a OPTIONS request. Returns :class:`Response` object. │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:589 in request  │
+│                                                                              │
+│   586 │   │   │   "allow_redirects": allow_redirects,                        │
+│   587 │   │   }                                                              │
+│   588 │   │   send_kwargs.update(settings)                                   │
+│ ❱ 589 │   │   resp = self.send(prep, **send_kwargs)                          │
+│   590 │   │                                                                  │
+│   591 │   │   return resp                                                    │
+│   592                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:703 in send     │
+│                                                                              │
+│   700 │   │   start = preferred_clock()                                      │
+│   701 │   │                                                                  │
+│   702 │   │   # Send the request                                             │
+│ ❱ 703 │   │   r = adapter.send(request, **kwargs)                            │
+│   704 │   │                                                                  │
+│   705 │   │   # Total elapsed time of the request (approximately)            │
+│   706 │   │   elapsed = preferred_clock() - start                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py:96 in │
+│ send                                                                         │
+│                                                                              │
+│    93 │   │   if constants.HF_DEBUG:                                         │
+│    94 │   │   │   logger.debug(f"Send: {_curlify(request)}")                 │
+│    95 │   │   try:                                                           │
+│ ❱  96 │   │   │   return super().send(request, *args, **kwargs)              │
+│    97 │   │   except requests.RequestException as e:                         │
+│    98 │   │   │   request_id = request.headers.get(X_AMZN_TRACE_ID)          │
+│    99 │   │   │   if request_id is not None:                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/adapters.py:667 in send     │
+│                                                                              │
+│   664 │   │   │   timeout = TimeoutSauce(connect=timeout, read=timeout)      │
+│   665 │   │                                                                  │
+│   666 │   │   try:                                                           │
+│ ❱ 667 │   │   │   resp = conn.urlopen(                                       │
+│   668 │   │   │   │   method=request.method,                                 │
+│   669 │   │   │   │   url=url,                                               │
+│   670 │   │   │   │   body=request.body,                                     │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:787 in     │
+│ urlopen                                                                      │
+│                                                                              │
+│    784 │   │   │   response_conn = conn if not release_conn else None        │
+│    785 │   │   │                                                             │
+│    786 │   │   │   # Make the request on the HTTPConnection object           │
+│ ❱  787 │   │   │   response = self._make_request(                            │
+│    788 │   │   │   │   conn,                                                 │
+│    789 │   │   │   │   method,                                               │
+│    790 │   │   │   │   url,                                                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:464 in     │
+│ _make_request                                                                │
+│                                                                              │
+│    461 │   │   try:                                                          │
+│    462 │   │   │   # Trigger any extra validation we need to do.             │
+│    463 │   │   │   try:                                                      │
+│ ❱  464 │   │   │   │   self._validate_conn(conn)                             │
+│    465 │   │   │   except (SocketTimeout, BaseSSLError) as e:                │
+│    466 │   │   │   │   self._raise_timeout(err=e, url=url, timeout_value=con │
+│    467 │   │   │   │   raise                                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:1093 in    │
+│ _validate_conn                                                               │
+│                                                                              │
+│   1090 │   │                                                                 │
+│   1091 │   │   # Force connect early to allow us to validate the connection. │
+│   1092 │   │   if conn.is_closed:                                            │
+│ ❱ 1093 │   │   │   conn.connect()                                            │
+│   1094 │   │                                                                 │
+│   1095 │   │   # TODO revise this, see https://github.com/urllib3/urllib3/is │
+│   1096 │   │   if not conn.is_verified and not conn.proxy_is_verified:       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:704 in connect │
+│                                                                              │
+│    701 │   │                                                                 │
+│    702 │   │   try:                                                          │
+│    703 │   │   │   sock: socket.socket | ssl.SSLSocket                       │
+│ ❱  704 │   │   │   self.sock = sock = self._new_conn()                       │
+│    705 │   │   │   server_hostname: str = self.host                          │
+│    706 │   │   │   tls_in_tls = False                                        │
+│    707                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:198 in         │
+│ _new_conn                                                                    │
+│                                                                              │
+│    195 │   │   :return: New socket connection.                               │
+│    196 │   │   """                                                           │
+│    197 │   │   try:                                                          │
+│ ❱  198 │   │   │   sock = connection.create_connection(                      │
+│    199 │   │   │   │   (self._dns_host, self.port),                          │
+│    200 │   │   │   │   self.timeout,                                         │
+│    201 │   │   │   │   source_address=self.source_address,                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py:73 in     │
+│ create_connection                                                            │
+│                                                                              │
+│    70 │   │   │   │   sock.settimeout(timeout)                               │
+│    71 │   │   │   if source_address:                                         │
+│    72 │   │   │   │   sock.bind(source_address)                              │
+│ ❱  73 │   │   │   sock.connect(sa)                                           │
+│    74 │   │   │   # Break explicitly a reference cycle                       │
+│    75 │   │   │   err = None                                                 │
+│    76 │   │   │   return sock                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+KeyboardInterrupt
+Using release 2025-05-30
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/show_livebench_result.py:439 in <module>                                  │
+│                                                                              │
+│   436 │                                                                      │
+│   437 │   display_result_func = display_result_single                        │
+│   438 │                                                                      │
+│ ❱ 439 │   display_result_func(args)                                          │
+│   440                                                                        │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/show_livebench_result.py:252 in display_result_single                     │
+│                                                                              │
+│   249 │   │   │   number_match = re.match(r'(.*)_\d+$', hf_bench)            │
+│   250 │   │   │   if number_match:                                           │
+│   251 │   │   │   │   hf_bench = number_match.group(1)                       │
+│ ❱ 252 │   │   │   bench_cats, bench_tasks = get_categories_tasks(hf_bench)   │
+│   253 │   │   │   categories.update(bench_cats)                              │
+│   254 │   │   │   for k, v in bench_tasks.items():                           │
+│   255 │   │   │   │   if k in tasks and isinstance(tasks[k], list):          │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:84 in get_categories_tasks                                      │
+│                                                                              │
+│    81 │   if len(split_bench_name) == 1:                                     │
+│    82 │   │   # specify entire bench                                         │
+│    83 │   │                                                                  │
+│ ❱  84 │   │   categories = {                                                 │
+│    85 │   │   │   category_name: get_hf_dataset(category_name)               │
+│    86 │   │   │   for category_name in LIVE_BENCH_CATEGORIES                 │
+│    87 │   │   }                                                              │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:85 in <dictcomp>                                                │
+│                                                                              │
+│    82 │   │   # specify entire bench                                         │
+│    83 │   │                                                                  │
+│    84 │   │   categories = {                                                 │
+│ ❱  85 │   │   │   category_name: get_hf_dataset(category_name)               │
+│    86 │   │   │   for category_name in LIVE_BENCH_CATEGORIES                 │
+│    87 │   │   }                                                              │
+│    88                                                                        │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:114 in get_hf_dataset                                           │
+│                                                                              │
+│   111 def get_hf_dataset(dataset_name: str, split="test"):                   │
+│   112 │   """Load a dataset from HuggingFace using the given split."""       │
+│   113 │   from datasets import load_dataset                                  │
+│ ❱ 114 │   return load_dataset(f"{LIVE_BENCH_HF_ORGANIZATION}/{dataset_name}" │
+│   115                                                                        │
+│   116                                                                        │
+│   117 def get_tasks_from_hf_category(category: 'Dataset'):                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:2129 in             │
+│ load_dataset                                                                 │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1849 in             │
+│ load_dataset_builder                                                         │
+│                                                                              │
+│   1846 │   if storage_options is not None:                                   │
+│   1847 │   │   download_config = download_config.copy() if download_config e │
+│   1848 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1849 │   dataset_module = dataset_module_factory(                          │
+│   1850 │   │   path,                                                         │
+│   1851 │   │   revision=revision,                                            │
+│   1852 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1601 in             │
+│ dataset_module_factory                                                       │
+│                                                                              │
+│   1598 │   │   │   )                                                         │
+│   1599 │   │   │   try:                                                      │
+│   1600 │   │   │   │   _raise_if_offline_mode_is_enabled()                   │
+│ ❱ 1601 │   │   │   │   dataset_readme_path = api.hf_hub_download(            │
+│   1602 │   │   │   │   │   repo_id=path,                                     │
+│   1603 │   │   │   │   │   filename=config.REPOCARD_FILENAME,                │
+│   1604 │   │   │   │   │   repo_type="dataset",                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py:5475 in    │
+│ hf_hub_download                                                              │
+│                                                                              │
+│   5472 │   │   │   # Cannot do `token = token or self.token` as token can be │
+│   5473 │   │   │   token = self.token                                        │
+│   5474 │   │                                                                 │
+│ ❱ 5475 │   │   return hf_hub_download(                                       │
+│   5476 │   │   │   repo_id=repo_id,                                          │
+│   5477 │   │   │   filename=filename,                                        │
+│   5478 │   │   │   subfolder=subfolder,                                      │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:961 │
+│ in hf_hub_download                                                           │
+│                                                                              │
+│    958 │   │   │   local_files_only=local_files_only,                        │
+│    959 │   │   )                                                             │
+│    960 │   else:                                                             │
+│ ❱  961 │   │   return _hf_hub_download_to_cache_dir(                         │
+│    962 │   │   │   # Destination                                             │
+│    963 │   │   │   cache_dir=cache_dir,                                      │
+│    964 │   │   │   # File info                                               │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:102 │
+│ 4 in _hf_hub_download_to_cache_dir                                           │
+│                                                                              │
+│   1021 │                                                                     │
+│   1022 │   # Try to get metadata (etag, commit_hash, url, size) from the ser │
+│   1023 │   # If we can't, a HEAD request error is returned.                  │
+│ ❱ 1024 │   (url_to_download, etag, commit_hash, expected_size, xet_file_data │
+│   1025 │   │   repo_id=repo_id,                                              │
+│   1026 │   │   filename=filename,                                            │
+│   1027 │   │   repo_type=repo_type,                                          │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:148 │
+│ 4 in _get_metadata_or_catch_error                                            │
+│                                                                              │
+│   1481 │   if not local_files_only:                                          │
+│   1482 │   │   try:                                                          │
+│   1483 │   │   │   try:                                                      │
+│ ❱ 1484 │   │   │   │   metadata = get_hf_file_metadata(                      │
+│   1485 │   │   │   │   │   url=url, proxies=proxies, timeout=etag_timeout, h │
+│   1486 │   │   │   │   )                                                     │
+│   1487 │   │   │   except EntryNotFoundError as http_error:                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:140 │
+│ 1 in get_hf_file_metadata                                                    │
+│                                                                              │
+│   1398 │   hf_headers["Accept-Encoding"] = "identity"  # prevent any compres │
+│   1399 │                                                                     │
+│   1400 │   # Retrieve metadata                                               │
+│ ❱ 1401 │   r = _request_wrapper(                                             │
+│   1402 │   │   method="HEAD",                                                │
+│   1403 │   │   url=url,                                                      │
+│   1404 │   │   headers=hf_headers,                                           │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:285 │
+│ in _request_wrapper                                                          │
+│                                                                              │
+│    282 │   """                                                               │
+│    283 │   # Recursively follow relative redirects                           │
+│    284 │   if follow_relative_redirects:                                     │
+│ ❱  285 │   │   response = _request_wrapper(                                  │
+│    286 │   │   │   method=method,                                            │
+│    287 │   │   │   url=url,                                                  │
+│    288 │   │   │   follow_relative_redirects=False,                          │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:308 │
+│ in _request_wrapper                                                          │
+│                                                                              │
+│    305 │   │   return response                                               │
+│    306 │                                                                     │
+│    307 │   # Perform request and return if status_code is not in the retry l │
+│ ❱  308 │   response = get_session().request(method=method, url=url, **params │
+│    309 │   hf_raise_for_status(response)                                     │
+│    310 │   return response                                                   │
+│    311                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:589 in request  │
+│                                                                              │
+│   586 │   │   │   "allow_redirects": allow_redirects,                        │
+│   587 │   │   }                                                              │
+│   588 │   │   send_kwargs.update(settings)                                   │
+│ ❱ 589 │   │   resp = self.send(prep, **send_kwargs)                          │
+│   590 │   │                                                                  │
+│   591 │   │   return resp                                                    │
+│   592                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:703 in send     │
+│                                                                              │
+│   700 │   │   start = preferred_clock()                                      │
+│   701 │   │                                                                  │
+│   702 │   │   # Send the request                                             │
+│ ❱ 703 │   │   r = adapter.send(request, **kwargs)                            │
+│   704 │   │                                                                  │
+│   705 │   │   # Total elapsed time of the request (approximately)            │
+│   706 │   │   elapsed = preferred_clock() - start                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py:96 in │
+│ send                                                                         │
+│                                                                              │
+│    93 │   │   if constants.HF_DEBUG:                                         │
+│    94 │   │   │   logger.debug(f"Send: {_curlify(request)}")                 │
+│    95 │   │   try:                                                           │
+│ ❱  96 │   │   │   return super().send(request, *args, **kwargs)              │
+│    97 │   │   except requests.RequestException as e:                         │
+│    98 │   │   │   request_id = request.headers.get(X_AMZN_TRACE_ID)          │
+│    99 │   │   │   if request_id is not None:                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/adapters.py:667 in send     │
+│                                                                              │
+│   664 │   │   │   timeout = TimeoutSauce(connect=timeout, read=timeout)      │
+│   665 │   │                                                                  │
+│   666 │   │   try:                                                           │
+│ ❱ 667 │   │   │   resp = conn.urlopen(                                       │
+│   668 │   │   │   │   method=request.method,                                 │
+│   669 │   │   │   │   url=url,                                               │
+│   670 │   │   │   │   body=request.body,                                     │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:787 in     │
+│ urlopen                                                                      │
+│                                                                              │
+│    784 │   │   │   response_conn = conn if not release_conn else None        │
+│    785 │   │   │                                                             │
+│    786 │   │   │   # Make the request on the HTTPConnection object           │
+│ ❱  787 │   │   │   response = self._make_request(                            │
+│    788 │   │   │   │   conn,                                                 │
+│    789 │   │   │   │   method,                                               │
+│    790 │   │   │   │   url,                                                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:464 in     │
+│ _make_request                                                                │
+│                                                                              │
+│    461 │   │   try:                                                          │
+│    462 │   │   │   # Trigger any extra validation we need to do.             │
+│    463 │   │   │   try:                                                      │
+│ ❱  464 │   │   │   │   self._validate_conn(conn)                             │
+│    465 │   │   │   except (SocketTimeout, BaseSSLError) as e:                │
+│    466 │   │   │   │   self._raise_timeout(err=e, url=url, timeout_value=con │
+│    467 │   │   │   │   raise                                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:1093 in    │
+│ _validate_conn                                                               │
+│                                                                              │
+│   1090 │   │                                                                 │
+│   1091 │   │   # Force connect early to allow us to validate the connection. │
+│   1092 │   │   if conn.is_closed:                                            │
+│ ❱ 1093 │   │   │   conn.connect()                                            │
+│   1094 │   │                                                                 │
+│   1095 │   │   # TODO revise this, see https://github.com/urllib3/urllib3/is │
+│   1096 │   │   if not conn.is_verified and not conn.proxy_is_verified:       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:704 in connect │
+│                                                                              │
+│    701 │   │                                                                 │
+│    702 │   │   try:                                                          │
+│    703 │   │   │   sock: socket.socket | ssl.SSLSocket                       │
+│ ❱  704 │   │   │   self.sock = sock = self._new_conn()                       │
+│    705 │   │   │   server_hostname: str = self.host                          │
+│    706 │   │   │   tls_in_tls = False                                        │
+│    707                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:198 in         │
+│ _new_conn                                                                    │
+│                                                                              │
+│    195 │   │   :return: New socket connection.                               │
+│    196 │   │   """                                                           │
+│    197 │   │   try:                                                          │
+│ ❱  198 │   │   │   sock = connection.create_connection(                      │
+│    199 │   │   │   │   (self._dns_host, self.port),                          │
+│    200 │   │   │   │   self.timeout,                                         │
+│    201 │   │   │   │   source_address=self.source_address,                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py:73 in     │
+│ create_connection                                                            │
+│                                                                              │
+│    70 │   │   │   │   sock.settimeout(timeout)                               │
+│    71 │   │   │   if source_address:                                         │
+│    72 │   │   │   │   sock.bind(source_address)                              │
+│ ❱  73 │   │   │   sock.connect(sa)                                           │
+│    74 │   │   │   # Break explicitly a reference cycle                       │
+│    75 │   │   │   err = None                                                 │
+│    76 │   │   │   return sock                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+KeyboardInterrupt
+Using release 2025-05-30
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/show_livebench_result.py:439 in <module>                                  │
+│                                                                              │
+│   436 │                                                                      │
+│   437 │   display_result_func = display_result_single                        │
+│   438 │                                                                      │
+│ ❱ 439 │   display_result_func(args)                                          │
+│   440                                                                        │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/show_livebench_result.py:252 in display_result_single                     │
+│                                                                              │
+│   249 │   │   │   number_match = re.match(r'(.*)_\d+$', hf_bench)            │
+│   250 │   │   │   if number_match:                                           │
+│   251 │   │   │   │   hf_bench = number_match.group(1)                       │
+│ ❱ 252 │   │   │   bench_cats, bench_tasks = get_categories_tasks(hf_bench)   │
+│   253 │   │   │   categories.update(bench_cats)                              │
+│   254 │   │   │   for k, v in bench_tasks.items():                           │
+│   255 │   │   │   │   if k in tasks and isinstance(tasks[k], list):          │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:84 in get_categories_tasks                                      │
+│                                                                              │
+│    81 │   if len(split_bench_name) == 1:                                     │
+│    82 │   │   # specify entire bench                                         │
+│    83 │   │                                                                  │
+│ ❱  84 │   │   categories = {                                                 │
+│    85 │   │   │   category_name: get_hf_dataset(category_name)               │
+│    86 │   │   │   for category_name in LIVE_BENCH_CATEGORIES                 │
+│    87 │   │   }                                                              │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:85 in <dictcomp>                                                │
+│                                                                              │
+│    82 │   │   # specify entire bench                                         │
+│    83 │   │                                                                  │
+│    84 │   │   categories = {                                                 │
+│ ❱  85 │   │   │   category_name: get_hf_dataset(category_name)               │
+│    86 │   │   │   for category_name in LIVE_BENCH_CATEGORIES                 │
+│    87 │   │   }                                                              │
+│    88                                                                        │
+│                                                                              │
+│ /mnt/project/Qwen2.5-7B-Instruct-news/general_test_dataset/LiveBench/liveben │
+│ ch/common.py:114 in get_hf_dataset                                           │
+│                                                                              │
+│   111 def get_hf_dataset(dataset_name: str, split="test"):                   │
+│   112 │   """Load a dataset from HuggingFace using the given split."""       │
+│   113 │   from datasets import load_dataset                                  │
+│ ❱ 114 │   return load_dataset(f"{LIVE_BENCH_HF_ORGANIZATION}/{dataset_name}" │
+│   115                                                                        │
+│   116                                                                        │
+│   117 def get_tasks_from_hf_category(category: 'Dataset'):                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:2129 in             │
+│ load_dataset                                                                 │
+│                                                                              │
+│   2126 │   )                                                                 │
+│   2127 │                                                                     │
+│   2128 │   # Create a dataset builder                                        │
+│ ❱ 2129 │   builder_instance = load_dataset_builder(                          │
+│   2130 │   │   path=path,                                                    │
+│   2131 │   │   name=name,                                                    │
+│   2132 │   │   data_dir=data_dir,                                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1849 in             │
+│ load_dataset_builder                                                         │
+│                                                                              │
+│   1846 │   if storage_options is not None:                                   │
+│   1847 │   │   download_config = download_config.copy() if download_config e │
+│   1848 │   │   download_config.storage_options.update(storage_options)       │
+│ ❱ 1849 │   dataset_module = dataset_module_factory(                          │
+│   1850 │   │   path,                                                         │
+│   1851 │   │   revision=revision,                                            │
+│   1852 │   │   download_config=download_config,                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/datasets/load.py:1601 in             │
+│ dataset_module_factory                                                       │
+│                                                                              │
+│   1598 │   │   │   )                                                         │
+│   1599 │   │   │   try:                                                      │
+│   1600 │   │   │   │   _raise_if_offline_mode_is_enabled()                   │
+│ ❱ 1601 │   │   │   │   dataset_readme_path = api.hf_hub_download(            │
+│   1602 │   │   │   │   │   repo_id=path,                                     │
+│   1603 │   │   │   │   │   filename=config.REPOCARD_FILENAME,                │
+│   1604 │   │   │   │   │   repo_type="dataset",                              │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py:5475 in    │
+│ hf_hub_download                                                              │
+│                                                                              │
+│   5472 │   │   │   # Cannot do `token = token or self.token` as token can be │
+│   5473 │   │   │   token = self.token                                        │
+│   5474 │   │                                                                 │
+│ ❱ 5475 │   │   return hf_hub_download(                                       │
+│   5476 │   │   │   repo_id=repo_id,                                          │
+│   5477 │   │   │   filename=filename,                                        │
+│   5478 │   │   │   subfolder=subfolder,                                      │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:961 │
+│ in hf_hub_download                                                           │
+│                                                                              │
+│    958 │   │   │   local_files_only=local_files_only,                        │
+│    959 │   │   )                                                             │
+│    960 │   else:                                                             │
+│ ❱  961 │   │   return _hf_hub_download_to_cache_dir(                         │
+│    962 │   │   │   # Destination                                             │
+│    963 │   │   │   cache_dir=cache_dir,                                      │
+│    964 │   │   │   # File info                                               │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:102 │
+│ 4 in _hf_hub_download_to_cache_dir                                           │
+│                                                                              │
+│   1021 │                                                                     │
+│   1022 │   # Try to get metadata (etag, commit_hash, url, size) from the ser │
+│   1023 │   # If we can't, a HEAD request error is returned.                  │
+│ ❱ 1024 │   (url_to_download, etag, commit_hash, expected_size, xet_file_data │
+│   1025 │   │   repo_id=repo_id,                                              │
+│   1026 │   │   filename=filename,                                            │
+│   1027 │   │   repo_type=repo_type,                                          │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:148 │
+│ 4 in _get_metadata_or_catch_error                                            │
+│                                                                              │
+│   1481 │   if not local_files_only:                                          │
+│   1482 │   │   try:                                                          │
+│   1483 │   │   │   try:                                                      │
+│ ❱ 1484 │   │   │   │   metadata = get_hf_file_metadata(                      │
+│   1485 │   │   │   │   │   url=url, proxies=proxies, timeout=etag_timeout, h │
+│   1486 │   │   │   │   )                                                     │
+│   1487 │   │   │   except EntryNotFoundError as http_error:                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py │
+│ :114 in _inner_fn                                                            │
+│                                                                              │
+│   111 │   │   if check_use_auth_token:                                       │
+│   112 │   │   │   kwargs = smoothly_deprecate_use_auth_token(fn_name=fn.__na │
+│   113 │   │                                                                  │
+│ ❱ 114 │   │   return fn(*args, **kwargs)                                     │
+│   115 │                                                                      │
+│   116 │   return _inner_fn  # type: ignore                                   │
+│   117                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:140 │
+│ 1 in get_hf_file_metadata                                                    │
+│                                                                              │
+│   1398 │   hf_headers["Accept-Encoding"] = "identity"  # prevent any compres │
+│   1399 │                                                                     │
+│   1400 │   # Retrieve metadata                                               │
+│ ❱ 1401 │   r = _request_wrapper(                                             │
+│   1402 │   │   method="HEAD",                                                │
+│   1403 │   │   url=url,                                                      │
+│   1404 │   │   headers=hf_headers,                                           │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:285 │
+│ in _request_wrapper                                                          │
+│                                                                              │
+│    282 │   """                                                               │
+│    283 │   # Recursively follow relative redirects                           │
+│    284 │   if follow_relative_redirects:                                     │
+│ ❱  285 │   │   response = _request_wrapper(                                  │
+│    286 │   │   │   method=method,                                            │
+│    287 │   │   │   url=url,                                                  │
+│    288 │   │   │   follow_relative_redirects=False,                          │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:308 │
+│ in _request_wrapper                                                          │
+│                                                                              │
+│    305 │   │   return response                                               │
+│    306 │                                                                     │
+│    307 │   # Perform request and return if status_code is not in the retry l │
+│ ❱  308 │   response = get_session().request(method=method, url=url, **params │
+│    309 │   hf_raise_for_status(response)                                     │
+│    310 │   return response                                                   │
+│    311                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:589 in request  │
+│                                                                              │
+│   586 │   │   │   "allow_redirects": allow_redirects,                        │
+│   587 │   │   }                                                              │
+│   588 │   │   send_kwargs.update(settings)                                   │
+│ ❱ 589 │   │   resp = self.send(prep, **send_kwargs)                          │
+│   590 │   │                                                                  │
+│   591 │   │   return resp                                                    │
+│   592                                                                        │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/sessions.py:703 in send     │
+│                                                                              │
+│   700 │   │   start = preferred_clock()                                      │
+│   701 │   │                                                                  │
+│   702 │   │   # Send the request                                             │
+│ ❱ 703 │   │   r = adapter.send(request, **kwargs)                            │
+│   704 │   │                                                                  │
+│   705 │   │   # Total elapsed time of the request (approximately)            │
+│   706 │   │   elapsed = preferred_clock() - start                            │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py:96 in │
+│ send                                                                         │
+│                                                                              │
+│    93 │   │   if constants.HF_DEBUG:                                         │
+│    94 │   │   │   logger.debug(f"Send: {_curlify(request)}")                 │
+│    95 │   │   try:                                                           │
+│ ❱  96 │   │   │   return super().send(request, *args, **kwargs)              │
+│    97 │   │   except requests.RequestException as e:                         │
+│    98 │   │   │   request_id = request.headers.get(X_AMZN_TRACE_ID)          │
+│    99 │   │   │   if request_id is not None:                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/requests/adapters.py:667 in send     │
+│                                                                              │
+│   664 │   │   │   timeout = TimeoutSauce(connect=timeout, read=timeout)      │
+│   665 │   │                                                                  │
+│   666 │   │   try:                                                           │
+│ ❱ 667 │   │   │   resp = conn.urlopen(                                       │
+│   668 │   │   │   │   method=request.method,                                 │
+│   669 │   │   │   │   url=url,                                               │
+│   670 │   │   │   │   body=request.body,                                     │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:787 in     │
+│ urlopen                                                                      │
+│                                                                              │
+│    784 │   │   │   response_conn = conn if not release_conn else None        │
+│    785 │   │   │                                                             │
+│    786 │   │   │   # Make the request on the HTTPConnection object           │
+│ ❱  787 │   │   │   response = self._make_request(                            │
+│    788 │   │   │   │   conn,                                                 │
+│    789 │   │   │   │   method,                                               │
+│    790 │   │   │   │   url,                                                  │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:464 in     │
+│ _make_request                                                                │
+│                                                                              │
+│    461 │   │   try:                                                          │
+│    462 │   │   │   # Trigger any extra validation we need to do.             │
+│    463 │   │   │   try:                                                      │
+│ ❱  464 │   │   │   │   self._validate_conn(conn)                             │
+│    465 │   │   │   except (SocketTimeout, BaseSSLError) as e:                │
+│    466 │   │   │   │   self._raise_timeout(err=e, url=url, timeout_value=con │
+│    467 │   │   │   │   raise                                                 │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py:1093 in    │
+│ _validate_conn                                                               │
+│                                                                              │
+│   1090 │   │                                                                 │
+│   1091 │   │   # Force connect early to allow us to validate the connection. │
+│   1092 │   │   if conn.is_closed:                                            │
+│ ❱ 1093 │   │   │   conn.connect()                                            │
+│   1094 │   │                                                                 │
+│   1095 │   │   # TODO revise this, see https://github.com/urllib3/urllib3/is │
+│   1096 │   │   if not conn.is_verified and not conn.proxy_is_verified:       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:704 in connect │
+│                                                                              │
+│    701 │   │                                                                 │
+│    702 │   │   try:                                                          │
+│    703 │   │   │   sock: socket.socket | ssl.SSLSocket                       │
+│ ❱  704 │   │   │   self.sock = sock = self._new_conn()                       │
+│    705 │   │   │   server_hostname: str = self.host                          │
+│    706 │   │   │   tls_in_tls = False                                        │
+│    707                                                                       │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/connection.py:198 in         │
+│ _new_conn                                                                    │
+│                                                                              │
+│    195 │   │   :return: New socket connection.                               │
+│    196 │   │   """                                                           │
+│    197 │   │   try:                                                          │
+│ ❱  198 │   │   │   sock = connection.create_connection(                      │
+│    199 │   │   │   │   (self._dns_host, self.port),                          │
+│    200 │   │   │   │   self.timeout,                                         │
+│    201 │   │   │   │   source_address=self.source_address,                   │
+│                                                                              │
+│ /usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py:73 in     │
+│ create_connection                                                            │
+│                                                                              │
+│    70 │   │   │   │   sock.settimeout(timeout)                               │
+│    71 │   │   │   if source_address:                                         │
+│    72 │   │   │   │   sock.bind(source_address)                              │
+│ ❱  73 │   │   │   sock.connect(sa)                                           │
+│    74 │   │   │   # Break explicitly a reference cycle                       │
+│    75 │   │   │   err = None                                                 │
+│    76 │   │   │   return sock                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+KeyboardInterrupt

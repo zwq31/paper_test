@@ -1,0 +1,16 @@
+{
+  "total_samples": 3212,
+  "refusal_count": 291,
+  "refusal_false_count": 2921,
+  "correct_count": 2837,
+  "refusal_rate": "9.06%",
+  "accuracy_rate": "97.12%",
+  "basic_metrics_average": {
+    "rouge_1": 15.60971806793904,
+    "rouge_2": 6.3786519988056485,
+    "rouge_l": 15.509711345418882,
+    "bertscore_precision": 60.89242677787692,
+    "bertscore_recall": 81.75868675539532,
+    "bertscore_f1": 69.47244372715244
+  }
+}

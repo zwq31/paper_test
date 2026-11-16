@@ -1,0 +1,24 @@
+{
+  "optimal_thresholds": {
+    "ppl_leq": 1.0889095792778594
+  },
+  "performance": {
+    "youden_j": 0.433645014959946,
+    "accuracy": 0.7173035104069587,
+    "sensitivity": 0.6668757841907151,
+    "specificity": 0.7667692307692308,
+    "tp": 1063,
+    "tn": 1246,
+    "fp": 379,
+    "fn": 531
+  },
+  "decision_rule": "若 PPL ≤ 阈值，则作答；否则拒答",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 500,
+    "best_trial_number": 495,
+    "metrics_used": [
+      "ppl"
+    ]
+  }
+}

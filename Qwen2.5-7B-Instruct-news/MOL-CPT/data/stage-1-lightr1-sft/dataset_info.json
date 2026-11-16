@@ -1,0 +1,59 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "stage-1-lightr1-sft",
+  "dataset_size": 1423784111,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/justus27/stage-1-lightr1-sft@8af66e4459ec1789836ef32c1624937ed8e04a99/data/train-00000-of-00003.parquet": {
+      "num_bytes": 208237221,
+      "checksum": null
+    },
+    "hf://datasets/justus27/stage-1-lightr1-sft@8af66e4459ec1789836ef32c1624937ed8e04a99/data/train-00001-of-00003.parquet": {
+      "num_bytes": 206398137,
+      "checksum": null
+    },
+    "hf://datasets/justus27/stage-1-lightr1-sft@8af66e4459ec1789836ef32c1624937ed8e04a99/data/train-00002-of-00003.parquet": {
+      "num_bytes": 209020905,
+      "checksum": null
+    }
+  },
+  "download_size": 623656263,
+  "features": {
+    "messages": [
+      {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ]
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2047440374,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1423784111,
+      "num_examples": 75913,
+      "shard_lengths": [
+        27305,
+        27304,
+        21304
+      ],
+      "dataset_name": "stage-1-lightr1-sft"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

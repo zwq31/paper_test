@@ -1,0 +1,99 @@
+{
+  "config": {
+    "model_path": "/mnt/project/Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-QLORA-1year",
+    "features_file": "/mnt/project/H-Neurous/output/h_neurons_chat_vectorized_final_20260110_113131/cett_features_vectorized.jsonl",
+    "test_size": 0.15,
+    "cv_folds": 5,
+    "random_seed": 42,
+    "C_values": [
+      0.0001,
+      0.0005,
+      0.001,
+      0.005,
+      0.01,
+      0.05,
+      0.1
+    ],
+    "extract_all_layers": true,
+    "methodology": "paper_method_vectorized",
+    "max_seq_length": 1024
+  },
+  "data_statistics": {
+    "processed_samples": 4070,
+    "train_samples": 3459,
+    "test_samples": 611,
+    "feature_dimension": 530432,
+    "positive_ratio": 0.2398034398034398
+  },
+  "evaluation": {
+    "accuracy": 0.9476268412438625,
+    "auc": 0.991613886934084,
+    "report": {
+      "0": {
+        "precision": 0.9864864864864865,
+        "recall": 0.9439655172413793,
+        "f1-score": 0.9647577092511013,
+        "support": 464.0
+      },
+      "1": {
+        "precision": 0.844311377245509,
+        "recall": 0.9591836734693877,
+        "f1-score": 0.8980891719745223,
+        "support": 147.0
+      },
+      "accuracy": 0.9476268412438625,
+      "macro avg": {
+        "precision": 0.9153989318659977,
+        "recall": 0.9515745953553836,
+        "f1-score": 0.9314234406128118,
+        "support": 611.0
+      },
+      "weighted avg": {
+        "precision": 0.952280690973518,
+        "recall": 0.9476268412438625,
+        "f1-score": 0.9487179793334956,
+        "support": 611.0
+      }
+    }
+  },
+  "h_neurons": {
+    "total_neurons": 530432,
+    "h_neuron_count": 485,
+    "h_neuron_ratio": 0.0009143490588803089,
+    "mean_weight": 0.019449656752877888,
+    "layer_distribution": {
+      "1": 5,
+      "2": 8,
+      "3": 5,
+      "4": 8,
+      "5": 15,
+      "6": 2,
+      "7": 10,
+      "8": 21,
+      "9": 33,
+      "10": 6,
+      "11": 14,
+      "12": 21,
+      "13": 22,
+      "14": 17,
+      "15": 31,
+      "16": 39,
+      "17": 43,
+      "18": 30,
+      "19": 44,
+      "20": 17,
+      "21": 12,
+      "22": 7,
+      "23": 7,
+      "24": 2,
+      "25": 6,
+      "26": 9,
+      "27": 51
+    }
+  },
+  "training_info": {
+    "start_time": "2026-01-10 12:00:34",
+    "end_time": "2026-01-10 16:54:09",
+    "total_time_seconds": 17614.41474056244
+  }
+}

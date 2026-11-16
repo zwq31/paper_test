@@ -1,0 +1,21 @@
+{
+  "optimal_threshold": {
+    "refusal_prob_lt": 0.00011871055963451605
+  },
+  "performance": {
+    "youden_j": 0.048128606747356306,
+    "accuracy": 0.5243713132567526,
+    "sensitivity": 0.5305275637225845,
+    "specificity": 0.5176010430247718,
+    "tp": 895,
+    "tn": 794,
+    "fp": 740,
+    "fn": 792
+  },
+  "decision_rule": "仅当 Refusal Prob < 阈值 时作答，否则拒答",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 200,
+    "best_trial_number": 103
+  }
+}

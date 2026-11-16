@@ -1,0 +1,88 @@
+nohup: ignoring input
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.03s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:05,  2.98s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:02,  2.49s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.09s/it]
+🚀 Start time: 2025-09-14 12:24:03.783864
+Evaluating MMLU Subjects:   0%|                                         | 0/57 [00:00<?, ?subject/s]/usr/local/lib/python3.10/dist-packages/bitsandbytes/nn/modules.py:451: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+Evaluating MMLU Subjects:   2%|▌                                | 1/57 [00:38<35:58, 38.54s/subject]Evaluating MMLU Subjects:   2%| | 1/57 [00:38<35:58, 38.54s/subject, Last: abstract_algebra | Acc: 0Evaluating MMLU Subjects:   4%| | 2/57 [01:28<41:37, 45.41s/subject, Last: abstract_algebra | Acc: 0Evaluating MMLU Subjects:   4%|▏    | 2/57 [01:28<41:37, 45.41s/subject, Last: anatomy | Acc: 0.652]Evaluating MMLU Subjects:   5%|▎    | 3/57 [02:52<56:39, 62.96s/subject, Last: anatomy | Acc: 0.652]Evaluating MMLU Subjects:   5%|▏  | 3/57 [02:52<56:39, 62.96s/subject, Last: astronomy | Acc: 0.809]Evaluating MMLU Subjects:   7%|▏  | 4/57 [03:47<52:44, 59.70s/subject, Last: astronomy | Acc: 0.809]Evaluating MMLU Subjects:   7%| | 4/57 [03:47<52:44, 59.70s/subject, Last: business_ethics | Acc: 0.Evaluating MMLU Subjects:   9%| | 5/57 [05:35<1:07:01, 77.34s/subject, Last: business_ethics | Acc: Evaluating MMLU Subjects:   9%| | 5/57 [05:35<1:07:01, 77.34s/subject, Last: clinical_knowledge | AcEvaluating MMLU Subjects:  11%| | 6/57 [06:44<1:03:19, 74.50s/subject, Last: clinical_knowledge | AcEvaluating MMLU Subjects:  11%| | 6/57 [06:44<1:03:19, 74.50s/subject, Last: college_biology | Acc: Evaluating MMLU Subjects:  12%| | 7/57 [07:38<56:29, 67.80s/subject, Last: college_biology | Acc: 0.Evaluating MMLU Subjects:  12%| | 7/57 [07:38<56:29, 67.80s/subject, Last: college_chemistry | Acc: Evaluating MMLU Subjects:  14%|▏| 8/57 [08:53<57:11, 70.02s/subject, Last: college_chemistry | Acc: Evaluating MMLU Subjects:  14%|▏| 8/57 [08:53<57:11, 70.02s/subject, Last: college_computer_science Evaluating MMLU Subjects:  16%|▏| 9/57 [09:50<52:42, 65.88s/subject, Last: college_computer_science Evaluating MMLU Subjects:  16%|▏| 9/57 [09:50<52:42, 65.88s/subject, Last: college_mathematics | AccEvaluating MMLU Subjects:  18%|▏| 10/57 [11:16<56:22, 71.97s/subject, Last: college_mathematics | AcEvaluating MMLU Subjects:  18%|▏| 10/57 [11:16<56:22, 71.97s/subject, Last: college_medicine | Acc: Evaluating MMLU Subjects:  19%|▏| 11/57 [12:06<50:14, 65.53s/subject, Last: college_medicine | Acc: Evaluating MMLU Subjects:  19%|▏| 11/57 [12:06<50:14, 65.53s/subject, Last: college_physics | Acc: 0Evaluating MMLU Subjects:  21%|▏| 12/57 [12:47<43:19, 57.77s/subject, Last: college_physics | Acc: 0Evaluating MMLU Subjects:  21%|▏| 12/57 [12:47<43:19, 57.77s/subject, Last: computer_security | Acc:Evaluating MMLU Subjects:  23%|▏| 13/57 [14:07<47:31, 64.80s/subject, Last: computer_security | Acc:Evaluating MMLU Subjects:  23%|▏| 13/57 [14:07<47:31, 64.80s/subject, Last: conceptual_physics | AccEvaluating MMLU Subjects:  25%|▏| 14/57 [15:14<46:50, 65.36s/subject, Last: conceptual_physics | AccEvaluating MMLU Subjects:  25%|▏| 14/57 [15:14<46:50, 65.36s/subject, Last: econometrics | Acc: 0.56Evaluating MMLU Subjects:  26%|▎| 15/57 [16:21<46:04, 65.82s/subject, Last: econometrics | Acc: 0.56Evaluating MMLU Subjects:  26%|▎| 15/57 [16:21<46:04, 65.82s/subject, Last: electrical_engineering |Evaluating MMLU Subjects:  28%|▎| 16/57 [19:49<1:14:08, 108.50s/subject, Last: electrical_engineerinEvaluating MMLU Subjects:  28%|▎| 16/57 [19:49<1:14:08, 108.50s/subject, Last: elementary_mathematicEvaluating MMLU Subjects:  30%|▎| 17/57 [21:00<1:04:52, 97.32s/subject, Last: elementary_mathematicsEvaluating MMLU Subjects:  30%|▎| 17/57 [21:00<1:04:52, 97.32s/subject, Last: formal_logic | Acc: 0.Evaluating MMLU Subjects:  32%|▎| 18/57 [21:45<53:01, 81.57s/subject, Last: formal_logic | Acc: 0.50Evaluating MMLU Subjects:  32%|▎| 18/57 [21:45<53:01, 81.57s/subject, Last: global_facts | Acc: 0.41Evaluating MMLU Subjects:  33%|▎| 19/57 [24:20<1:05:40, 103.69s/subject, Last: global_facts | Acc: 0Evaluating MMLU Subjects:  33%|▎| 19/57 [24:20<1:05:40, 103.69s/subject, Last: high_school_biology |Evaluating MMLU Subjects:  35%|▎| 20/57 [26:02<1:03:39, 103.23s/subject, Last: high_school_biology |Evaluating MMLU Subjects:  35%|▎| 20/57 [26:02<1:03:39, 103.23s/subject, Last: high_school_chemistryEvaluating MMLU Subjects:  37%|▎| 21/57 [27:20<57:22, 95.62s/subject, Last: high_school_chemistry | Evaluating MMLU Subjects:  37%|▎| 21/57 [27:20<57:22, 95.62s/subject, Last: high_school_computer_sciEvaluating MMLU Subjects:  39%|▍| 22/57 [31:31<1:22:53, 142.09s/subject, Last: high_school_computer_Evaluating MMLU Subjects:  39%|▍| 22/57 [31:31<1:22:53, 142.09s/subject, Last: high_school_european_Evaluating MMLU Subjects:  40%|▍| 23/57 [32:47<1:09:25, 122.51s/subject, Last: high_school_european_Evaluating MMLU Subjects:  40%|▍| 23/57 [32:47<1:09:25, 122.51s/subject, Last: high_school_geographyEvaluating MMLU Subjects:  42%|▍| 24/57 [34:18<1:02:04, 112.87s/subject, Last: high_school_geographyEvaluating MMLU Subjects:  42%|▍| 24/57 [34:18<1:02:04, 112.87s/subject, Last: high_school_governmenEvaluating MMLU Subjects:  44%|▍| 25/57 [36:51<1:06:36, 124.90s/subject, Last: high_school_governmenEvaluating MMLU Subjects:  44%|▍| 25/57 [36:51<1:06:36, 124.90s/subject, Last: high_school_macroeconEvaluating MMLU Subjects:  46%|▍| 26/57 [39:18<1:07:58, 131.57s/subject, Last: high_school_macroeconEvaluating MMLU Subjects:  46%|▍| 26/57 [39:18<1:07:58, 131.57s/subject, Last: high_school_mathematiEvaluating MMLU Subjects:  47%|▍| 27/57 [40:56<1:00:45, 121.53s/subject, Last: high_school_mathematiEvaluating MMLU Subjects:  47%|▍| 27/57 [40:56<1:00:45, 121.53s/subject, Last: high_school_microeconEvaluating MMLU Subjects:  49%|▍| 28/57 [42:20<53:14, 110.16s/subject, Last: high_school_microeconomEvaluating MMLU Subjects:  49%|▍| 28/57 [42:20<53:14, 110.16s/subject, Last: high_school_physics | AEvaluating MMLU Subjects:  51%|▌| 29/57 [46:47<1:13:22, 157.22s/subject, Last: high_school_physics |Evaluating MMLU Subjects:  51%|▌| 29/57 [46:47<1:13:22, 157.22s/subject, Last: high_school_psychologEvaluating MMLU Subjects:  53%|▌| 30/57 [49:26<1:11:06, 158.00s/subject, Last: high_school_psychologEvaluating MMLU Subjects:  53%|▌| 30/57 [49:26<1:11:06, 158.00s/subject, Last: high_school_statisticEvaluating MMLU Subjects:  54%|▌| 31/57 [54:45<1:29:21, 206.23s/subject, Last: high_school_statisticEvaluating MMLU Subjects:  54%|▌| 31/57 [54:45<1:29:21, 206.23s/subject, Last: high_school_us_historEvaluating MMLU Subjects:  56%|▌| 32/57 [59:34<1:36:16, 231.05s/subject, Last: high_school_us_historEvaluating MMLU Subjects:  56%|▌| 32/57 [59:34<1:36:16, 231.05s/subject, Last: high_school_world_hisEvaluating MMLU Subjects:  58%|▌| 33/57 [1:00:52<1:14:02, 185.11s/subject, Last: high_school_world_hEvaluating MMLU Subjects:  58%|▌| 33/57 [1:00:52<1:14:02, 185.11s/subject, Last: human_aging | Acc: Evaluating MMLU Subjects:  60%|▌| 34/57 [1:01:40<55:08, 143.85s/subject, Last: human_aging | Acc: 0.Evaluating MMLU Subjects:  60%|▌| 34/57 [1:01:40<55:08, 143.85s/subject, Last: human_sexuality | AccEvaluating MMLU Subjects:  61%|▌| 35/57 [1:02:51<44:46, 122.10s/subject, Last: human_sexuality | AccEvaluating MMLU Subjects:  61%|▌| 35/57 [1:02:51<44:46, 122.10s/subject, Last: international_law | AEvaluating MMLU Subjects:  63%|▋| 36/57 [1:03:35<34:31, 98.64s/subject, Last: international_law | AcEvaluating MMLU Subjects:  63%|▋| 36/57 [1:03:35<34:31, 98.64s/subject, Last: jurisprudence | Acc: 0Evaluating MMLU Subjects:  65%|▋| 37/57 [1:04:50<30:30, 91.52s/subject, Last: jurisprudence | Acc: 0Evaluating MMLU Subjects:  65%|▋| 37/57 [1:04:50<30:30, 91.52s/subject, Last: logical_fallacies | AcEvaluating MMLU Subjects:  67%|▋| 38/57 [1:06:01<27:00, 85.31s/subject, Last: logical_fallacies | AcEvaluating MMLU Subjects:  67%|▋| 38/57 [1:06:01<27:00, 85.31s/subject, Last: machine_learning | AccEvaluating MMLU Subjects:  68%|▋| 39/57 [1:06:35<20:59, 69.98s/subject, Last: machine_learning | AccEvaluating MMLU Subjects:  68%|▋| 39/57 [1:06:35<20:59, 69.98s/subject, Last: management | Acc: 0.87Evaluating MMLU Subjects:  70%|▋| 40/57 [1:08:11<22:02, 77.77s/subject, Last: management | Acc: 0.87Evaluating MMLU Subjects:  70%|▋| 40/57 [1:08:11<22:02, 77.77s/subject, Last: marketing | Acc: 0.868Evaluating MMLU Subjects:  72%|▋| 41/57 [1:08:47<17:26, 65.40s/subject, Last: marketing | Acc: 0.868Evaluating MMLU Subjects:  72%|▋| 41/57 [1:08:47<17:26, 65.40s/subject, Last: medical_genetics | AccEvaluating MMLU Subjects:  74%|▋| 42/57 [1:13:19<31:47, 127.20s/subject, Last: medical_genetics | AcEvaluating MMLU Subjects:  74%|▋| 42/57 [1:13:19<31:47, 127.20s/subject, Last: miscellaneous | Acc: Evaluating MMLU Subjects:  75%|▊| 43/57 [1:16:03<32:15, 138.24s/subject, Last: miscellaneous | Acc: Evaluating MMLU Subjects:  75%|▊| 43/57 [1:16:03<32:15, 138.24s/subject, Last: moral_disputes | Acc:Evaluating MMLU Subjects:  77%|▊| 44/57 [1:25:31<57:55, 267.31s/subject, Last: moral_disputes | Acc:Evaluating MMLU Subjects:  77%|▊| 44/57 [1:25:31<57:55, 267.31s/subject, Last: moral_scenarios | AccEvaluating MMLU Subjects:  79%|▊| 45/57 [1:28:23<47:42, 238.55s/subject, Last: moral_scenarios | AccEvaluating MMLU Subjects:  79%|▊| 45/57 [1:28:23<47:42, 238.55s/subject, Last: nutrition | Acc: 0.74Evaluating MMLU Subjects:  81%|▊| 46/57 [1:30:14<36:42, 200.23s/subject, Last: nutrition | Acc: 0.74Evaluating MMLU Subjects:  81%|▊| 46/57 [1:30:14<36:42, 200.23s/subject, Last: philosophy | Acc: 0.7Evaluating MMLU Subjects:  82%|▊| 47/57 [1:32:58<31:35, 189.50s/subject, Last: philosophy | Acc: 0.7Evaluating MMLU Subjects:  82%|▊| 47/57 [1:32:58<31:35, 189.50s/subject, Last: prehistory | Acc: 0.7Evaluating MMLU Subjects:  84%|▊| 48/57 [1:36:06<28:22, 189.21s/subject, Last: prehistory | Acc: 0.7Evaluating MMLU Subjects:  84%|▊| 48/57 [1:36:06<28:22, 189.21s/subject, Last: professional_accountiEvaluating MMLU Subjects:  86%|▊| 49/57 [2:11:35<1:42:47, 770.89s/subject, Last: professional_accounEvaluating MMLU Subjects:  86%|▊| 49/57 [2:11:35<1:42:47, 770.89s/subject, Last: professional_law | Evaluating MMLU Subjects:  88%|▉| 50/57 [2:16:30<1:13:18, 628.35s/subject, Last: professional_law | Evaluating MMLU Subjects:  88%|▉| 50/57 [2:16:30<1:13:18, 628.35s/subject, Last: professional_mediciEvaluating MMLU Subjects:  89%|▉| 51/57 [2:26:20<1:01:40, 616.73s/subject, Last: professional_mediciEvaluating MMLU Subjects:  89%|▉| 51/57 [2:26:20<1:01:40, 616.73s/subject, Last: professional_psychoEvaluating MMLU Subjects:  91%|▉| 52/57 [2:27:40<37:58, 455.73s/subject, Last: professional_psycholoEvaluating MMLU Subjects:  91%|▉| 52/57 [2:27:40<37:58, 455.73s/subject, Last: public_relations | AcEvaluating MMLU Subjects:  93%|▉| 53/57 [2:34:45<29:46, 446.59s/subject, Last: public_relations | AcEvaluating MMLU Subjects:  93%|▉| 53/57 [2:34:45<29:46, 446.59s/subject, Last: security_studies | AcEvaluating MMLU Subjects:  95%|▉| 54/57 [2:37:25<18:01, 360.38s/subject, Last: security_studies | AcEvaluating MMLU Subjects:  95%|▉| 54/57 [2:37:25<18:01, 360.38s/subject, Last: sociology | Acc: 0.79Evaluating MMLU Subjects:  96%|▉| 55/57 [2:38:42<09:11, 275.62s/subject, Last: sociology | Acc: 0.79Evaluating MMLU Subjects:  96%|▉| 55/57 [2:38:42<09:11, 275.62s/subject, Last: us_foreign_policy | AEvaluating MMLU Subjects:  98%|▉| 56/57 [2:40:29<03:44, 224.81s/subject, Last: us_foreign_policy | AEvaluating MMLU Subjects:  98%|▉| 56/57 [2:40:29<03:44, 224.81s/subject, Last: virology | Acc: 0.548Evaluating MMLU Subjects: 100%|█| 57/57 [2:42:00<00:00, 184.73s/subject, Last: virology | Acc: 0.548Evaluating MMLU Subjects: 100%|█| 57/57 [2:42:00<00:00, 184.73s/subject, Last: world_religions | AccEvaluating MMLU Subjects: 100%|█| 57/57 [2:42:00<00:00, 170.53s/subject, Last: world_religions | Acc
+Average accuracy 0.490 - abstract_algebra
+Average accuracy 0.652 - anatomy
+Average accuracy 0.809 - astronomy
+Average accuracy 0.760 - business_ethics
+Average accuracy 0.747 - clinical_knowledge
+Average accuracy 0.806 - college_biology
+Average accuracy 0.520 - college_chemistry
+Average accuracy 0.570 - college_computer_science
+Average accuracy 0.460 - college_mathematics
+Average accuracy 0.642 - college_medicine
+Average accuracy 0.520 - college_physics
+Average accuracy 0.750 - computer_security
+Average accuracy 0.668 - conceptual_physics
+Average accuracy 0.561 - econometrics
+Average accuracy 0.703 - electrical_engineering
+Average accuracy 0.675 - elementary_mathematics
+Average accuracy 0.500 - formal_logic
+Average accuracy 0.410 - global_facts
+Average accuracy 0.803 - high_school_biology
+Average accuracy 0.631 - high_school_chemistry
+Average accuracy 0.790 - high_school_computer_science
+Average accuracy 0.764 - high_school_european_history
+Average accuracy 0.864 - high_school_geography
+Average accuracy 0.891 - high_school_government_and_politics
+Average accuracy 0.713 - high_school_macroeconomics
+Average accuracy 0.470 - high_school_mathematics
+Average accuracy 0.815 - high_school_microeconomics
+Average accuracy 0.490 - high_school_physics
+Average accuracy 0.877 - high_school_psychology
+Average accuracy 0.634 - high_school_statistics
+Average accuracy 0.824 - high_school_us_history
+Average accuracy 0.835 - high_school_world_history
+Average accuracy 0.700 - human_aging
+Average accuracy 0.725 - human_sexuality
+Average accuracy 0.785 - international_law
+Average accuracy 0.778 - jurisprudence
+Average accuracy 0.798 - logical_fallacies
+Average accuracy 0.545 - machine_learning
+Average accuracy 0.874 - management
+Average accuracy 0.868 - marketing
+Average accuracy 0.790 - medical_genetics
+Average accuracy 0.814 - miscellaneous
+Average accuracy 0.705 - moral_disputes
+Average accuracy 0.389 - moral_scenarios
+Average accuracy 0.745 - nutrition
+Average accuracy 0.714 - philosophy
+Average accuracy 0.744 - prehistory
+Average accuracy 0.496 - professional_accounting
+Average accuracy 0.470 - professional_law
+Average accuracy 0.636 - professional_medicine
+Average accuracy 0.688 - professional_psychology
+Average accuracy 0.609 - public_relations
+Average accuracy 0.727 - security_studies
+Average accuracy 0.796 - sociology
+Average accuracy 0.850 - us_foreign_policy
+Average accuracy 0.548 - virology
+Average accuracy 0.836 - world_religions
+Average accuracy 0.577 - math
+Average accuracy 0.685 - health
+Average accuracy 0.636 - physics
+Average accuracy 0.844 - business
+Average accuracy 0.804 - biology
+Average accuracy 0.594 - chemistry
+Average accuracy 0.660 - computer science
+Average accuracy 0.722 - economics
+Average accuracy 0.703 - engineering
+Average accuracy 0.572 - philosophy
+Average accuracy 0.702 - other
+Average accuracy 0.788 - history
+Average accuracy 0.864 - geography
+Average accuracy 0.775 - politics
+Average accuracy 0.777 - psychology
+Average accuracy 0.768 - culture
+Average accuracy 0.510 - law
+Average accuracy 0.643 - STEM
+Average accuracy 0.591 - humanities
+Average accuracy 0.768 - social sciences
+Average accuracy 0.713 - other (business, health, misc.)
+Overall Average accuracy: 0.669
+✅ End time: 2025-09-14 15:06:04.151057
+⏱️ Total cost time: 9720.37 seconds

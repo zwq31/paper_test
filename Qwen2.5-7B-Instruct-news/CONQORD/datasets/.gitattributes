@@ -1,0 +1,59 @@
+*.7z -text
+*.arrow -text
+*.bin -text
+*.bz2 -text
+*.ckpt -text
+*.ftz -text
+*.gz -text
+*.h5 -text
+*.joblib -text
+*.lfs.* -text
+*.lz4 -text
+*.mlmodel -text
+*.model -text
+*.msgpack -text
+*.npy -text
+*.npz -text
+*.onnx -text
+*.ot -text
+*.parquet -text
+*.pb -text
+*.pickle -text
+*.pkl -text
+*.pt -text
+*.pth -text
+*.rar -text
+*.safetensors -text
+saved_model/**/* -text
+*.tar.* -text
+*.tar -text
+*.tflite -text
+*.tgz -text
+*.wasm -text
+*.xz -text
+*.zip -text
+*.zst -text
+*tfevents* -text
+# Audio files - uncompressed
+*.pcm -text
+*.sam -text
+*.raw -text
+# Audio files - compressed
+*.aac -text
+*.flac -text
+*.mp3 -text
+*.ogg -text
+*.wav -text
+# Image files - uncompressed
+*.bmp -text
+*.gif -text
+*.png -text
+*.tiff -text
+# Image files - compressed
+*.jpg -text
+*.jpeg -text
+*.webp -text
+# Video files - compressed
+*.mp4 -text
+*.webm -text
+conqord_step2_data/train.jsonl -text

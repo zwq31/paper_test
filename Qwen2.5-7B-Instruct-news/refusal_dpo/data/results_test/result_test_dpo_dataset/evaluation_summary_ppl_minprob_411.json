@@ -1,0 +1,64 @@
+{
+  "total_samples": 3221,
+  "score_ge_3_count": 1525,
+  "score_lt_3_count": 1696,
+  "model_answered_count": 1692,
+  "model_refused_count": 1529,
+  "answered_and_score_ge_3": 1107,
+  "answered_and_score_lt_3": 585,
+  "refused_and_score_lt_3": 1111,
+  "refused_and_score_ge_3": 418,
+  "knowledge_boundary_metrics": {
+    "refusal_rate": 0.47469729897547347,
+    "refusal_rate_percentage": "47.47%",
+    "refusal_precision": 0.7266187050359713,
+    "refusal_precision_percentage": "72.66%",
+    "refusal_recall": 0.6550707547169812,
+    "refusal_recall_percentage": "65.51%",
+    "refusal_f1": 0.6889922480620156,
+    "refusal_f1_percentage": "68.90%"
+  },
+  "answer_accuracy_metrics": {
+    "answer_accuracy": 0.6542553191489362,
+    "answer_accuracy_percentage": "65.43%",
+    "answer_recall": 0.7259016393442623,
+    "answer_recall_percentage": "72.59%",
+    "answer_f1": 0.6882188374261735,
+    "answer_f1_percentage": "68.82%"
+  },
+  "overall_metrics": {
+    "overall_accuracy": 0.6886060229742316,
+    "overall_accuracy_percentage": "68.86%"
+  },
+  "basic_metrics_average": {
+    "rouge_1": 19.433916833331597,
+    "rouge_2": 7.462972264049583,
+    "rouge_l": 19.388296640629758,
+    "bertscore_precision": 69.11476673324151,
+    "bertscore_recall": 78.87441871033734,
+    "bertscore_f1": 73.2558584424214
+  },
+  "error_types_distribution": {
+    "事实错误": 1621,
+    "遗漏": 907,
+    "虚构内容": 15,
+    "虚构": 4,
+    "包含虚构或错误内容": 3,
+    "虚构或错误内容": 1,
+    "单位不一致": 1,
+    "包含虚构内容": 1
+  },
+  "score_distribution": {
+    "5": 1447,
+    "1": 809,
+    "2": 653,
+    "3": 234,
+    "4": 78
+  },
+  "confusion_matrix_counts": {
+    "true_positive": 1107,
+    "false_positive": 585,
+    "true_negative": 1111,
+    "false_negative": 418
+  }
+}

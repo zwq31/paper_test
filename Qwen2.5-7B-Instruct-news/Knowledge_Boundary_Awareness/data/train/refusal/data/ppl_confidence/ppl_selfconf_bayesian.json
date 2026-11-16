@@ -1,0 +1,26 @@
+{
+  "optimal_thresholds": {
+    "ppl_leq": 1.102255516911981,
+    "self_reported_confidence_geq": 0.48433006896079756
+  },
+  "performance": {
+    "youden_j": 0.4326844899141009,
+    "accuracy": 0.7163715439577508,
+    "sensitivity": 0.7132998745294856,
+    "specificity": 0.7193846153846154,
+    "tp": 1137,
+    "tn": 1169,
+    "fp": 456,
+    "fn": 457
+  },
+  "decision_rule": "仅当 [PPL ≤ 阈值 且 Self-reported Confidence ≥ 阈值] 时作答，否则拒答",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 500,
+    "best_trial_number": 453,
+    "metrics_used": [
+      "ppl",
+      "self_reported_confidence"
+    ]
+  }
+}

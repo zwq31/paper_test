@@ -1,0 +1,177 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "magpie-qwen2-pro-300_k-filtered",
+  "dataset_size": 1711177467,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/Magpie-Align/Magpie-Qwen2-Pro-300K-Filtered@29cd2f1b3d3297cfa07bcdad0996295b880d9550/data/train-00000-of-00003.parquet": {
+      "num_bytes": 278728400,
+      "checksum": null
+    },
+    "hf://datasets/Magpie-Align/Magpie-Qwen2-Pro-300K-Filtered@29cd2f1b3d3297cfa07bcdad0996295b880d9550/data/train-00001-of-00003.parquet": {
+      "num_bytes": 278098961,
+      "checksum": null
+    },
+    "hf://datasets/Magpie-Align/Magpie-Qwen2-Pro-300K-Filtered@29cd2f1b3d3297cfa07bcdad0996295b880d9550/data/train-00002-of-00003.parquet": {
+      "num_bytes": 278344808,
+      "checksum": null
+    }
+  },
+  "download_size": 835172169,
+  "features": {
+    "uuid": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "model": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "gen_input_configs": {
+      "temperature": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "top_p": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "input_generator": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "seed": {
+        "dtype": "null",
+        "_type": "Value"
+      },
+      "extract_input": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    "instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "conversations": [
+      {
+        "from": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "value": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "task_category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "other_task_category": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "task_category_generator": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "difficulty": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "intent": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "knowledge": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "difficulty_generator": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input_quality": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "quality_explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "quality_generator": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "llama_guard_2": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reward_model": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruct_reward": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "min_neighbor_distance": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "repeat_count": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "min_similar_uuid": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruction_length": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "response_length": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "language": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2546349636,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1711177467,
+      "num_examples": 300000,
+      "shard_lengths": [
+        88000,
+        88000,
+        88000,
+        36000
+      ],
+      "dataset_name": "magpie-qwen2-pro-300_k-filtered"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

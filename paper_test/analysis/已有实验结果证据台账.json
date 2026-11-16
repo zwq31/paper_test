@@ -1,0 +1,5348 @@
+{
+  "H-Neurous/data/test/train_inference/evaluation_summary.json": {
+    "total_samples": 3219,
+    "refusal_count": 0,
+    "refusal_false_count": 3219,
+    "correct_count": 1740,
+    "refusal_rate": "0.00%",
+    "accuracy_rate": "54.05%",
+    "basic_metrics_average": {
+      "rouge_1": 18.642080358798626,
+      "rouge_2": 7.513010713210253,
+      "rouge_l": 18.53939586409961,
+      "bertscore_precision": 70.77761273431867,
+      "bertscore_recall": 79.25732199654664,
+      "bertscore_f1": 74.38516558309118
+    }
+  },
+  "H-Neurous/data/test/test_inference_chat/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 0,
+    "refusal_false_count": 3212,
+    "correct_count": 1774,
+    "refusal_rate": "0.00%",
+    "accuracy_rate": "55.23%",
+    "basic_metrics_average": {
+      "rouge_1": 21.666556085059447,
+      "rouge_2": 8.41972915091956,
+      "rouge_l": 21.611571073356423,
+      "bertscore_precision": 69.36206224364035,
+      "bertscore_recall": 79.36674319717982,
+      "bertscore_f1": 73.60105961004497
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-drouput0.1-r128-bs16-epoch5/all_results.json": {
+    "train_runtime": 24652.8335,
+    "train_samples_per_second": 5.231,
+    "train_steps_per_second": 0.327,
+    "total_flos": 1.1776532945615585e+18,
+    "train_loss": 0.6143289550520692,
+    "eval_loss": 1.3027640581130981
+  },
+  "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-cpt-drouput0.05-r64-bs32/all_results.json": {
+    "train_runtime": 15862.929,
+    "train_samples_per_second": 4.878,
+    "train_steps_per_second": 0.152,
+    "total_flos": 7.650108267936154e+17,
+    "train_loss": 1.090909815665313,
+    "eval_loss": 1.3340729475021362
+  },
+  "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-drouput0.05-r64-bs32/all_results.json": {
+    "train_runtime": 15728.7159,
+    "train_samples_per_second": 4.919,
+    "train_steps_per_second": 0.154,
+    "total_flos": 7.650108267936154e+17,
+    "train_loss": 1.1435315696240655,
+    "eval_loss": 1.3702118396759033
+  },
+  "Qwen2.5-7B-Instruct-news/1year-news-finetune/output-mol-cpt-drouput0.05-r128-bs32/all_results.json": {
+    "train_runtime": 16361.1554,
+    "train_samples_per_second": 4.729,
+    "train_steps_per_second": 0.148,
+    "total_flos": 7.820922401605878e+17,
+    "train_loss": 1.0009598756275264,
+    "eval_loss": 1.3116416931152344
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1470,
+    "model_refused_count": 1751,
+    "correct_answer": 758,
+    "wrong_answer": 712,
+    "correct_refusal": 935,
+    "wrong_refusal": 816,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5436199937907482,
+      "refusal_rate_percentage": "54.36%",
+      "refusal_precision": 0.5339805825242718,
+      "refusal_precision_percentage": "53.40%",
+      "refusal_recall": 0.5339805825242718,
+      "refusal_recall_percentage": "53.40%",
+      "refusal_f1": 0.5339805825242718,
+      "refusal_f1_percentage": "53.40%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5156462585034014,
+      "answer_accuracy_percentage": "51.56%",
+      "answer_recall": 0.5156462585034014,
+      "answer_recall_percentage": "51.56%",
+      "answer_f1": 0.5156462585034014,
+      "answer_f1_percentage": "51.56%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5256131636137845,
+      "overall_accuracy_percentage": "52.56%"
+    },
+    "error_types_distribution": {
+      "事实错误": 655,
+      "遗漏": 377,
+      "虚构内容": 6,
+      "虚构": 3
+    },
+    "score_distribution": {
+      "5": 708,
+      "1": 2044,
+      "2": 290,
+      "4": 50,
+      "3": 129
+    },
+    "base_score_distribution": {
+      "1": 719,
+      "5": 1578,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 758,
+      "false_positive": 712,
+      "true_negative": 935,
+      "false_negative": 816
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/test_data_evaluation/optimal_refusal_ppl_minprob_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.8412744582036726,
+      "min_token_prob_geq": 0.35249756438706736
+    },
+    "performance": {
+      "youden_j": 0.02350352499311703,
+      "accuracy": 0.665321328779882,
+      "sensitivity": 0.22163588390501318,
+      "specificity": 0.8018676410881039,
+      "tp": 168,
+      "tn": 1975,
+      "fp": 488,
+      "fn": 590
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 53
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 582,
+    "accuracy_rate": "27.97%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/test_data_evaluation/evaluation_summary_2_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1470,
+    "model_refused_count": 1751,
+    "correct_answer": 758,
+    "wrong_answer": 712,
+    "correct_refusal": 935,
+    "wrong_refusal": 816,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5436199937907482,
+      "refusal_rate_percentage": "54.36%",
+      "refusal_precision": 0.5339805825242718,
+      "refusal_precision_percentage": "53.40%",
+      "refusal_recall": 0.5339805825242718,
+      "refusal_recall_percentage": "53.40%",
+      "refusal_f1": 0.5339805825242718,
+      "refusal_f1_percentage": "53.40%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5156462585034014,
+      "answer_accuracy_percentage": "51.56%",
+      "answer_recall": 0.5156462585034014,
+      "answer_recall_percentage": "51.56%",
+      "answer_f1": 0.5156462585034014,
+      "answer_f1_percentage": "51.56%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5256131636137845,
+      "overall_accuracy_percentage": "52.56%"
+    },
+    "error_types_distribution": {
+      "事实错误": 655,
+      "遗漏": 377,
+      "虚构内容": 6,
+      "虚构": 3
+    },
+    "score_distribution": {
+      "5": 708,
+      "1": 2044,
+      "2": 290,
+      "4": 50,
+      "3": 129
+    },
+    "base_score_distribution": {
+      "1": 719,
+      "5": 1578,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 758,
+      "false_positive": 712,
+      "true_negative": 935,
+      "false_negative": 816
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/dpo_test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1490,
+    "model_refused_count": 1731,
+    "correct_answer": 756,
+    "wrong_answer": 734,
+    "correct_refusal": 920,
+    "wrong_refusal": 811,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5374107420055884,
+      "refusal_rate_percentage": "53.74%",
+      "refusal_precision": 0.5314846909300982,
+      "refusal_precision_percentage": "53.15%",
+      "refusal_recall": 0.5314846909300982,
+      "refusal_recall_percentage": "53.15%",
+      "refusal_f1": 0.5314846909300982,
+      "refusal_f1_percentage": "53.15%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5073825503355704,
+      "answer_accuracy_percentage": "50.74%",
+      "answer_recall": 0.5073825503355704,
+      "answer_recall_percentage": "50.74%",
+      "answer_f1": 0.5073825503355704,
+      "answer_f1_percentage": "50.74%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5203352995963987,
+      "overall_accuracy_percentage": "52.03%"
+    },
+    "error_types_distribution": {
+      "事实错误": 673,
+      "遗漏": 378,
+      "虚构内容": 7,
+      "虚构": 4
+    },
+    "score_distribution": {
+      "5": 704,
+      "1": 2037,
+      "2": 302,
+      "4": 52,
+      "3": 126
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 756,
+      "false_positive": 734,
+      "true_negative": 920,
+      "false_negative": 811
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei_model_chat/dpo_test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 570,
+    "accuracy_rate": "27.17%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/reject/sft/test_old_data/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 1793,
+    "refusal_false_count": 1428,
+    "correct_count": 700,
+    "refusal_rate": "55.67%",
+    "accuracy_rate": "49.02%",
+    "basic_metrics_average": {
+      "rouge_1": 6.464651010948139,
+      "rouge_2": 2.517701851085201,
+      "rouge_l": 6.404568875852764,
+      "bertscore_precision": 55.2244731212062,
+      "bertscore_recall": 66.54287432983995,
+      "bertscore_f1": 60.02005664542091
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/reject/sft_dpo/test_old_data/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1428,
+    "model_refused_count": 1793,
+    "correct_answer": 707,
+    "wrong_answer": 721,
+    "correct_refusal": 951,
+    "wrong_refusal": 842,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.556659422539584,
+      "refusal_rate_percentage": "55.67%",
+      "refusal_precision": 0.5303959843837145,
+      "refusal_precision_percentage": "53.04%",
+      "refusal_recall": 0.5303959843837145,
+      "refusal_recall_percentage": "53.04%",
+      "refusal_f1": 0.5303959843837145,
+      "refusal_f1_percentage": "53.04%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4950980392156863,
+      "answer_accuracy_percentage": "49.51%",
+      "answer_recall": 0.4950980392156863,
+      "answer_recall_percentage": "49.51%",
+      "answer_f1": 0.4950980392156863,
+      "answer_f1_percentage": "49.51%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5147469729897547,
+      "overall_accuracy_percentage": "51.47%"
+    },
+    "error_types_distribution": {
+      "事实错误": 676,
+      "遗漏": 250,
+      "虚构内容": 3
+    },
+    "score_distribution": {
+      "5": 670,
+      "1": 2156,
+      "2": 258,
+      "3": 100,
+      "4": 37
+    },
+    "base_score_distribution": {
+      "1": 719,
+      "5": 1578,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 707,
+      "false_positive": 721,
+      "true_negative": 951,
+      "false_negative": 842
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/reject/sft_dpo/test_old_data/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 1769,
+    "refusal_false_count": 1452,
+    "correct_count": 703,
+    "refusal_rate": "54.92%",
+    "accuracy_rate": "48.42%",
+    "basic_metrics_average": {
+      "rouge_1": 6.497809322831125,
+      "rouge_2": 2.4549212931663353,
+      "rouge_l": 6.406745632721701,
+      "bertscore_precision": 55.25609183222638,
+      "bertscore_recall": 66.59498960381153,
+      "bertscore_f1": 60.05602222594072
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/sft_dpo_2lei_model/dpo_test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1484,
+    "model_refused_count": 1737,
+    "correct_answer": 762,
+    "wrong_answer": 722,
+    "correct_refusal": 925,
+    "wrong_refusal": 812,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5392735175411363,
+      "refusal_rate_percentage": "53.93%",
+      "refusal_precision": 0.5325273459988485,
+      "refusal_precision_percentage": "53.25%",
+      "refusal_recall": 0.5325273459988485,
+      "refusal_recall_percentage": "53.25%",
+      "refusal_f1": 0.5325273459988485,
+      "refusal_f1_percentage": "53.25%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5134770889487871,
+      "answer_accuracy_percentage": "51.35%",
+      "answer_recall": 0.5134770889487871,
+      "answer_recall_percentage": "51.35%",
+      "answer_f1": 0.5134770889487871,
+      "answer_f1_percentage": "51.35%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5237503880782366,
+      "overall_accuracy_percentage": "52.38%"
+    },
+    "error_types_distribution": {
+      "事实错误": 663,
+      "遗漏": 377,
+      "虚构内容": 5,
+      "虚构": 6
+    },
+    "score_distribution": {
+      "5": 709,
+      "1": 2035,
+      "2": 297,
+      "4": 53,
+      "3": 127
+    },
+    "base_score_distribution": {
+      "1": 719,
+      "5": 1578,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 762,
+      "false_positive": 722,
+      "true_negative": 925,
+      "false_negative": 812
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/sft_dpo_2lei_model/dpo_test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 592,
+    "accuracy_rate": "28.68%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/base_model_dpo_train_2lei_model/dpo_test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 3188,
+    "model_refused_count": 33,
+    "correct_answer": 1316,
+    "wrong_answer": 1872,
+    "correct_refusal": 21,
+    "wrong_refusal": 12,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.010245265445513815,
+      "refusal_rate_percentage": "1.02%",
+      "refusal_precision": 0.6363636363636364,
+      "refusal_precision_percentage": "63.64%",
+      "refusal_recall": 0.6363636363636364,
+      "refusal_recall_percentage": "63.64%",
+      "refusal_f1": 0.6363636363636364,
+      "refusal_f1_percentage": "63.64%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4127979924717691,
+      "answer_accuracy_percentage": "41.28%",
+      "answer_recall": 0.4127979924717691,
+      "answer_recall_percentage": "41.28%",
+      "answer_f1": 0.4127979924717691,
+      "answer_f1_percentage": "41.28%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4150884818379385,
+      "overall_accuracy_percentage": "41.51%"
+    },
+    "error_types_distribution": {
+      "事实错误": 1705,
+      "遗漏": 1025,
+      "虚构内容": 7,
+      "虚构": 9
+    },
+    "score_distribution": {
+      "1": 883,
+      "5": 1196,
+      "2": 740,
+      "3": 282,
+      "4": 120
+    },
+    "base_score_distribution": {
+      "1": 719,
+      "5": 1578,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1316,
+      "false_positive": 1872,
+      "true_negative": 21,
+      "false_negative": 12
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/base_model_dpo_train_2lei_model/dpo_test_data_evaluation/evaluation_summary_1metrics_4.json": {
+    "total_samples": 3221,
+    "score_ge_4_count": 1327,
+    "score_lt_4_count": 1894,
+    "model_answered_count": 642,
+    "model_refused_count": 2579,
+    "answered_and_score_ge_4": 435,
+    "answered_and_score_lt_4": 207,
+    "refused_and_score_lt_4": 1687,
+    "refused_and_score_ge_4": 892,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.8006830176963676,
+      "refusal_rate_percentage": "80.07%",
+      "refusal_precision": 0.6541295075610701,
+      "refusal_precision_percentage": "65.41%",
+      "refusal_recall": 0.8907074973600845,
+      "refusal_recall_percentage": "89.07%",
+      "refusal_f1": 0.7543035993740219,
+      "refusal_f1_percentage": "75.43%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.677570093457944,
+      "answer_accuracy_percentage": "67.76%",
+      "answer_recall": 0.3278070836473248,
+      "answer_recall_percentage": "32.78%",
+      "answer_f1": 0.44184865413915686,
+      "answer_f1_percentage": "44.18%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6588016144054641,
+      "overall_accuracy_percentage": "65.88%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 16.72600498847215,
+      "rouge_2": 6.091002056612171,
+      "rouge_l": 16.684790511135347,
+      "bertscore_precision": 68.9980244852119,
+      "bertscore_recall": 75.41247526150762,
+      "bertscore_f1": 71.61982234443651
+    },
+    "error_types_distribution": {
+      "事实错误": 1731,
+      "遗漏": 1122,
+      "虚构内容": 8,
+      "虚构": 9
+    },
+    "score_distribution": {
+      "1": 867,
+      "5": 1207,
+      "2": 745,
+      "3": 282,
+      "4": 120
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 435,
+      "false_positive": 207,
+      "true_negative": 1687,
+      "false_negative": 892
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/base_model_dpo_train_2lei_model/dpo_test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1025,
+    "accuracy_rate": "31.96%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/4lei_model_chat/test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1842,
+    "model_refused_count": 1379,
+    "correct_answer": 876,
+    "wrong_answer": 966,
+    "correct_refusal": 718,
+    "wrong_refusal": 661,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.4281279105867743,
+      "refusal_rate_percentage": "42.81%",
+      "refusal_precision": 0.5206671501087745,
+      "refusal_precision_percentage": "52.07%",
+      "refusal_recall": 0.5206671501087745,
+      "refusal_recall_percentage": "52.07%",
+      "refusal_f1": 0.5206671501087745,
+      "refusal_f1_percentage": "52.07%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4755700325732899,
+      "answer_accuracy_percentage": "47.56%",
+      "answer_recall": 0.4755700325732899,
+      "answer_recall_percentage": "47.56%",
+      "answer_f1": 0.4755700325732899,
+      "answer_f1_percentage": "47.56%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4948773672772431,
+      "overall_accuracy_percentage": "49.49%"
+    },
+    "error_types_distribution": {
+      "事实错误": 904,
+      "遗漏": 432,
+      "虚构": 3,
+      "虚构内容": 10
+    },
+    "score_distribution": {
+      "5": 820,
+      "1": 1858,
+      "2": 362,
+      "3": 125,
+      "4": 56
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "4": 105,
+      "3": 233
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 876,
+      "false_positive": 966,
+      "true_negative": 718,
+      "false_negative": 661
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/4lei_model_chat/test_data_evaluation/optimal_refusal_ppl_minprob_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3274378040374148,
+      "min_token_prob_geq": 0.29721975578401616
+    },
+    "performance": {
+      "youden_j": 0.31602116618473186,
+      "accuracy": 0.7180999689537411,
+      "sensitivity": 0.526255707762557,
+      "specificity": 0.7897654584221748,
+      "tp": 461,
+      "tn": 1852,
+      "fp": 493,
+      "fn": 415
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 269
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/4lei_model_chat/test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 673,
+    "accuracy_rate": "31.60%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/4lei_model_chat/test_data_evaluation/evaluation_summary_2_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1842,
+    "model_refused_count": 1379,
+    "correct_answer": 876,
+    "wrong_answer": 966,
+    "correct_refusal": 718,
+    "wrong_refusal": 661,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.4281279105867743,
+      "refusal_rate_percentage": "42.81%",
+      "refusal_precision": 0.5206671501087745,
+      "refusal_precision_percentage": "52.07%",
+      "refusal_recall": 0.5206671501087745,
+      "refusal_recall_percentage": "52.07%",
+      "refusal_f1": 0.5206671501087745,
+      "refusal_f1_percentage": "52.07%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4755700325732899,
+      "answer_accuracy_percentage": "47.56%",
+      "answer_recall": 0.4755700325732899,
+      "answer_recall_percentage": "47.56%",
+      "answer_f1": 0.4755700325732899,
+      "answer_f1_percentage": "47.56%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4948773672772431,
+      "overall_accuracy_percentage": "49.49%"
+    },
+    "error_types_distribution": {
+      "事实错误": 904,
+      "遗漏": 432,
+      "虚构": 3,
+      "虚构内容": 10
+    },
+    "score_distribution": {
+      "5": 820,
+      "1": 1858,
+      "2": 362,
+      "3": 125,
+      "4": 56
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "4": 105,
+      "3": 233
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 876,
+      "false_positive": 966,
+      "true_negative": 718,
+      "false_negative": 661
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei2tiao_model_chat/test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 1918,
+    "model_refused_count": 1303,
+    "correct_answer": 887,
+    "wrong_answer": 1031,
+    "correct_refusal": 635,
+    "wrong_refusal": 668,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.4045327538031667,
+      "refusal_rate_percentage": "40.45%",
+      "refusal_precision": 0.4873369148119724,
+      "refusal_precision_percentage": "48.73%",
+      "refusal_recall": 0.4873369148119724,
+      "refusal_recall_percentage": "48.73%",
+      "refusal_f1": 0.4873369148119724,
+      "refusal_f1_percentage": "48.73%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4624608967674661,
+      "answer_accuracy_percentage": "46.25%",
+      "answer_recall": 0.4624608967674661,
+      "answer_recall_percentage": "46.25%",
+      "answer_f1": 0.4624608967674661,
+      "answer_f1_percentage": "46.25%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4725240608506675,
+      "overall_accuracy_percentage": "47.25%"
+    },
+    "error_types_distribution": {
+      "事实错误": 969,
+      "遗漏": 539,
+      "虚构内容": 1,
+      "虚构": 5
+    },
+    "score_distribution": {
+      "5": 818,
+      "1": 1759,
+      "4": 69,
+      "2": 414,
+      "3": 161
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 887,
+      "false_positive": 1031,
+      "true_negative": 635,
+      "false_negative": 668
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei2tiao_model_chat/test_data_evaluation/optimal_refusal_ppl_minprob_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.5001272678057973,
+      "min_token_prob_geq": 0.3001794962326787
+    },
+    "performance": {
+      "youden_j": 0.2217873327865416,
+      "accuracy": 0.7035082272586153,
+      "sensitivity": 0.4047350620067644,
+      "specificity": 0.8170522707797772,
+      "tp": 359,
+      "tn": 1907,
+      "fp": 427,
+      "fn": 528
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 221
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/code/test/test1/output/2lei2tiao_model_chat/test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 687,
+    "accuracy_rate": "29.25%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_10to1_refusal/test_data_evaluation/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 2884,
+    "model_refused_count": 337,
+    "correct_answer": 1507,
+    "wrong_answer": 1377,
+    "correct_refusal": 222,
+    "wrong_refusal": 115,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.10462589257994412,
+      "refusal_rate_percentage": "10.46%",
+      "refusal_precision": 0.658753709198813,
+      "refusal_precision_percentage": "65.88%",
+      "refusal_recall": 0.658753709198813,
+      "refusal_recall_percentage": "65.88%",
+      "refusal_f1": 0.658753709198813,
+      "refusal_f1_percentage": "65.88%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5225381414701803,
+      "answer_accuracy_percentage": "52.25%",
+      "answer_recall": 0.5225381414701803,
+      "answer_recall_percentage": "52.25%",
+      "answer_f1": 0.5225381414701803,
+      "answer_f1_percentage": "52.25%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5367898168270724,
+      "overall_accuracy_percentage": "53.68%"
+    },
+    "error_types_distribution": {
+      "事实错误": 1277,
+      "遗漏": 736,
+      "虚构内容": 8,
+      "虚构": 13,
+      "单位错误": 1
+    },
+    "score_distribution": {
+      "5": 1420,
+      "1": 916,
+      "2": 592,
+      "3": 206,
+      "4": 87
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1507,
+      "false_positive": 1377,
+      "true_negative": 222,
+      "false_negative": 115
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_10to1_refusal/test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1169,
+    "accuracy_rate": "38.93%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_10to1_refusal/test_data_evaluation/evaluation_summary_2_4.json": {
+    "total_samples": 3221,
+    "model_answered_count": 2884,
+    "model_refused_count": 337,
+    "correct_answer": 1507,
+    "wrong_answer": 1377,
+    "correct_refusal": 222,
+    "wrong_refusal": 115,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.10462589257994412,
+      "refusal_rate_percentage": "10.46%",
+      "refusal_precision": 0.658753709198813,
+      "refusal_precision_percentage": "65.88%",
+      "refusal_recall": 0.658753709198813,
+      "refusal_recall_percentage": "65.88%",
+      "refusal_f1": 0.658753709198813,
+      "refusal_f1_percentage": "65.88%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5225381414701803,
+      "answer_accuracy_percentage": "52.25%",
+      "answer_recall": 0.5225381414701803,
+      "answer_recall_percentage": "52.25%",
+      "answer_f1": 0.5225381414701803,
+      "answer_f1_percentage": "52.25%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5367898168270724,
+      "overall_accuracy_percentage": "53.68%"
+    },
+    "error_types_distribution": {
+      "事实错误": 1277,
+      "遗漏": 736,
+      "虚构内容": 8,
+      "虚构": 13,
+      "单位错误": 1
+    },
+    "score_distribution": {
+      "5": 1420,
+      "1": 916,
+      "2": 592,
+      "3": 206,
+      "4": 87
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1507,
+      "false_positive": 1377,
+      "true_negative": 222,
+      "false_negative": 115
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/test_data_evaluation_111/evaluation_summary.json": {
+    "total_samples": 121,
+    "correct_count": 8,
+    "accuracy_rate": "6.90%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/test_data_evaluation/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 567,
+    "accuracy_rate": "17.86%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/test_data_evaluation_11/evaluation_summary.json": {
+    "total_samples": 193,
+    "correct_count": 11,
+    "accuracy_rate": "5.79%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/test_data_evaluation_11111/evaluation_summary.json": {
+    "total_samples": 74,
+    "correct_count": 0,
+    "accuracy_rate": "0.00%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/test_data_evaluation_1111/evaluation_summary.json": {
+    "total_samples": 88,
+    "correct_count": 1,
+    "accuracy_rate": "1.18%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/new_test/output/sft_dpo_1to1_refusal/test_data_evaluation_1/evaluation_summary.json": {
+    "total_samples": 516,
+    "correct_count": 79,
+    "accuracy_rate": "15.64%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_class_sft/optimal_refusal_3metrics_ppl_refprob_minprob_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3908742688933213,
+      "refusal_prob_lt": 0.4819482029847955,
+      "min_token_prob_geq": 0.2834015115381612
+    },
+    "performance": {
+      "youden_j": 0.41148425260128363,
+      "accuracy": 0.8084445824278175,
+      "sensitivity": 0.5585215605749486,
+      "specificity": 0.852962692026335,
+      "tp": 272,
+      "tn": 2332,
+      "fp": 402,
+      "fn": 215
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Refusal Prob < 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 457
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_class_sft/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 981,
+    "model_refused_count": 2240,
+    "correct_answer": 406,
+    "wrong_answer": 575,
+    "correct_refusal": 1165,
+    "wrong_refusal": 1075,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.6954361999379075,
+      "refusal_rate_percentage": "69.54%",
+      "refusal_precision": 0.5200892857142857,
+      "refusal_precision_percentage": "52.01%",
+      "refusal_recall": 0.7574772431729518,
+      "refusal_recall_percentage": "75.75%",
+      "refusal_f1": 0.6167284277395446,
+      "refusal_f1_percentage": "61.67%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4138634046890928,
+      "answer_accuracy_percentage": "41.39%",
+      "answer_recall": 0.24123588829471182,
+      "answer_recall_percentage": "24.12%",
+      "answer_f1": 0.3048048048048048,
+      "answer_f1_percentage": "30.48%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4877367277243092,
+      "overall_accuracy_percentage": "48.77%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 8.90733513675249,
+      "rouge_2": 3.405719977126372,
+      "rouge_l": 8.887050711277858,
+      "bertscore_precision": 58.29940432719065,
+      "bertscore_recall": 67.04676203737345,
+      "bertscore_f1": 62.10152510714361
+    },
+    "error_types_distribution": {
+      "事实错误": 442,
+      "遗漏": 274,
+      "虚构": 4,
+      "包含虚构内容": 1,
+      "虚构内容": 6
+    },
+    "score_distribution": {
+      "5": 455,
+      "1": 2449,
+      "2": 203,
+      "3": 82,
+      "4": 32
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 406,
+      "false_positive": 575,
+      "true_negative": 1165,
+      "false_negative": 1075
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_class_sft/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 384,
+    "accuracy_rate": "35.52%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_class_sft/optimal_refusal_1metric_refusalprob_bayesian.json": {
+    "optimal_thresholds": {
+      "refusal_prob_lt": 0.19882341501611137
+    },
+    "performance": {
+      "youden_j": 0.010788924622481488,
+      "accuracy": 0.27351754113629306,
+      "sensitivity": 0.837782340862423,
+      "specificity": 0.17300658376005854,
+      "tp": 408,
+      "tn": 473,
+      "fp": 2261,
+      "fn": 79
+    },
+    "decision_rule": "仅当 Refusal Probability < 阈值时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 86
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_refusal_only/optimal_refusal_3metrics_ppl_refprob_minprob_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3663559384952393,
+      "refusal_prob_lt": 0.3974119990654845,
+      "min_token_prob_geq": 0.12296621705486277
+    },
+    "performance": {
+      "youden_j": 0.3481628435563311,
+      "accuracy": 0.6764979819931698,
+      "sensitivity": 0.7249555423829283,
+      "specificity": 0.6232073011734028,
+      "tp": 1223,
+      "tn": 956,
+      "fp": 578,
+      "fn": 464
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Refusal Prob < 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 330
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_refusal_only/optimal_refusal_prob_only_bayesian.json": {
+    "optimal_threshold": {
+      "refusal_prob_lt": 0.00011871055963451605
+    },
+    "performance": {
+      "youden_j": 0.048128606747356306,
+      "accuracy": 0.5243713132567526,
+      "sensitivity": 0.5305275637225845,
+      "specificity": 0.5176010430247718,
+      "tp": 895,
+      "tn": 794,
+      "fp": 740,
+      "fn": 792
+    },
+    "decision_rule": "仅当 Refusal Prob < 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 200,
+      "best_trial_number": 103
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_refusal_only/evaluation_summary_1metrics_4.json": {
+    "total_samples": 3221,
+    "score_ge_4_count": 1687,
+    "score_lt_4_count": 1534,
+    "model_answered_count": 647,
+    "model_refused_count": 2574,
+    "answered_and_score_ge_4": 511,
+    "answered_and_score_lt_4": 136,
+    "refused_and_score_lt_4": 1398,
+    "refused_and_score_ge_4": 1176,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.7991307047500776,
+      "refusal_rate_percentage": "79.91%",
+      "refusal_precision": 0.5431235431235432,
+      "refusal_precision_percentage": "54.31%",
+      "refusal_recall": 0.9113428943937418,
+      "refusal_recall_percentage": "91.13%",
+      "refusal_f1": 0.6806231742940604,
+      "refusal_f1_percentage": "68.06%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7897990726429676,
+      "answer_accuracy_percentage": "78.98%",
+      "answer_recall": 0.3029045643153527,
+      "answer_recall_percentage": "30.29%",
+      "answer_f1": 0.43787489288774634,
+      "answer_f1_percentage": "43.79%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5926730828935113,
+      "overall_accuracy_percentage": "59.27%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 21.48081819545838,
+      "rouge_2": 8.358872080330908,
+      "rouge_l": 21.418484397255195,
+      "bertscore_precision": 69.2393314954991,
+      "bertscore_recall": 79.36272094502134,
+      "bertscore_f1": 73.53138732395716
+    },
+    "error_types_distribution": {
+      "事实错误": 1431,
+      "遗漏": 874,
+      "虚构": 14,
+      "虚构内容": 10,
+      "包含虚构或错误内容": 1
+    },
+    "score_distribution": {
+      "5": 1588,
+      "1": 672,
+      "2": 619,
+      "3": 243,
+      "4": 99
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 511,
+      "false_positive": 136,
+      "true_negative": 1398,
+      "false_negative": 1176
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_refusal_only/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1307,
+    "accuracy_rate": "40.58%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_dpo_dataset/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 3221,
+    "model_refused_count": 0,
+    "correct_answer": 1191,
+    "wrong_answer": 2030,
+    "correct_refusal": 0,
+    "wrong_refusal": 0,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.0,
+      "refusal_rate_percentage": "0.00%",
+      "refusal_precision": 0.0,
+      "refusal_precision_percentage": "0.00%",
+      "refusal_recall": 0.0,
+      "refusal_recall_percentage": "0.00%",
+      "refusal_f1": 0.0,
+      "refusal_f1_percentage": "0.00%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.36976094380627134,
+      "answer_accuracy_percentage": "36.98%",
+      "answer_recall": 0.7076648841354723,
+      "answer_recall_percentage": "70.77%",
+      "answer_f1": 0.48572593800978786,
+      "answer_f1_percentage": "48.57%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.36976094380627134,
+      "overall_accuracy_percentage": "36.98%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 19.433916833331597,
+      "rouge_2": 7.462972264049583,
+      "rouge_l": 19.388296640629758,
+      "bertscore_precision": 69.11476673324151,
+      "bertscore_recall": 78.87441871033734,
+      "bertscore_f1": 73.2558584424214
+    },
+    "error_types_distribution": {
+      "事实错误": 1617,
+      "遗漏": 839,
+      "虚构内容": 14,
+      "虚构": 4,
+      "包含虚构或错误内容": 3,
+      "虚构或错误内容": 1,
+      "单位不一致": 1,
+      "包含虚构内容": 1
+    },
+    "score_distribution": {
+      "5": 1447,
+      "1": 809,
+      "2": 653,
+      "3": 234,
+      "4": 78
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1191,
+      "false_positive": 2030,
+      "true_negative": 0,
+      "false_negative": 0
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_dpo_dataset/evaluation_summary_ppl_minprob_411.json": {
+    "total_samples": 3221,
+    "score_ge_3_count": 1525,
+    "score_lt_3_count": 1696,
+    "model_answered_count": 1692,
+    "model_refused_count": 1529,
+    "answered_and_score_ge_3": 1107,
+    "answered_and_score_lt_3": 585,
+    "refused_and_score_lt_3": 1111,
+    "refused_and_score_ge_3": 418,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.47469729897547347,
+      "refusal_rate_percentage": "47.47%",
+      "refusal_precision": 0.7266187050359713,
+      "refusal_precision_percentage": "72.66%",
+      "refusal_recall": 0.6550707547169812,
+      "refusal_recall_percentage": "65.51%",
+      "refusal_f1": 0.6889922480620156,
+      "refusal_f1_percentage": "68.90%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6542553191489362,
+      "answer_accuracy_percentage": "65.43%",
+      "answer_recall": 0.7259016393442623,
+      "answer_recall_percentage": "72.59%",
+      "answer_f1": 0.6882188374261735,
+      "answer_f1_percentage": "68.82%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6886060229742316,
+      "overall_accuracy_percentage": "68.86%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 19.433916833331597,
+      "rouge_2": 7.462972264049583,
+      "rouge_l": 19.388296640629758,
+      "bertscore_precision": 69.11476673324151,
+      "bertscore_recall": 78.87441871033734,
+      "bertscore_f1": 73.2558584424214
+    },
+    "error_types_distribution": {
+      "事实错误": 1621,
+      "遗漏": 907,
+      "虚构内容": 15,
+      "虚构": 4,
+      "包含虚构或错误内容": 3,
+      "虚构或错误内容": 1,
+      "单位不一致": 1,
+      "包含虚构内容": 1
+    },
+    "score_distribution": {
+      "5": 1447,
+      "1": 809,
+      "2": 653,
+      "3": 234,
+      "4": 78
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1107,
+      "false_positive": 585,
+      "true_negative": 1111,
+      "false_negative": 418
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/evaluation_summary_ppl_minprob_4.json": {
+    "total_samples": 3219,
+    "score_ge_3_count": 1616,
+    "score_lt_3_count": 1603,
+    "model_answered_count": 1553,
+    "model_refused_count": 1666,
+    "answered_and_score_ge_3": 1133,
+    "answered_and_score_lt_3": 420,
+    "refused_and_score_lt_3": 1183,
+    "refused_and_score_ge_3": 483,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.517552034793414,
+      "refusal_rate_percentage": "51.76%",
+      "refusal_precision": 0.7100840336134454,
+      "refusal_precision_percentage": "71.01%",
+      "refusal_recall": 0.7379912663755459,
+      "refusal_recall_percentage": "73.80%",
+      "refusal_f1": 0.7237687366167025,
+      "refusal_f1_percentage": "72.38%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7295556986477785,
+      "answer_accuracy_percentage": "72.96%",
+      "answer_recall": 0.7011138613861386,
+      "answer_recall_percentage": "70.11%",
+      "answer_f1": 0.7150520668980752,
+      "answer_f1_percentage": "71.51%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7194780987884436,
+      "overall_accuracy_percentage": "71.95%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1087,
+      "事实错误": 1447,
+      "虚构内容": 22,
+      "包含虚构或错误内容": 1,
+      "虚构": 7
+    },
+    "score_distribution": {
+      "3": 302,
+      "2": 753,
+      "5": 1497,
+      "1": 548,
+      "4": 119
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1133,
+      "false_positive": 420,
+      "true_negative": 1183,
+      "false_negative": 483
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/evaluation_summary_ppl_minprob_5.json": {
+    "total_samples": 3219,
+    "score_ge_3_count": 1497,
+    "score_lt_3_count": 1722,
+    "model_answered_count": 1573,
+    "model_refused_count": 1646,
+    "answered_and_score_ge_3": 1078,
+    "answered_and_score_lt_3": 495,
+    "refused_and_score_lt_3": 1227,
+    "refused_and_score_ge_3": 419,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5113389251320286,
+      "refusal_rate_percentage": "51.13%",
+      "refusal_precision": 0.7454434993924666,
+      "refusal_precision_percentage": "74.54%",
+      "refusal_recall": 0.7125435540069687,
+      "refusal_recall_percentage": "71.25%",
+      "refusal_f1": 0.7286223277909738,
+      "refusal_f1_percentage": "72.86%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6853146853146853,
+      "answer_accuracy_percentage": "68.53%",
+      "answer_recall": 0.7201068804275217,
+      "answer_recall_percentage": "72.01%",
+      "answer_f1": 0.7022801302931597,
+      "answer_f1_percentage": "70.23%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7160608884746815,
+      "overall_accuracy_percentage": "71.61%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1087,
+      "事实错误": 1447,
+      "虚构内容": 22,
+      "包含虚构或错误内容": 1,
+      "虚构": 7
+    },
+    "score_distribution": {
+      "3": 302,
+      "2": 753,
+      "5": 1497,
+      "1": 548,
+      "4": 119
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1078,
+      "false_positive": 495,
+      "true_negative": 1227,
+      "false_negative": 419
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/optimal_refusal_ppl_minprob_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.1071248144943788,
+      "min_token_prob_geq": 0.337702810936907
+    },
+    "performance": {
+      "youden_j": 0.4391051277616844,
+      "accuracy": 0.7194780987884436,
+      "sensitivity": 0.7011138613861386,
+      "specificity": 0.7379912663755459,
+      "tp": 1133,
+      "tn": 1183,
+      "fp": 420,
+      "fn": 483
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 193
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/evaluation_summary_ppl_minprob_3.json": {
+    "total_samples": 3219,
+    "score_ge_3_count": 1918,
+    "score_lt_3_count": 1301,
+    "model_answered_count": 1561,
+    "model_refused_count": 1658,
+    "answered_and_score_ge_3": 1244,
+    "answered_and_score_lt_3": 317,
+    "refused_and_score_lt_3": 984,
+    "refused_and_score_ge_3": 674,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5150667909288599,
+      "refusal_rate_percentage": "51.51%",
+      "refusal_precision": 0.5934861278648975,
+      "refusal_precision_percentage": "59.35%",
+      "refusal_recall": 0.7563412759415834,
+      "refusal_recall_percentage": "75.63%",
+      "refusal_f1": 0.6650895572828658,
+      "refusal_f1_percentage": "66.51%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7969250480461243,
+      "answer_accuracy_percentage": "79.69%",
+      "answer_recall": 0.64859228362878,
+      "answer_recall_percentage": "64.86%",
+      "answer_f1": 0.7151480310434033,
+      "answer_f1_percentage": "71.51%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6921404162783473,
+      "overall_accuracy_percentage": "69.21%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1087,
+      "事实错误": 1447,
+      "虚构内容": 22,
+      "包含虚构或错误内容": 1,
+      "虚构": 7
+    },
+    "score_distribution": {
+      "3": 302,
+      "2": 753,
+      "5": 1497,
+      "1": 548,
+      "4": 119
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1244,
+      "false_positive": 317,
+      "true_negative": 984,
+      "false_negative": 674
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/evaluation_summary_3.json": {
+    "total_samples": 3219,
+    "correct_count": 1918,
+    "accuracy": 0.5958372165268717,
+    "accuracy_rate": "59.58%",
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/optimal_refusal_ppl_minprob_bayesian_3.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.1064714111937788,
+      "min_token_prob_geq": 0.332255115594937
+    },
+    "performance": {
+      "youden_j": 0.40493355957036337,
+      "accuracy": 0.6921404162783473,
+      "sensitivity": 0.64859228362878,
+      "specificity": 0.7563412759415834,
+      "tp": 1244,
+      "tn": 984,
+      "fp": 317,
+      "fn": 674
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 133
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset/optimal_refusal_ppl_minprob_bayesian_5.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.1071183999125036,
+      "min_token_prob_geq": 0.32628722506836316
+    },
+    "performance": {
+      "youden_j": 0.43265043443449036,
+      "accuracy": 0.7160608884746815,
+      "sensitivity": 0.7201068804275217,
+      "specificity": 0.7125435540069687,
+      "tp": 1078,
+      "tn": 1227,
+      "fp": 495,
+      "fn": 419
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 232
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_coke_direct/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 3221,
+    "model_refused_count": 0,
+    "correct_answer": 1267,
+    "wrong_answer": 1954,
+    "correct_refusal": 0,
+    "wrong_refusal": 0,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.0,
+      "refusal_rate_percentage": "0.00%",
+      "refusal_precision": 0.0,
+      "refusal_precision_percentage": "0.00%",
+      "refusal_recall": 0.0,
+      "refusal_recall_percentage": "0.00%",
+      "refusal_f1": 0.0,
+      "refusal_f1_percentage": "0.00%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.3933561005898789,
+      "answer_accuracy_percentage": "39.34%",
+      "answer_recall": 0.7528223410576351,
+      "answer_recall_percentage": "75.28%",
+      "answer_f1": 0.516721044045677,
+      "answer_f1_percentage": "51.67%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.3933561005898789,
+      "overall_accuracy_percentage": "39.34%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 21.164877525608617,
+      "rouge_2": 8.11860177145326,
+      "rouge_l": 21.11099086585422,
+      "bertscore_precision": 69.21738127084002,
+      "bertscore_recall": 79.42012242466276,
+      "bertscore_f1": 73.53216288938022
+    },
+    "error_types_distribution": {
+      "事实错误": 1423,
+      "遗漏": 807,
+      "虚构内容": 9,
+      "虚构": 12,
+      "部分事实错误": 1
+    },
+    "score_distribution": {
+      "1": 701,
+      "5": 1584,
+      "2": 584,
+      "3": 260,
+      "4": 92
+    },
+    "base_score_distribution": {
+      "1": 719,
+      "5": 1578,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1267,
+      "false_positive": 1954,
+      "true_negative": 0,
+      "false_negative": 0
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_coke_direct/optimal_refusal_ppl_minprob_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.1917278765934514,
+      "min_token_prob_geq": 0.368722201819193
+    },
+    "performance": {
+      "youden_j": 0.4417800125124547,
+      "accuracy": 0.719962744489289,
+      "sensitivity": 0.698090692124105,
+      "specificity": 0.7436893203883496,
+      "tp": 1170,
+      "tn": 1149,
+      "fp": 396,
+      "fn": 506
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 154
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_coke_direct/evaluation_summary_1metrics_4.json": {
+    "total_samples": 3221,
+    "score_ge_4_count": 1676,
+    "score_lt_4_count": 1545,
+    "model_answered_count": 1283,
+    "model_refused_count": 1938,
+    "answered_and_score_ge_4": 992,
+    "answered_and_score_lt_4": 291,
+    "refused_and_score_lt_4": 1254,
+    "refused_and_score_ge_4": 684,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.6016764979819932,
+      "refusal_rate_percentage": "60.17%",
+      "refusal_precision": 0.6470588235294118,
+      "refusal_precision_percentage": "64.71%",
+      "refusal_recall": 0.8116504854368932,
+      "refusal_recall_percentage": "81.17%",
+      "refusal_f1": 0.7200689061154177,
+      "refusal_f1_percentage": "72.01%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7731878409976617,
+      "answer_accuracy_percentage": "77.32%",
+      "answer_recall": 0.5918854415274463,
+      "answer_recall_percentage": "59.19%",
+      "answer_f1": 0.6704967894558972,
+      "answer_f1_percentage": "67.05%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6972989754734554,
+      "overall_accuracy_percentage": "69.73%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 21.164877525608617,
+      "rouge_2": 8.11860177145326,
+      "rouge_l": 21.11099086585422,
+      "bertscore_precision": 69.21738127084002,
+      "bertscore_recall": 79.42012242466276,
+      "bertscore_f1": 73.53216288938022
+    },
+    "error_types_distribution": {
+      "事实错误": 1430,
+      "遗漏": 878,
+      "虚构内容": 9,
+      "虚构": 12,
+      "部分事实错误": 1
+    },
+    "score_distribution": {
+      "1": 701,
+      "5": 1584,
+      "2": 584,
+      "3": 260,
+      "4": 92
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 992,
+      "false_positive": 291,
+      "true_negative": 1254,
+      "false_negative": 684
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_coke_direct/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1276,
+    "accuracy_rate": "39.62%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result5/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 911,
+    "accuracy_rate": "28.30%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_class_1:1/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 914,
+    "model_refused_count": 2307,
+    "correct_answer": 367,
+    "wrong_answer": 547,
+    "correct_refusal": 1198,
+    "wrong_refusal": 1109,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.7162371934181931,
+      "refusal_rate_percentage": "71.62%",
+      "refusal_precision": 0.5192891200693541,
+      "refusal_precision_percentage": "51.93%",
+      "refusal_recall": 0.7789336801040312,
+      "refusal_recall_percentage": "77.89%",
+      "refusal_f1": 0.6231469440832249,
+      "refusal_f1_percentage": "62.31%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.40153172866520787,
+      "answer_accuracy_percentage": "40.15%",
+      "answer_recall": 0.21806298276886513,
+      "answer_recall_percentage": "21.81%",
+      "answer_f1": 0.28263380824027723,
+      "answer_f1_percentage": "28.26%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4858739521887612,
+      "overall_accuracy_percentage": "48.59%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 5.978649503195271,
+      "rouge_2": 2.3548617258916194,
+      "rouge_l": 5.915478803576264,
+      "bertscore_precision": 57.02299877506204,
+      "bertscore_recall": 57.22348432720762,
+      "bertscore_f1": 56.746904909592246
+    },
+    "error_types_distribution": {
+      "事实错误": 432,
+      "遗漏": 253,
+      "虚构": 1,
+      "虚构内容": 2
+    },
+    "score_distribution": {
+      "5": 406,
+      "1": 2515,
+      "2": 194,
+      "4": 32,
+      "3": 74
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 367,
+      "false_positive": 547,
+      "true_negative": 1198,
+      "false_negative": 1109
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_class_1:1/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 328,
+    "accuracy_rate": "19.27%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_dataset/evaluation_summary_ppl_minprob_4.json": {
+    "total_samples": 3221,
+    "score_ge_3_count": 1683,
+    "score_lt_3_count": 1538,
+    "model_answered_count": 1800,
+    "model_refused_count": 1421,
+    "answered_and_score_ge_3": 1273,
+    "answered_and_score_lt_3": 527,
+    "refused_and_score_lt_3": 1011,
+    "refused_and_score_ge_3": 410,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.44116733933561003,
+      "refusal_rate_percentage": "44.12%",
+      "refusal_precision": 0.7114707952146376,
+      "refusal_precision_percentage": "71.15%",
+      "refusal_recall": 0.6573472041612484,
+      "refusal_recall_percentage": "65.73%",
+      "refusal_f1": 0.683338965866847,
+      "refusal_f1_percentage": "68.33%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7072222222222222,
+      "answer_accuracy_percentage": "70.72%",
+      "answer_recall": 0.756387403446227,
+      "answer_recall_percentage": "75.64%",
+      "answer_f1": 0.7309790410565604,
+      "answer_f1_percentage": "73.10%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7090965538652593,
+      "overall_accuracy_percentage": "70.91%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 21.57409365718875,
+      "rouge_2": 7.600463555318641,
+      "rouge_l": 21.464189826052632,
+      "bertscore_precision": 69.12345213989633,
+      "bertscore_recall": 79.28567367916114,
+      "bertscore_f1": 73.43294006332556
+    },
+    "error_types_distribution": {
+      "事实错误": 1463,
+      "遗漏": 850,
+      "虚构内容": 14,
+      "虚构": 4
+    },
+    "score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1273,
+      "false_positive": 527,
+      "true_negative": 1011,
+      "false_negative": 410
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_sft_dpo/evaluation_summary_4.json": {
+    "total_samples": 3219,
+    "should_answer_count": 1616,
+    "should_refuse_count": 1603,
+    "model_answered_count": 1475,
+    "model_refused_count": 1744,
+    "correct_answer": 931,
+    "wrong_answer": 544,
+    "correct_refusal": 1520,
+    "wrong_refusal": 224,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5417831624728177,
+      "refusal_rate_percentage": "54.18%",
+      "refusal_precision": 0.8715596330275229,
+      "refusal_precision_percentage": "87.16%",
+      "refusal_recall": 0.9482220835932627,
+      "refusal_recall_percentage": "94.82%",
+      "refusal_f1": 0.908276068120705,
+      "refusal_f1_percentage": "90.83%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6311864406779661,
+      "answer_accuracy_percentage": "63.12%",
+      "answer_recall": 0.5761138613861386,
+      "answer_recall_percentage": "57.61%",
+      "answer_f1": 0.6023940472339048,
+      "answer_f1_percentage": "60.24%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7614165890027959,
+      "overall_accuracy_percentage": "76.14%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 11.100145555028798,
+      "rouge_2": 3.986162346159246,
+      "rouge_l": 11.038285665582702,
+      "bertscore_precision": 61.73390452722542,
+      "bertscore_recall": 70.27843997655503,
+      "bertscore_f1": 65.44862076913248
+    },
+    "error_types_distribution": {
+      "事实错误": 476,
+      "遗漏": 380,
+      "虚构内容": 14,
+      "虚构": 8,
+      "重复冗余": 2,
+      "重复内容": 1
+    },
+    "score_distribution": {
+      "1": 1916,
+      "5": 849,
+      "2": 246,
+      "4": 89,
+      "3": 119
+    },
+    "base_score_distribution": {
+      "3": 302,
+      "2": 753,
+      "5": 1497,
+      "1": 548,
+      "4": 119
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 931,
+      "false_positive": 544,
+      "true_negative": 1520,
+      "false_negative": 224
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_sft_dpo/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 734,
+    "accuracy_rate": "46.51%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/test_data_sft_prompt_1:1/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 2763,
+    "model_refused_count": 458,
+    "correct_answer": 1010,
+    "wrong_answer": 1753,
+    "correct_refusal": 277,
+    "wrong_refusal": 181,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.14219186588016144,
+      "refusal_rate_percentage": "14.22%",
+      "refusal_precision": 0.6048034934497817,
+      "refusal_precision_percentage": "60.48%",
+      "refusal_recall": 0.1801040312093628,
+      "refusal_recall_percentage": "18.01%",
+      "refusal_f1": 0.2775551102204409,
+      "refusal_f1_percentage": "27.76%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.3655446977922548,
+      "answer_accuracy_percentage": "36.55%",
+      "answer_recall": 0.6001188354129531,
+      "answer_recall_percentage": "60.01%",
+      "answer_f1": 0.45434098065677014,
+      "answer_f1_percentage": "45.43%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.3995653523750388,
+      "overall_accuracy_percentage": "39.96%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 17.65211355820681,
+      "rouge_2": 6.294120750610332,
+      "rouge_l": 17.571665992780154,
+      "bertscore_precision": 65.90469601925246,
+      "bertscore_recall": 75.80289674523232,
+      "bertscore_f1": 70.10683132065486
+    },
+    "error_types_distribution": {
+      "事实错误": 1354,
+      "遗漏": 797,
+      "虚构": 10,
+      "虚构内容": 12,
+      "日期错误": 1
+    },
+    "score_distribution": {
+      "5": 1196,
+      "1": 1102,
+      "2": 595,
+      "3": 242,
+      "4": 86
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1010,
+      "false_positive": 1753,
+      "true_negative": 277,
+      "false_negative": 181
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/test_data_sft_prompt_1:1/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 981,
+    "accuracy_rate": "35.24%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/test_data_sft_duoshuju/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 2321,
+    "model_refused_count": 900,
+    "correct_answer": 993,
+    "wrong_answer": 1328,
+    "correct_refusal": 478,
+    "wrong_refusal": 422,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.279416330332195,
+      "refusal_rate_percentage": "27.94%",
+      "refusal_precision": 0.5311111111111111,
+      "refusal_precision_percentage": "53.11%",
+      "refusal_recall": 0.3107932379713914,
+      "refusal_recall_percentage": "31.08%",
+      "refusal_f1": 0.3921246923707958,
+      "refusal_f1_percentage": "39.21%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4278328306764326,
+      "answer_accuracy_percentage": "42.78%",
+      "answer_recall": 0.5900178253119429,
+      "answer_recall_percentage": "59.00%",
+      "answer_f1": 0.496003996003996,
+      "answer_f1_percentage": "49.60%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4566904687985098,
+      "overall_accuracy_percentage": "45.67%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 16.52669978424532,
+      "rouge_2": 6.233172855429605,
+      "rouge_l": 16.46128992388105,
+      "bertscore_precision": 65.48733591330196,
+      "bertscore_recall": 74.94587003259473,
+      "bertscore_f1": 69.52925914564847
+    },
+    "error_types_distribution": {
+      "事实错误": 915,
+      "遗漏": 557,
+      "虚构内容": 11,
+      "虚构": 6,
+      "单位不一致": 1
+    },
+    "score_distribution": {
+      "5": 1248,
+      "1": 1298,
+      "2": 439,
+      "4": 68,
+      "3": 168
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 993,
+      "false_positive": 1328,
+      "true_negative": 478,
+      "false_negative": 422
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/test_data_sft_duoshuju/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1007,
+    "accuracy_rate": "42.58%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_sft_dataset/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 1052,
+    "model_refused_count": 2169,
+    "correct_answer": 439,
+    "wrong_answer": 613,
+    "correct_refusal": 1133,
+    "wrong_refusal": 1036,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.6733933561005899,
+      "refusal_rate_percentage": "67.34%",
+      "refusal_precision": 0.5223605348086676,
+      "refusal_precision_percentage": "52.24%",
+      "refusal_recall": 0.7366710013003901,
+      "refusal_recall_percentage": "73.67%",
+      "refusal_f1": 0.6112759643916914,
+      "refusal_f1_percentage": "61.13%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.41730038022813687,
+      "answer_accuracy_percentage": "41.73%",
+      "answer_recall": 0.2608437314319667,
+      "answer_recall_percentage": "26.08%",
+      "answer_f1": 0.32102376599634364,
+      "answer_f1_percentage": "32.10%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4880471903135672,
+      "overall_accuracy_percentage": "48.80%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 8.839681524572569,
+      "rouge_2": 3.0883700273638333,
+      "rouge_l": 8.811635534366488,
+      "bertscore_precision": 58.739082488870075,
+      "bertscore_recall": 67.24916770661036,
+      "bertscore_f1": 62.42713654996149
+    },
+    "error_types_distribution": {
+      "事实错误": 479,
+      "遗漏": 284,
+      "虚构内容": 1,
+      "单位不一致": 1
+    },
+    "score_distribution": {
+      "5": 485,
+      "1": 2397,
+      "2": 211,
+      "3": 74,
+      "4": 54
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 439,
+      "false_positive": 613,
+      "true_negative": 1133,
+      "false_negative": 1036
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_sft_dataset/evaluation_summary_ppl_minprob_411.json": {
+    "total_samples": 3221,
+    "score_ge_3_count": 539,
+    "score_lt_3_count": 2682,
+    "model_answered_count": 3182,
+    "model_refused_count": 39,
+    "answered_and_score_ge_3": 538,
+    "answered_and_score_lt_3": 2644,
+    "refused_and_score_lt_3": 38,
+    "refused_and_score_ge_3": 1,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.012108040981061783,
+      "refusal_rate_percentage": "1.21%",
+      "refusal_precision": 0.9743589743589743,
+      "refusal_precision_percentage": "97.44%",
+      "refusal_recall": 0.014168530947054437,
+      "refusal_recall_percentage": "1.42%",
+      "refusal_f1": 0.02793090775450202,
+      "refusal_f1_percentage": "2.79%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.16907605279698304,
+      "answer_accuracy_percentage": "16.91%",
+      "answer_recall": 0.9981447124304267,
+      "answer_recall_percentage": "99.81%",
+      "answer_f1": 0.28916957807041116,
+      "answer_f1_percentage": "28.92%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.17882645141260478,
+      "overall_accuracy_percentage": "17.88%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 8.839681524572569,
+      "rouge_2": 3.0883700273638333,
+      "rouge_l": 8.811635534366488,
+      "bertscore_precision": 58.739082488870075,
+      "bertscore_recall": 67.24916770661036,
+      "bertscore_f1": 62.42713654996149
+    },
+    "error_types_distribution": {
+      "事实错误": 485,
+      "遗漏": 330,
+      "虚构内容": 1,
+      "单位不一致": 1,
+      "模型拒答": 1
+    },
+    "score_distribution": {
+      "5": 485,
+      "1": 2397,
+      "2": 211,
+      "3": 74,
+      "4": 54
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 538,
+      "false_positive": 2644,
+      "true_negative": 38,
+      "false_negative": 1
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_4metrics_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3442820439240084,
+      "min_token_prob_geq": 0.0878306865526556,
+      "avg_token_prob_geq": 0.7419144579275132,
+      "avg_topk_delta_geq": 0.7122927173457129
+    },
+    "performance": {
+      "youden_j": 0.4039825991480255,
+      "accuracy": 0.7023920472196334,
+      "sensitivity": 0.7410824108241082,
+      "specificity": 0.6629001883239172,
+      "tp": 1205,
+      "tn": 1056,
+      "fp": 537,
+      "fn": 421
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Avg Token Prob ≥ 阈值 且 Avg TopK Delta ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 272
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_3metrics_min_avg_avgtopk_bayesian.json": {
+    "optimal_thresholds": {
+      "min_token_prob_geq": 0.11190908853495929,
+      "avg_token_prob_geq": 0.7878532334738373,
+      "avg_topk_delta_geq": 0.7285755295909325
+    },
+    "performance": {
+      "youden_j": 0.39917721211110413,
+      "accuracy": 0.6999068033550793,
+      "sensitivity": 0.7306273062730627,
+      "specificity": 0.6685499058380414,
+      "tp": 1188,
+      "tn": 1065,
+      "fp": 528,
+      "fn": 438
+    },
+    "decision_rule": "仅当 Min Token Prob ≥ 阈值 且 Avg Token Prob ≥ 阈值 且 Avg TopK Delta ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 251
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/evaluation_summary_3metrics_4.json": {
+    "total_samples": 3219,
+    "score_ge_4_count": 1626,
+    "score_lt_4_count": 1593,
+    "model_answered_count": 1716,
+    "model_refused_count": 1503,
+    "answered_and_score_ge_4": 1188,
+    "answered_and_score_lt_4": 528,
+    "refused_and_score_lt_4": 1065,
+    "refused_and_score_ge_4": 438,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.46691519105312207,
+      "refusal_rate_percentage": "46.69%",
+      "refusal_precision": 0.7085828343313373,
+      "refusal_precision_percentage": "70.86%",
+      "refusal_recall": 0.6685499058380414,
+      "refusal_recall_percentage": "66.85%",
+      "refusal_f1": 0.6879844961240309,
+      "refusal_f1_percentage": "68.80%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6923076923076923,
+      "answer_accuracy_percentage": "69.23%",
+      "answer_recall": 0.7306273062730627,
+      "answer_recall_percentage": "73.06%",
+      "answer_f1": 0.7109515260323159,
+      "answer_f1_percentage": "71.10%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6999068033550793,
+      "overall_accuracy_percentage": "69.99%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136942,
+      "rouge_2": 7.941455079855797,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1108,
+      "事实错误": 1425,
+      "虚构内容": 16,
+      "虚构或错误内容": 1,
+      "虚构": 6,
+      "部分事实失败": 1
+    },
+    "score_distribution": {
+      "3": 308,
+      "2": 762,
+      "5": 1478,
+      "1": 523,
+      "4": 148
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1188,
+      "false_positive": 528,
+      "true_negative": 1065,
+      "false_negative": 438
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/evaluation_summary_2metrics_4.json": {
+    "total_samples": 3219,
+    "score_ge_4_count": 1626,
+    "score_lt_4_count": 1593,
+    "model_answered_count": 1840,
+    "model_refused_count": 1379,
+    "answered_and_score_ge_4": 1244,
+    "answered_and_score_lt_4": 596,
+    "refused_and_score_lt_4": 997,
+    "refused_and_score_ge_4": 382,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.42839391115253184,
+      "refusal_rate_percentage": "42.84%",
+      "refusal_precision": 0.7229876722262509,
+      "refusal_precision_percentage": "72.30%",
+      "refusal_recall": 0.6258631512868801,
+      "refusal_recall_percentage": "62.59%",
+      "refusal_f1": 0.6709286675639299,
+      "refusal_f1_percentage": "67.09%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6760869565217391,
+      "answer_accuracy_percentage": "67.61%",
+      "answer_recall": 0.7650676506765067,
+      "answer_recall_percentage": "76.51%",
+      "answer_f1": 0.7178303519907673,
+      "answer_f1_percentage": "71.78%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6961789375582479,
+      "overall_accuracy_percentage": "69.62%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136942,
+      "rouge_2": 7.941455079855797,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1108,
+      "事实错误": 1425,
+      "虚构内容": 16,
+      "虚构或错误内容": 1,
+      "虚构": 6,
+      "部分事实失败": 1
+    },
+    "score_distribution": {
+      "3": 308,
+      "2": 762,
+      "5": 1478,
+      "1": 523,
+      "4": 148
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1244,
+      "false_positive": 596,
+      "true_negative": 997,
+      "false_negative": 382
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/evaluation_summary_1metrics_4.json": {
+    "total_samples": 3219,
+    "score_ge_4_count": 1626,
+    "score_lt_4_count": 1593,
+    "model_answered_count": 1727,
+    "model_refused_count": 1492,
+    "answered_and_score_ge_4": 1166,
+    "answered_and_score_lt_4": 561,
+    "refused_and_score_lt_4": 1032,
+    "refused_and_score_ge_4": 460,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.46349798073936005,
+      "refusal_rate_percentage": "46.35%",
+      "refusal_precision": 0.6916890080428955,
+      "refusal_precision_percentage": "69.17%",
+      "refusal_recall": 0.647834274952919,
+      "refusal_recall_percentage": "64.78%",
+      "refusal_f1": 0.6690437601296596,
+      "refusal_f1_percentage": "66.90%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6751592356687898,
+      "answer_accuracy_percentage": "67.52%",
+      "answer_recall": 0.7170971709717097,
+      "answer_recall_percentage": "71.71%",
+      "answer_f1": 0.6954965702356098,
+      "answer_f1_percentage": "69.55%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.682820751786269,
+      "overall_accuracy_percentage": "68.28%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136942,
+      "rouge_2": 7.941455079855797,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1108,
+      "事实错误": 1425,
+      "虚构内容": 16,
+      "虚构或错误内容": 1,
+      "虚构": 6,
+      "部分事实失败": 1
+    },
+    "score_distribution": {
+      "3": 308,
+      "2": 762,
+      "5": 1478,
+      "1": 523,
+      "4": 148
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1166,
+      "false_positive": 561,
+      "true_negative": 1032,
+      "false_negative": 460
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1286,
+    "accuracy_rate": "39.95%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_3metrics_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.345027876629751,
+      "min_token_prob_geq": 0.07651338665662932,
+      "avg_token_prob_geq": 0.7275938569886486
+    },
+    "performance": {
+      "youden_j": 0.4043173200093584,
+      "accuracy": 0.7027027027027027,
+      "sensitivity": 0.7552275522755227,
+      "specificity": 0.6490897677338355,
+      "tp": 1228,
+      "tn": 1034,
+      "fp": 559,
+      "fn": 398
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Avg Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 220
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_1metric_minprob_bayesian.json": {
+    "optimal_thresholds": {
+      "min_token_prob_geq": 0.17095043860867817
+    },
+    "performance": {
+      "youden_j": 0.3649314459246287,
+      "accuracy": 0.682820751786269,
+      "sensitivity": 0.7170971709717097,
+      "specificity": 0.647834274952919,
+      "tp": 1166,
+      "tn": 1032,
+      "fp": 561,
+      "fn": 460
+    },
+    "decision_rule": "仅当 Min Token Prob ≥ 阈值时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 145
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_2metrics_ppl_avgtopk_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3429333557006495,
+      "avg_topk_delta_geq": 0.7043635712209834
+    },
+    "performance": {
+      "youden_j": 0.3909308019633868,
+      "accuracy": 0.6961789375582479,
+      "sensitivity": 0.7650676506765067,
+      "specificity": 0.6258631512868801,
+      "tp": 1244,
+      "tn": 997,
+      "fp": 596,
+      "fn": 382
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Avg TopK Delta ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 54
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_2metrics_ppl_avgprob_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3431971627988375,
+      "avg_token_prob_geq": 0.711127770534109
+    },
+    "performance": {
+      "youden_j": 0.3908671007614031,
+      "accuracy": 0.6961789375582479,
+      "sensitivity": 0.7681426814268143,
+      "specificity": 0.6227244193345888,
+      "tp": 1249,
+      "tn": 992,
+      "fp": 601,
+      "fn": 377
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Avg Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 11
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/evaluation_summary_4metrics_4.json": {
+    "total_samples": 3219,
+    "score_ge_4_count": 1626,
+    "score_lt_4_count": 1593,
+    "model_answered_count": 1742,
+    "model_refused_count": 1477,
+    "answered_and_score_ge_4": 1205,
+    "answered_and_score_lt_4": 537,
+    "refused_and_score_lt_4": 1056,
+    "refused_and_score_ge_4": 421,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.4588381484933209,
+      "refusal_rate_percentage": "45.88%",
+      "refusal_precision": 0.7149627623561273,
+      "refusal_precision_percentage": "71.50%",
+      "refusal_recall": 0.6629001883239172,
+      "refusal_recall_percentage": "66.29%",
+      "refusal_f1": 0.6879478827361564,
+      "refusal_f1_percentage": "68.79%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.6917336394948336,
+      "answer_accuracy_percentage": "69.17%",
+      "answer_recall": 0.7410824108241082,
+      "answer_recall_percentage": "74.11%",
+      "answer_f1": 0.7155581947743469,
+      "answer_f1_percentage": "71.56%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7023920472196334,
+      "overall_accuracy_percentage": "70.24%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136942,
+      "rouge_2": 7.941455079855797,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    },
+    "error_types_distribution": {
+      "遗漏": 1108,
+      "事实错误": 1425,
+      "虚构内容": 16,
+      "虚构或错误内容": 1,
+      "虚构": 6,
+      "部分事实失败": 1
+    },
+    "score_distribution": {
+      "3": 308,
+      "2": 762,
+      "5": 1478,
+      "1": 523,
+      "4": 148
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1205,
+      "false_positive": 537,
+      "true_negative": 1056,
+      "false_negative": 421
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_dataset_4zhibiao/optimal_refusal_3metrics_ppl_min_topk_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.3455614047625466,
+      "min_token_prob_geq": 0.08725228526445696,
+      "avg_topk_delta_geq": 0.5798081720880707
+    },
+    "performance": {
+      "youden_j": 0.40386793698445445,
+      "accuracy": 0.7023920472196334,
+      "sensitivity": 0.7466174661746617,
+      "specificity": 0.6572504708097928,
+      "tp": 1214,
+      "tn": 1047,
+      "fp": 546,
+      "fn": 412
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Avg TopK Delta ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 110
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_sft_dpo/evaluation_summary_4.json": {
+    "total_samples": 3221,
+    "should_answer_count": 1683,
+    "should_refuse_count": 1538,
+    "model_answered_count": 1032,
+    "model_refused_count": 2189,
+    "correct_answer": 212,
+    "wrong_answer": 820,
+    "correct_refusal": 1148,
+    "wrong_refusal": 1041,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.6796026078857498,
+      "refusal_rate_percentage": "67.96%",
+      "refusal_precision": 0.5244403837368662,
+      "refusal_precision_percentage": "52.44%",
+      "refusal_recall": 0.7464239271781534,
+      "refusal_recall_percentage": "74.64%",
+      "refusal_f1": 0.61604507646901,
+      "refusal_f1_percentage": "61.60%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.2054263565891473,
+      "answer_accuracy_percentage": "20.54%",
+      "answer_recall": 0.1259655377302436,
+      "answer_recall_percentage": "12.60%",
+      "answer_f1": 0.1561694290976059,
+      "answer_f1_percentage": "15.62%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.4222291213908724,
+      "overall_accuracy_percentage": "42.22%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 6.256635332034992,
+      "rouge_2": 1.950866289243515,
+      "rouge_l": 6.226910423626715,
+      "bertscore_precision": 56.50447530984805,
+      "bertscore_recall": 65.71640928907078,
+      "bertscore_f1": 60.51538780919146
+    },
+    "error_types_distribution": {
+      "事实错误": 743,
+      "遗漏": 491,
+      "虚构内容": 45,
+      "单位错误": 2,
+      "虚构": 2,
+      "重复内容": 1
+    },
+    "score_distribution": {
+      "5": 224,
+      "1": 2568,
+      "2": 330,
+      "4": 24,
+      "3": 75
+    },
+    "base_score_distribution": {
+      "5": 1578,
+      "1": 719,
+      "2": 586,
+      "3": 233,
+      "4": 105
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 212,
+      "false_positive": 820,
+      "true_negative": 1148,
+      "false_negative": 1041
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_test_sft_dpo/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 207,
+    "accuracy_rate": "17.88%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_class_sft/evaluation_summary_4.json": {
+    "total_samples": 3219,
+    "should_answer_count": 1616,
+    "should_refuse_count": 1603,
+    "model_answered_count": 1538,
+    "model_refused_count": 1681,
+    "correct_answer": 1420,
+    "wrong_answer": 118,
+    "correct_refusal": 1557,
+    "wrong_refusal": 124,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.5222118670394532,
+      "refusal_rate_percentage": "52.22%",
+      "refusal_precision": 0.9262343842950624,
+      "refusal_precision_percentage": "92.62%",
+      "refusal_recall": 0.9713038053649408,
+      "refusal_recall_percentage": "97.13%",
+      "refusal_f1": 0.9482338611449452,
+      "refusal_f1_percentage": "94.82%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.9232769830949284,
+      "answer_accuracy_percentage": "92.33%",
+      "answer_recall": 0.8787128712871287,
+      "answer_recall_percentage": "87.87%",
+      "answer_f1": 0.9004438807863031,
+      "answer_f1_percentage": "90.04%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.9248213730972351,
+      "overall_accuracy_percentage": "92.48%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 15.104849646591932,
+      "rouge_2": 6.173867720946453,
+      "rouge_l": 15.065425986478616,
+      "bertscore_precision": 63.87365371238819,
+      "bertscore_recall": 72.57406236352148,
+      "bertscore_f1": 67.64084642886671
+    },
+    "error_types_distribution": {
+      "事实错误": 79,
+      "遗漏": 79,
+      "虚构内容": 4
+    },
+    "score_distribution": {
+      "1": 1700,
+      "5": 1311,
+      "4": 119,
+      "3": 50,
+      "2": 39
+    },
+    "base_score_distribution": {
+      "3": 302,
+      "2": 753,
+      "5": 1497,
+      "1": 548,
+      "4": 119
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1420,
+      "false_positive": 118,
+      "true_negative": 1557,
+      "false_negative": 124
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result_train_class_sft/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1148,
+    "accuracy_rate": "71.08%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result2/evaluation_summary_ppl_minprob_5.json": {
+    "total_samples": 3219,
+    "score_ge_3_count": 957,
+    "score_lt_3_count": 2262,
+    "model_answered_count": 565,
+    "model_refused_count": 2654,
+    "answered_and_score_ge_3": 265,
+    "answered_and_score_lt_3": 300,
+    "refused_and_score_lt_3": 1962,
+    "refused_and_score_ge_3": 692,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.8244796520658589,
+      "refusal_rate_percentage": "82.45%",
+      "refusal_precision": 0.7392614920874152,
+      "refusal_precision_percentage": "73.93%",
+      "refusal_recall": 0.8673740053050398,
+      "refusal_recall_percentage": "86.74%",
+      "refusal_f1": 0.7982099267697315,
+      "refusal_f1_percentage": "79.82%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4690265486725664,
+      "answer_accuracy_percentage": "46.90%",
+      "answer_recall": 0.2769070010449321,
+      "answer_recall_percentage": "27.69%",
+      "answer_f1": 0.3482260183968463,
+      "answer_f1_percentage": "34.82%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.691829760795278,
+      "overall_accuracy_percentage": "69.18%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 10.157727995816497,
+      "rouge_2": 3.3309804334364377,
+      "rouge_l": 10.077224843625507,
+      "bertscore_precision": 67.15723304190819,
+      "bertscore_recall": 76.26430521880887,
+      "bertscore_f1": 71.08477088337769
+    },
+    "error_types_distribution": {
+      "事实错误": 2149,
+      "遗漏": 1428,
+      "虚构内容": 7,
+      "虚构": 1,
+      "虚构或错误内容": 1,
+      "部分事实错误": 1,
+      "重复冗余": 1,
+      "冗余重复": 1,
+      "重复内容": 1
+    },
+    "score_distribution": {
+      "2": 1124,
+      "4": 71,
+      "5": 886,
+      "1": 831,
+      "3": 307
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 265,
+      "false_positive": 300,
+      "true_negative": 1962,
+      "false_negative": 692
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result2/optimal_refusal_ppl_minprob_bayesian_4.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.9015167973989917,
+      "min_token_prob_geq": 0.2705187210376767
+    },
+    "performance": {
+      "youden_j": 0.14428100634997199,
+      "accuracy": 0.691829760795278,
+      "sensitivity": 0.2769070010449321,
+      "specificity": 0.8673740053050398,
+      "tp": 265,
+      "tn": 1962,
+      "fp": 300,
+      "fn": 692
+    },
+    "decision_rule": "仅当 PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "best_trial_number": 151
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result2/evaluation_summary.json": {
+    "total_samples": 3219,
+    "score_ge_3_count": 1264,
+    "score_lt_3_count": 1955,
+    "model_answered_count": 2244,
+    "model_refused_count": 975,
+    "answered_and_score_ge_3": 969,
+    "answered_and_score_lt_3": 1275,
+    "refused_and_score_lt_3": 680,
+    "refused_and_score_ge_3": 295,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.30288909599254427,
+      "refusal_rate_percentage": "30.29%",
+      "refusal_precision": 0.6974358974358974,
+      "refusal_precision_percentage": "69.74%",
+      "refusal_recall": 0.34782608695652173,
+      "refusal_recall_percentage": "34.78%",
+      "refusal_f1": 0.4641638225255973,
+      "refusal_f1_percentage": "46.42%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4318181818181818,
+      "answer_accuracy_percentage": "43.18%",
+      "answer_recall": 0.7666139240506329,
+      "answer_recall_percentage": "76.66%",
+      "answer_f1": 0.5524515393386544,
+      "answer_f1_percentage": "55.25%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5122708915812364,
+      "overall_accuracy_percentage": "51.23%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 10.157727995816497,
+      "rouge_2": 3.3309804334364377,
+      "rouge_l": 10.077224843625507,
+      "bertscore_precision": 67.15723304190819,
+      "bertscore_recall": 76.26430521880887,
+      "bertscore_f1": 71.08477088337769
+    },
+    "error_types_distribution": {
+      "事实错误": 2149,
+      "遗漏": 1428,
+      "虚构内容": 7,
+      "虚构": 1,
+      "虚构或错误内容": 1,
+      "部分事实错误": 1,
+      "重复冗余": 1,
+      "冗余重复": 1,
+      "重复内容": 1
+    },
+    "score_distribution": {
+      "2": 1124,
+      "4": 71,
+      "5": 886,
+      "1": 831,
+      "3": 307
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 969,
+      "false_positive": 1275,
+      "true_negative": 680,
+      "false_negative": 295
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result4/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 895,
+    "accuracy_rate": "27.80%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/results_test/result3/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 907,
+    "accuracy_rate": "28.18%"
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result1/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 859,
+    "accuracy": 0.2668530599565082,
+    "accuracy_rate": "26.69%",
+    "basic_metrics_average": {
+      "rouge_1": 9.018514891058588,
+      "rouge_2": 2.771050828214197,
+      "rouge_l": 8.909062520263205,
+      "bertscore_precision": 66.65163662639898,
+      "bertscore_recall": 75.64810465103575,
+      "bertscore_f1": 70.53503090270968
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result1/evaluation_summary_3.json": {
+    "total_samples": 3219,
+    "correct_count": 1177,
+    "accuracy": 0.36564150357253805,
+    "accuracy_rate": "36.56%",
+    "basic_metrics_average": {
+      "rouge_1": 9.018514891058588,
+      "rouge_2": 2.771050828214197,
+      "rouge_l": 8.909062520263205,
+      "bertscore_precision": 66.65163662639898,
+      "bertscore_recall": 75.64810465103575,
+      "bertscore_f1": 70.53503090270968
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result5/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 675,
+    "accuracy": 0.2096924510717614,
+    "accuracy_rate": "20.97%",
+    "basic_metrics_average": {
+      "rouge_1": 7.171138828656947,
+      "rouge_2": 1.9597228175748513,
+      "rouge_l": 7.086995828074031,
+      "bertscore_precision": 64.0432285462599,
+      "bertscore_recall": 74.17712967267649,
+      "bertscore_f1": 68.41958873240094
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result5/evaluation_summary_3.json": {
+    "total_samples": 3219,
+    "correct_count": 946,
+    "accuracy": 0.29388008698353524,
+    "accuracy_rate": "29.39%",
+    "basic_metrics_average": {
+      "rouge_1": 7.171138828656947,
+      "rouge_2": 1.9597228175748513,
+      "rouge_l": 7.086995828074031,
+      "bertscore_precision": 64.0432285462599,
+      "bertscore_recall": 74.17712967267649,
+      "bertscore_f1": 68.41958873240094
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result2/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 833,
+    "accuracy": 0.258776017396707,
+    "accuracy_rate": "25.88%",
+    "basic_metrics_average": {
+      "rouge_1": 8.690555469958055,
+      "rouge_2": 2.83627281908874,
+      "rouge_l": 8.606750710696906,
+      "bertscore_precision": 66.03404349442334,
+      "bertscore_recall": 75.35350284116466,
+      "bertscore_f1": 70.04767335712928
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result2/evaluation_summary_3.json": {
+    "total_samples": 3219,
+    "correct_count": 1123,
+    "accuracy": 0.34886610748679714,
+    "accuracy_rate": "34.89%",
+    "basic_metrics_average": {
+      "rouge_1": 8.690555469958055,
+      "rouge_2": 2.83627281908874,
+      "rouge_l": 8.606750710696906,
+      "bertscore_precision": 66.03404349442334,
+      "bertscore_recall": 75.35350284116466,
+      "bertscore_f1": 70.04767335712928
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result4/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 739,
+    "accuracy": 0.2295744019881951,
+    "accuracy_rate": "22.96%",
+    "basic_metrics_average": {
+      "rouge_1": 7.245424178077051,
+      "rouge_2": 2.207992701367718,
+      "rouge_l": 7.105167431835096,
+      "bertscore_precision": 64.64994732092612,
+      "bertscore_recall": 74.67327247998402,
+      "bertscore_f1": 68.97580407724206
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result4/evaluation_summary_3.json": {
+    "total_samples": 3219,
+    "correct_count": 1005,
+    "accuracy": 0.31220876048462254,
+    "accuracy_rate": "31.22%",
+    "basic_metrics_average": {
+      "rouge_1": 7.245424178077051,
+      "rouge_2": 2.207992701367718,
+      "rouge_l": 7.105167431835096,
+      "bertscore_precision": 64.64994732092612,
+      "bertscore_recall": 74.67327247998402,
+      "bertscore_f1": 68.97580407724206
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result3/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 783,
+    "accuracy": 0.24324324324324326,
+    "accuracy_rate": "24.32%",
+    "basic_metrics_average": {
+      "rouge_1": 8.029993532104658,
+      "rouge_2": 2.4121763894424166,
+      "rouge_l": 7.9160755960298275,
+      "bertscore_precision": 65.38690836922505,
+      "bertscore_recall": 75.04254816277644,
+      "bertscore_f1": 69.54649622653649
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/refusal_dpo/data/train_generate_result/result3/evaluation_summary_3.json": {
+    "total_samples": 3219,
+    "correct_count": 1071,
+    "accuracy": 0.33271202236719477,
+    "accuracy_rate": "33.27%",
+    "basic_metrics_average": {
+      "rouge_1": 8.029993532104658,
+      "rouge_2": 2.4121763894424166,
+      "rouge_l": 7.9160755960298275,
+      "bertscore_precision": 65.38690836922505,
+      "bertscore_recall": 75.04254816277644,
+      "bertscore_f1": 69.54649622653649
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-mol/evaluation_summary.json": {
+    "total_samples": 3224,
+    "correct_count": 53,
+    "accuracy": 0.016439205955334987,
+    "accuracy_rate": "1.64%",
+    "basic_metrics_average": {
+      "rouge_1": 4.960579244358889,
+      "rouge_2": 0.9164381432116069,
+      "rouge_l": 4.828504922572538,
+      "bertscore_precision": 57.38916903382939,
+      "bertscore_recall": 67.22834722575715,
+      "bertscore_f1": 61.75590450817687
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-mol/evaluation_summary_3.json": {
+    "total_samples": 3224,
+    "correct_count": 112,
+    "accuracy": 0.034739454094292806,
+    "accuracy_rate": "3.47%",
+    "basic_metrics_average": {
+      "rouge_1": 4.960579244358889,
+      "rouge_2": 0.9164381432116069,
+      "rouge_l": 4.828504922572538,
+      "bertscore_precision": 57.38916903382939,
+      "bertscore_recall": 67.22834722575715,
+      "bertscore_f1": 61.75590450817687
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-cpt/evaluation_summary.json": {
+    "total_samples": 3224,
+    "correct_count": 88,
+    "accuracy": 0.02729528535980149,
+    "accuracy_rate": "2.73%",
+    "basic_metrics_average": {
+      "rouge_1": 5.83835168377622,
+      "rouge_2": 1.0642615461951868,
+      "rouge_l": 5.724684647202228,
+      "bertscore_precision": 58.84505587978931,
+      "bertscore_recall": 70.26816804156114,
+      "bertscore_f1": 63.84482392509729
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-cpt/evaluation_summary_3.json": {
+    "total_samples": 3224,
+    "correct_count": 144,
+    "accuracy": 0.04466501240694789,
+    "accuracy_rate": "4.47%",
+    "basic_metrics_average": {
+      "rouge_1": 5.83835168377622,
+      "rouge_2": 1.0642615461951868,
+      "rouge_l": 5.724684647202228,
+      "bertscore_precision": 58.84505587978931,
+      "bertscore_recall": 70.26816804156114,
+      "bertscore_f1": 63.84482392509729
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-cpt-qlora/evaluation_summary.json": {
+    "total_samples": 3224,
+    "correct_count": 1469,
+    "accuracy": 0.45564516129032256,
+    "accuracy_rate": "45.56%",
+    "basic_metrics_average": {
+      "rouge_1": 24.089288721330732,
+      "rouge_2": 10.59610697882267,
+      "rouge_l": 23.9857174235907,
+      "bertscore_precision": 70.3013250507211,
+      "bertscore_recall": 79.73650322196353,
+      "bertscore_f1": 74.32633269088292
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-cpt-qlora/evaluation_summary_3.json": {
+    "total_samples": 3224,
+    "correct_count": 1833,
+    "accuracy": 0.5685483870967742,
+    "accuracy_rate": "56.85%",
+    "basic_metrics_average": {
+      "rouge_1": 24.089288721330732,
+      "rouge_2": 10.59610697882267,
+      "rouge_l": 23.9857174235907,
+      "bertscore_precision": 70.3013250507211,
+      "bertscore_recall": 79.73650322196353,
+      "bertscore_f1": 74.32633269088292
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-mol-qlora/evaluation_summary.json": {
+    "total_samples": 3224,
+    "correct_count": 1444,
+    "accuracy": 0.4478908188585608,
+    "accuracy_rate": "44.79%",
+    "basic_metrics_average": {
+      "rouge_1": 23.998692834363506,
+      "rouge_2": 10.73937542352161,
+      "rouge_l": 23.86046955394581,
+      "bertscore_precision": 70.63822243732422,
+      "bertscore_recall": 79.74750512642393,
+      "bertscore_f1": 74.52154449064737
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-mol-qlora/evaluation_summary_3.json": {
+    "total_samples": 3224,
+    "correct_count": 1825,
+    "accuracy": 0.5660669975186104,
+    "accuracy_rate": "56.61%",
+    "basic_metrics_average": {
+      "rouge_1": 23.998692834363506,
+      "rouge_2": 10.73937542352161,
+      "rouge_l": 23.86046955394581,
+      "bertscore_precision": 70.63822243732422,
+      "bertscore_recall": 79.74750512642393,
+      "bertscore_f1": 74.52154449064737
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-mol-qlora-prompt/evaluation_summary.json": {
+    "total_samples": 3224,
+    "correct_count": 1323,
+    "accuracy": 0.4103598014888337,
+    "accuracy_rate": "41.04%",
+    "basic_metrics_average": {
+      "rouge_1": 22.872649746714917,
+      "rouge_2": 10.130813063691583,
+      "rouge_l": 22.746400574213375,
+      "bertscore_precision": 71.13431084337216,
+      "bertscore_recall": 79.01446050675425,
+      "bertscore_f1": 74.45236283074833
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-mol-qlora-prompt/evaluation_summary_3.json": {
+    "total_samples": 3224,
+    "correct_count": 1730,
+    "accuracy": 0.5366004962779156,
+    "accuracy_rate": "53.66%",
+    "basic_metrics_average": {
+      "rouge_1": 22.872649746714917,
+      "rouge_2": 10.130813063691583,
+      "rouge_l": 22.746400574213375,
+      "bertscore_precision": 71.13431084337216,
+      "bertscore_recall": 79.01446050675425,
+      "bertscore_f1": 74.45236283074833
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-base-model/evaluation_summary.json": {
+    "total_samples": 3224,
+    "correct_count": 33,
+    "accuracy": 0.010235732009925558,
+    "accuracy_rate": "1.02%",
+    "basic_metrics_average": {
+      "rouge_1": 4.958031184941977,
+      "rouge_2": 0.8240841206831574,
+      "rouge_l": 4.868301454010232,
+      "bertscore_precision": 57.136480663683514,
+      "bertscore_recall": 66.75762135822039,
+      "bertscore_f1": 61.41762207389321
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/datasets_fact_qa/evaluate-base-model/evaluation_summary_3.json": {
+    "total_samples": 3224,
+    "correct_count": 81,
+    "accuracy": 0.02512406947890819,
+    "accuracy_rate": "2.51%",
+    "basic_metrics_average": {
+      "rouge_1": 4.958031184941977,
+      "rouge_2": 0.8240841206831574,
+      "rouge_l": 4.868301454010232,
+      "bertscore_precision": 57.136480663683514,
+      "bertscore_recall": 66.75762135822039,
+      "bertscore_f1": 61.41762207389321
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora1/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1418,
+    "accuracy": 0.44050947499223364,
+    "accuracy_rate": "44.05%",
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1315,
+    "accuracy": 0.40851196023609815,
+    "accuracy_rate": "40.85%",
+    "basic_metrics_average": {
+      "rouge_1": 17.63153390142136,
+      "rouge_2": 7.419040016491291,
+      "rouge_l": 17.58272419743924,
+      "bertscore_precision": 70.55635171004725,
+      "bertscore_recall": 78.90058438316493,
+      "bertscore_f1": 74.11677296134248
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora_test/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1586,
+    "accuracy": 0.4923936665631791,
+    "accuracy_rate": "49.24%",
+    "basic_metrics_average": {
+      "rouge_1": 21.48081819545838,
+      "rouge_2": 8.358872080330908,
+      "rouge_l": 21.4184843972552,
+      "bertscore_precision": 69.2393314954991,
+      "bertscore_recall": 79.36272094502134,
+      "bertscore_f1": 73.53138732395716
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora_test/evaluation_summary_3.json": {
+    "total_samples": 3221,
+    "correct_count": 1945,
+    "accuracy": 0.6038497361067992,
+    "accuracy_rate": "60.38%",
+    "basic_metrics_average": {
+      "rouge_1": 21.48081819545838,
+      "rouge_2": 8.358872080330908,
+      "rouge_l": 21.4184843972552,
+      "bertscore_precision": 69.2393314954991,
+      "bertscore_recall": 79.36272094502134,
+      "bertscore_f1": 73.53138732395716
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora_2epoch_test/evaluation_summary.json": {
+    "total_samples": 3221,
+    "correct_count": 1008,
+    "accuracy": 0.31294628997205837,
+    "accuracy_rate": "31.29%",
+    "basic_metrics_average": {
+      "rouge_1": 14.791436596383074,
+      "rouge_2": 4.7940788033746164,
+      "rouge_l": 14.749080116114346,
+      "bertscore_precision": 68.0741807043978,
+      "bertscore_recall": 76.83399273386212,
+      "bertscore_f1": 71.7899636937683
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora_2epoch_test/evaluation_summary_3.json": {
+    "total_samples": 3221,
+    "correct_count": 1432,
+    "accuracy": 0.444582427817448,
+    "accuracy_rate": "44.46%",
+    "basic_metrics_average": {
+      "rouge_1": 14.791436596383074,
+      "rouge_2": 4.7940788033746164,
+      "rouge_l": 14.749080116114346,
+      "bertscore_precision": 68.0741807043978,
+      "bertscore_recall": 76.83399273386212,
+      "bertscore_f1": 71.7899636937683
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora3/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1428,
+    "accuracy": 0.44361602982292636,
+    "accuracy_rate": "44.36%",
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora_sft_test/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 2388,
+    "refusal_false_count": 833,
+    "correct_count": 423,
+    "refudal_rate": "74.14%",
+    "accuracy_rate": "50.78%",
+    "basic_metrics_average": {
+      "rouge_1": 8.712566820905288,
+      "rouge_2": 2.987126541480563,
+      "rouge_l": 8.680756725450362,
+      "bertscore_precision": 57.361191686489164,
+      "bertscore_recall": 65.9319384910053,
+      "bertscore_f1": 61.08514092439304
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora2/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1429,
+    "accuracy": 0.44392668530599566,
+    "accuracy_rate": "44.39%",
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora4/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1427,
+    "accuracy": 0.4433053743398571,
+    "accuracy_rate": "44.33%",
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/domain_test/domain_fact_qa_4/evaluate_mol_qlora/evaluation_summary.json": {
+    "total_samples": 3219,
+    "correct_count": 1435,
+    "accuracy": 0.4457906182044113,
+    "accuracy_rate": "44.58%",
+    "basic_metrics_average": {
+      "rouge_1": 18.932452061136946,
+      "rouge_2": 7.941455079855799,
+      "rouge_l": 18.829459317490844,
+      "bertscore_precision": 70.81867878936617,
+      "bertscore_recall": 79.3318491168702,
+      "bertscore_f1": 74.43968520082277
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/data-2016news-finetune/evaluation_results/evaluation_summary.json": {
+    "total_samples": 196,
+    "situational_samples": 98,
+    "conceptual_samples": 98,
+    "basic_metrics_average": {
+      "rouge_1": 3.877551020408163,
+      "rouge_2": 1.0204081632653061,
+      "rouge_l": 3.877551020408163,
+      "bertscore_precision": 77.12864848423978,
+      "bertscore_recall": 76.06387118599852,
+      "bertscore_f1": 76.33466180794093
+    },
+    "situational_average_score": 2.0918367346938775,
+    "conceptual_average_score": 3.357142857142857,
+    "hallucination_detection_rate": 0.4846938775510204
+  },
+  "Qwen2.5-7B-Instruct-news/data-2016news-finetune/evaluation_results/evaluation_summary_true.json": {
+    "total_samples": 196,
+    "situational_samples": 98,
+    "conceptual_samples": 98,
+    "basic_metrics_average": {
+      "rouge_1": 3.877551020408163,
+      "rouge_2": 1.0204081632653061,
+      "rouge_l": 3.877551020408163,
+      "bertscore_precision": 77.12864848423978,
+      "bertscore_recall": 76.06387118599852,
+      "bertscore_f1": 76.33466180794093
+    },
+    "situational_average_score": 2.0918367346938775,
+    "conceptual_average_score": 3.357142857142857,
+    "hallucination_detection_rate": 0.6479591836734694
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test/test/evaluation_summary.json": {
+    "total_samples": 3221,
+    "score_ge_4_count": 1709,
+    "score_lt_4_count": 1512,
+    "model_answered_count": 1655,
+    "model_refused_count": 1566,
+    "answered_and_score_ge_4": 1225,
+    "answered_and_score_lt_4": 430,
+    "refused_and_score_lt_4": 1082,
+    "refused_and_score_ge_4": 484,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.48618441477801927,
+      "refusal_rate_percentage": "48.62%",
+      "refusal_precision": 0.6909323116219668,
+      "refusal_precision_percentage": "69.09%",
+      "refusal_recall": 0.7156084656084656,
+      "refusal_recall_percentage": "71.56%",
+      "refusal_f1": 0.7030539311241065,
+      "refusal_f1_percentage": "70.31%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7401812688821753,
+      "answer_accuracy_percentage": "74.02%",
+      "answer_recall": 0.716793446459918,
+      "answer_recall_percentage": "71.68%",
+      "answer_f1": 0.7282996432818074,
+      "answer_f1_percentage": "72.83%"
+    },
+    "hallucination_metrics": {
+      "hallucination_count": 430,
+      "global_hallucination_rate": 0.13349891338093758,
+      "global_hallucination_rate_percentage": "13.35%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7162371934181931,
+      "overall_accuracy_percentage": "71.62%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 21.71988308702365,
+      "rouge_2": 8.487453157140958,
+      "rouge_l": 21.67399712865162,
+      "bertscore_precision": 69.48427335700053,
+      "bertscore_recall": 79.39502218520187,
+      "bertscore_f1": 73.68957892647813
+    },
+    "error_types_distribution": {
+      "事实错误": 1421,
+      "遗漏": 841,
+      "虚构内容": 9,
+      "虚构": 14
+    },
+    "score_distribution": {
+      "5": 1605,
+      "1": 710,
+      "2": 552,
+      "3": 250,
+      "4": 104
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1225,
+      "false_positive": 430,
+      "true_negative": 1082,
+      "false_negative": 484
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/min_confi/minprob_selfconf_bayesian.json": {
+    "optimal_thresholds": {
+      "min_token_prob_geq": 0.379441287433978,
+      "self_reported_confidence_geq": 0.3622772425171563
+    },
+    "performance": {
+      "youden_j": 0.4156401891709294,
+      "accuracy": 0.7073625349487418,
+      "sensitivity": 0.7553324968632371,
+      "specificity": 0.6603076923076923,
+      "tp": 1204,
+      "tn": 1073,
+      "fp": 552,
+      "fn": 390
+    },
+    "decision_rule": "仅当 [Min Token Prob ≥ 阈值 且 Self-reported Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 83,
+      "metrics_used": [
+        "min_token_prob",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/ppl_min/ppl_min_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.107677773611726,
+      "min_token_prob_geq": 0.3400814026453694
+    },
+    "performance": {
+      "youden_j": 0.44707074606698205,
+      "accuracy": 0.7238272755514135,
+      "sensitivity": 0.6932245922208281,
+      "specificity": 0.7538461538461538,
+      "tp": 1105,
+      "tn": 1225,
+      "fp": 400,
+      "fn": 489
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Min Token Prob ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 300,
+      "metrics_used": [
+        "ppl",
+        "min_token_prob"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/three_metrics/three_metrics_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.1078039478035446,
+      "min_token_prob_geq": 0.36614843507825107,
+      "self_reported_confidence_geq": 0.4061379994643789
+    },
+    "performance": {
+      "youden_j": 0.4474587395039089,
+      "accuracy": 0.7241379310344828,
+      "sensitivity": 0.6813048933500627,
+      "specificity": 0.7661538461538462,
+      "tp": 1086,
+      "tn": 1245,
+      "fp": 380,
+      "fn": 508
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Self Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 239,
+      "metrics_used": [
+        "ppl",
+        "min_token_prob",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/ppl/ppl_only_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.0889095792778594
+    },
+    "performance": {
+      "youden_j": 0.433645014959946,
+      "accuracy": 0.7173035104069587,
+      "sensitivity": 0.6668757841907151,
+      "specificity": 0.7667692307692308,
+      "tp": 1063,
+      "tn": 1246,
+      "fp": 379,
+      "fn": 531
+    },
+    "decision_rule": "若 PPL ≤ 阈值，则作答；否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 495,
+      "metrics_used": [
+        "ppl"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/min/minprob_only_bayesian.json": {
+    "optimal_thresholds": {
+      "min_token_prob_geq": 0.37935994175952936
+    },
+    "performance": {
+      "youden_j": 0.4156401891709294,
+      "accuracy": 0.7073625349487418,
+      "sensitivity": 0.7553324968632371,
+      "specificity": 0.6603076923076923,
+      "tp": 1204,
+      "tn": 1073,
+      "fp": 552,
+      "fn": 390
+    },
+    "decision_rule": "若 min_token_prob ≥ 阈值，则作答；否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 75,
+      "metrics_used": [
+        "min_token_prob"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/ppl_confidence/ppl_selfconf_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.102255516911981,
+      "self_reported_confidence_geq": 0.48433006896079756
+    },
+    "performance": {
+      "youden_j": 0.4326844899141009,
+      "accuracy": 0.7163715439577508,
+      "sensitivity": 0.7132998745294856,
+      "specificity": 0.7193846153846154,
+      "tp": 1137,
+      "tn": 1169,
+      "fp": 456,
+      "fn": 457
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Self-reported Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 453,
+      "metrics_used": [
+        "ppl",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/data/confi/selfconf_only_bayesian.json": {
+    "optimal_thresholds": {
+      "self_reported_confidence_geq": 0.8413610949130097
+    },
+    "performance": {
+      "youden_j": 0.01053064376025481,
+      "accuracy": 0.5032618825722274,
+      "sensitivity": 0.7132998745294856,
+      "specificity": 0.29723076923076924,
+      "tp": 1137,
+      "tn": 483,
+      "fp": 1142,
+      "fn": 457
+    },
+    "decision_rule": "若 self-reported confidence ≥ 阈值，则作答；否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 6,
+      "metrics_used": [
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/decision_tree/test_decision_tree_2400/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 0,
+    "refusal_false_count": 3212,
+    "correct_count": 1778,
+    "refusal_rate": "0.00%",
+    "accuracy_rate": "55.35%",
+    "basic_metrics_average": {
+      "rouge_1": 21.717731504020346,
+      "rouge_2": 8.556618500910036,
+      "rouge_l": 21.671716973535812,
+      "bertscore_precision": 69.47959468306819,
+      "bertscore_recall": 79.41087983168225,
+      "bertscore_f1": 73.69641284939658
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/decision_tree/test_decision_tree_3/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 0,
+    "refusal_false_count": 3212,
+    "correct_count": 1781,
+    "refusal_rate": "0.00%",
+    "accuracy_rate": "55.45%",
+    "basic_metrics_average": {
+      "rouge_1": 21.717731504020346,
+      "rouge_2": 8.556618500910036,
+      "rouge_l": 21.671716973535812,
+      "bertscore_precision": 69.47959468306819,
+      "bertscore_recall": 79.41087983168225,
+      "bertscore_f1": 73.69641284939658
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/refusal/decision_tree/test_decision_tree/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 0,
+    "refusal_false_count": 3212,
+    "correct_count": 1775,
+    "refusal_rate": "0.00%",
+    "accuracy_rate": "55.26%",
+    "basic_metrics_average": {
+      "rouge_1": 21.717731504020346,
+      "rouge_2": 8.556618500910036,
+      "rouge_l": 21.671716973535812,
+      "bertscore_precision": 69.47959468306819,
+      "bertscore_recall": 79.41087983168225,
+      "bertscore_f1": 73.69641284939658
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/train/evaluation_summary.json": {
+    "total_samples": 3219,
+    "score_ge_4_count": 1594,
+    "score_lt_4_count": 1625,
+    "model_answered_count": 1434,
+    "model_refused_count": 1785,
+    "answered_and_score_ge_4": 1070,
+    "answered_and_score_lt_4": 364,
+    "refused_and_score_lt_4": 1261,
+    "refused_and_score_ge_4": 524,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.554520037278658,
+      "refusal_rate_percentage": "55.45%",
+      "refusal_precision": 0.7064425770308124,
+      "refusal_precision_percentage": "70.64%",
+      "refusal_recall": 0.776,
+      "refusal_recall_percentage": "77.60%",
+      "refusal_f1": 0.7395894428152494,
+      "refusal_f1_percentage": "73.96%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.7461645746164575,
+      "answer_accuracy_percentage": "74.62%",
+      "answer_recall": 0.671267252195734,
+      "answer_recall_percentage": "67.13%",
+      "answer_f1": 0.7067371202113607,
+      "answer_f1_percentage": "70.67%"
+    },
+    "hallucination_metrics": {
+      "hallucination_count": 364,
+      "global_hallucination_rate": 0.11307859583721652,
+      "global_hallucination_rate_percentage": "11.31%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.7241379310344828,
+      "overall_accuracy_percentage": "72.41%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 18.63465717186225,
+      "rouge_2": 7.411858779027466,
+      "rouge_l": 18.499844714000794,
+      "bertscore_precision": 70.90228858452178,
+      "bertscore_recall": 79.24213324988544,
+      "bertscore_f1": 74.44826128802043
+    },
+    "error_types_distribution": {
+      "事实错误": 1431,
+      "遗漏": 1112,
+      "虚构内容": 20,
+      "虚构": 11
+    },
+    "score_distribution": {
+      "2": 725,
+      "5": 1465,
+      "1": 554,
+      "3": 346,
+      "4": 129
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1070,
+      "false_positive": 364,
+      "true_negative": 1261,
+      "false_negative": 524
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/train/optimal_single_threshold_bayesian.json": {
+    "optimal_threshold": 0.8120983440784356,
+    "performance": {
+      "youden_j": 0.01053064376025481,
+      "accuracy": 0.5032618825722274,
+      "sensitivity": 0.7132998745294856,
+      "specificity": 0.29723076923076924,
+      "tp": 1137,
+      "tn": 483,
+      "fp": 1142,
+      "fn": 457,
+      "hallucination_in_false_positives": 1028
+    },
+    "decision_rule": "if self_reported_confidence >= T: answer; else: refuse",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "metric_used": "self_reported_confidence"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/train/train/optimal_refusal_three_metrics_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.1022038499105375,
+      "min_token_prob_geq": 0.3661533556634178,
+      "self_reported_confidence_geq": 0.44508323935997046
+    },
+    "performance": {
+      "youden_j": 0.44726725219573416,
+      "accuracy": 0.7241379310344828,
+      "sensitivity": 0.671267252195734,
+      "specificity": 0.776,
+      "tp": 1070,
+      "tn": 1261,
+      "fp": 364,
+      "fn": 524
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Self Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 357,
+      "metrics_used": [
+        "ppl",
+        "min_token_prob",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/zmq_milvus/test/unfinetuned/evaluation_summary.json": {
+    "total_samples": 3334,
+    "refusal_count": 686,
+    "refusal_false_count": 2648,
+    "correct_count": 201,
+    "refusal_rate": "20.58%",
+    "accuracy_rate": "7.59%",
+    "basic_metrics_average": {
+      "rouge_1": 18.887225957233248,
+      "rouge_2": 10.349167922445096,
+      "rouge_l": 18.75636048223043,
+      "bertscore_precision": 73.86508510991636,
+      "bertscore_recall": 73.87655890302595,
+      "bertscore_f1": 73.64950436600397
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/zmq_milvus/test/test/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 85,
+    "refusal_false_count": 3136,
+    "correct_count": 1985,
+    "refusal_rate": "2.64%",
+    "accuracy_rate": "63.30%",
+    "basic_metrics_average": {
+      "rouge_1": 22.531721701770202,
+      "rouge_2": 8.639073080325776,
+      "rouge_l": 22.453096234609937,
+      "bertscore_precision": 67.18661031000217,
+      "bertscore_recall": 80.05889236686467,
+      "bertscore_f1": 72.62222699610501
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/zmq_milvus/test/unmentioned/evaluation_summary.json": {
+    "total_samples": 3224,
+    "refusal_count": 864,
+    "refusal_false_count": 2360,
+    "correct_count": 871,
+    "refusal_rate": "26.80%",
+    "accuracy_rate": "36.91%",
+    "basic_metrics_average": {
+      "rouge_1": 0.0,
+      "rouge_2": 0.0,
+      "rouge_l": 0.0,
+      "bertscore_precision": 59.93351043379928,
+      "bertscore_recall": 67.0434402704017,
+      "bertscore_f1": 63.166004811267996
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/unfinetuned/unfinetuned/evaluation_summary.json": {
+    "total_samples": 3334,
+    "refusal_count": 110,
+    "refusal_false_count": 3224,
+    "correct_count": 1435,
+    "refusal_rate": "3.30%",
+    "accuracy_rate": "44.51%",
+    "basic_metrics_average": {
+      "rouge_1": 31.911900185650275,
+      "rouge_2": 19.596634759038256,
+      "rouge_l": 31.65252072537278,
+      "bertscore_precision": 81.21562950809201,
+      "bertscore_recall": 82.89153398459874,
+      "bertscore_f1": 81.7808118671733
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/unfinetuned/unfinetuned_time/evaluation_summary.json": {
+    "total_samples": 3334,
+    "refusal_count": 89,
+    "refusal_false_count": 3245,
+    "correct_count": 1592,
+    "refusal_rate": "2.67%",
+    "accuracy_rate": "49.06%",
+    "basic_metrics_average": {
+      "rouge_1": 31.970344859343054,
+      "rouge_2": 19.40128125217765,
+      "rouge_l": 31.70699028059412,
+      "bertscore_precision": 81.98162745941379,
+      "bertscore_recall": 83.6859420353092,
+      "bertscore_f1": 82.55502251840024
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time_relaxed/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 112,
+    "refusal_false_count": 3109,
+    "correct_count": 2544,
+    "refusal_rate": "3.48%",
+    "accuracy_rate": "81.83%",
+    "basic_metrics_average": {
+      "rouge_1": 25.136073742379484,
+      "rouge_2": 10.000574596563578,
+      "rouge_l": 25.05087688765641,
+      "bertscore_precision": 69.77288312550769,
+      "bertscore_recall": 82.16577329294388,
+      "bertscore_f1": 75.01904078889656
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 108,
+    "refusal_false_count": 3113,
+    "correct_count": 2367,
+    "refusal_rate": "3.35%",
+    "accuracy_rate": "76.04%",
+    "basic_metrics_average": {
+      "rouge_1": 25.136073742379494,
+      "rouge_2": 10.000574596563578,
+      "rouge_l": 25.050876887656415,
+      "bertscore_precision": 69.77288312550769,
+      "bertscore_recall": 82.16577329294388,
+      "bertscore_f1": 75.01904078889656
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time_relaxed_qwen/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 118,
+    "refusal_false_count": 3103,
+    "correct_count": 2596,
+    "refusal_rate": "3.66%",
+    "accuracy_rate": "83.66%",
+    "basic_metrics_average": {
+      "rouge_1": 25.136073742379484,
+      "rouge_2": 10.000574596563578,
+      "rouge_l": 25.050876887656415,
+      "bertscore_precision": 69.77288312550769,
+      "bertscore_recall": 82.16577329294388,
+      "bertscore_f1": 75.01904078889656
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time_nodecide_relaxed_qwen/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 239,
+    "refusal_false_count": 2982,
+    "correct_count": 2702,
+    "refusal_rate": "7.42%",
+    "accuracy_rate": "90.61%",
+    "basic_metrics_average": {
+      "rouge_1": 26.296725693454796,
+      "rouge_2": 10.316018684554912,
+      "rouge_l": 26.163185021947818,
+      "bertscore_precision": 68.51106037480311,
+      "bertscore_recall": 81.94180086824103,
+      "bertscore_f1": 74.15846094179139
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time_nodecide_relaxed/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 217,
+    "refusal_false_count": 3004,
+    "correct_count": 2695,
+    "refusal_rate": "6.74%",
+    "accuracy_rate": "89.71%",
+    "basic_metrics_average": {
+      "rouge_1": 26.296725693454796,
+      "rouge_2": 10.316018684554912,
+      "rouge_l": 26.163185021947815,
+      "bertscore_precision": 68.51106037480311,
+      "bertscore_recall": 81.94180086824103,
+      "bertscore_f1": 74.15846094179139
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time_nodecide/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 211,
+    "refusal_false_count": 3010,
+    "correct_count": 2509,
+    "refusal_rate": "6.55%",
+    "accuracy_rate": "83.36%",
+    "basic_metrics_average": {
+      "rouge_1": 26.296725693454796,
+      "rouge_2": 10.316018684554912,
+      "rouge_l": 26.163185021947818,
+      "bertscore_precision": 68.51106037480311,
+      "bertscore_recall": 81.94180086824103,
+      "bertscore_f1": 74.15846094179139
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test/test_time_nodecide/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 676,
+      "非拒答错误样本数": 465,
+      "拒答样本数": 211,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 465,
+      "召回成功数": 328,
+      "召回失败数": 137,
+      "召回成功率": "70.5%",
+      "召回失败率": "29.5%",
+      "分析错误数": 0,
+      "错误类型分析": {
+        "召回失败导致的错误": "29.5%",
+        "提取错误导致的错误": "70.5%"
+      }
+    },
+    "拒答样本分析": {
+      "总数": 211,
+      "召回成功数": 181,
+      "召回失败数": 30,
+      "召回成功率": "85.8%",
+      "召回失败率": "14.2%",
+      "分析错误数": 0,
+      "拒答类型分析": {
+        "正确拒答（召回失败）": "14.2%",
+        "错误拒答（召回成功）": "85.8%"
+      }
+    },
+    "性能指标": {
+      "非拒答错误中提取错误比例": "70.5%",
+      "拒答样本中错误拒答比例": "85.8%",
+      "总体召回失败率": "24.7%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_m3/test_qwen2.5/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 286,
+    "refusal_false_count": 2926,
+    "correct_count": 2751,
+    "refusal_rate": "8.90%",
+    "accuracy_rate": "94.02%",
+    "basic_metrics_average": {
+      "rouge_1": 27.87735173969539,
+      "rouge_2": 10.948140662509656,
+      "rouge_l": 27.772119383162764,
+      "bertscore_precision": 70.17361116717346,
+      "bertscore_recall": 82.90149622769611,
+      "bertscore_f1": 75.5155604578564
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk/test_nodecide_450/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 226,
+    "refusal_false_count": 2995,
+    "correct_count": 2641,
+    "refusal_rate": "7.02%",
+    "accuracy_rate": "88.18%",
+    "basic_metrics_average": {
+      "rouge_1": 26.275561865053177,
+      "rouge_2": 10.319297729898924,
+      "rouge_l": 26.160327433384317,
+      "bertscore_precision": 68.92144586202781,
+      "bertscore_recall": 81.71003913609222,
+      "bertscore_f1": 74.30528425552282
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk/test_qwen2.5_450_youhuatime/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 44,
+    "refusal_false_count": 3168,
+    "correct_count": 2384,
+    "refusal_rate": "1.37%",
+    "accuracy_rate": "75.25%",
+    "basic_metrics_average": {
+      "rouge_1": 23.96067655693716,
+      "rouge_2": 9.816978493259972,
+      "rouge_l": 23.8534384845317,
+      "bertscore_precision": 68.4594967176356,
+      "bertscore_recall": 81.99190268870605,
+      "bertscore_f1": 74.16480173673457
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk/test_nodecide_256/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 433,
+    "refusal_false_count": 2788,
+    "correct_count": 2447,
+    "refusal_rate": "13.44%",
+    "accuracy_rate": "87.77%",
+    "basic_metrics_average": {
+      "rouge_1": 23.11011480798604,
+      "rouge_2": 8.997633561450757,
+      "rouge_l": 23.031204407598377,
+      "bertscore_precision": 68.24014276377127,
+      "bertscore_recall": 79.90035308939594,
+      "bertscore_f1": 73.12606606691456
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk/test_nodecide_128/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 496,
+    "refusal_false_count": 2725,
+    "correct_count": 2369,
+    "refusal_rate": "15.40%",
+    "accuracy_rate": "86.94%",
+    "basic_metrics_average": {
+      "rouge_1": 22.61602993692762,
+      "rouge_2": 8.81236205160183,
+      "rouge_l": 22.50047765982523,
+      "bertscore_precision": 67.8368641149735,
+      "bertscore_recall": 79.03983935052214,
+      "bertscore_f1": 72.51211487702871
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk/test_qwen2.5_450/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 46,
+    "refusal_false_count": 3166,
+    "correct_count": 2391,
+    "refusal_rate": "1.43%",
+    "accuracy_rate": "75.52%",
+    "basic_metrics_average": {
+      "rouge_1": 24.08070113972597,
+      "rouge_2": 9.924410151127494,
+      "rouge_l": 23.969072480738145,
+      "bertscore_precision": 68.54181275198498,
+      "bertscore_recall": 82.07919834411308,
+      "bertscore_f1": 74.25089138252649
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test1/test/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 108,
+    "refusal_false_count": 3113,
+    "correct_count": 2503,
+    "refusal_rate": "3.35%",
+    "accuracy_rate": "80.40%",
+    "basic_metrics_average": {
+      "rouge_1": 25.48222122241387,
+      "rouge_2": 10.296161595859692,
+      "rouge_l": 25.403577024478984,
+      "bertscore_precision": 69.92380621917349,
+      "bertscore_recall": 82.13305888857688,
+      "bertscore_f1": 75.09064870438047
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test1/test_nodecide/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 190,
+    "refusal_false_count": 3031,
+    "correct_count": 2675,
+    "refusal_rate": "5.90%",
+    "accuracy_rate": "88.25%",
+    "basic_metrics_average": {
+      "rouge_1": 26.621144028011333,
+      "rouge_2": 10.60941964470521,
+      "rouge_l": 26.52282907015092,
+      "bertscore_precision": 68.92900368194704,
+      "bertscore_recall": 81.83008593289388,
+      "bertscore_f1": 74.35343828548449
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test1/test_nodecide/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 545,
+      "非拒答错误样本数": 354,
+      "拒答样本数": 191
+    },
+    "非拒答错误样本分析": {
+      "总数": 355,
+      "召回成功数": 201,
+      "召回失败数": 153,
+      "召回成功率": "56.6%",
+      "召回失败率": "43.4%",
+      "召回成功错误类型分析": {
+        "证据偏移": "149  74%",
+        "信息遗漏": "39   19.4%",
+        "多答案选择": "13   6.6%"
+      }
+    },
+    "拒答样本分析": {
+      "总数": 191,
+      "召回成功数": 143,
+      "召回失败数": 48,
+      "召回成功率": "74.8%",
+      "召回失败率": "25.2%"
+    },
+    "性能指标": {
+      "总体召回失败率": "36.8%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/ds_450_notime/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 722,
+    "refusal_false_count": 2490,
+    "correct_count": 2363,
+    "refusal_rate": "22.48%",
+    "accuracy_rate": "94.90%",
+    "basic_metrics_average": {
+      "rouge_1": 13.895159234878156,
+      "rouge_2": 5.598231962082055,
+      "rouge_l": 13.779137598733184,
+      "bertscore_precision": 59.851092946336394,
+      "bertscore_recall": 78.40501954906607,
+      "bertscore_f1": 67.49313335081709
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/ds_450_notime/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 852,
+      "非拒答错误样本数": 130,
+      "拒答样本数": 722,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 130,
+      "召回成功数": 96,
+      "召回失败数": 34,
+      "召回成功率": "73.8%",
+      "召回失败率": "26.2%",
+      "分析错误数": 0,
+      "错误类型分析": {
+        "召回失败导致的错误": "26.2%",
+        "提取错误导致的错误": "73.8%"
+      }
+    },
+    "拒答样本分析": {
+      "总数": 722,
+      "召回成功数": 80,
+      "召回失败数": 642,
+      "召回成功率": "11.1%",
+      "召回失败率": "88.9%",
+      "分析错误数": 0,
+      "拒答类型分析": {
+        "正确拒答（召回失败）": "88.9%",
+        "错误拒答（召回成功）": "11.1%"
+      }
+    },
+    "性能指标": {
+      "非拒答错误中提取错误比例": "73.8%",
+      "拒答样本中错误拒答比例": "11.1%",
+      "总体召回失败率": "79.3%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/ds_128/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 545,
+    "refusal_false_count": 2667,
+    "correct_count": 2548,
+    "refusal_rate": "16.97%",
+    "accuracy_rate": "95.54%",
+    "basic_metrics_average": {
+      "rouge_1": 13.391864633022443,
+      "rouge_2": 5.416244341002981,
+      "rouge_l": 13.304118773462228,
+      "bertscore_precision": 60.2334160385549,
+      "bertscore_recall": 79.70920310890392,
+      "bertscore_f1": 68.25590293441584
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/ds_256/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 361,
+    "refusal_false_count": 2851,
+    "correct_count": 2759,
+    "refusal_rate": "11.24%",
+    "accuracy_rate": "96.77%",
+    "basic_metrics_average": {
+      "rouge_1": 14.717382852415538,
+      "rouge_2": 5.923844766833336,
+      "rouge_l": 14.613806932874752,
+      "bertscore_precision": 60.804254501352865,
+      "bertscore_recall": 81.2726543170132,
+      "bertscore_f1": 69.23128164293311
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/test_nodecide_v2_api/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 291,
+    "refusal_false_count": 2930,
+    "correct_count": 2842,
+    "refusal_rate": "9.03%",
+    "accuracy_rate": "97.00%",
+    "basic_metrics_average": {
+      "rouge_1": 15.739470654333498,
+      "rouge_2": 6.431250027596909,
+      "rouge_l": 15.599056384852949,
+      "bertscore_precision": 60.927354758828,
+      "bertscore_recall": 81.74223033066531,
+      "bertscore_f1": 69.4932014767852
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/test_nodecide_v2_api/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 384,
+      "非拒答错误样本数": 93,
+      "拒答样本数": 291,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 93,
+      "召回成功数": 66,
+      "召回失败数": 27,
+      "召回成功率": "71.0%",
+      "召回失败率": "29.0%"
+    },
+    "拒答样本分析": {
+      "总数": 291,
+      "召回成功数": 64,
+      "召回失败数": 227,
+      "召回成功率": "22.0%",
+      "召回失败率": "78.0%"
+    },
+    "性能指标": {
+      "总体召回失败率": "66.1%",
+      "总幻觉率": "4.9%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/ds_450/evaluation_summary.json": {
+    "total_samples": 3212,
+    "refusal_count": 291,
+    "refusal_false_count": 2921,
+    "correct_count": 2837,
+    "refusal_rate": "9.06%",
+    "accuracy_rate": "97.12%",
+    "basic_metrics_average": {
+      "rouge_1": 15.60971806793904,
+      "rouge_2": 6.3786519988056485,
+      "rouge_l": 15.509711345418882,
+      "bertscore_precision": 60.89242677787692,
+      "bertscore_recall": 81.75868675539532,
+      "bertscore_f1": 69.47244372715244
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_chunk_api/ds_450/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 382,
+      "非拒答错误样本数": 91,
+      "拒答样本数": 291,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 91,
+      "召回成功数": 63,
+      "召回失败数": 28,
+      "召回成功率": "69.2%",
+      "召回失败率": "30.8%",
+      "分析错误数": 0,
+      "错误类型分析": {
+        "召回失败导致的错误": "30.8%",
+        "提取错误导致的错误": "69.2%"
+      }
+    },
+    "拒答样本分析": {
+      "总数": 291,
+      "召回成功数": 69,
+      "召回失败数": 222,
+      "召回成功率": "23.7%",
+      "召回失败率": "76.3%",
+      "分析错误数": 0,
+      "拒答类型分析": {
+        "正确拒答（召回失败）": "76.3%",
+        "错误拒答（召回成功）": "23.7%"
+      }
+    },
+    "性能指标": {
+      "非拒答错误中提取错误比例": "69.2%",
+      "拒答样本中错误拒答比例": "23.7%",
+      "总体召回失败率": "65.4%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test2/test_multi_inference_nodecide/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 123,
+    "refusal_false_count": 3098,
+    "correct_count": 2763,
+    "refusal_rate": "3.82%",
+    "accuracy_rate": "89.19%",
+    "basic_metrics_average": {
+      "rouge_1": 27.741384786212883,
+      "rouge_2": 10.858578252009325,
+      "rouge_l": 27.599554150938967,
+      "bertscore_precision": 69.81965596447891,
+      "bertscore_recall": 82.64129334579007,
+      "bertscore_f1": 75.22035561818878
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test2/test_two_stage_nodecide/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 4,
+    "refusal_false_count": 3217,
+    "correct_count": 2728,
+    "refusal_rate": "0.12%",
+    "accuracy_rate": "84.80%",
+    "basic_metrics_average": {
+      "rouge_1": 22.74932182870988,
+      "rouge_2": 9.123476478582688,
+      "rouge_l": 22.602955998497333,
+      "bertscore_precision": 64.58093763896672,
+      "bertscore_recall": 80.83898190643727,
+      "bertscore_f1": 71.3734596634607
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/unmentioned/unmentioned_time/evaluation_summary.json": {
+    "total_samples": 3224,
+    "refusal_count": 691,
+    "refusal_false_count": 2533,
+    "correct_count": 697,
+    "refusal_rate": "21.43%",
+    "accuracy_rate": "27.52%",
+    "basic_metrics_average": {
+      "rouge_1": 0.0,
+      "rouge_2": 0.0,
+      "rouge_l": 0.0,
+      "bertscore_precision": 58.67360069349445,
+      "bertscore_recall": 66.13237126256632,
+      "bertscore_f1": 62.09337432908065
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/unmentioned/unmentioned/evaluation_summary.json": {
+    "total_samples": 3224,
+    "refusal_count": 707,
+    "refusal_false_count": 2517,
+    "correct_count": 715,
+    "refusal_rate": "21.93%",
+    "accuracy_rate": "28.41%",
+    "basic_metrics_average": {
+      "rouge_1": 0.0,
+      "rouge_2": 0.0,
+      "rouge_l": 0.0,
+      "bertscore_precision": 59.09737453659622,
+      "bertscore_recall": 66.27033148191998,
+      "bertscore_f1": 62.38902353175521
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_nodecide_450/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 16,
+    "refusal_false_count": 3205,
+    "correct_count": 2669,
+    "refusal_rate": "0.50%",
+    "accuracy_rate": "83.28%",
+    "basic_metrics_average": {
+      "rouge_1": 22.874417753104087,
+      "rouge_2": 9.56256750724269,
+      "rouge_l": 22.713083783140526,
+      "bertscore_precision": 66.10396537156032,
+      "bertscore_recall": 81.97196749603108,
+      "bertscore_f1": 72.74583418966635
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_nodecide_v2/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 20,
+    "refusal_false_count": 3201,
+    "correct_count": 2677,
+    "refusal_rate": "0.62%",
+    "accuracy_rate": "83.63%",
+    "basic_metrics_average": {
+      "rouge_1": 23.136008540793643,
+      "rouge_2": 9.614672490399506,
+      "rouge_l": 23.028047356075152,
+      "bertscore_precision": 65.99214582737837,
+      "bertscore_recall": 81.98962106777992,
+      "bertscore_f1": 72.68698365097644
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_nodecide_256/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 17,
+    "refusal_false_count": 3204,
+    "correct_count": 2676,
+    "refusal_rate": "0.53%",
+    "accuracy_rate": "83.52%",
+    "basic_metrics_average": {
+      "rouge_1": 22.78937670758112,
+      "rouge_2": 9.251640389601436,
+      "rouge_l": 22.641154535268317,
+      "bertscore_precision": 66.24812868414219,
+      "bertscore_recall": 82.15135688350202,
+      "bertscore_f1": 72.9086646083274
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_nodecide_128/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 25,
+    "refusal_false_count": 3196,
+    "correct_count": 2643,
+    "refusal_rate": "0.78%",
+    "accuracy_rate": "82.70%",
+    "basic_metrics_average": {
+      "rouge_1": 21.903029371824164,
+      "rouge_2": 9.028950721338859,
+      "rouge_l": 21.76520222677468,
+      "bertscore_precision": 66.10731594276074,
+      "bertscore_recall": 81.79191737229023,
+      "bertscore_f1": 72.67062094817803
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_nodecide_v2_2/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 22,
+    "refusal_false_count": 3199,
+    "correct_count": 2826,
+    "refusal_rate": "0.68%",
+    "accuracy_rate": "88.34%",
+    "basic_metrics_average": {
+      "rouge_1": 26.475643605900693,
+      "rouge_2": 10.5987465840451,
+      "rouge_l": 26.388331490646948,
+      "bertscore_precision": 69.13643839269719,
+      "bertscore_recall": 83.14782181666232,
+      "bertscore_f1": 75.02591771781167
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_nodecide_256_basemodel/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 268,
+    "refusal_false_count": 2953,
+    "correct_count": 2715,
+    "refusal_rate": "8.32%",
+    "accuracy_rate": "91.94%",
+    "basic_metrics_average": {
+      "rouge_1": 14.94361534905248,
+      "rouge_2": 6.066610178948834,
+      "rouge_l": 14.819026417845217,
+      "bertscore_precision": 61.3998687320968,
+      "bertscore_recall": 81.08778752014156,
+      "bertscore_f1": 69.5884320638595
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_qwen/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 355,
+    "refusal_false_count": 2866,
+    "correct_count": 2794,
+    "refusal_rate": "11.02%",
+    "accuracy_rate": "97.49%",
+    "basic_metrics_average": {
+      "rouge_1": 15.076866992872764,
+      "rouge_2": 6.386523282773743,
+      "rouge_l": 14.952725402057995,
+      "bertscore_precision": 60.73693938643545,
+      "bertscore_recall": 81.02476380046056,
+      "bertscore_f1": 69.09003064466611
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_qwen/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 430,
+      "非拒答错误样本数": 75,
+      "拒答样本数": 355
+    },
+    "非拒答错误样本分析": {
+      "总数": 75,
+      "召回成功数": 57,
+      "召回失败数": 18,
+      "召回成功率": "76.0%",
+      "召回失败率": "24.0%"
+    },
+    "拒答样本分析": {
+      "总数": 355,
+      "召回成功数": 122,
+      "召回失败数": 233,
+      "召回成功率": "34.4%",
+      "召回失败率": "65.6%"
+    },
+    "性能指标": {
+      "总体召回失败率": "58.4%",
+      "总幻觉率": "6.1%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 15,
+    "refusal_false_count": 3206,
+    "correct_count": 2824,
+    "refusal_rate": "0.47%",
+    "accuracy_rate": "88.08%",
+    "basic_metrics_average": {
+      "rouge_1": 26.502887976886743,
+      "rouge_2": 10.469909491709949,
+      "rouge_l": 26.392291167438646,
+      "bertscore_precision": 69.22175925883104,
+      "bertscore_recall": 83.20534332906634,
+      "bertscore_f1": 75.10193207921985
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 393,
+      "非拒答错误样本数": 378,
+      "拒答样本数": 15,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 378,
+      "召回成功数": 212,
+      "召回失败数": 166,
+      "召回成功率": "56.1%",
+      "召回失败率": "43.9%"
+    },
+    "拒答样本分析": {
+      "总数": 15,
+      "召回成功数": 5,
+      "召回失败数": 10,
+      "召回成功率": "33.3%",
+      "召回失败率": "66.7%"
+    },
+    "性能指标": {
+      "总体召回失败率": "44.7%",
+      "总幻觉率": "11.9%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_api/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 291,
+    "refusal_false_count": 2930,
+    "correct_count": 2842,
+    "refusal_rate": "9.03%",
+    "accuracy_rate": "97.00%",
+    "basic_metrics_average": {
+      "rouge_1": 15.739470654333498,
+      "rouge_2": 6.431250027596909,
+      "rouge_l": 15.599056384852949,
+      "bertscore_precision": 60.927354758828,
+      "bertscore_recall": 81.74223033066531,
+      "bertscore_f1": 69.4932014767852
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_api/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 384,
+      "非拒答错误样本数": 93,
+      "拒答样本数": 291,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 93,
+      "召回成功数": 66,
+      "召回失败数": 27,
+      "召回成功率": "71.0%",
+      "召回失败率": "29.0%"
+    },
+    "拒答样本分析": {
+      "总数": 291,
+      "召回成功数": 64,
+      "召回失败数": 227,
+      "召回成功率": "22.0%",
+      "召回失败率": "78.0%"
+    },
+    "性能指标": {
+      "总体召回失败率": "66.1%",
+      "总幻觉率": "4.9%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_qwen_jiandanprompt/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 500,
+    "refusal_false_count": 2721,
+    "correct_count": 2643,
+    "refusal_rate": "15.52%",
+    "accuracy_rate": "97.13%",
+    "basic_metrics_average": {
+      "rouge_1": 25.674601549299666,
+      "rouge_2": 10.241123358006192,
+      "rouge_l": 25.559731672999643,
+      "bertscore_precision": 67.11532624472524,
+      "bertscore_recall": 80.48917118417147,
+      "bertscore_f1": 72.63809861566146
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_qwen_jiandanprompt/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 580,
+      "非拒答错误样本数": 80,
+      "拒答样本数": 500,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 80,
+      "召回成功数": 67,
+      "召回失败数": 13,
+      "召回成功率": "83.8%",
+      "召回失败率": "16.2%",
+      "分析错误数": 0,
+      "错误类型分析": {
+        "召回失败导致的错误": "16.2%",
+        "提取错误导致的错误": "83.8%"
+      }
+    },
+    "拒答样本分析": {
+      "总数": 500,
+      "召回成功数": 255,
+      "召回失败数": 245,
+      "召回成功率": "51.0%",
+      "召回失败率": "49.0%",
+      "分析错误数": 0,
+      "拒答类型分析": {
+        "正确拒答（召回失败）": "49.0%",
+        "错误拒答（召回成功）": "51.0%"
+      }
+    },
+    "性能指标": {
+      "非拒答错误中提取错误比例": "83.8%",
+      "拒答样本中错误拒答比例": "51.0%",
+      "总体召回失败率": "44.5%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_ds_jiandanprompt/evaluation_summary.json": {
+    "total_samples": 3221,
+    "refusal_count": 328,
+    "refusal_false_count": 2893,
+    "correct_count": 2791,
+    "refusal_rate": "10.18%",
+    "accuracy_rate": "96.47%",
+    "basic_metrics_average": {
+      "rouge_1": 31.14735710613546,
+      "rouge_2": 11.673693936291356,
+      "rouge_l": 31.06585826878567,
+      "bertscore_precision": 78.63123842330869,
+      "bertscore_recall": 84.02465470771321,
+      "bertscore_f1": 80.74598971433944
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/data/test_rag/my_milvus/test_youhua_prompt_0.1/test_duibi/test_nodecide_v2_ds_jiandanprompt/evaluation_results_analysis/recall_analysis_summary.json": {
+    "总体统计": {
+      "总样本数": 430,
+      "非拒答错误样本数": 102,
+      "拒答样本数": 328,
+      "分析错误样本数": 0
+    },
+    "非拒答错误样本分析": {
+      "总数": 102,
+      "召回成功数": 82,
+      "召回失败数": 20,
+      "召回成功率": "80.4%",
+      "召回失败率": "19.6%",
+      "分析错误数": 0,
+      "错误类型分析": {
+        "召回失败导致的错误": "19.6%",
+        "提取错误导致的错误": "80.4%"
+      }
+    },
+    "拒答样本分析": {
+      "总数": 328,
+      "召回成功数": 96,
+      "召回失败数": 232,
+      "召回成功率": "29.3%",
+      "召回失败率": "70.7%",
+      "分析错误数": 0,
+      "拒答类型分析": {
+        "正确拒答（召回失败）": "70.7%",
+        "错误拒答（召回成功）": "29.3%"
+      }
+    },
+    "性能指标": {
+      "非拒答错误中提取错误比例": "80.4%",
+      "拒答样本中错误拒答比例": "29.3%",
+      "总体召回失败率": "58.6%"
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-finetune-news-enhanced_2moban/test/evaluation_summary.json": {
+    "total_samples": 3224,
+    "score_ge_4_count": 1374,
+    "score_lt_4_count": 1850,
+    "model_answered_count": 2035,
+    "model_refused_count": 1189,
+    "answered_and_score_ge_4": 1015,
+    "answered_and_score_lt_4": 1020,
+    "refused_and_score_lt_4": 830,
+    "refused_and_score_ge_4": 359,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.36879652605459057,
+      "refusal_rate_percentage": "36.88%",
+      "refusal_precision": 0.6980656013456686,
+      "refusal_precision_percentage": "69.81%",
+      "refusal_recall": 0.4486486486486487,
+      "refusal_recall_percentage": "44.86%",
+      "refusal_f1": 0.5462323132609412,
+      "refusal_f1_percentage": "54.62%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.4987714987714988,
+      "answer_accuracy_percentage": "49.88%",
+      "answer_recall": 0.7387190684133915,
+      "answer_recall_percentage": "73.87%",
+      "answer_f1": 0.5954825462012321,
+      "answer_f1_percentage": "59.55%"
+    },
+    "hallucination_metrics": {
+      "hallucination_count": 1020,
+      "global_hallucination_rate": 0.3163771712158809,
+      "global_hallucination_rate_percentage": "31.64%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5722704714640199,
+      "overall_accuracy_percentage": "57.23%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 26.184624433173195,
+      "rouge_2": 12.65677644331032,
+      "rouge_l": 25.966568847657232,
+      "bertscore_precision": 80.11998123034058,
+      "bertscore_recall": 78.61384445288341,
+      "bertscore_f1": 79.21185133974103
+    },
+    "error_types_distribution": {
+      "事实错误": 1444,
+      "遗漏": 1795,
+      "部分事实错误": 1,
+      "虚构": 8,
+      "虚构内容": 10
+    },
+    "score_distribution": {
+      "2": 927,
+      "5": 1112,
+      "3": 727,
+      "1": 196,
+      "4": 262
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 1015,
+      "false_positive": 1020,
+      "true_negative": 830,
+      "false_negative": 359
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-finetune-news-enhanced_2moban/val/optimal_refusal_three_metrics_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.6406210864978659,
+      "min_token_prob_geq": 0.15681080546851547,
+      "self_reported_confidence_geq": 0.7011515240430605
+    },
+    "performance": {
+      "youden_j": 0.23284807659431617,
+      "accuracy": 0.6023573200992556,
+      "sensitivity": 0.7459986082115518,
+      "specificity": 0.4868494683827644,
+      "tp": 1072,
+      "tn": 870,
+      "fp": 917,
+      "fn": 365
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Self Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 419,
+      "metrics_used": [
+        "ppl",
+        "min_token_prob",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-finetune-news-enhanced-1moban/test/evaluation_summary.json": {
+    "total_samples": 3224,
+    "score_ge_4_count": 1346,
+    "score_lt_4_count": 1878,
+    "model_answered_count": 1784,
+    "model_refused_count": 1440,
+    "answered_and_score_ge_4": 869,
+    "answered_and_score_lt_4": 915,
+    "refused_and_score_lt_4": 963,
+    "refused_and_score_ge_4": 477,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.4466501240694789,
+      "refusal_rate_percentage": "44.67%",
+      "refusal_precision": 0.66875,
+      "refusal_precision_percentage": "66.88%",
+      "refusal_recall": 0.512779552715655,
+      "refusal_recall_percentage": "51.28%",
+      "refusal_f1": 0.5804701627486438,
+      "refusal_f1_percentage": "58.05%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.48710762331838564,
+      "answer_accuracy_percentage": "48.71%",
+      "answer_recall": 0.6456166419019317,
+      "answer_recall_percentage": "64.56%",
+      "answer_f1": 0.5552715654952076,
+      "answer_f1_percentage": "55.53%"
+    },
+    "hallucination_metrics": {
+      "hallucination_count": 915,
+      "global_hallucination_rate": 0.2838089330024814,
+      "global_hallucination_rate_percentage": "28.38%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.5682382133995038,
+      "overall_accuracy_percentage": "56.82%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 26.213485536193325,
+      "rouge_2": 13.265163327845052,
+      "rouge_l": 25.97563945625031,
+      "bertscore_precision": 79.3225012470046,
+      "bertscore_recall": 77.99758479812601,
+      "bertscore_f1": 78.51262368243326
+    },
+    "error_types_distribution": {
+      "事实错误": 1357,
+      "遗漏": 1681,
+      "虚构": 9,
+      "虚构内容": 9,
+      "重复": 1
+    },
+    "score_distribution": {
+      "5": 1098,
+      "2": 891,
+      "1": 305,
+      "4": 248,
+      "3": 682
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 869,
+      "false_positive": 915,
+      "true_negative": 963,
+      "false_negative": 477
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-finetune-news-enhanced-1moban/val/optimal_refusal_three_metrics_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.8544495056296606,
+      "min_token_prob_geq": 0.1944858877843563,
+      "self_reported_confidence_geq": 0.6254613775587341
+    },
+    "performance": {
+      "youden_j": 0.16697859951603133,
+      "accuracy": 0.5728908188585607,
+      "sensitivity": 0.6535087719298246,
+      "specificity": 0.5134698275862069,
+      "tp": 894,
+      "tn": 953,
+      "fp": 903,
+      "fn": 474
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Self Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 399,
+      "metrics_used": [
+        "ppl",
+        "min_token_prob",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-finetune-news-enhanced-1moban-1shuju/test/evaluation_summary.json": {
+    "total_samples": 3223,
+    "score_ge_4_count": 1386,
+    "score_lt_4_count": 1837,
+    "model_answered_count": 1619,
+    "model_refused_count": 1604,
+    "answered_and_score_ge_4": 860,
+    "answered_and_score_lt_4": 759,
+    "refused_and_score_lt_4": 1078,
+    "refused_and_score_ge_4": 526,
+    "knowledge_boundary_metrics": {
+      "refusal_rate": 0.4976729754886752,
+      "refusal_rate_percentage": "49.77%",
+      "refusal_precision": 0.672069825436409,
+      "refusal_precision_percentage": "67.21%",
+      "refusal_recall": 0.5868263473053892,
+      "refusal_recall_percentage": "58.68%",
+      "refusal_f1": 0.6265620459168846,
+      "refusal_f1_percentage": "62.66%"
+    },
+    "answer_accuracy_metrics": {
+      "answer_accuracy": 0.5311920938851142,
+      "answer_accuracy_percentage": "53.12%",
+      "answer_recall": 0.6204906204906205,
+      "answer_recall_percentage": "62.05%",
+      "answer_f1": 0.5723793677204659,
+      "answer_f1_percentage": "57.24%"
+    },
+    "hallucination_metrics": {
+      "hallucination_count": 759,
+      "global_hallucination_rate": 0.2354948805460751,
+      "global_hallucination_rate_percentage": "23.55%"
+    },
+    "overall_metrics": {
+      "overall_accuracy": 0.6013031337263419,
+      "overall_accuracy_percentage": "60.13%"
+    },
+    "basic_metrics_average": {
+      "rouge_1": 25.803095269228137,
+      "rouge_2": 12.571611209315693,
+      "rouge_l": 25.49231456817632,
+      "bertscore_precision": 79.72885256056973,
+      "bertscore_recall": 78.2963844992306,
+      "bertscore_f1": 78.86018228575269
+    },
+    "error_types_distribution": {
+      "遗漏": 1782,
+      "事实错误": 1406,
+      "虚构": 13,
+      "虚构内容": 15
+    },
+    "score_distribution": {
+      "5": 1123,
+      "3": 755,
+      "2": 909,
+      "4": 263,
+      "1": 173
+    },
+    "confusion_matrix_counts": {
+      "true_positive": 860,
+      "false_positive": 759,
+      "true_negative": 1078,
+      "false_negative": 526
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/model/Qwen2.5-7B-Instruct-CPT-MOL-3years-finetune-news-enhanced-1moban-1shuju/val/optimal_refusal_three_metrics_bayesian.json": {
+    "optimal_thresholds": {
+      "ppl_leq": 1.7073709957337249,
+      "min_token_prob_geq": 0.18674798549058166,
+      "self_reported_confidence_geq": 0.36827505291496604
+    },
+    "performance": {
+      "youden_j": 0.22614079618690885,
+      "accuracy": 0.6113523573200993,
+      "sensitivity": 0.6252707581227437,
+      "specificity": 0.6008700380641653,
+      "tp": 866,
+      "tn": 1105,
+      "fp": 734,
+      "fn": 519
+    },
+    "decision_rule": "仅当 [PPL ≤ 阈值 且 Min Token Prob ≥ 阈值 且 Self Confidence ≥ 阈值] 时作答，否则拒答",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 500,
+      "best_trial_number": 344,
+      "metrics_used": [
+        "ppl",
+        "min_token_prob",
+        "self_reported_confidence"
+      ]
+    }
+  },
+  "Qwen2.5-7B-Instruct-news/MOL-CPT/output/general_test/MMLU/accuracies_qwen2.5-7b-instruct-cpt-mol-3years-5epoch.json": {
+    "subcategories": {
+      "math": 0.6231203007518797,
+      "health": 0.724390243902439,
+      "physics": 0.6765625,
+      "business": 0.851258581235698,
+      "biology": 0.8612334801762115,
+      "chemistry": 0.6435643564356436,
+      "computer science": 0.6844660194174758,
+      "economics": 0.7681940700808625,
+      "engineering": 0.7172413793103448,
+      "philosophy": 0.6565606361829026,
+      "other": 0.7390557939914163,
+      "history": 0.821505376344086,
+      "geography": 0.8888888888888888,
+      "politics": 0.8379629629629629,
+      "psychology": 0.8210890233362144,
+      "culture": 0.8102409638554217,
+      "law": 0.5382870107770845
+    },
+    "categories": {
+      "STEM": 0.685222001325381,
+      "humanities": 0.644845908607864,
+      "social sciences": 0.8150796230094247,
+      "other (business, health, misc.)": 0.7467612584824183
+    },
+    "start_time": "2025-08-31T10:50:00.497996",
+    "weighted_accuracy": 0.7143569292123629,
+    "cost_time": 9031.398979187012,
+    "end_time": "2025-08-31T10:50:00.498338"
+  },
+  "Qwen2.5-7B-Instruct-news/MOL-CPT/output/general_test1/MMLU/accuracies_qwen2.5-7b-instruct-cpt-mol-3years.json": {
+    "subcategories": {
+      "math": 0.6033834586466166,
+      "health": 0.723780487804878,
+      "physics": 0.703125,
+      "business": 0.8741418764302059,
+      "biology": 0.8656387665198237,
+      "chemistry": 0.6303630363036303,
+      "computer science": 0.6868932038834952,
+      "economics": 0.7803234501347709,
+      "engineering": 0.7448275862068966,
+      "philosophy": 0.6312127236580517,
+      "other": 0.744206008583691,
+      "history": 0.843010752688172,
+      "geography": 0.9040404040404041,
+      "politics": 0.8209876543209876,
+      "psychology": 0.8210890233362144,
+      "culture": 0.8283132530120482,
+      "law": 0.5411230856494611
+    },
+    "categories": {
+      "STEM": 0.6848906560636183,
+      "humanities": 0.6393198724760892,
+      "social sciences": 0.8173545661358466,
+      "other (business, health, misc.)": 0.7513880320789637
+    },
+    "start_time": "2025-08-24T08:35:40.484150",
+    "weighted_accuracy": 0.7140008545791198,
+    "cost_time": 8799.374777317047,
+    "end_time": "2025-08-24T08:35:40.484520"
+  },
+  "Qwen2.5-7B-Instruct-news/general_test_dataset/MMLU_result/Qwen2.5-7B-Instruct/accuracies_qwen2.5-7b-instruct.json": {
+    "subcategories": {
+      "math": 0.6212406015037594,
+      "health": 0.7365853658536585,
+      "physics": 0.690625,
+      "business": 0.8764302059496567,
+      "biology": 0.8634361233480177,
+      "chemistry": 0.6303630363036303,
+      "computer science": 0.6966019417475728,
+      "economics": 0.784366576819407,
+      "engineering": 0.7172413793103448,
+      "philosophy": 0.6401590457256461,
+      "other": 0.7416309012875536,
+      "history": 0.8451612903225807,
+      "geography": 0.8939393939393939,
+      "politics": 0.8132716049382716,
+      "psychology": 0.8202247191011236,
+      "culture": 0.8192771084337349,
+      "law": 0.5428247305728872
+    },
+    "categories": {
+      "STEM": 0.6882041086812458,
+      "humanities": 0.6442082890541977,
+      "social sciences": 0.8147546311342216,
+      "other (business, health, misc.)": 0.757248611967921
+    },
+    "start_time": "2025-09-14T14:53:07.031740",
+    "weighted_accuracy": 0.7171343113516593,
+    "cost_time": 9112.896147727966,
+    "end_time": "2025-09-14T14:53:07.032101"
+  },
+  "Qwen2.5-7B-Instruct-news/general_test_dataset/MMLU_result/Qwen2.5-7B-Instruct-CPT-3years-QLORA-1year-2dataset/accuracies_qwen2.5-7b-instruct-mol-qlora.json": {
+    "subcategories": {
+      "math": 0.5657894736842105,
+      "health": 0.6963414634146341,
+      "physics": 0.628125,
+      "business": 0.8649885583524027,
+      "biology": 0.7995594713656388,
+      "chemistry": 0.570957095709571,
+      "computer science": 0.6893203883495146,
+      "economics": 0.7466307277628033,
+      "engineering": 0.7103448275862069,
+      "philosophy": 0.5606361829025845,
+      "other": 0.7012875536480687,
+      "history": 0.7967741935483871,
+      "geography": 0.8838383838383839,
+      "politics": 0.7932098765432098,
+      "psychology": 0.7891097666378565,
+      "culture": 0.7981927710843374,
+      "law": 0.5025524673851389
+    },
+    "categories": {
+      "STEM": 0.6385023194168323,
+      "humanities": 0.5855472901168969,
+      "social sciences": 0.7868053298667533,
+      "other (business, health, misc.)": 0.7208513263417643
+    },
+    "start_time": "2025-09-24T14:10:43.138713",
+    "weighted_accuracy": 0.6722689075630253,
+    "cost_time": 9009.515864133835,
+    "end_time": "2025-09-24T14:10:43.139074"
+  },
+  "Qwen2.5-7B-Instruct-news/general_test_dataset/MMLU_result/Qwen2.5-7B-Instruct-CPT-3years-QLORA-1year/accuracies_qwen2.5-7b-instruct-cpt-qlora.json": {
+    "subcategories": {
+      "math": 0.5770676691729323,
+      "health": 0.6853658536585366,
+      "physics": 0.6359375,
+      "business": 0.8443935926773455,
+      "biology": 0.8039647577092511,
+      "chemistry": 0.594059405940594,
+      "computer science": 0.6601941747572816,
+      "economics": 0.7223719676549866,
+      "engineering": 0.7034482758620689,
+      "philosophy": 0.5715705765407555,
+      "other": 0.7021459227467811,
+      "history": 0.7881720430107527,
+      "geography": 0.8636363636363636,
+      "politics": 0.7746913580246914,
+      "psychology": 0.777009507346586,
+      "culture": 0.7680722891566265,
+      "law": 0.5104934770277936
+    },
+    "categories": {
+      "STEM": 0.6428098078197482,
+      "humanities": 0.5914984059511158,
+      "social sciences": 0.7679558011049724,
+      "other (business, health, misc.)": 0.7128315854410857
+    },
+    "start_time": "2025-09-14T15:06:04.150515",
+    "weighted_accuracy": 0.6692066657171343,
+    "cost_time": 9720.367018461227,
+    "end_time": "2025-09-14T15:06:04.150879"
+  },
+  "Qwen2.5-7B-Instruct-news/general_test_dataset/MMLU_result/Qwen2.5-7B-Instruct-CPT-MOL-3years-QLORA-1year/accuracies_qwen2.5-7b-instruct-mol-qlora.json": {
+    "subcategories": {
+      "math": 0.5460526315789473,
+      "health": 0.6884146341463414,
+      "physics": 0.65625,
+      "business": 0.8283752860411899,
+      "biology": 0.8193832599118943,
+      "chemistry": 0.5214521452145214,
+      "computer science": 0.6893203883495146,
+      "economics": 0.715633423180593,
+      "engineering": 0.7241379310344828,
+      "philosophy": 0.5501988071570576,
+      "other": 0.7141630901287553,
+      "history": 0.7946236559139785,
+      "geography": 0.8383838383838383,
+      "politics": 0.7870370370370371,
+      "psychology": 0.77009507346586,
+      "culture": 0.7951807228915663,
+      "law": 0.5087918321043675
+    },
+    "categories": {
+      "STEM": 0.6361829025844931,
+      "humanities": 0.5829968119022316,
+      "social sciences": 0.7676308092297692,
+      "other (business, health, misc.)": 0.716533004318322
+    },
+    "start_time": "2025-09-14T14:50:09.448099",
+    "weighted_accuracy": 0.6657171343113517,
+    "cost_time": 8640.09120965004,
+    "end_time": "2025-09-14T14:50:09.448450"
+  },
+  "Qwen2.5-7B-Instruct-news/data-continued-pretraining/MMLU_test/accuracies_qwen2.5-7b-cpt-3years.json": {
+    "subcategories": {
+      "math": 0.6127819548872181,
+      "health": 0.7268292682926829,
+      "physics": 0.6953125,
+      "business": 0.8443935926773455,
+      "biology": 0.8700440528634361,
+      "chemistry": 0.6534653465346535,
+      "computer science": 0.6771844660194175,
+      "economics": 0.7574123989218329,
+      "engineering": 0.7103448275862069,
+      "philosophy": 0.6182902584493042,
+      "other": 0.7330472103004292,
+      "history": 0.832258064516129,
+      "geography": 0.8636363636363636,
+      "politics": 0.816358024691358,
+      "psychology": 0.8262748487467588,
+      "culture": 0.8192771084337349,
+      "law": 0.5558706749858197
+    },
+    "categories": {
+      "STEM": 0.6865473823724321,
+      "humanities": 0.6371944739638682,
+      "social sciences": 0.8092297692557686,
+      "other (business, health, misc.)": 0.7449105490438002
+    },
+    "start_time": "2025-06-25T11:31:06.817466",
+    "weighted_accuracy": 0.7103688933200398,
+    "cost_time": 14892.08733701706,
+    "end_time": "2025-06-25T11:31:06.817902"
+  },
+  "semantic_entropy/data/optimal_entropy_threshold_bayesian_basemodel.json": {
+    "optimal_threshold": 0.9758692797026183,
+    "performance": {
+      "youden_j": 0.4486705916417333,
+      "accuracy": 0.7250698974836906,
+      "sensitivity": 0.6480552070263488,
+      "specificity": 0.8006153846153846,
+      "tp": 1033,
+      "tn": 1301,
+      "fp": 324,
+      "fn": 561
+    },
+    "decision_rule": "if semantic_entropy <= T: answer; else: refuse",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "metric_used": "semantic_entropy"
+    }
+  },
+  "semantic_entropy/data/optimal_entropy_threshold_bayesian.json": {
+    "optimal_threshold": 0.9986342564556536,
+    "performance": {
+      "youden_j": 0.3159073448508831,
+      "accuracy": 0.6604535570052812,
+      "sensitivity": 0.3983688833124216,
+      "specificity": 0.9175384615384615,
+      "tp": 635,
+      "tn": 1491,
+      "fp": 134,
+      "fn": 959
+    },
+    "decision_rule": "if semantic_entropy <= T: answer; else: refuse",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "metric_used": "semantic_entropy"
+    }
+  },
+  "semantic_entropy/data/discrete/optimal_discrete_entropy_threshold_bayesian.json": {
+    "optimal_threshold": 0.978412231049464,
+    "performance": {
+      "youden_j": 0.31020133191776855,
+      "accuracy": 0.6576576576576577,
+      "sensitivity": 0.38958594730238394,
+      "specificity": 0.9206153846153846,
+      "tp": 621,
+      "tn": 1496,
+      "fp": 129,
+      "fn": 973
+    },
+    "decision_rule": "if discrete_semantic_entropy <= T: answer; else: refuse",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "metric_used": "discrete_semantic_entropy"
+    }
+  },
+  "semantic_entropy/data/discrete/optimal_discrete_entropy_threshold_bayesian_basemodel.json": {
+    "optimal_threshold": 0.9980483116977286,
+    "performance": {
+      "youden_j": 0.43924833510278916,
+      "accuracy": 0.7204100652376515,
+      "sensitivity": 0.6380175658720201,
+      "specificity": 0.8012307692307692,
+      "tp": 1017,
+      "tn": 1302,
+      "fp": 323,
+      "fn": 577
+    },
+    "decision_rule": "if discrete_semantic_entropy <= T: answer; else: refuse",
+    "optimization": {
+      "method": "Bayesian Optimization (Optuna)",
+      "n_trials": 300,
+      "metric_used": "discrete_semantic_entropy"
+    }
+  },
+  "Qwen3-8B-news/sft/output/Qwen3-8B-cpt-sft/train_results.json": {
+    "epoch": 3.0,
+    "total_flos": 7.608282667006034e+17,
+    "train_loss": 3.4806710677860786,
+    "train_runtime": 14213.189,
+    "train_samples_per_second": 5.444,
+    "train_steps_per_second": 0.085
+  },
+  "Qwen3-8B-news/sft/output/Qwen3-8B-cpt-sft/all_results.json": {
+    "epoch": 3.0,
+    "total_flos": 7.608282667006034e+17,
+    "train_loss": 3.4806710677860786,
+    "train_runtime": 14213.189,
+    "train_samples_per_second": 5.444,
+    "train_steps_per_second": 0.085
+  },
+  "Qwen3-8B-news/models/Qwen3-8B-sft/train_results.json": {
+    "epoch": 3.0,
+    "total_flos": 7.608282667006034e+17,
+    "train_loss": 1.2476780361336455,
+    "train_runtime": 14298.6704,
+    "train_samples_per_second": 5.411,
+    "train_steps_per_second": 0.085
+  },
+  "Qwen3-8B-news/models/Qwen3-8B-sft/all_results.json": {
+    "epoch": 3.0,
+    "total_flos": 7.608282667006034e+17,
+    "train_loss": 1.2476780361336455,
+    "train_runtime": 14298.6704,
+    "train_samples_per_second": 5.411,
+    "train_steps_per_second": 0.085
+  }
+}

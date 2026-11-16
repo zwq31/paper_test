@@ -1,0 +1,30 @@
+{
+  "source": "/mnt/project",
+  "destination": "/mnt/project/.github-upload/paper_test",
+  "max_file_mib": 50,
+  "candidate_files": 4787,
+  "candidate_bytes": 4801384711,
+  "excluded_files": 13562,
+  "exclusion_counts": {
+    "log_or_temporary": 303,
+    "milvus": 3499,
+    "model_weight_or_serialized_detector": 278,
+    "generated_cache_or_tracking": 6252,
+    "large_non_model_data": 48,
+    "training_checkpoint": 1978,
+    "symlink_not_followed": 614,
+    "model_directory": 571,
+    "installer_or_archive": 3,
+    "pretrained_model_resource": 14,
+    "invalid_notebook_pending_review": 2
+  },
+  "files_with_potential_credentials": 119,
+  "invalid_notebooks_excluded": [
+    "Qwen2.5-7B-Instruct-news/code-2016news-finetune/merge_json.ipynb",
+    "deepseek-r1-distill-llama-8b-qlora/code/train.ipynb"
+  ],
+  "mode": "written",
+  "export_bytes": 4799822669,
+  "sanitized_files": 144,
+  "sanitization_syntax_issues": []
+}

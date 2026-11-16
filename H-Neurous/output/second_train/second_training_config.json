@@ -1,0 +1,8 @@
+{
+  "first_training_dir": "/mnt/project/H-Neurous/output/saga_chat",
+  "full_dimension_features_path": "/mnt/project/H-Neurous/output/saga_chat/cett_features_vectorized.jsonl",
+  "selected_neurons_count": 1050,
+  "h_neuron_count": 635,
+  "weight_threshold": 0.0001,
+  "training_time": "2026-01-13 16:14:59"
+}

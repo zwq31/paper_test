@@ -1,0 +1,2542 @@
+[
+  {
+    "name": "layer_26_neuron_7079",
+    "weight": 0.23996876180171967
+  },
+  {
+    "name": "layer_21_neuron_17695",
+    "weight": 0.23550355434417725
+  },
+  {
+    "name": "layer_1_neuron_6832",
+    "weight": 0.23523059487342834
+  },
+  {
+    "name": "layer_20_neuron_10948",
+    "weight": 0.22479157149791718
+  },
+  {
+    "name": "layer_6_neuron_12597",
+    "weight": 0.2189246565103531
+  },
+  {
+    "name": "layer_11_neuron_17463",
+    "weight": 0.21821413934230804
+  },
+  {
+    "name": "layer_26_neuron_13841",
+    "weight": 0.19745154678821564
+  },
+  {
+    "name": "layer_9_neuron_14078",
+    "weight": 0.19234530627727509
+  },
+  {
+    "name": "layer_5_neuron_14175",
+    "weight": 0.18542085587978363
+  },
+  {
+    "name": "layer_24_neuron_16676",
+    "weight": 0.18392446637153625
+  },
+  {
+    "name": "layer_7_neuron_18148",
+    "weight": 0.18336251378059387
+  },
+  {
+    "name": "layer_14_neuron_7315",
+    "weight": 0.18091732263565063
+  },
+  {
+    "name": "layer_27_neuron_16044",
+    "weight": 0.17468367516994476
+  },
+  {
+    "name": "layer_25_neuron_3227",
+    "weight": 0.17015770077705383
+  },
+  {
+    "name": "layer_8_neuron_1155",
+    "weight": 0.16938525438308716
+  },
+  {
+    "name": "layer_24_neuron_7497",
+    "weight": 0.16905008256435394
+  },
+  {
+    "name": "layer_20_neuron_12543",
+    "weight": 0.1681700050830841
+  },
+  {
+    "name": "layer_6_neuron_10289",
+    "weight": 0.16600871086120605
+  },
+  {
+    "name": "layer_14_neuron_9258",
+    "weight": 0.16368135809898376
+  },
+  {
+    "name": "layer_27_neuron_11578",
+    "weight": 0.16270402073860168
+  },
+  {
+    "name": "layer_18_neuron_14242",
+    "weight": 0.1624985635280609
+  },
+  {
+    "name": "layer_15_neuron_11829",
+    "weight": 0.15960954129695892
+  },
+  {
+    "name": "layer_10_neuron_16088",
+    "weight": 0.1579383909702301
+  },
+  {
+    "name": "layer_18_neuron_10091",
+    "weight": 0.15728192031383514
+  },
+  {
+    "name": "layer_4_neuron_7168",
+    "weight": 0.15679769217967987
+  },
+  {
+    "name": "layer_18_neuron_3969",
+    "weight": 0.15652398765087128
+  },
+  {
+    "name": "layer_15_neuron_4788",
+    "weight": 0.15589959919452667
+  },
+  {
+    "name": "layer_18_neuron_10644",
+    "weight": 0.1555449664592743
+  },
+  {
+    "name": "layer_6_neuron_14143",
+    "weight": 0.15380297601222992
+  },
+  {
+    "name": "layer_18_neuron_4543",
+    "weight": 0.15379178524017334
+  },
+  {
+    "name": "layer_15_neuron_15216",
+    "weight": 0.1531141698360443
+  },
+  {
+    "name": "layer_21_neuron_18619",
+    "weight": 0.15131478011608124
+  },
+  {
+    "name": "layer_6_neuron_7084",
+    "weight": 0.15075023472309113
+  },
+  {
+    "name": "layer_18_neuron_16242",
+    "weight": 0.15036267042160034
+  },
+  {
+    "name": "layer_15_neuron_10095",
+    "weight": 0.14990152418613434
+  },
+  {
+    "name": "layer_18_neuron_13147",
+    "weight": 0.1485600620508194
+  },
+  {
+    "name": "layer_18_neuron_8153",
+    "weight": 0.1479746550321579
+  },
+  {
+    "name": "layer_2_neuron_16258",
+    "weight": 0.14684174954891205
+  },
+  {
+    "name": "layer_25_neuron_3606",
+    "weight": 0.1468079835176468
+  },
+  {
+    "name": "layer_23_neuron_14304",
+    "weight": 0.1455976963043213
+  },
+  {
+    "name": "layer_19_neuron_9905",
+    "weight": 0.14523498713970184
+  },
+  {
+    "name": "layer_21_neuron_18304",
+    "weight": 0.14392763376235962
+  },
+  {
+    "name": "layer_7_neuron_14785",
+    "weight": 0.14368191361427307
+  },
+  {
+    "name": "layer_19_neuron_7845",
+    "weight": 0.143024742603302
+  },
+  {
+    "name": "layer_20_neuron_18275",
+    "weight": 0.14278283715248108
+  },
+  {
+    "name": "layer_21_neuron_7683",
+    "weight": 0.14267899096012115
+  },
+  {
+    "name": "layer_17_neuron_5851",
+    "weight": 0.14230288565158844
+  },
+  {
+    "name": "layer_13_neuron_7774",
+    "weight": 0.1413293331861496
+  },
+  {
+    "name": "layer_14_neuron_15664",
+    "weight": 0.14125214517116547
+  },
+  {
+    "name": "layer_16_neuron_15572",
+    "weight": 0.14047099649906158
+  },
+  {
+    "name": "layer_14_neuron_4850",
+    "weight": 0.1398293524980545
+  },
+  {
+    "name": "layer_23_neuron_11944",
+    "weight": 0.1396874040365219
+  },
+  {
+    "name": "layer_12_neuron_10612",
+    "weight": 0.13927647471427917
+  },
+  {
+    "name": "layer_18_neuron_16399",
+    "weight": 0.13927040994167328
+  },
+  {
+    "name": "layer_8_neuron_4824",
+    "weight": 0.13888710737228394
+  },
+  {
+    "name": "layer_19_neuron_18906",
+    "weight": 0.13851924240589142
+  },
+  {
+    "name": "layer_16_neuron_15370",
+    "weight": 0.137276753783226
+  },
+  {
+    "name": "layer_12_neuron_11125",
+    "weight": 0.1367747038602829
+  },
+  {
+    "name": "layer_10_neuron_11825",
+    "weight": 0.13648466765880585
+  },
+  {
+    "name": "layer_15_neuron_17145",
+    "weight": 0.13534420728683472
+  },
+  {
+    "name": "layer_16_neuron_16383",
+    "weight": 0.13453099131584167
+  },
+  {
+    "name": "layer_5_neuron_13976",
+    "weight": 0.13256780803203583
+  },
+  {
+    "name": "layer_6_neuron_5101",
+    "weight": 0.1321132332086563
+  },
+  {
+    "name": "layer_17_neuron_13404",
+    "weight": 0.13204389810562134
+  },
+  {
+    "name": "layer_20_neuron_301",
+    "weight": 0.13169248402118683
+  },
+  {
+    "name": "layer_7_neuron_4682",
+    "weight": 0.13110139966011047
+  },
+  {
+    "name": "layer_12_neuron_2450",
+    "weight": 0.12972484529018402
+  },
+  {
+    "name": "layer_26_neuron_5762",
+    "weight": 0.12923620641231537
+  },
+  {
+    "name": "layer_19_neuron_6414",
+    "weight": 0.12870247662067413
+  },
+  {
+    "name": "layer_21_neuron_17911",
+    "weight": 0.12868613004684448
+  },
+  {
+    "name": "layer_10_neuron_8009",
+    "weight": 0.12538334727287292
+  },
+  {
+    "name": "layer_18_neuron_7053",
+    "weight": 0.1248341053724289
+  },
+  {
+    "name": "layer_19_neuron_10275",
+    "weight": 0.12331617623567581
+  },
+  {
+    "name": "layer_26_neuron_248",
+    "weight": 0.12259658426046371
+  },
+  {
+    "name": "layer_11_neuron_14778",
+    "weight": 0.12257739901542664
+  },
+  {
+    "name": "layer_20_neuron_17990",
+    "weight": 0.12138141691684723
+  },
+  {
+    "name": "layer_3_neuron_1",
+    "weight": 0.1203809529542923
+  },
+  {
+    "name": "layer_8_neuron_18017",
+    "weight": 0.11976896971464157
+  },
+  {
+    "name": "layer_19_neuron_1820",
+    "weight": 0.11915480345487595
+  },
+  {
+    "name": "layer_18_neuron_12591",
+    "weight": 0.11914901435375214
+  },
+  {
+    "name": "layer_9_neuron_7512",
+    "weight": 0.11905550956726074
+  },
+  {
+    "name": "layer_24_neuron_13399",
+    "weight": 0.1186724528670311
+  },
+  {
+    "name": "layer_16_neuron_1947",
+    "weight": 0.11864878982305527
+  },
+  {
+    "name": "layer_6_neuron_2163",
+    "weight": 0.11850282549858093
+  },
+  {
+    "name": "layer_19_neuron_17363",
+    "weight": 0.1183997169137001
+  },
+  {
+    "name": "layer_21_neuron_13750",
+    "weight": 0.11780209839344025
+  },
+  {
+    "name": "layer_0_neuron_5317",
+    "weight": 0.11702051758766174
+  },
+  {
+    "name": "layer_14_neuron_4577",
+    "weight": 0.11554136872291565
+  },
+  {
+    "name": "layer_5_neuron_5136",
+    "weight": 0.11501853168010712
+  },
+  {
+    "name": "layer_10_neuron_13134",
+    "weight": 0.11454331874847412
+  },
+  {
+    "name": "layer_11_neuron_656",
+    "weight": 0.11376381665468216
+  },
+  {
+    "name": "layer_23_neuron_14675",
+    "weight": 0.11339486390352249
+  },
+  {
+    "name": "layer_21_neuron_414",
+    "weight": 0.11211548000574112
+  },
+  {
+    "name": "layer_17_neuron_2986",
+    "weight": 0.11211037635803223
+  },
+  {
+    "name": "layer_19_neuron_7065",
+    "weight": 0.11157418042421341
+  },
+  {
+    "name": "layer_27_neuron_16967",
+    "weight": 0.11118374764919281
+  },
+  {
+    "name": "layer_11_neuron_18166",
+    "weight": 0.11102515459060669
+  },
+  {
+    "name": "layer_21_neuron_14881",
+    "weight": 0.11082335561513901
+  },
+  {
+    "name": "layer_16_neuron_1144",
+    "weight": 0.11077554523944855
+  },
+  {
+    "name": "layer_26_neuron_10303",
+    "weight": 0.10964273661375046
+  },
+  {
+    "name": "layer_23_neuron_998",
+    "weight": 0.10933905094861984
+  },
+  {
+    "name": "layer_17_neuron_18485",
+    "weight": 0.10803978145122528
+  },
+  {
+    "name": "layer_16_neuron_14526",
+    "weight": 0.10772714763879776
+  },
+  {
+    "name": "layer_21_neuron_7713",
+    "weight": 0.10771603137254715
+  },
+  {
+    "name": "layer_14_neuron_8176",
+    "weight": 0.1070033386349678
+  },
+  {
+    "name": "layer_20_neuron_11236",
+    "weight": 0.1064249724149704
+  },
+  {
+    "name": "layer_27_neuron_8536",
+    "weight": 0.10594463348388672
+  },
+  {
+    "name": "layer_6_neuron_16483",
+    "weight": 0.10566569864749908
+  },
+  {
+    "name": "layer_23_neuron_17416",
+    "weight": 0.10493752360343933
+  },
+  {
+    "name": "layer_16_neuron_10127",
+    "weight": 0.10440027713775635
+  },
+  {
+    "name": "layer_18_neuron_5390",
+    "weight": 0.10390601307153702
+  },
+  {
+    "name": "layer_25_neuron_9715",
+    "weight": 0.10364975035190582
+  },
+  {
+    "name": "layer_17_neuron_6234",
+    "weight": 0.10306546092033386
+  },
+  {
+    "name": "layer_19_neuron_1925",
+    "weight": 0.10238216072320938
+  },
+  {
+    "name": "layer_17_neuron_10305",
+    "weight": 0.10220903903245926
+  },
+  {
+    "name": "layer_14_neuron_17461",
+    "weight": 0.10182804614305496
+  },
+  {
+    "name": "layer_20_neuron_13313",
+    "weight": 0.10180144011974335
+  },
+  {
+    "name": "layer_10_neuron_12233",
+    "weight": 0.10116942226886749
+  },
+  {
+    "name": "layer_13_neuron_9884",
+    "weight": 0.10091216117143631
+  },
+  {
+    "name": "layer_14_neuron_17051",
+    "weight": 0.10080496221780777
+  },
+  {
+    "name": "layer_1_neuron_16195",
+    "weight": 0.10078779608011246
+  },
+  {
+    "name": "layer_16_neuron_16761",
+    "weight": 0.09951019287109375
+  },
+  {
+    "name": "layer_27_neuron_779",
+    "weight": 0.09819774329662323
+  },
+  {
+    "name": "layer_14_neuron_18874",
+    "weight": 0.09811526536941528
+  },
+  {
+    "name": "layer_22_neuron_10513",
+    "weight": 0.09803835302591324
+  },
+  {
+    "name": "layer_11_neuron_11921",
+    "weight": 0.09788550436496735
+  },
+  {
+    "name": "layer_5_neuron_371",
+    "weight": 0.09779652208089828
+  },
+  {
+    "name": "layer_6_neuron_15805",
+    "weight": 0.09747446328401566
+  },
+  {
+    "name": "layer_8_neuron_1046",
+    "weight": 0.09710752964019775
+  },
+  {
+    "name": "layer_18_neuron_13109",
+    "weight": 0.09705841541290283
+  },
+  {
+    "name": "layer_16_neuron_4526",
+    "weight": 0.0966348722577095
+  },
+  {
+    "name": "layer_10_neuron_15669",
+    "weight": 0.09658042341470718
+  },
+  {
+    "name": "layer_9_neuron_9925",
+    "weight": 0.09651760756969452
+  },
+  {
+    "name": "layer_14_neuron_12146",
+    "weight": 0.09621472656726837
+  },
+  {
+    "name": "layer_14_neuron_101",
+    "weight": 0.09539706259965897
+  },
+  {
+    "name": "layer_20_neuron_12685",
+    "weight": 0.09534639865159988
+  },
+  {
+    "name": "layer_15_neuron_15525",
+    "weight": 0.0950821116566658
+  },
+  {
+    "name": "layer_13_neuron_12663",
+    "weight": 0.09457172453403473
+  },
+  {
+    "name": "layer_21_neuron_14707",
+    "weight": 0.09451086819171906
+  },
+  {
+    "name": "layer_25_neuron_17947",
+    "weight": 0.0944773256778717
+  },
+  {
+    "name": "layer_22_neuron_7946",
+    "weight": 0.09398818016052246
+  },
+  {
+    "name": "layer_16_neuron_5047",
+    "weight": 0.09375779330730438
+  },
+  {
+    "name": "layer_11_neuron_18241",
+    "weight": 0.09358121454715729
+  },
+  {
+    "name": "layer_20_neuron_18595",
+    "weight": 0.09342631697654724
+  },
+  {
+    "name": "layer_12_neuron_17280",
+    "weight": 0.09324729442596436
+  },
+  {
+    "name": "layer_18_neuron_5042",
+    "weight": 0.09273695945739746
+  },
+  {
+    "name": "layer_21_neuron_10152",
+    "weight": 0.09270444512367249
+  },
+  {
+    "name": "layer_17_neuron_8866",
+    "weight": 0.09252063184976578
+  },
+  {
+    "name": "layer_22_neuron_2049",
+    "weight": 0.09148412197828293
+  },
+  {
+    "name": "layer_17_neuron_965",
+    "weight": 0.09125854820013046
+  },
+  {
+    "name": "layer_24_neuron_9111",
+    "weight": 0.09110940247774124
+  },
+  {
+    "name": "layer_6_neuron_18734",
+    "weight": 0.09093320369720459
+  },
+  {
+    "name": "layer_18_neuron_18211",
+    "weight": 0.09005969762802124
+  },
+  {
+    "name": "layer_8_neuron_9190",
+    "weight": 0.09005127102136612
+  },
+  {
+    "name": "layer_7_neuron_14503",
+    "weight": 0.08976034820079803
+  },
+  {
+    "name": "layer_16_neuron_15229",
+    "weight": 0.08917517215013504
+  },
+  {
+    "name": "layer_19_neuron_6242",
+    "weight": 0.08896877616643906
+  },
+  {
+    "name": "layer_13_neuron_13202",
+    "weight": 0.08888821303844452
+  },
+  {
+    "name": "layer_18_neuron_15383",
+    "weight": 0.08868981152772903
+  },
+  {
+    "name": "layer_18_neuron_4859",
+    "weight": 0.08856182545423508
+  },
+  {
+    "name": "layer_6_neuron_11882",
+    "weight": 0.08852548897266388
+  },
+  {
+    "name": "layer_11_neuron_16675",
+    "weight": 0.08756499737501144
+  },
+  {
+    "name": "layer_8_neuron_7592",
+    "weight": 0.08716798573732376
+  },
+  {
+    "name": "layer_14_neuron_11662",
+    "weight": 0.08714041113853455
+  },
+  {
+    "name": "layer_9_neuron_1665",
+    "weight": 0.08693990856409073
+  },
+  {
+    "name": "layer_17_neuron_5395",
+    "weight": 0.0868498682975769
+  },
+  {
+    "name": "layer_21_neuron_18040",
+    "weight": 0.08618094772100449
+  },
+  {
+    "name": "layer_0_neuron_6448",
+    "weight": 0.08570534735918045
+  },
+  {
+    "name": "layer_17_neuron_9718",
+    "weight": 0.08518163859844208
+  },
+  {
+    "name": "layer_19_neuron_18585",
+    "weight": 0.08498163521289825
+  },
+  {
+    "name": "layer_3_neuron_7262",
+    "weight": 0.08482326567173004
+  },
+  {
+    "name": "layer_7_neuron_11741",
+    "weight": 0.08461230993270874
+  },
+  {
+    "name": "layer_27_neuron_9474",
+    "weight": 0.08458463847637177
+  },
+  {
+    "name": "layer_4_neuron_12086",
+    "weight": 0.08423957973718643
+  },
+  {
+    "name": "layer_14_neuron_11291",
+    "weight": 0.08343810588121414
+  },
+  {
+    "name": "layer_19_neuron_14741",
+    "weight": 0.08312144875526428
+  },
+  {
+    "name": "layer_7_neuron_10331",
+    "weight": 0.0830063745379448
+  },
+  {
+    "name": "layer_17_neuron_12195",
+    "weight": 0.08274585008621216
+  },
+  {
+    "name": "layer_16_neuron_2514",
+    "weight": 0.08235141634941101
+  },
+  {
+    "name": "layer_21_neuron_18874",
+    "weight": 0.08212685585021973
+  },
+  {
+    "name": "layer_19_neuron_352",
+    "weight": 0.08156077563762665
+  },
+  {
+    "name": "layer_18_neuron_2366",
+    "weight": 0.08149567246437073
+  },
+  {
+    "name": "layer_5_neuron_10369",
+    "weight": 0.08140525966882706
+  },
+  {
+    "name": "layer_11_neuron_4096",
+    "weight": 0.0805199071764946
+  },
+  {
+    "name": "layer_26_neuron_12214",
+    "weight": 0.08036772161722183
+  },
+  {
+    "name": "layer_15_neuron_10340",
+    "weight": 0.0802006945014
+  },
+  {
+    "name": "layer_15_neuron_14459",
+    "weight": 0.07976224273443222
+  },
+  {
+    "name": "layer_23_neuron_8045",
+    "weight": 0.07951860874891281
+  },
+  {
+    "name": "layer_20_neuron_5",
+    "weight": 0.07853814959526062
+  },
+  {
+    "name": "layer_17_neuron_6730",
+    "weight": 0.0784638449549675
+  },
+  {
+    "name": "layer_19_neuron_3187",
+    "weight": 0.07803641259670258
+  },
+  {
+    "name": "layer_20_neuron_14154",
+    "weight": 0.0780203714966774
+  },
+  {
+    "name": "layer_10_neuron_13376",
+    "weight": 0.07790999859571457
+  },
+  {
+    "name": "layer_18_neuron_5669",
+    "weight": 0.07773201167583466
+  },
+  {
+    "name": "layer_6_neuron_8848",
+    "weight": 0.07739559561014175
+  },
+  {
+    "name": "layer_8_neuron_18787",
+    "weight": 0.07704619318246841
+  },
+  {
+    "name": "layer_13_neuron_4368",
+    "weight": 0.07703513652086258
+  },
+  {
+    "name": "layer_26_neuron_5470",
+    "weight": 0.07694388926029205
+  },
+  {
+    "name": "layer_18_neuron_14097",
+    "weight": 0.0769248902797699
+  },
+  {
+    "name": "layer_11_neuron_13557",
+    "weight": 0.0768980160355568
+  },
+  {
+    "name": "layer_0_neuron_10754",
+    "weight": 0.07652733474969864
+  },
+  {
+    "name": "layer_18_neuron_10119",
+    "weight": 0.07616356760263443
+  },
+  {
+    "name": "layer_2_neuron_10019",
+    "weight": 0.07584990561008453
+  },
+  {
+    "name": "layer_9_neuron_6557",
+    "weight": 0.07564563304185867
+  },
+  {
+    "name": "layer_23_neuron_9543",
+    "weight": 0.07558740675449371
+  },
+  {
+    "name": "layer_24_neuron_4429",
+    "weight": 0.07515566796064377
+  },
+  {
+    "name": "layer_10_neuron_10494",
+    "weight": 0.07470323145389557
+  },
+  {
+    "name": "layer_15_neuron_10298",
+    "weight": 0.07422970980405807
+  },
+  {
+    "name": "layer_14_neuron_15466",
+    "weight": 0.07419540733098984
+  },
+  {
+    "name": "layer_23_neuron_1206",
+    "weight": 0.0741693452000618
+  },
+  {
+    "name": "layer_13_neuron_16229",
+    "weight": 0.07412731647491455
+  },
+  {
+    "name": "layer_25_neuron_14788",
+    "weight": 0.07402525842189789
+  },
+  {
+    "name": "layer_14_neuron_6264",
+    "weight": 0.07394801080226898
+  },
+  {
+    "name": "layer_18_neuron_12924",
+    "weight": 0.07388543337583542
+  },
+  {
+    "name": "layer_2_neuron_5954",
+    "weight": 0.07383991777896881
+  },
+  {
+    "name": "layer_18_neuron_14030",
+    "weight": 0.07381219416856766
+  },
+  {
+    "name": "layer_8_neuron_14750",
+    "weight": 0.07372782379388809
+  },
+  {
+    "name": "layer_27_neuron_4490",
+    "weight": 0.07316326349973679
+  },
+  {
+    "name": "layer_15_neuron_7145",
+    "weight": 0.0729198306798935
+  },
+  {
+    "name": "layer_19_neuron_379",
+    "weight": 0.07238436490297318
+  },
+  {
+    "name": "layer_11_neuron_14350",
+    "weight": 0.07202453911304474
+  },
+  {
+    "name": "layer_19_neuron_16238",
+    "weight": 0.07165192812681198
+  },
+  {
+    "name": "layer_18_neuron_17841",
+    "weight": 0.07128865271806717
+  },
+  {
+    "name": "layer_24_neuron_3850",
+    "weight": 0.0706581175327301
+  },
+  {
+    "name": "layer_14_neuron_18432",
+    "weight": 0.07055602222681046
+  },
+  {
+    "name": "layer_17_neuron_8947",
+    "weight": 0.07021450996398926
+  },
+  {
+    "name": "layer_15_neuron_2155",
+    "weight": 0.07019805163145065
+  },
+  {
+    "name": "layer_18_neuron_9612",
+    "weight": 0.06905518472194672
+  },
+  {
+    "name": "layer_12_neuron_16966",
+    "weight": 0.06886787712574005
+  },
+  {
+    "name": "layer_12_neuron_18295",
+    "weight": 0.06850548833608627
+  },
+  {
+    "name": "layer_10_neuron_13473",
+    "weight": 0.06849858909845352
+  },
+  {
+    "name": "layer_15_neuron_894",
+    "weight": 0.0682126060128212
+  },
+  {
+    "name": "layer_12_neuron_3098",
+    "weight": 0.06818927824497223
+  },
+  {
+    "name": "layer_19_neuron_15033",
+    "weight": 0.0678374171257019
+  },
+  {
+    "name": "layer_7_neuron_6044",
+    "weight": 0.06768003851175308
+  },
+  {
+    "name": "layer_18_neuron_10327",
+    "weight": 0.06745888292789459
+  },
+  {
+    "name": "layer_14_neuron_13314",
+    "weight": 0.0672970563173294
+  },
+  {
+    "name": "layer_18_neuron_9230",
+    "weight": 0.06688365340232849
+  },
+  {
+    "name": "layer_25_neuron_9426",
+    "weight": 0.06639678031206131
+  },
+  {
+    "name": "layer_9_neuron_173",
+    "weight": 0.06639133393764496
+  },
+  {
+    "name": "layer_15_neuron_14302",
+    "weight": 0.06567741930484772
+  },
+  {
+    "name": "layer_18_neuron_11375",
+    "weight": 0.06503089517354965
+  },
+  {
+    "name": "layer_11_neuron_18303",
+    "weight": 0.0647922232747078
+  },
+  {
+    "name": "layer_19_neuron_6706",
+    "weight": 0.06471002846956253
+  },
+  {
+    "name": "layer_19_neuron_5169",
+    "weight": 0.06424926221370697
+  },
+  {
+    "name": "layer_26_neuron_2057",
+    "weight": 0.0642094686627388
+  },
+  {
+    "name": "layer_15_neuron_5236",
+    "weight": 0.0641903281211853
+  },
+  {
+    "name": "layer_22_neuron_5989",
+    "weight": 0.06414522975683212
+  },
+  {
+    "name": "layer_19_neuron_15902",
+    "weight": 0.06358135491609573
+  },
+  {
+    "name": "layer_15_neuron_12672",
+    "weight": 0.06354628503322601
+  },
+  {
+    "name": "layer_22_neuron_10297",
+    "weight": 0.06335734575986862
+  },
+  {
+    "name": "layer_16_neuron_5121",
+    "weight": 0.06322969496250153
+  },
+  {
+    "name": "layer_1_neuron_13788",
+    "weight": 0.06315638870000839
+  },
+  {
+    "name": "layer_14_neuron_3719",
+    "weight": 0.06313032656908035
+  },
+  {
+    "name": "layer_20_neuron_11834",
+    "weight": 0.06292960792779922
+  },
+  {
+    "name": "layer_19_neuron_12535",
+    "weight": 0.06271829456090927
+  },
+  {
+    "name": "layer_27_neuron_3541",
+    "weight": 0.06251855194568634
+  },
+  {
+    "name": "layer_11_neuron_7267",
+    "weight": 0.062425170093774796
+  },
+  {
+    "name": "layer_20_neuron_16171",
+    "weight": 0.0621112659573555
+  },
+  {
+    "name": "layer_10_neuron_6603",
+    "weight": 0.06206538900732994
+  },
+  {
+    "name": "layer_10_neuron_85",
+    "weight": 0.061928872019052505
+  },
+  {
+    "name": "layer_9_neuron_4111",
+    "weight": 0.061913203448057175
+  },
+  {
+    "name": "layer_22_neuron_3323",
+    "weight": 0.06141016259789467
+  },
+  {
+    "name": "layer_7_neuron_1092",
+    "weight": 0.06099456921219826
+  },
+  {
+    "name": "layer_12_neuron_3719",
+    "weight": 0.06090554967522621
+  },
+  {
+    "name": "layer_16_neuron_7176",
+    "weight": 0.060392942279577255
+  },
+  {
+    "name": "layer_15_neuron_14782",
+    "weight": 0.060326069593429565
+  },
+  {
+    "name": "layer_23_neuron_4648",
+    "weight": 0.06009940057992935
+  },
+  {
+    "name": "layer_19_neuron_9897",
+    "weight": 0.059716206043958664
+  },
+  {
+    "name": "layer_17_neuron_4652",
+    "weight": 0.05956685170531273
+  },
+  {
+    "name": "layer_13_neuron_6931",
+    "weight": 0.05952950194478035
+  },
+  {
+    "name": "layer_19_neuron_7825",
+    "weight": 0.05935478210449219
+  },
+  {
+    "name": "layer_6_neuron_12231",
+    "weight": 0.05915745347738266
+  },
+  {
+    "name": "layer_27_neuron_7668",
+    "weight": 0.05912639945745468
+  },
+  {
+    "name": "layer_10_neuron_4987",
+    "weight": 0.058841854333877563
+  },
+  {
+    "name": "layer_22_neuron_6584",
+    "weight": 0.058753758668899536
+  },
+  {
+    "name": "layer_15_neuron_5971",
+    "weight": 0.05846057087182999
+  },
+  {
+    "name": "layer_12_neuron_17324",
+    "weight": 0.05836177244782448
+  },
+  {
+    "name": "layer_6_neuron_10192",
+    "weight": 0.05824507027864456
+  },
+  {
+    "name": "layer_22_neuron_13284",
+    "weight": 0.05805592238903046
+  },
+  {
+    "name": "layer_14_neuron_14187",
+    "weight": 0.0580068975687027
+  },
+  {
+    "name": "layer_19_neuron_17144",
+    "weight": 0.05796568840742111
+  },
+  {
+    "name": "layer_18_neuron_11286",
+    "weight": 0.057920195162296295
+  },
+  {
+    "name": "layer_11_neuron_17343",
+    "weight": 0.05781228840351105
+  },
+  {
+    "name": "layer_14_neuron_9242",
+    "weight": 0.05771955847740173
+  },
+  {
+    "name": "layer_12_neuron_4890",
+    "weight": 0.057521022856235504
+  },
+  {
+    "name": "layer_10_neuron_1743",
+    "weight": 0.05685335397720337
+  },
+  {
+    "name": "layer_9_neuron_18144",
+    "weight": 0.05660100281238556
+  },
+  {
+    "name": "layer_12_neuron_13620",
+    "weight": 0.05634807050228119
+  },
+  {
+    "name": "layer_24_neuron_4095",
+    "weight": 0.055494051426649094
+  },
+  {
+    "name": "layer_8_neuron_11809",
+    "weight": 0.055206961929798126
+  },
+  {
+    "name": "layer_18_neuron_4451",
+    "weight": 0.055051159113645554
+  },
+  {
+    "name": "layer_13_neuron_12419",
+    "weight": 0.054652635008096695
+  },
+  {
+    "name": "layer_16_neuron_4632",
+    "weight": 0.054649606347084045
+  },
+  {
+    "name": "layer_8_neuron_1879",
+    "weight": 0.054593924432992935
+  },
+  {
+    "name": "layer_20_neuron_2028",
+    "weight": 0.05448315665125847
+  },
+  {
+    "name": "layer_15_neuron_14877",
+    "weight": 0.05438389629125595
+  },
+  {
+    "name": "layer_8_neuron_8729",
+    "weight": 0.05352457985281944
+  },
+  {
+    "name": "layer_6_neuron_14866",
+    "weight": 0.0534181147813797
+  },
+  {
+    "name": "layer_21_neuron_11989",
+    "weight": 0.05337291210889816
+  },
+  {
+    "name": "layer_19_neuron_15252",
+    "weight": 0.053082630038261414
+  },
+  {
+    "name": "layer_5_neuron_14671",
+    "weight": 0.05291479453444481
+  },
+  {
+    "name": "layer_8_neuron_1341",
+    "weight": 0.05279136449098587
+  },
+  {
+    "name": "layer_5_neuron_11770",
+    "weight": 0.05203767120838165
+  },
+  {
+    "name": "layer_18_neuron_1199",
+    "weight": 0.05160309001803398
+  },
+  {
+    "name": "layer_4_neuron_7350",
+    "weight": 0.05139847472310066
+  },
+  {
+    "name": "layer_7_neuron_7362",
+    "weight": 0.051377903670072556
+  },
+  {
+    "name": "layer_23_neuron_1540",
+    "weight": 0.051124826073646545
+  },
+  {
+    "name": "layer_16_neuron_12103",
+    "weight": 0.05096258595585823
+  },
+  {
+    "name": "layer_24_neuron_7587",
+    "weight": 0.05086004361510277
+  },
+  {
+    "name": "layer_7_neuron_6178",
+    "weight": 0.050657495856285095
+  },
+  {
+    "name": "layer_16_neuron_13437",
+    "weight": 0.05055913329124451
+  },
+  {
+    "name": "layer_10_neuron_6691",
+    "weight": 0.05050138756632805
+  },
+  {
+    "name": "layer_15_neuron_16002",
+    "weight": 0.05022324621677399
+  },
+  {
+    "name": "layer_6_neuron_691",
+    "weight": 0.05021972954273224
+  },
+  {
+    "name": "layer_16_neuron_17439",
+    "weight": 0.04979608580470085
+  },
+  {
+    "name": "layer_1_neuron_9498",
+    "weight": 0.04955668747425079
+  },
+  {
+    "name": "layer_10_neuron_10669",
+    "weight": 0.04870009422302246
+  },
+  {
+    "name": "layer_10_neuron_9834",
+    "weight": 0.0486726239323616
+  },
+  {
+    "name": "layer_14_neuron_13071",
+    "weight": 0.048610620200634
+  },
+  {
+    "name": "layer_18_neuron_13307",
+    "weight": 0.048479076474905014
+  },
+  {
+    "name": "layer_21_neuron_8953",
+    "weight": 0.04821876436471939
+  },
+  {
+    "name": "layer_5_neuron_5178",
+    "weight": 0.04815806820988655
+  },
+  {
+    "name": "layer_19_neuron_298",
+    "weight": 0.047792911529541016
+  },
+  {
+    "name": "layer_27_neuron_2372",
+    "weight": 0.04689246788620949
+  },
+  {
+    "name": "layer_20_neuron_1722",
+    "weight": 0.04683186486363411
+  },
+  {
+    "name": "layer_19_neuron_15133",
+    "weight": 0.046789951622486115
+  },
+  {
+    "name": "layer_10_neuron_14923",
+    "weight": 0.04656891152262688
+  },
+  {
+    "name": "layer_20_neuron_7768",
+    "weight": 0.046295057982206345
+  },
+  {
+    "name": "layer_18_neuron_18844",
+    "weight": 0.04629133641719818
+  },
+  {
+    "name": "layer_7_neuron_7570",
+    "weight": 0.046291060745716095
+  },
+  {
+    "name": "layer_24_neuron_5068",
+    "weight": 0.04618283361196518
+  },
+  {
+    "name": "layer_24_neuron_771",
+    "weight": 0.04615354910492897
+  },
+  {
+    "name": "layer_16_neuron_4661",
+    "weight": 0.04609982669353485
+  },
+  {
+    "name": "layer_7_neuron_16400",
+    "weight": 0.04591196030378342
+  },
+  {
+    "name": "layer_19_neuron_7055",
+    "weight": 0.045889902859926224
+  },
+  {
+    "name": "layer_16_neuron_1824",
+    "weight": 0.04587583988904953
+  },
+  {
+    "name": "layer_6_neuron_12654",
+    "weight": 0.04582969471812248
+  },
+  {
+    "name": "layer_22_neuron_12330",
+    "weight": 0.045671187341213226
+  },
+  {
+    "name": "layer_22_neuron_14008",
+    "weight": 0.04558742046356201
+  },
+  {
+    "name": "layer_18_neuron_8059",
+    "weight": 0.045541755855083466
+  },
+  {
+    "name": "layer_21_neuron_14297",
+    "weight": 0.04541943222284317
+  },
+  {
+    "name": "layer_8_neuron_14659",
+    "weight": 0.04525734484195709
+  },
+  {
+    "name": "layer_9_neuron_16793",
+    "weight": 0.044949471950531006
+  },
+  {
+    "name": "layer_3_neuron_13538",
+    "weight": 0.04486014321446419
+  },
+  {
+    "name": "layer_15_neuron_14521",
+    "weight": 0.044696707278490067
+  },
+  {
+    "name": "layer_3_neuron_7824",
+    "weight": 0.044695790857076645
+  },
+  {
+    "name": "layer_13_neuron_6696",
+    "weight": 0.044636957347393036
+  },
+  {
+    "name": "layer_16_neuron_77",
+    "weight": 0.0446179173886776
+  },
+  {
+    "name": "layer_14_neuron_7312",
+    "weight": 0.04456716403365135
+  },
+  {
+    "name": "layer_21_neuron_4693",
+    "weight": 0.044551100581884384
+  },
+  {
+    "name": "layer_11_neuron_9159",
+    "weight": 0.04451281204819679
+  },
+  {
+    "name": "layer_23_neuron_17000",
+    "weight": 0.04435958340764046
+  },
+  {
+    "name": "layer_18_neuron_801",
+    "weight": 0.0442189946770668
+  },
+  {
+    "name": "layer_13_neuron_17787",
+    "weight": 0.043989282101392746
+  },
+  {
+    "name": "layer_14_neuron_5145",
+    "weight": 0.04375160485506058
+  },
+  {
+    "name": "layer_8_neuron_6553",
+    "weight": 0.043503180146217346
+  },
+  {
+    "name": "layer_11_neuron_96",
+    "weight": 0.043143417686223984
+  },
+  {
+    "name": "layer_14_neuron_6085",
+    "weight": 0.04311481863260269
+  },
+  {
+    "name": "layer_19_neuron_13850",
+    "weight": 0.04276128113269806
+  },
+  {
+    "name": "layer_22_neuron_14069",
+    "weight": 0.04243755340576172
+  },
+  {
+    "name": "layer_11_neuron_5151",
+    "weight": 0.04239083454012871
+  },
+  {
+    "name": "layer_17_neuron_1933",
+    "weight": 0.04230222478508949
+  },
+  {
+    "name": "layer_10_neuron_4274",
+    "weight": 0.04205785319209099
+  },
+  {
+    "name": "layer_24_neuron_6382",
+    "weight": 0.04196784645318985
+  },
+  {
+    "name": "layer_21_neuron_14651",
+    "weight": 0.04191762953996658
+  },
+  {
+    "name": "layer_11_neuron_18175",
+    "weight": 0.04170474410057068
+  },
+  {
+    "name": "layer_13_neuron_16686",
+    "weight": 0.04166432470083237
+  },
+  {
+    "name": "layer_15_neuron_10057",
+    "weight": 0.04149492457509041
+  },
+  {
+    "name": "layer_13_neuron_18799",
+    "weight": 0.04144113510847092
+  },
+  {
+    "name": "layer_9_neuron_10734",
+    "weight": 0.04139794036746025
+  },
+  {
+    "name": "layer_9_neuron_4705",
+    "weight": 0.040892310440540314
+  },
+  {
+    "name": "layer_24_neuron_205",
+    "weight": 0.040840715169906616
+  },
+  {
+    "name": "layer_26_neuron_2763",
+    "weight": 0.04042056202888489
+  },
+  {
+    "name": "layer_10_neuron_18062",
+    "weight": 0.040311913937330246
+  },
+  {
+    "name": "layer_17_neuron_12515",
+    "weight": 0.04011311009526253
+  },
+  {
+    "name": "layer_25_neuron_521",
+    "weight": 0.03990970551967621
+  },
+  {
+    "name": "layer_17_neuron_253",
+    "weight": 0.039589449763298035
+  },
+  {
+    "name": "layer_0_neuron_11409",
+    "weight": 0.03941715136170387
+  },
+  {
+    "name": "layer_18_neuron_1604",
+    "weight": 0.039276525378227234
+  },
+  {
+    "name": "layer_23_neuron_15772",
+    "weight": 0.03922753781080246
+  },
+  {
+    "name": "layer_16_neuron_2065",
+    "weight": 0.03900516405701637
+  },
+  {
+    "name": "layer_20_neuron_7991",
+    "weight": 0.03897550702095032
+  },
+  {
+    "name": "layer_14_neuron_12977",
+    "weight": 0.03885073587298393
+  },
+  {
+    "name": "layer_20_neuron_7351",
+    "weight": 0.03883996605873108
+  },
+  {
+    "name": "layer_12_neuron_15005",
+    "weight": 0.038836520165205
+  },
+  {
+    "name": "layer_9_neuron_11902",
+    "weight": 0.038746461272239685
+  },
+  {
+    "name": "layer_23_neuron_17138",
+    "weight": 0.038711946457624435
+  },
+  {
+    "name": "layer_4_neuron_17456",
+    "weight": 0.038686420768499374
+  },
+  {
+    "name": "layer_5_neuron_18704",
+    "weight": 0.038663893938064575
+  },
+  {
+    "name": "layer_14_neuron_2944",
+    "weight": 0.03862318396568298
+  },
+  {
+    "name": "layer_11_neuron_3128",
+    "weight": 0.038329288363456726
+  },
+  {
+    "name": "layer_19_neuron_11854",
+    "weight": 0.037978481501340866
+  },
+  {
+    "name": "layer_6_neuron_12182",
+    "weight": 0.03792085498571396
+  },
+  {
+    "name": "layer_24_neuron_8262",
+    "weight": 0.037733543664216995
+  },
+  {
+    "name": "layer_8_neuron_17073",
+    "weight": 0.037677474319934845
+  },
+  {
+    "name": "layer_7_neuron_12149",
+    "weight": 0.037626780569553375
+  },
+  {
+    "name": "layer_21_neuron_11320",
+    "weight": 0.03742179274559021
+  },
+  {
+    "name": "layer_12_neuron_17361",
+    "weight": 0.037273138761520386
+  },
+  {
+    "name": "layer_21_neuron_15275",
+    "weight": 0.03724616393446922
+  },
+  {
+    "name": "layer_11_neuron_5512",
+    "weight": 0.03690715506672859
+  },
+  {
+    "name": "layer_14_neuron_4136",
+    "weight": 0.03688693046569824
+  },
+  {
+    "name": "layer_25_neuron_9195",
+    "weight": 0.03645118698477745
+  },
+  {
+    "name": "layer_10_neuron_6644",
+    "weight": 0.03644295036792755
+  },
+  {
+    "name": "layer_18_neuron_11934",
+    "weight": 0.0364387221634388
+  },
+  {
+    "name": "layer_27_neuron_2654",
+    "weight": 0.036152660846710205
+  },
+  {
+    "name": "layer_6_neuron_5237",
+    "weight": 0.03589310124516487
+  },
+  {
+    "name": "layer_2_neuron_2230",
+    "weight": 0.03578077629208565
+  },
+  {
+    "name": "layer_24_neuron_8926",
+    "weight": 0.035673193633556366
+  },
+  {
+    "name": "layer_26_neuron_4933",
+    "weight": 0.03543145954608917
+  },
+  {
+    "name": "layer_8_neuron_7373",
+    "weight": 0.03510803356766701
+  },
+  {
+    "name": "layer_5_neuron_5067",
+    "weight": 0.03508191928267479
+  },
+  {
+    "name": "layer_20_neuron_12646",
+    "weight": 0.034925106912851334
+  },
+  {
+    "name": "layer_22_neuron_12482",
+    "weight": 0.03488718718290329
+  },
+  {
+    "name": "layer_26_neuron_5019",
+    "weight": 0.0347929410636425
+  },
+  {
+    "name": "layer_14_neuron_8200",
+    "weight": 0.03380595147609711
+  },
+  {
+    "name": "layer_20_neuron_13047",
+    "weight": 0.033729881048202515
+  },
+  {
+    "name": "layer_13_neuron_11178",
+    "weight": 0.03359581157565117
+  },
+  {
+    "name": "layer_17_neuron_1958",
+    "weight": 0.03354505077004433
+  },
+  {
+    "name": "layer_16_neuron_16309",
+    "weight": 0.03310013934969902
+  },
+  {
+    "name": "layer_19_neuron_15496",
+    "weight": 0.03302896395325661
+  },
+  {
+    "name": "layer_13_neuron_17103",
+    "weight": 0.03272368758916855
+  },
+  {
+    "name": "layer_23_neuron_2536",
+    "weight": 0.03259976953268051
+  },
+  {
+    "name": "layer_27_neuron_8903",
+    "weight": 0.03251880034804344
+  },
+  {
+    "name": "layer_7_neuron_7441",
+    "weight": 0.03247838839888573
+  },
+  {
+    "name": "layer_14_neuron_7585",
+    "weight": 0.032392095774412155
+  },
+  {
+    "name": "layer_27_neuron_9542",
+    "weight": 0.032008782029151917
+  },
+  {
+    "name": "layer_17_neuron_15762",
+    "weight": 0.03182864189147949
+  },
+  {
+    "name": "layer_14_neuron_10370",
+    "weight": 0.03165731579065323
+  },
+  {
+    "name": "layer_26_neuron_4753",
+    "weight": 0.03155199810862541
+  },
+  {
+    "name": "layer_12_neuron_794",
+    "weight": 0.03147904947400093
+  },
+  {
+    "name": "layer_22_neuron_1593",
+    "weight": 0.030873510986566544
+  },
+  {
+    "name": "layer_10_neuron_17545",
+    "weight": 0.030841602012515068
+  },
+  {
+    "name": "layer_11_neuron_13665",
+    "weight": 0.030754096806049347
+  },
+  {
+    "name": "layer_21_neuron_12881",
+    "weight": 0.030669966712594032
+  },
+  {
+    "name": "layer_14_neuron_7631",
+    "weight": 0.03051789291203022
+  },
+  {
+    "name": "layer_2_neuron_2422",
+    "weight": 0.030466046184301376
+  },
+  {
+    "name": "layer_17_neuron_1772",
+    "weight": 0.030035467818379402
+  },
+  {
+    "name": "layer_15_neuron_1050",
+    "weight": 0.029963688924908638
+  },
+  {
+    "name": "layer_20_neuron_3866",
+    "weight": 0.029914800077676773
+  },
+  {
+    "name": "layer_15_neuron_10004",
+    "weight": 0.029835695400834084
+  },
+  {
+    "name": "layer_9_neuron_6033",
+    "weight": 0.02958245389163494
+  },
+  {
+    "name": "layer_2_neuron_3116",
+    "weight": 0.029489174485206604
+  },
+  {
+    "name": "layer_7_neuron_18455",
+    "weight": 0.029487648978829384
+  },
+  {
+    "name": "layer_24_neuron_4043",
+    "weight": 0.029476920142769814
+  },
+  {
+    "name": "layer_10_neuron_17283",
+    "weight": 0.029367078095674515
+  },
+  {
+    "name": "layer_11_neuron_17997",
+    "weight": 0.029094569385051727
+  },
+  {
+    "name": "layer_26_neuron_13319",
+    "weight": 0.028867583721876144
+  },
+  {
+    "name": "layer_21_neuron_10368",
+    "weight": 0.02882089652121067
+  },
+  {
+    "name": "layer_18_neuron_12020",
+    "weight": 0.028486354276537895
+  },
+  {
+    "name": "layer_12_neuron_9811",
+    "weight": 0.028253819793462753
+  },
+  {
+    "name": "layer_26_neuron_7274",
+    "weight": 0.028150027617812157
+  },
+  {
+    "name": "layer_16_neuron_15513",
+    "weight": 0.02804148942232132
+  },
+  {
+    "name": "layer_16_neuron_5794",
+    "weight": 0.027742400765419006
+  },
+  {
+    "name": "layer_9_neuron_16112",
+    "weight": 0.02764432318508625
+  },
+  {
+    "name": "layer_13_neuron_6442",
+    "weight": 0.027515577152371407
+  },
+  {
+    "name": "layer_22_neuron_3529",
+    "weight": 0.027088791131973267
+  },
+  {
+    "name": "layer_8_neuron_2980",
+    "weight": 0.02690981701016426
+  },
+  {
+    "name": "layer_15_neuron_4569",
+    "weight": 0.026787694543600082
+  },
+  {
+    "name": "layer_13_neuron_8666",
+    "weight": 0.026739973574876785
+  },
+  {
+    "name": "layer_15_neuron_4510",
+    "weight": 0.026704829186201096
+  },
+  {
+    "name": "layer_22_neuron_1686",
+    "weight": 0.026219096034765244
+  },
+  {
+    "name": "layer_8_neuron_8399",
+    "weight": 0.026074599474668503
+  },
+  {
+    "name": "layer_16_neuron_1224",
+    "weight": 0.025838539004325867
+  },
+  {
+    "name": "layer_23_neuron_5791",
+    "weight": 0.025823242962360382
+  },
+  {
+    "name": "layer_23_neuron_10441",
+    "weight": 0.025822144001722336
+  },
+  {
+    "name": "layer_18_neuron_6340",
+    "weight": 0.025811439380049706
+  },
+  {
+    "name": "layer_9_neuron_5767",
+    "weight": 0.02569633163511753
+  },
+  {
+    "name": "layer_6_neuron_850",
+    "weight": 0.025537004694342613
+  },
+  {
+    "name": "layer_17_neuron_15554",
+    "weight": 0.025232624262571335
+  },
+  {
+    "name": "layer_7_neuron_17459",
+    "weight": 0.025171060115098953
+  },
+  {
+    "name": "layer_3_neuron_16088",
+    "weight": 0.02504938654601574
+  },
+  {
+    "name": "layer_14_neuron_13077",
+    "weight": 0.02480056881904602
+  },
+  {
+    "name": "layer_9_neuron_1271",
+    "weight": 0.02468855120241642
+  },
+  {
+    "name": "layer_24_neuron_5909",
+    "weight": 0.02462652511894703
+  },
+  {
+    "name": "layer_21_neuron_15842",
+    "weight": 0.024546142667531967
+  },
+  {
+    "name": "layer_8_neuron_16528",
+    "weight": 0.024390442296862602
+  },
+  {
+    "name": "layer_26_neuron_6828",
+    "weight": 0.024365631863474846
+  },
+  {
+    "name": "layer_4_neuron_2117",
+    "weight": 0.02414698339998722
+  },
+  {
+    "name": "layer_11_neuron_5700",
+    "weight": 0.024052713066339493
+  },
+  {
+    "name": "layer_19_neuron_16140",
+    "weight": 0.02401769906282425
+  },
+  {
+    "name": "layer_12_neuron_1685",
+    "weight": 0.024007422849535942
+  },
+  {
+    "name": "layer_4_neuron_13788",
+    "weight": 0.023851070553064346
+  },
+  {
+    "name": "layer_11_neuron_13839",
+    "weight": 0.023679906502366066
+  },
+  {
+    "name": "layer_21_neuron_13670",
+    "weight": 0.02364141307771206
+  },
+  {
+    "name": "layer_3_neuron_17837",
+    "weight": 0.023601969704031944
+  },
+  {
+    "name": "layer_10_neuron_9981",
+    "weight": 0.0235607773065567
+  },
+  {
+    "name": "layer_24_neuron_9301",
+    "weight": 0.023495245724916458
+  },
+  {
+    "name": "layer_20_neuron_7955",
+    "weight": 0.023492474108934402
+  },
+  {
+    "name": "layer_9_neuron_12436",
+    "weight": 0.02333769202232361
+  },
+  {
+    "name": "layer_15_neuron_15482",
+    "weight": 0.023253202438354492
+  },
+  {
+    "name": "layer_20_neuron_17834",
+    "weight": 0.023131031543016434
+  },
+  {
+    "name": "layer_20_neuron_12015",
+    "weight": 0.023079829290509224
+  },
+  {
+    "name": "layer_22_neuron_2864",
+    "weight": 0.022790037095546722
+  },
+  {
+    "name": "layer_26_neuron_18895",
+    "weight": 0.022499507293105125
+  },
+  {
+    "name": "layer_17_neuron_6338",
+    "weight": 0.021768536418676376
+  },
+  {
+    "name": "layer_26_neuron_14177",
+    "weight": 0.021572835743427277
+  },
+  {
+    "name": "layer_20_neuron_7542",
+    "weight": 0.021464264020323753
+  },
+  {
+    "name": "layer_14_neuron_13866",
+    "weight": 0.02139246091246605
+  },
+  {
+    "name": "layer_20_neuron_13232",
+    "weight": 0.021348798647522926
+  },
+  {
+    "name": "layer_17_neuron_8182",
+    "weight": 0.021308723837137222
+  },
+  {
+    "name": "layer_14_neuron_249",
+    "weight": 0.021238166838884354
+  },
+  {
+    "name": "layer_16_neuron_8065",
+    "weight": 0.02121252939105034
+  },
+  {
+    "name": "layer_17_neuron_9544",
+    "weight": 0.02113301306962967
+  },
+  {
+    "name": "layer_15_neuron_17616",
+    "weight": 0.02111322432756424
+  },
+  {
+    "name": "layer_16_neuron_7940",
+    "weight": 0.020701302215456963
+  },
+  {
+    "name": "layer_8_neuron_626",
+    "weight": 0.02048574760556221
+  },
+  {
+    "name": "layer_20_neuron_7051",
+    "weight": 0.02043899893760681
+  },
+  {
+    "name": "layer_12_neuron_2908",
+    "weight": 0.020384080708026886
+  },
+  {
+    "name": "layer_22_neuron_3497",
+    "weight": 0.020201897248625755
+  },
+  {
+    "name": "layer_6_neuron_5002",
+    "weight": 0.020168961957097054
+  },
+  {
+    "name": "layer_21_neuron_8689",
+    "weight": 0.020015694200992584
+  },
+  {
+    "name": "layer_13_neuron_9765",
+    "weight": 0.020009228959679604
+  },
+  {
+    "name": "layer_25_neuron_11633",
+    "weight": 0.01959138736128807
+  },
+  {
+    "name": "layer_7_neuron_15753",
+    "weight": 0.019286425784230232
+  },
+  {
+    "name": "layer_8_neuron_17537",
+    "weight": 0.018868325278162956
+  },
+  {
+    "name": "layer_7_neuron_8478",
+    "weight": 0.018833952024579048
+  },
+  {
+    "name": "layer_16_neuron_16068",
+    "weight": 0.018345242366194725
+  },
+  {
+    "name": "layer_10_neuron_256",
+    "weight": 0.01830761693418026
+  },
+  {
+    "name": "layer_19_neuron_11816",
+    "weight": 0.018161676824092865
+  },
+  {
+    "name": "layer_18_neuron_12171",
+    "weight": 0.017990287393331528
+  },
+  {
+    "name": "layer_14_neuron_9409",
+    "weight": 0.017982061952352524
+  },
+  {
+    "name": "layer_27_neuron_5973",
+    "weight": 0.017884181812405586
+  },
+  {
+    "name": "layer_6_neuron_8483",
+    "weight": 0.017607837915420532
+  },
+  {
+    "name": "layer_14_neuron_16736",
+    "weight": 0.017420576885342598
+  },
+  {
+    "name": "layer_13_neuron_16693",
+    "weight": 0.017054356634616852
+  },
+  {
+    "name": "layer_24_neuron_12231",
+    "weight": 0.01704876683652401
+  },
+  {
+    "name": "layer_4_neuron_14500",
+    "weight": 0.017026299610733986
+  },
+  {
+    "name": "layer_14_neuron_13792",
+    "weight": 0.01701771840453148
+  },
+  {
+    "name": "layer_0_neuron_4498",
+    "weight": 0.016987163573503494
+  },
+  {
+    "name": "layer_23_neuron_3098",
+    "weight": 0.01695317216217518
+  },
+  {
+    "name": "layer_19_neuron_818",
+    "weight": 0.016910294070839882
+  },
+  {
+    "name": "layer_10_neuron_2982",
+    "weight": 0.016778096556663513
+  },
+  {
+    "name": "layer_19_neuron_14424",
+    "weight": 0.016635525971651077
+  },
+  {
+    "name": "layer_19_neuron_5316",
+    "weight": 0.016598621383309364
+  },
+  {
+    "name": "layer_13_neuron_11899",
+    "weight": 0.016562771052122116
+  },
+  {
+    "name": "layer_13_neuron_1677",
+    "weight": 0.01634647697210312
+  },
+  {
+    "name": "layer_16_neuron_13241",
+    "weight": 0.01630399376153946
+  },
+  {
+    "name": "layer_7_neuron_9916",
+    "weight": 0.01628301478922367
+  },
+  {
+    "name": "layer_16_neuron_5797",
+    "weight": 0.016227273270487785
+  },
+  {
+    "name": "layer_17_neuron_11342",
+    "weight": 0.01615724340081215
+  },
+  {
+    "name": "layer_19_neuron_7241",
+    "weight": 0.016154184937477112
+  },
+  {
+    "name": "layer_18_neuron_16437",
+    "weight": 0.01563413441181183
+  },
+  {
+    "name": "layer_10_neuron_16870",
+    "weight": 0.01558627374470234
+  },
+  {
+    "name": "layer_14_neuron_4383",
+    "weight": 0.01556718721985817
+  },
+  {
+    "name": "layer_9_neuron_5352",
+    "weight": 0.015388794243335724
+  },
+  {
+    "name": "layer_27_neuron_17234",
+    "weight": 0.01505657285451889
+  },
+  {
+    "name": "layer_17_neuron_10978",
+    "weight": 0.01499980315566063
+  },
+  {
+    "name": "layer_17_neuron_8780",
+    "weight": 0.014871551655232906
+  },
+  {
+    "name": "layer_20_neuron_2023",
+    "weight": 0.01480490155518055
+  },
+  {
+    "name": "layer_12_neuron_14247",
+    "weight": 0.014688917435705662
+  },
+  {
+    "name": "layer_17_neuron_5557",
+    "weight": 0.01468459889292717
+  },
+  {
+    "name": "layer_2_neuron_5624",
+    "weight": 0.014545122161507607
+  },
+  {
+    "name": "layer_4_neuron_5107",
+    "weight": 0.014530371874570847
+  },
+  {
+    "name": "layer_6_neuron_268",
+    "weight": 0.014530355110764503
+  },
+  {
+    "name": "layer_6_neuron_4634",
+    "weight": 0.014506387524306774
+  },
+  {
+    "name": "layer_15_neuron_10656",
+    "weight": 0.014198901131749153
+  },
+  {
+    "name": "layer_27_neuron_2167",
+    "weight": 0.014075169339776039
+  },
+  {
+    "name": "layer_8_neuron_9916",
+    "weight": 0.013983425684273243
+  },
+  {
+    "name": "layer_23_neuron_5517",
+    "weight": 0.013912500813603401
+  },
+  {
+    "name": "layer_15_neuron_4607",
+    "weight": 0.013846158981323242
+  },
+  {
+    "name": "layer_19_neuron_1472",
+    "weight": 0.013672003522515297
+  },
+  {
+    "name": "layer_27_neuron_9107",
+    "weight": 0.013670038431882858
+  },
+  {
+    "name": "layer_12_neuron_15353",
+    "weight": 0.013407103717327118
+  },
+  {
+    "name": "layer_21_neuron_10859",
+    "weight": 0.012952923774719238
+  },
+  {
+    "name": "layer_7_neuron_2702",
+    "weight": 0.012824089266359806
+  },
+  {
+    "name": "layer_19_neuron_10624",
+    "weight": 0.012756170704960823
+  },
+  {
+    "name": "layer_18_neuron_7941",
+    "weight": 0.012622109614312649
+  },
+  {
+    "name": "layer_16_neuron_5222",
+    "weight": 0.012553862296044827
+  },
+  {
+    "name": "layer_7_neuron_7377",
+    "weight": 0.01251449529081583
+  },
+  {
+    "name": "layer_16_neuron_18813",
+    "weight": 0.012452028691768646
+  },
+  {
+    "name": "layer_27_neuron_15315",
+    "weight": 0.01235185656696558
+  },
+  {
+    "name": "layer_9_neuron_1958",
+    "weight": 0.012296129018068314
+  },
+  {
+    "name": "layer_3_neuron_1732",
+    "weight": 0.011803763918578625
+  },
+  {
+    "name": "layer_25_neuron_16413",
+    "weight": 0.011573952622711658
+  },
+  {
+    "name": "layer_20_neuron_14730",
+    "weight": 0.011485304683446884
+  },
+  {
+    "name": "layer_26_neuron_16191",
+    "weight": 0.011238418519496918
+  },
+  {
+    "name": "layer_5_neuron_4118",
+    "weight": 0.01116817444562912
+  },
+  {
+    "name": "layer_20_neuron_3294",
+    "weight": 0.01087777130305767
+  },
+  {
+    "name": "layer_18_neuron_917",
+    "weight": 0.010867378674447536
+  },
+  {
+    "name": "layer_17_neuron_8534",
+    "weight": 0.010811888612806797
+  },
+  {
+    "name": "layer_10_neuron_11009",
+    "weight": 0.010727748274803162
+  },
+  {
+    "name": "layer_16_neuron_14400",
+    "weight": 0.009777357801795006
+  },
+  {
+    "name": "layer_9_neuron_18544",
+    "weight": 0.009699740447103977
+  },
+  {
+    "name": "layer_17_neuron_11194",
+    "weight": 0.009654251858592033
+  },
+  {
+    "name": "layer_17_neuron_16511",
+    "weight": 0.009422059170901775
+  },
+  {
+    "name": "layer_13_neuron_12694",
+    "weight": 0.009416644461452961
+  },
+  {
+    "name": "layer_15_neuron_15185",
+    "weight": 0.009237874299287796
+  },
+  {
+    "name": "layer_20_neuron_11478",
+    "weight": 0.009046468883752823
+  },
+  {
+    "name": "layer_6_neuron_18480",
+    "weight": 0.008810230530798435
+  },
+  {
+    "name": "layer_7_neuron_9478",
+    "weight": 0.00867691170424223
+  },
+  {
+    "name": "layer_25_neuron_15608",
+    "weight": 0.008500917814671993
+  },
+  {
+    "name": "layer_18_neuron_11716",
+    "weight": 0.008387626148760319
+  },
+  {
+    "name": "layer_17_neuron_548",
+    "weight": 0.008317059837281704
+  },
+  {
+    "name": "layer_26_neuron_6846",
+    "weight": 0.00801971834152937
+  },
+  {
+    "name": "layer_9_neuron_5397",
+    "weight": 0.007917484268546104
+  },
+  {
+    "name": "layer_8_neuron_3121",
+    "weight": 0.007848981767892838
+  },
+  {
+    "name": "layer_26_neuron_3582",
+    "weight": 0.0078054675832390785
+  },
+  {
+    "name": "layer_15_neuron_628",
+    "weight": 0.007724191062152386
+  },
+  {
+    "name": "layer_7_neuron_1085",
+    "weight": 0.007605697028338909
+  },
+  {
+    "name": "layer_26_neuron_6385",
+    "weight": 0.00718068890273571
+  },
+  {
+    "name": "layer_7_neuron_5078",
+    "weight": 0.00708711426705122
+  },
+  {
+    "name": "layer_12_neuron_8802",
+    "weight": 0.007010643370449543
+  },
+  {
+    "name": "layer_20_neuron_13418",
+    "weight": 0.006978382356464863
+  },
+  {
+    "name": "layer_24_neuron_15469",
+    "weight": 0.006968477740883827
+  },
+  {
+    "name": "layer_17_neuron_6824",
+    "weight": 0.006552363745868206
+  },
+  {
+    "name": "layer_25_neuron_6341",
+    "weight": 0.0064246319234371185
+  },
+  {
+    "name": "layer_3_neuron_7276",
+    "weight": 0.006395173259079456
+  },
+  {
+    "name": "layer_12_neuron_210",
+    "weight": 0.006309828720986843
+  },
+  {
+    "name": "layer_7_neuron_15456",
+    "weight": 0.005754001438617706
+  },
+  {
+    "name": "layer_19_neuron_12969",
+    "weight": 0.005735063925385475
+  },
+  {
+    "name": "layer_3_neuron_13449",
+    "weight": 0.004982371814548969
+  },
+  {
+    "name": "layer_24_neuron_550",
+    "weight": 0.004875002428889275
+  },
+  {
+    "name": "layer_21_neuron_9722",
+    "weight": 0.004544837400317192
+  },
+  {
+    "name": "layer_15_neuron_15748",
+    "weight": 0.004265664145350456
+  },
+  {
+    "name": "layer_23_neuron_17752",
+    "weight": 0.004204665310680866
+  },
+  {
+    "name": "layer_8_neuron_783",
+    "weight": 0.004202384501695633
+  },
+  {
+    "name": "layer_25_neuron_18795",
+    "weight": 0.004181550815701485
+  },
+  {
+    "name": "layer_17_neuron_9962",
+    "weight": 0.003390311496332288
+  },
+  {
+    "name": "layer_15_neuron_9795",
+    "weight": 0.0031770775094628334
+  },
+  {
+    "name": "layer_12_neuron_5187",
+    "weight": 0.0030092070810496807
+  },
+  {
+    "name": "layer_10_neuron_7797",
+    "weight": 0.0029428815469145775
+  },
+  {
+    "name": "layer_26_neuron_17004",
+    "weight": 0.002705239225178957
+  },
+  {
+    "name": "layer_17_neuron_9586",
+    "weight": 0.0024563497863709927
+  },
+  {
+    "name": "layer_23_neuron_16536",
+    "weight": 0.002453477820381522
+  },
+  {
+    "name": "layer_17_neuron_8864",
+    "weight": 0.00218923925422132
+  },
+  {
+    "name": "layer_19_neuron_4251",
+    "weight": 0.002033619210124016
+  },
+  {
+    "name": "layer_25_neuron_18425",
+    "weight": 0.001895958324894309
+  },
+  {
+    "name": "layer_17_neuron_7021",
+    "weight": 0.0018839481053873897
+  },
+  {
+    "name": "layer_15_neuron_8779",
+    "weight": 0.0016425560461357236
+  },
+  {
+    "name": "layer_21_neuron_17569",
+    "weight": 0.0014044231502339244
+  },
+  {
+    "name": "layer_9_neuron_194",
+    "weight": 0.0009734900668263435
+  },
+  {
+    "name": "layer_13_neuron_16258",
+    "weight": 0.0007372661493718624
+  },
+  {
+    "name": "layer_17_neuron_6627",
+    "weight": 0.0004351535171736032
+  },
+  {
+    "name": "layer_20_neuron_16522",
+    "weight": 0.00023784794029779732
+  }
+]

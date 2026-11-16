@@ -1,0 +1,69 @@
+{
+  "total_samples": 3219,
+  "should_answer_count": 1616,
+  "should_refuse_count": 1603,
+  "model_answered_count": 1475,
+  "model_refused_count": 1744,
+  "correct_answer": 931,
+  "wrong_answer": 544,
+  "correct_refusal": 1520,
+  "wrong_refusal": 224,
+  "knowledge_boundary_metrics": {
+    "refusal_rate": 0.5417831624728177,
+    "refusal_rate_percentage": "54.18%",
+    "refusal_precision": 0.8715596330275229,
+    "refusal_precision_percentage": "87.16%",
+    "refusal_recall": 0.9482220835932627,
+    "refusal_recall_percentage": "94.82%",
+    "refusal_f1": 0.908276068120705,
+    "refusal_f1_percentage": "90.83%"
+  },
+  "answer_accuracy_metrics": {
+    "answer_accuracy": 0.6311864406779661,
+    "answer_accuracy_percentage": "63.12%",
+    "answer_recall": 0.5761138613861386,
+    "answer_recall_percentage": "57.61%",
+    "answer_f1": 0.6023940472339048,
+    "answer_f1_percentage": "60.24%"
+  },
+  "overall_metrics": {
+    "overall_accuracy": 0.7614165890027959,
+    "overall_accuracy_percentage": "76.14%"
+  },
+  "basic_metrics_average": {
+    "rouge_1": 11.100145555028798,
+    "rouge_2": 3.986162346159246,
+    "rouge_l": 11.038285665582702,
+    "bertscore_precision": 61.73390452722542,
+    "bertscore_recall": 70.27843997655503,
+    "bertscore_f1": 65.44862076913248
+  },
+  "error_types_distribution": {
+    "事实错误": 476,
+    "遗漏": 380,
+    "虚构内容": 14,
+    "虚构": 8,
+    "重复冗余": 2,
+    "重复内容": 1
+  },
+  "score_distribution": {
+    "1": 1916,
+    "5": 849,
+    "2": 246,
+    "4": 89,
+    "3": 119
+  },
+  "base_score_distribution": {
+    "3": 302,
+    "2": 753,
+    "5": 1497,
+    "1": 548,
+    "4": 119
+  },
+  "confusion_matrix_counts": {
+    "true_positive": 931,
+    "false_positive": 544,
+    "true_negative": 1520,
+    "false_negative": 224
+  }
+}

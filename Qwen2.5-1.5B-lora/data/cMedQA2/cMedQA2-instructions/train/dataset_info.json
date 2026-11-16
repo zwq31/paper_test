@@ -1,0 +1,50 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "c_med_qa2-instructions",
+  "dataset_size": 104189030,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/zirui3/cMedQA2-instructions@f283977bc354da779371f2593ccb3c8b5a1dbc92/data.jsonl.gz": {
+      "num_bytes": 38521397,
+      "checksum": null
+    }
+  },
+  "download_size": 38521397,
+  "features": {
+    "question_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "answer_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "anwser": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 142710427,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 104189030,
+      "num_examples": 226266,
+      "dataset_name": "c_med_qa2-instructions"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

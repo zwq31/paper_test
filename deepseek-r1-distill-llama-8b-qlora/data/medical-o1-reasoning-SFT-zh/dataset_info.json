@@ -1,0 +1,46 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "zh",
+  "dataset_name": "medical-o1-reasoning-sft",
+  "dataset_size": 62450657,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/FreedomIntelligence/medical-o1-reasoning-SFT@61536c1d80b2c799df6800cc583897b77d2c86d2/medical_o1_sft_Chinese.json": {
+      "num_bytes": 64814379,
+      "checksum": null
+    }
+  },
+  "download_size": 64814379,
+  "features": {
+    "Question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Complex_CoT": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Response": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 127265036,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 62450657,
+      "num_examples": 24772,
+      "dataset_name": "medical-o1-reasoning-sft"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

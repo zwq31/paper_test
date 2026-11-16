@@ -1,0 +1,47 @@
+{
+  "total_neurons": 530432,
+  "h_neuron_count": 3575,
+  "h_neuron_ratio": 0.006739789454633205,
+  "layer_distribution": {
+    "0": 103,
+    "1": 66,
+    "2": 87,
+    "3": 135,
+    "4": 173,
+    "5": 172,
+    "6": 110,
+    "7": 107,
+    "8": 119,
+    "9": 137,
+    "10": 116,
+    "11": 120,
+    "12": 125,
+    "13": 104,
+    "14": 109,
+    "15": 129,
+    "16": 109,
+    "17": 108,
+    "18": 138,
+    "19": 148,
+    "20": 140,
+    "21": 145,
+    "22": 177,
+    "23": 197,
+    "24": 151,
+    "25": 155,
+    "26": 103,
+    "27": 92
+  },
+  "importance_statistics": {},
+  "lightgbm_params": {
+    "n_estimators": 500,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "best_iteration": 171
+  },
+  "feature_selection": {
+    "variance_threshold": 0,
+    "percentile": 10,
+    "method": "f_classif"
+  }
+}

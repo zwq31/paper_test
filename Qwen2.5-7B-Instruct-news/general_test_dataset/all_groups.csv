@@ -1,0 +1,5 @@
+model,average,coding,data_analysis,instruction_following,language,math,reasoning
+qwen2.5-7b-instruct-local,33.9,37.9,37.5,51.4,15.4,34.2,27.3
+qwen2.5-7b-instruct-cpt-3years,26.1,35.9,27.2,40.5,11.3,31.8,10.2
+qwen2.5-7b-instruct-cpt-mol-3years,32.8,35.6,36.2,49.5,12.9,35.7,26.8
+qwen2.5-7b-instruct-mol-cpt-3years-qlora-1year,24.5,22.5,27.0,42.1,10.6,27.1,17.6

@@ -1,0 +1,26 @@
+{
+  "optimal_thresholds": {
+    "min_token_prob_geq": 0.379441287433978,
+    "self_reported_confidence_geq": 0.3622772425171563
+  },
+  "performance": {
+    "youden_j": 0.4156401891709294,
+    "accuracy": 0.7073625349487418,
+    "sensitivity": 0.7553324968632371,
+    "specificity": 0.6603076923076923,
+    "tp": 1204,
+    "tn": 1073,
+    "fp": 552,
+    "fn": 390
+  },
+  "decision_rule": "仅当 [Min Token Prob ≥ 阈值 且 Self-reported Confidence ≥ 阈值] 时作答，否则拒答",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 500,
+    "best_trial_number": 83,
+    "metrics_used": [
+      "min_token_prob",
+      "self_reported_confidence"
+    ]
+  }
+}

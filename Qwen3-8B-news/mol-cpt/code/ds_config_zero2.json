@@ -1,0 +1,31 @@
+{
+  "train_batch_size": 4, 
+    "gradient_accumulation_steps": 1, 
+    "zero_optimization": {
+        "stage": 2, 
+        "offload_optimizer": {
+            "device": "cpu", 
+            "pin_memory": true
+        }, 
+        "contiguous_gradients": true, 
+        "overlap_comm": false, 
+        "allgather_bucket_size": 1.000000e+07, 
+        "reduce_bucket_size": 1.000000e+07
+    }, 
+    "gradient_clipping": 1.0, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "activation_checkpointing": {
+        "partition_activations": false, 
+        "cpu_checkpointing": true, 
+        "contiguous_memory_optimization": true, 
+        "synchronize_checkpoint_boundary": true
+    }, 
+    "gradient_checkpointing": true, 
+    "wall_clock_breakdown": false,  
+    "zero_allow_untested_optimizer": true
+}

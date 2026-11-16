@@ -1,0 +1,57 @@
+
+============================================================
+H-Neurons训练完成报告 - 弹性网络版本（参考代码特征筛选）
+============================================================
+
+特征筛选方法（完全按照参考代码）:
+  - 第一阶段: VarianceThreshold(threshold=0) - 剔除常数特征
+  - 第二阶段: SelectPercentile(f_classif, percentile=10) - 选择前10%特征
+
+弹性网络方法:
+  - 正则化类型: 弹性网络(L1+L2)
+  - 网格搜索: 自动寻找最佳L1比例和正则化强度
+  - L1比例范围: [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]
+  - 正则化强度C范围: [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1.0]
+  - 稳定性选择: 50次自助采样，阈值0.8
+
+数据统计:
+  - 原始特征维度: 530432
+  - 筛选后特征维度: 53044
+  - 筛选比例: 10.00%
+  - 正样本比例: 0.250
+
+H-Neurons发现:
+  - H-Neurons数量: 145
+  - H-Neurons比例: 0.0273%
+  - 是否<0.1%: ✓ 是
+  - 最佳L1比例: 0.1
+  - 最佳正则化强度C: 0.005
+
+模型性能:
+  - 准确率: 0.8208
+  - AUC: 0.9086
+
+输出文件:
+  - /mnt/project/H-Neurous/output/elastic_net_reference/h_neurons_elastic_net_reference_20260118_103645/elastic_net_model.pkl - 完整的模型对象
+  - /mnt/project/H-Neurous/output/elastic_net_reference/h_neurons_elastic_net_reference_20260118_103645/h_neurons_elastic_net.json - H-Neurons详细信息(按权重排序)
+  - /mnt/project/H-Neurous/output/elastic_net_reference/h_neurons_elastic_net_reference_20260118_103645/h_neurons_statistics.json - 统计信息
+  - /mnt/project/H-Neurous/output/elastic_net_reference/h_neurons_elastic_net_reference_20260118_103645/experiment_results.json - 完整实验结果
+  - /mnt/project/H-Neurous/output/elastic_net_reference/h_neurons_elastic_net_reference_20260118_103645/training_report.txt - 本报告
+
+使用说明:
+  1. 加载模型:
+     with open('/mnt/project/H-Neurous/output/elastic_net_reference/h_neurons_elastic_net_reference_20260118_103645/elastic_net_model.pkl', 'rb') as f:
+         model_data = pickle.load(f)
+  
+  2. 获取H-Neurons:
+     h_neurons = model_data['h_neuron_names']
+     h_weights = model_data['h_neuron_weights']
+  
+  3. 进行预测:
+     # 先应用相同的特征筛选
+     X_test_var = model_data['var_selector'].transform(new_X)
+     X_test_percentile = model_data['percentile_selector'].transform(X_test_var)
+     X_test_scaled = model_data['scaler'].transform(X_test_percentile)
+     predictions = model_data['classifier'].predict(X_test_scaled)
+
+============================================================

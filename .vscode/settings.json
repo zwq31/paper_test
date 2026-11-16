@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Qwen2.5-7B-Instruct-news/Knowledge_Boundary_Awareness/code/utils"
+    ]
+}

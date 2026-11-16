@@ -1,0 +1,20 @@
+{
+  "optimal_threshold": 0.8120983440784356,
+  "performance": {
+    "youden_j": 0.01053064376025481,
+    "accuracy": 0.5032618825722274,
+    "sensitivity": 0.7132998745294856,
+    "specificity": 0.29723076923076924,
+    "tp": 1137,
+    "tn": 483,
+    "fp": 1142,
+    "fn": 457,
+    "hallucination_in_false_positives": 1028
+  },
+  "decision_rule": "if self_reported_confidence >= T: answer; else: refuse",
+  "optimization": {
+    "method": "Bayesian Optimization (Optuna)",
+    "n_trials": 300,
+    "metric_used": "self_reported_confidence"
+  }
+}

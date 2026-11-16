@@ -1,0 +1,65 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "data_analysis",
+  "dataset_size": 305848,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/livebench/data_analysis@31b9661ff678df9958e2f7fa228427f4c858c1a1/data/test-00000-of-00001.parquet": {
+      "num_bytes": 144796,
+      "checksum": null
+    }
+  },
+  "download_size": 144796,
+  "features": {
+    "question_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "turns": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ground_truth": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "livebench_release_date": {
+      "dtype": "timestamp[s]",
+      "_type": "Value"
+    },
+    "livebench_removal_date": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 450644,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 305848,
+      "num_examples": 150,
+      "dataset_name": "data_analysis"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

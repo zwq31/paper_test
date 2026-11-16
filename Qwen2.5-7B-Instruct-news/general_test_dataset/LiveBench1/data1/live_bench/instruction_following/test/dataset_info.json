@@ -1,0 +1,146 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "instruction_following",
+  "dataset_size": 1036075,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/livebench/instruction_following@0868379c4b5cf62aeacaf8be4f08fced815c81bb/data/test-00000-of-00001.parquet": {
+      "num_bytes": 537024,
+      "checksum": null
+    }
+  },
+  "download_size": 537024,
+  "features": {
+    "question_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "turns": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruction_id_list": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "kwargs": [
+      {
+        "num_bullets": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "num_paragraphs": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "num_words": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "relation": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "forbidden_words": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "section_spliter": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "num_sections": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "keywords": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "end_phrase": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "postscript_marker": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "num_sentences": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "nth_paragraph": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "first_word": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "prompt_to_repeat": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "task_prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "livebench_release_date": {
+      "dtype": "timestamp[s]",
+      "_type": "Value"
+    },
+    "livebench_removal_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "release_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "citation": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1573099,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 1036075,
+      "num_examples": 400,
+      "dataset_name": "instruction_following"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

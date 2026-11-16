@@ -1,0 +1,50 @@
+[
+  {
+    "question": "杭温高铁的开通运营日期是哪一天？",
+    "answer": "2024年9月6日",
+    "mol_cpt_qlora_sft_model_answer": "杭温高铁的开通运营日期是2024年9月6日。",
+    "source_id": 79
+  },
+  {
+    "question": "截至2024年8月底，建行永嘉支行支持涉农贷款资金达多少亿元？",
+    "answer": "90.28亿元",
+    "mol_cpt_qlora_sft_model_answer": "截至2024年8月底，建行永嘉支行支持涉农贷款资金达15.12亿元。",
+    "source_id": 292
+  },
+  {
+    "question": "2024年永嘉县全县单季稻种植总面积是多少亩？",
+    "answer": "13.8万亩",
+    "mol_cpt_qlora_sft_model_answer": "13.8万亩。",
+    "source_id": 415
+  },
+  {
+    "question": "2024年永嘉县单季稻种植面积是多少？",
+    "answer": "13.8万亩",
+    "mol_cpt_qlora_sft_model_answer": "13.8万亩。",
+    "source_id": 474
+  },
+  {
+    "question": "2024年11月6日，在'机械工业科学技术奖'奖励项目中，亚龙集团获得科技进步一等奖的项目名称是什么？",
+    "answer": "调制光场三维高精度在线测量技术及应用",
+    "mol_cpt_qlora_sft_model_answer": "亚龙集团获得科技进步一等奖的项目名称是《面向制造业智能化升级的机器人技术研究与应用》。",
+    "source_id": 713
+  },
+  {
+    "question": "2024年11月18日，中国人民银行发行的2025中国乙巳（蛇）年贵金属纪念币一套的总枚数是多少？",
+    "answer": "12枚",
+    "mol_cpt_qlora_sft_model_answer": "12枚。",
+    "source_id": 809
+  },
+  {
+    "question": "2024年11月28日，联合国旅游组织执行委员会第122次会议上公布的2024年“最佳旅游乡村”名单中，中国有多少个乡村入选？",
+    "answer": "中国共有7个乡村入选。",
+    "mol_cpt_qlora_sft_model_answer": "中国有7个乡村入选。",
+    "source_id": 974
+  },
+  {
+    "question": "2024年12月4日，市政协副主席徐有平带队赴永嘉县浙江红蜻蜓鞋业股份有限公司走访调研时，陪同调研的县政协副主席是谁？",
+    "answer": "杨志华",
+    "mol_cpt_qlora_sft_model_answer": "县政协副主席黄天集参加了调研活动。",
+    "source_id": 1038
+  }
+]

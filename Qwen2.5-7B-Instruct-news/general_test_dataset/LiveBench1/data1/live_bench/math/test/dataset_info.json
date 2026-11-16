@@ -1,0 +1,85 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "math",
+  "dataset_size": 550557,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/livebench/math@bb66571c8ccf32d3df9e6f48b920d3770ff4aacb/data/test-00000-of-00001.parquet": {
+      "num_bytes": 185605,
+      "checksum": null
+    }
+  },
+  "download_size": 185605,
+  "features": {
+    "question_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "task": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "subtask": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "year": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "turns": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ground_truth": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "hardness": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "expressions": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "livebench_release_date": {
+      "dtype": "timestamp[s]",
+      "_type": "Value"
+    },
+    "livebench_removal_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "release_date": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 736162,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 550557,
+      "num_examples": 368,
+      "dataset_name": "math"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
